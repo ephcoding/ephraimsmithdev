@@ -1,31 +1,23 @@
-# DevSpace Blog
-
-> Static Next.js blog that uses Markdown for posts. Includes pagination, categories and search
-
-This project is part of my [Next.js Udemy course](https://www.udemy.com/course/nextjs-dev-to-deployment)
-
-![DevSpace Blog](/public/images/screen.png 'DevSpace Blog')
-
-[VIEW DEMO](https://devspace-blog-pearl.vercel.app)
-
-## Usage
+![EPHCODDING Site Repo Banner](./gh-profile__ephcoding.png)
 
 ### Install Dependencies
+
 ```bash
 npm install
 ```
 
-### Run Dev Server (http://localhost:3000) 
+### Run Dev Server (http://localhost:3000)
+
 ```bash
 npm run dev
 ```
 
 ### Creating posts
 
-* Create a markdown file in the "posts" folder and name it whatever you want as the slug
-* Add the frontmatter/fields at the top and then the post body. See an example in the "posts" folder of this repo
-* Add your cover image and author image in the public/images folder
-* For category color coding, edit the "Components/CategoryLabel.js" file
+- Create a markdown file in the "posts" folder and name it whatever you want as the slug
+- Add the frontmatter/fields at the top and then the post body. See an example in the "posts" folder of this repo
+- Add your cover image and author image in the public/images folder
+- For category color coding, edit the "Components/CategoryLabel.js" file
 
 ### Caching
 
