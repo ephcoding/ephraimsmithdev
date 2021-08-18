@@ -21,6 +21,7 @@
     "autoprefixer": "^10.2.5",
     "husky": "^6.0.0",
     "postcss": "^8.2.15",
+    "sass": "^1.38.0",
     "tailwindcss": "^2.1.2"
   }
 }

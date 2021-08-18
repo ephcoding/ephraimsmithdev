@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from './Header';
 import Search from './Search';
+import styles from '../styles/Layout.module.scss';
 
 export default function Layout({ title, keywords, description, children }) {
 	return (
@@ -12,9 +13,10 @@ export default function Layout({ title, keywords, description, children }) {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Header />
-			<Search />
-			<main className='container mx-auto my-7'>{children}</main>
+			{/* <Header /> */}
+			{/* <Search /> */}
+			{/* <main className='container mx-auto my-7'>{children}</main> */}
+			<main className={styles.container}>{children}</main>
 		</div>
 	);
 }
