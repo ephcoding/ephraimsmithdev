@@ -4,7 +4,10 @@ import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post, compact }) {
 	return (
-		<div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
+		<div
+			id='blog-post-content'
+			className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'
+		>
 			{!compact && (
 				<Image
 					src={post.frontmatter.cover_image}

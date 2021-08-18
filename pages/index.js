@@ -8,8 +8,7 @@ import styles from '../styles/HomePage.module.scss';
 export default function HomePage({ posts }) {
 	return (
 		<Layout>
-			{/* TODO: center HomePage logo */}
-			<div className={styles['homepage-wrapper']}>
+			<div id='ephcoding-landing-page' className={styles['homepage-wrapper']}>
 				<img
 					className={styles.logo}
 					src='/images/ephcoding-text-logo.png'
