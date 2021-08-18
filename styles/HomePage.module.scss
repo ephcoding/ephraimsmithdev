@@ -9,7 +9,7 @@
 .logo {
 	height: auto;
 	margin: 0 auto;
-	max-width: 90vw;
+	max-width: 100vw;
 }
 
 .landing-page-nav {
@@ -20,7 +20,7 @@
 		padding: 0.5rem 1rem;
 	}
 
-	&-__li:hover {
+	&__li:hover {
 		color: #eb222f;
-	}	
+	}
 }
