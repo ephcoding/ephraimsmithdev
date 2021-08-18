@@ -9,6 +9,7 @@ body {
 }
 
 body {
+	font-family: Arial, Helvetica, sans-serif;
 	background-color: #1f1f1f;
 	color: #e9e9e9;
 }
@@ -36,12 +37,12 @@ ul {
 // 	margin: 10px 0;
 // }
 
-// .blog-text pre {
-// 	background: #f4f4f4;
-// 	padding: 20px;
-// 	margin: 20px 0;
-// 	line-height: 2.3;
-// }
+.blog-text pre {
+	background: #f4f4f4;
+	padding: 20px;
+	margin: 20px 0;
+	line-height: 2.3;
+}
 
 // .blog-text h1 {
 // 	font-size: 35px;

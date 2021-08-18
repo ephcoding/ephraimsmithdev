@@ -17,30 +17,27 @@ export default function HomePage({ posts }) {
 					width={1000}
 				/>
 
-				<nav className={styles['landing-page__nav']}>
-					<ul className={styles['landing-page__nav-items']}>
-						<li>
+				<nav className={styles['landing-page-nav']}>
+					<ul className={styles['landing-page-nav__ul']}>
+						<li className={styles['landing-page-nav__li']}>
 							<Link href='/blog'>
-								<a className={styles['landing-page__nav-item']}>blog</a>
+								<a>blog</a>
 							</Link>
 						</li>
-						<span> | </span>
-						<li>
+						<li className={styles['landing-page-nav__li']}>
 							<Link href='https://github.com/ephcoding'>
-								<a className={styles['landing-page__nav-item']}>github</a>
+								<a>github</a>
 							</Link>
 						</li>
-						<span> | </span>
-						<li>
+						<li className={styles['landing-page-nav__li']}>
 							<Link href='https://twitter.com/ephcoding'>
-								<a className={styles['landing-page__nav-item']}>twitter</a>
+								<a>twitter</a>
 							</Link>
 						</li>
-						<span> | </span>
 						{/* TODO: add Postman link */}
-						<li>
+						<li className={styles['landing-page-nav__li']}>
 							<Link href='https://www.linkedin.com/in/ephraimjsmith'>
-								<a className={styles['landing-page__nav-item']}>linkedIn</a>
+								<a>linkedIn</a>
 							</Link>
 						</li>
 					</ul>
