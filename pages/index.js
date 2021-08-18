@@ -9,48 +9,43 @@ export default function HomePage({ posts }) {
 	return (
 		<Layout>
 			{/* TODO: center HomePage logo */}
-			<div>
+			<div className={styles['homepage-wrapper']}>
 				<img
 					className={styles.logo}
 					src='/images/ephcoding-text-logo.png'
 					height={417}
 					width={1000}
 				/>
-			</div>
-			<nav className={styles['landing-page__nav']}>
-				<ul className={styles['landing-page__nav-items']}>
-					<li>
-						<Link href='/blog'>
-							<a className={styles['landing-page__nav-item']}>blog</a>
-						</Link>
-					</li>
-					<span> | </span>
-					<li>
-						<Link href='https://github.com/ephcoding'>
-							<a className={styles['landing-page__nav-item']}>github</a>
-						</Link>
-					</li>
-					<span> | </span>
-					<li>
-						<Link href='https://twitter.com/ephcoding'>
-							<a className={styles['landing-page__nav-item']}>twitter</a>
-						</Link>
-					</li>
-					<span> | </span>
-					<li>
-						<Link href='https://postman.com/ephcoding'>
-							<a className={styles['landing-page__nav-item']}>postman</a>
-						</Link>
-					</li>
-					<span> | </span>
-					<li>
-						<Link href='https://www.linkedin.com/in/ephraimjsmith'>
-							<a className={styles['landing-page__nav-item']}>linkedIn</a>
-						</Link>
-					</li>
-				</ul>
-			</nav>
-			{/* <h1 className='text-5xl border-b-4 p-5 font-bold'>Latest Posts</h1>
+
+				<nav className={styles['landing-page__nav']}>
+					<ul className={styles['landing-page__nav-items']}>
+						<li>
+							<Link href='/blog'>
+								<a className={styles['landing-page__nav-item']}>blog</a>
+							</Link>
+						</li>
+						<span> | </span>
+						<li>
+							<Link href='https://github.com/ephcoding'>
+								<a className={styles['landing-page__nav-item']}>github</a>
+							</Link>
+						</li>
+						<span> | </span>
+						<li>
+							<Link href='https://twitter.com/ephcoding'>
+								<a className={styles['landing-page__nav-item']}>twitter</a>
+							</Link>
+						</li>
+						<span> | </span>
+						{/* TODO: add Postman link */}
+						<li>
+							<Link href='https://www.linkedin.com/in/ephraimjsmith'>
+								<a className={styles['landing-page__nav-item']}>linkedIn</a>
+							</Link>
+						</li>
+					</ul>
+				</nav>
+				{/* <h1 className='text-5xl border-b-4 p-5 font-bold'>Latest Posts</h1>
 
 			<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
 				{posts.map((post, index) => (
@@ -63,6 +58,7 @@ export default function HomePage({ posts }) {
 					All Posts
 				</a>
 			</Link> */}
+			</div>
 		</Layout>
 	);
 }

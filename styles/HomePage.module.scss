@@ -1,6 +1,12 @@
+.homepage-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
 .logo {
-	// display: inline-block;
-	// width: 100%;
 	margin: 0 auto;
 }
 
