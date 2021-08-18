@@ -26,18 +26,18 @@ export default function HomePage({ posts }) {
 						</li>
 						<li className={styles['landing-page-nav__li']}>
 							<Link href='https://github.com/ephcoding'>
-								<a>github</a>
+								<a target='_blank'>github</a>
 							</Link>
 						</li>
 						<li className={styles['landing-page-nav__li']}>
 							<Link href='https://twitter.com/ephcoding'>
-								<a>twitter</a>
+								<a target='_blank'>twitter</a>
 							</Link>
 						</li>
 						{/* TODO: add Postman link */}
 						<li className={styles['landing-page-nav__li']}>
 							<Link href='https://www.linkedin.com/in/ephraimjsmith'>
-								<a>linkedIn</a>
+								<a target='_blank'>linkedIn</a>
 							</Link>
 						</li>
 					</ul>
