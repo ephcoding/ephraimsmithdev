@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
 import Search from './Search';
-import styles from '../styles/Layout.module.scss';
 
 export default function Layout({ title, keywords, description, children }) {
 	return (

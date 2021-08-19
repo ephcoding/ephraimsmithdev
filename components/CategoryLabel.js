@@ -2,18 +2,18 @@ import Link from 'next/link';
 
 export default function CategoryLabel({ children }) {
 	const colorKey = {
-		JavaScript: 'yellow',
+		HTML: '',
 		CSS: 'blue',
-		Python: 'green',
-		PHP: 'purple',
-		Ruby: 'red',
+		JavaScript: 'yellow',
+		TypeScript: '',
+		Node: '',
+		React: '',
+		ReactNative: '',
+		Git: '',
 	};
 
 	return (
-		<div
-			id='category-label'
-			className={`px-2 py-1 bg-${colorKey[children]}-600 text-gray-100 font-bold rounded`}
-		>
+		<div id='category-label' className={`bg-${colorKey[children]}`}>
 			<Link href={`/blog/category/${children.toLowerCase()}`}>{children}</Link>
 		</div>
 	);

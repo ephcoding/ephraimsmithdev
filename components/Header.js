@@ -1,21 +1,27 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/Header.module.scss';
 
 export default function Header() {
 	return (
 		// <header className='bg-gray-900 text-gray-100 shadow w-full'>
-		<header id='header' className={styles.header}>
-			<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+		<header id='header' className='header'>
+			<div className=''>
 				<Link href='/'>
-					<a className='flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0'>
+					<a className=''>
 						<Image
+							src='/images/ephcoding-text-logo.png'
+							height={417}
+							width={1000}
+							className='logo'
+							alt='logo'
+						/>
+						{/* <Image
 							src='/images/ephcoding-text-logo.png'
 							height={417}
 							width={1000}
 							className={styles.logo}
 							alt='logo'
-						/>
+						/> */}
 					</a>
 				</Link>
 				{/* TODO: use nav in main body of minimalistic landing page */}

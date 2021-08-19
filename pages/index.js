@@ -1,22 +1,23 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
 import Post from '@/components/Post';
 import { getPosts } from '@/lib/posts';
-import styles from '../styles/HomePage.module.scss';
 
 export default function HomePage({ posts }) {
 	return (
 		<Layout>
-			<div id='ephcoding-landing-page' className={styles['homepage-wrapper']}>
+			<Header />
+			<div id='ephcoding-landing-page'>
 				<img
-					className={styles.logo}
+					className='logo'
 					src='/images/ephcoding-text-logo.png'
 					height={417}
 					width={1000}
 				/>
 
-				<nav className={styles['landing-page-nav']}>
+				{/* <nav className={styles['landing-page-nav']}>
 					<ul className={styles['landing-page-nav__ul']}>
 						<li className={styles['landing-page-nav__li']}>
 							<Link href='/blog'>
@@ -34,13 +35,13 @@ export default function HomePage({ posts }) {
 							</Link>
 						</li>
 						{/* TODO: add Postman link */}
-						<li className={styles['landing-page-nav__li']}>
+				{/* <li className={styles['landing-page-nav__li']}>
 							<Link href='https://www.linkedin.com/in/ephraimjsmith'>
 								<a target='_blank'>linkedIn</a>
 							</Link>
 						</li>
 					</ul>
-				</nav>
+				</nav> */}
 				{/* <h1 className='text-5xl border-b-4 p-5 font-bold'>Latest Posts</h1>
 
 			<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
