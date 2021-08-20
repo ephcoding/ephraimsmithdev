@@ -1,8 +1,13 @@
 import Head from 'next/head';
 import Header from './Header';
-import Search from './Search';
+import SearchInputField from './SearchInputField';
 
-export default function Layout({ title, keywords, description, children }) {
+export default function MetaContainer({
+	title,
+	keywords,
+	description,
+	children,
+}) {
 	return (
 		<div id='layout'>
 			<Head>
@@ -18,7 +23,7 @@ export default function Layout({ title, keywords, description, children }) {
 	);
 }
 
-Layout.defaultProps = {
+MetaContainer.defaultProps = {
 	title: 'ephcoding.com',
 	keywords:
 		'react native, mobile apps, mobile development, android, ios, coding, programming, software, software development',
