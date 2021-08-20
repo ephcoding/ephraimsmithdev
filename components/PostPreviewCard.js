@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import CategoryLabel from './CategoryLabel';
 
 export default function PostPreviewCard({ post, compact }) {
 	return (
