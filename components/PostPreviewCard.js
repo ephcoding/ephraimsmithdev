@@ -3,24 +3,22 @@ import Image from 'next/image';
 
 export default function PostPreviewCard({ post, compact }) {
 	return (
-		<div id='post-preview-card' className=''>
-			<div className=''>
+		<div id='PostPreviewCard' className='postprev'>
+			<div className='postprev__content'>
 				<Link href={`/blog/${post.slug}`}>
-					<a className=''>{post.frontmatter.title}</a>
+					<a className='postprev__title'>{post.frontmatter.title}</a>
 				</Link>
-				<div className=''>
-					<span className=''>{post.frontmatter.date}</span>
+				<div className='postprev__date-container'>
+					<span className='postprev__date-text'>{post.frontmatter.date}</span>
 				</div>
-				<p className=''>{post.frontmatter.excerpt}</p>
+				<p className='postprev__excerpt'>{post.frontmatter.excerpt}</p>
 			</div>
 
-			{!compact && (
-				<div className=''>
-					<Link href={`/blog/${post.slug}`}>
-						<a className=''>Read More</a>
-					</Link>
-				</div>
-			)}
+			<div className='postprev__read-more'>
+				<Link href={`/blog/${post.slug}`}>
+					<a className=''>Read More</a>
+				</Link>
+			</div>
 		</div>
 	);
 }

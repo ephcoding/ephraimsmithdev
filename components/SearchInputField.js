@@ -21,21 +21,21 @@ export default function SearchInputField() {
 	}, [searchTerm]);
 
 	return (
-		<div id='SearchInputField' className=''>
+		<div id='SearchInputField' className='search'>
 			<div className=''>
 				<div className=''>
 					<form>
 						<input
 							type='search'
 							name='search'
-							id='search'
-							className=''
+							id='SearchInputField'
+							className='search__input'
 							value={searchTerm}
 							onChange={(e) => setSearchTerm(e.target.value)}
 							placeholder='Search Posts...'
 						/>
 
-						<FaSearch className='text-black' />
+						<FaSearch className='icon icon--search' />
 					</form>
 				</div>
 			</div>

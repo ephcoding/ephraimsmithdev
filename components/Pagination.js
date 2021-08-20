@@ -9,7 +9,7 @@ export default function Pagination({ currentPage, numPages }) {
 	if (numPages === 1) return <></>;
 
 	return (
-		<div id='pagination' className='mt-6'>
+		<div id='Pagination' className=''>
 			<ul className=''>
 				{!isFirst && (
 					<Link href={prevPage}>

@@ -18,7 +18,6 @@ export default function MetaContainer({
 			</Head>
 
 			<main className='container'>{children}</main>
-			{/* <main className={styles.container}>{children}</main> */}
 		</div>
 	);
 }
