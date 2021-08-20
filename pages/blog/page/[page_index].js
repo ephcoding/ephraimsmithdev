@@ -1,10 +1,9 @@
 import fs from 'fs';
 import { getPosts } from '@/lib/posts';
 import path from 'path';
-import CategoryList from '@/components/CategoryList';
 import Layout from '@/components/Layout';
 import Pagination from '@/components/Pagination';
-import PostPreview from '@/components/PostPreview';
+import PostPreviewCard from '@/components/PostPreviewCard';
 import { POSTS_PER_PAGE } from '@/config/index';
 import Search from '@/components/Search';
 
@@ -22,7 +21,7 @@ export default function AllBlogPostsPage({
 					<Search />
 					<div className=''>
 						{posts.map((post, index) => (
-							<PostPreview key={index} post={post} />
+							<PostPreviewCard key={index} post={post} />
 						))}
 					</div>
 
