@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CategoryLabel from './CategoryLabel';
 
-export default function Post({ post, compact }) {
+export default function PostPreviewCard({ post, compact }) {
 	return (
 		<div id='post-preview-card' className=''>
 			<div className=''>
