@@ -1,0 +1,17 @@
+// -----
+// Tryin' out hybrid custom CSS setup
+// (SMACSS + BEM)
+// -----
+
+// --- 5 STYLE CATEGORIES(SMACSS)
+// Base.scss: defaults (normalize/reset)
+// Layout.scss: page section definitions
+// Module.scss: modular design parts (think components)
+// State.scss: scenario-based styles
+// Theme.scss: themes
+
+@use './Base.scss';
+@use './Layout.scss';
+@use './Module.scss';
+@use './State.scss';
+@use './Theme.scss';
