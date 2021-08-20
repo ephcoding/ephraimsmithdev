@@ -1,0 +1,23 @@
+@use './base';
+
+.logo {
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%; // << why is this impacting #HomePageNavMenu
+}
+.main-nav {
+	background-color: #ffffff;
+	font-size: 1.5rem;
+	&__list {
+		@extend %reset__m-p;
+		list-style: none;
+		text-align: center;
+	}
+	&__item {
+		margin: 1rem 0;
+		padding: 0.5rem 1rem;
+	}
+	&__item:hover {
+		color: #eb222f;
+	}
+}
