@@ -1,4 +1,4 @@
-import PostPreview from './PostPreview';
+import PostPreviewCard from './PostPreviewCard';
 
 export default function SearchResults({ results }) {
 	if (results.length === 0) return <></>;
@@ -11,7 +11,7 @@ export default function SearchResults({ results }) {
 			<div className='p-10'>
 				<h2 className='text-3xl mb-3'>{results.length} Results</h2>
 				{results.map((result, index) => (
-					<PostPreview key={index} post={result} compact={true} />
+					<PostPreviewCard key={index} post={result} compact={true} />
 				))}
 			</div>
 		</div>
