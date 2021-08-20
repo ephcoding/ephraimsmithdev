@@ -1,0 +1,41 @@
+// CONFIGS
+$color-background: #1f1f1f;
+$color-text-dk: #414142;
+$color-text-lt: #e9e9e9;
+$font-family: '';
+
+// LAYOUT
+* {
+	box-sizing: border-box;
+}
+%reset__m {
+	margin: 0;
+}
+%reset__p {
+	padding: 0;
+}
+%reset__m-p {
+	margin: 0;
+	padding: 0;
+}
+
+// STYLES
+* {
+	background-color: $color-background;
+	color: $color-text-lt;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+// TYPOGRAPHY
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family;
+}
