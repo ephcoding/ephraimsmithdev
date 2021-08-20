@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import Layout from '@/components/Layout';
+import MetaContainer from '@/components/MetaContainer';
 
 export default function HomePage({ posts }) {
 	return (
-		<Layout>
+		<MetaContainer>
 			<div id='ephcoding-landing-page'>
 				<img
 					className='logo'
@@ -38,7 +38,7 @@ export default function HomePage({ posts }) {
 				</nav>
 				{/* TODO: add Postman link */}
 			</div>
-		</Layout>
+		</MetaContainer>
 	);
 }
 

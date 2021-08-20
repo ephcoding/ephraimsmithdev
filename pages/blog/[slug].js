@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import marked from 'marked';
 import Link from 'next/link';
-import Layout from '@/components/Layout';
+import MetaContainer from '@/components/MetaContainer';
 import CategoryLabel from '@/components/CategoryLabel';
 
 export default function PostPage({
@@ -12,7 +12,7 @@ export default function PostPage({
 	slug,
 }) {
 	return (
-		<Layout title={title}>
+		<MetaContainer title={title}>
 			<Link href='/blog'>Go Back</Link>
 			<div
 				id='blog-post-page'
@@ -40,7 +40,7 @@ export default function PostPage({
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</div>
-		</Layout>
+		</MetaContainer>
 	);
 }
 

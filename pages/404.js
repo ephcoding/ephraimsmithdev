@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '@/components/Layout';
+import MetaContainer from '@/components/MetaContainer';
 
 export default function NotFoundPage() {
 	return (
-		<Layout title='Page Not Found'>
+		<MetaContainer title='Page Not Found'>
 			<div id='404-page' className='flex flex-col items-center mt-20'>
 				<Image
 					src='/images/logo.png'
@@ -19,6 +19,6 @@ export default function NotFoundPage() {
 					This page does not exist
 				</h2>
 			</div>
-		</Layout>
+		</MetaContainer>
 	);
 }

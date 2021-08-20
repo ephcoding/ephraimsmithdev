@@ -1,24 +1,19 @@
 import fs from 'fs';
 import { getPosts } from '@/lib/posts';
 import path from 'path';
-import Layout from '@/components/Layout';
+import MetaContainer from '@/components/MetaContainer';
 import Pagination from '@/components/Pagination';
 import PostPreviewCard from '@/components/PostPreviewCard';
 import { POSTS_PER_PAGE } from '@/config/index';
-import Search from '@/components/Search';
+import SearchInputField from '@/components/SearchInputField';
 
-export default function AllBlogPostsPage({
-	posts,
-	numPages,
-	currentPage,
-	categories,
-}) {
+export default function AllBlogPostsPage({ posts, numPages, currentPage }) {
 	return (
-		<Layout>
-			<div id='blog-landing-page' className=''>
+		<MetaContainer>
+			<div id='AllBlogPostsPage' className=''>
 				<div className=''>
 					{/* <h1 className='text-5xl border-b-4 p-5 font-bold'>Blog</h1> */}
-					<Search />
+					<SearchInputField />
 					<div className=''>
 						{posts.map((post, index) => (
 							<PostPreviewCard key={index} post={post} />
@@ -27,12 +22,8 @@ export default function AllBlogPostsPage({
 
 					<Pagination currentPage={currentPage} numPages={numPages} />
 				</div>
-
-				<div className=''>
-					<CategoryList categories={categories} />
-				</div>
 			</div>
-		</Layout>
+		</MetaContainer>
 	);
 }
 
