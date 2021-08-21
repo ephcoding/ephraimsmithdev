@@ -4,39 +4,29 @@ import matter from 'gray-matter';
 import marked from 'marked';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
-import CategoryLabel from '@/components/CategoryLabel';
 
-export default function PostPage({
-	frontmatter: { title, category, date, cover_image, author, author_image },
+export default function BlogPost({
+	frontmatter: { title, subtitle, date },
 	content,
 	slug,
 }) {
 	return (
 		<MetaContainer title={title}>
-			<Link href='/blog'>Go Back</Link>
-			<div
-				id='blog-post-page'
-				className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'
-			>
-				<div className='flex justify-between items-center mt-4'>
-					<h1 className='text-5xl mb-7'>{title}</h1>
-					<CategoryLabel>{category}</CategoryLabel>
+			<span>
+				{`<< `}
+				<Link href='/blog'>go back</Link>
+			</span>
+			<div id='BlogPostPage' className='post'>
+				<div className=''>
+					<h1 className='post__title'>{title}</h1>
 				</div>
-				<img src={cover_image} alt='' className='w-full rounded' />
-
-				<div className='flex justify-between items-center bg-gray-100 p-2 my-8'>
-					<div className='flex items-center'>
-						<img
-							src={author_image}
-							alt=''
-							className='mx-4 w-10 h-10 object-cover rounded-full hidden sm:block'
-						/>
-						<h4>{author}</h4>
-					</div>
-					<div className='mr-4'>{date}</div>
+				<div className=''>
+					<h2 className='post__subtitle'>{subtitle}</h2>
 				</div>
-
-				<div className='blog-text mt-2'>
+				<div className=''>
+					<div className='post__date'>{date}</div>
+				</div>
+				<div className='post__copy'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</div>

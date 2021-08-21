@@ -9,22 +9,22 @@ export default function Pagination({ currentPage, numPages }) {
 	if (numPages === 1) return <></>;
 
 	return (
-		<div id='Pagination' className=''>
-			<ul className=''>
+		<div id='Pagination' className='pag'>
+			<ul className='pag__list'>
 				{!isFirst && (
 					<Link href={prevPage}>
-						<li className=''>Previous</li>
+						<li className='pag__item'>Previous</li>
 					</Link>
 				)}
 				{Array.from({ length: numPages }, (_, i) => (
 					<Link href={`/blog/page/${i + 1}`}>
-						<li className=''>{i + 1}</li>
+						<li className='pag__item'>{i + 1}</li>
 					</Link>
 				))}
 
 				{!isLast && (
 					<Link href={nextPage}>
-						<li className=''>Next</li>
+						<li className='pag__item'>Next</li>
 					</Link>
 				)}
 			</ul>
