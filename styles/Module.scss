@@ -1,4 +1,5 @@
 @use './base';
+
 .bp-footer {
 	background-color: yellow;
 	position: fixed;
@@ -29,13 +30,22 @@
 		text-align: right;
 	}
 }
+.copyright {
+	text-align: center;
+	padding: 1rem 0;
+	&__symbol {
+		font-size: 1.2rem;
+	}
+}
 .logo {
 	height: auto;
 	margin: 0 auto;
-	max-width: 100%; // << why is this impacting #HomePageNavMenu
+	width: 100%;
+	// max-width: 100%; // << why is this impacting #HomePageNavMenu
 }
 .main-nav {
 	font-size: 1.5rem;
+	flex: 1;
 	&__list {
 		@extend %reset__m-p;
 		list-style: none;
@@ -43,9 +53,11 @@
 	}
 	&__item {
 		margin: 1rem 0;
-		padding: 0.5rem 1rem;
-	}
-	&__item:hover {
-		color: #eb222f;
+		&-link {
+			padding: 0.5rem 1rem;
+			&:hover {
+				color: #eb222f;
+			}
+		}
 	}
 }
