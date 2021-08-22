@@ -9,7 +9,7 @@ export default function MetaContainer({
 	children,
 }) {
 	return (
-		<div id='layout'>
+		<div id='MetaContainer' className='meta'>
 			<Head>
 				<title>{title}</title>
 				<meta name='keywords' content={keywords} />
@@ -17,7 +17,7 @@ export default function MetaContainer({
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className='container'>{children}</main>
+			<main className='meta-main'>{children}</main>
 		</div>
 	);
 }
