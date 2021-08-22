@@ -1,4 +1,17 @@
+#__next,
+.meta,
+.meta-main,
+.homepage {
+	height: 100%;
+}
+
 .container {
+	width: 80%;
 	max-width: 1180px;
 	margin: 0 auto;
+}
+
+.homepage {
+	display: flex;
+	flex-direction: column;
 }
