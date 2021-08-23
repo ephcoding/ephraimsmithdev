@@ -12,19 +12,15 @@ import BlogPageFooter from '@/components/BlogPageFooter';
 export default function DisplayPostsPage({ posts, numPages, currentPage }) {
 	return (
 		<MetaContainer>
-			<div id='AllBlogPostsPage' className='blog-posts'>
+			<div id='DisplayPostsPage' className='blog-posts'>
+				<img
+					className='logo'
+					src='/images/ephcoding-text-logo.png'
+					height={125}
+					width={300}
+				/>
 				<nav id='DisplayPostsPageNav' className='mobile-nav'>
 					<ul className='mobile-nav__list'>
-						<li className='mobile-nav__item'>
-							<Link href='/'>
-								<img
-									className='logo logo-mobile'
-									src='/images/ephcoding-text-logo.png'
-									height={125}
-									width={300}
-								></img>
-							</Link>
-						</li>
 						<li className='mobile-nav__item'>
 							<Link href='https://github.com/ephcoding'>
 								<a>github</a>

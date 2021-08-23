@@ -12,7 +12,7 @@ export default function HomePage({ posts }) {
 						src='/images/ephcoding-text-logo.png'
 						height={417}
 						width={1000}
-					/>
+					></img>
 				</div>
 
 				<nav id='HomePageNavMenu' className='main-nav'>
