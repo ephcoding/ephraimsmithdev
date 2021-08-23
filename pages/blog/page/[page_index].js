@@ -19,19 +19,24 @@ export default function DisplayPostsPage({ posts, numPages, currentPage }) {
 					height={125}
 					width={300}
 				/>
-				<nav id='DisplayPostsPageNav' className='mobile-nav'>
-					<ul className='mobile-nav__list'>
-						<li className='mobile-nav__item'>
+				<nav id='DisplayPostsPageNav' className='blog-nav'>
+					<ul className='blog-nav__list'>
+						<li className='blog-nav__item'>
+							<Link href='/'>
+								<a>home</a>
+							</Link>
+						</li>
+						<li className='blog-nav__item'>
 							<Link href='https://github.com/ephcoding'>
 								<a>github</a>
 							</Link>
 						</li>
-						<li className='mobile-nav__item'>
+						<li className='blog-nav__item'>
 							<Link href='https://twitter.com/ephcoding'>
 								<a>twitter</a>
 							</Link>
 						</li>
-						<li className='mobile-nav__item'>
+						<li className='blog-nav__item'>
 							<Link href='https://linkedin.com/in/ephraimjsmith'>
 								<a>linkedin</a>
 							</Link>
@@ -50,8 +55,8 @@ export default function DisplayPostsPage({ posts, numPages, currentPage }) {
 				</div>
 				{/* <BlogPageFooter /> */}
 				<div className='back-link'>
-					<Link href='/' className='back-link__text'>
-						home
+					<Link href='/'>
+						<a className='back-link__text'>home</a>
 					</Link>
 				</div>
 			</div>
