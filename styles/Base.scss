@@ -50,10 +50,10 @@ body {
 }
 a {
 	color: inherit;
-	cursor: pointer;
 	font-weight: bold;
 	text-decoration: none;
 	&:hover {
+		cursor: pointer;
 		color: $color-primary;
 	}
 }

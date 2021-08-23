@@ -38,21 +38,25 @@
 	}
 }
 .logo {
+	// margin: auto;
 	height: auto;
-	margin: 0 auto;
-	width: 100%;
+	max-width: 100%;
 	// max-width: 100%; // << why is this impacting #HomePageNavMenu
 }
 .main-nav {
 	font-size: 1.5rem;
 	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	&__list {
 		@extend %reset__m-p;
 		list-style: none;
 		text-align: center;
 	}
 	&__item {
-		margin: 1rem 0;
+		margin: 1.5rem 0;
 		&-link {
 			padding: 0.5rem 1rem;
 			&:hover {
