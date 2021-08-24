@@ -1,5 +1,6 @@
-@use './Baseline.scss'; // basic global resets
+// Global CSS import file
+@use './Baseline.scss'; // site-wide layouts & styles
 @use './Layout.scss'; // site-wide structure
 @use './Theme.scss'; // colors & fonts
-@use './Components.scss';
+@use './Components.scss'; // btns, links, etc.
 @use './Utils.scss'; // layout & style modules
