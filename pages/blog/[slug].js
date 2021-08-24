@@ -13,23 +13,19 @@ export default function BlogPost({
 	return (
 		<MetaContainer title={title}>
 			<span>
-				{`<< `}
-				<Link href='/blog'>go back</Link>
+				<Link href='/'>go back</Link>
 			</span>
-			<div id='BlogPostPage' className='post'>
-				<div className=''>
-					<h1 className='post__title'>{title}</h1>
-				</div>
-				<div className=''>
-					<h2 className='post__subtitle'>{subtitle}</h2>
-				</div>
+			<article id='BlogPostPage' className='post'>
+				<h1 className='post__title'>{title}</h1>
+				<h2 className='post__subtitle'>{subtitle}</h2>
+
 				<div className=''>
 					<div className='post__date'>{date}</div>
 				</div>
-				<div className='post__copy'>
+				<div className='post__body'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
-			</div>
+			</article>
 		</MetaContainer>
 	);
 }

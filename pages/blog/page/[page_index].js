@@ -1,65 +1,47 @@
+// NODE
 import fs from 'fs';
+import path from 'path';
+// UTILS
 import { getPosts } from '@/lib/posts';
+import { POSTS_PER_PAGE } from '@/config/index';
+// COMPONENTS
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
-// import Pagination from '@/components/Pagination';
 import PostPreviewCard from '@/components/PostPreviewCard';
-import { POSTS_PER_PAGE } from '@/config/index';
-import path from 'path';
-// import SearchInputField from '@/components/SearchInputField';
-import BlogPageFooter from '@/components/BlogPageFooter';
+import Head from 'next/head';
+// import Pagination from '@/components/Pagination';
+import SearchInputField from '@/components/SearchInputField';
 
 export default function DisplayPostsPage({ posts, numPages, currentPage }) {
 	return (
-		<MetaContainer>
-			<div id='DisplayPostsPage' className='blog-posts'>
-				<img
-					className='logo'
-					src='/images/ephcoding-text-logo.png'
-					height={125}
-					width={300}
-				/>
-				<nav id='DisplayPostsPageNav' className='blog-nav'>
-					<ul className='blog-nav__list'>
-						<li className='blog-nav__item'>
-							<Link href='/'>
-								<a>home</a>
-							</Link>
-						</li>
-						<li className='blog-nav__item'>
-							<Link href='https://github.com/ephcoding'>
-								<a>github</a>
-							</Link>
-						</li>
-						<li className='blog-nav__item'>
-							<Link href='https://twitter.com/ephcoding'>
-								<a>twitter</a>
-							</Link>
-						</li>
-						<li className='blog-nav__item'>
-							<Link href='https://linkedin.com/in/ephraimjsmith'>
-								<a>linkedin</a>
-							</Link>
-						</li>
-					</ul>
-				</nav>
-				<div className='blog-posts__cards'>
-					{/* TODO: only display h1 on md & lg screens */}
-					{/* <h1 className=''>Blog</h1> */}
+		<MetaContainer
+			title='ephcoding.com | blog'
+			keywords='javascript, typescript, node.js, coding blog'
+		>
+			<div id='DisplayPostsPage'>
+				{/* <nav className='header-nav'>
+					<Link href='https://github.com/ephcoding'>
+						<a className='header-nav__link'>github</a>
+					</Link>
+					<Link href='https://twitter.com/ephcoding'>
+						<a className='header-nav__link'>twitter</a>
+					</Link>
+					<Link href='https://linkedin.com/in/ephraimjsmith'>
+						<a className='header-nav__link'>linkedin</a>
+					</Link>
+				</nav> */}
 
+				<div className='blog-posts__cards'>
+					<h1>Latest Posts</h1>
 					<div className=''>
 						{posts.map((post, index) => (
 							<PostPreviewCard key={index} post={post} />
 						))}
 					</div>
 				</div>
-				{/* <BlogPageFooter /> */}
-				<div className='back-link'>
-					<Link href='/'>
-						<a className='back-link__text'>home</a>
-					</Link>
-				</div>
 			</div>
+
+			<SearchInputField />
 		</MetaContainer>
 	);
 }

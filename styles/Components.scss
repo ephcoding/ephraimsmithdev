@@ -1,0 +1,75 @@
+@use './base';
+
+// COMPONENT-SPECIFIC STYLES
+
+.blog-nav__list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+.card {
+	// @extend %devborder;
+	border: 3px solid #fff;
+	margin: 1rem 0;
+	padding: 0.75rem;
+	&__date {
+		font-size: 0.8rem;
+		margin-bottom: 0.75rem;
+	}
+	&__excerpt {
+		margin-bottom: 1rem;
+	}
+	&__link {
+		text-align: right;
+		&-arrows {
+			color: #0f0;
+		}
+	}
+	&__title {
+		color: base.$color-primary;
+		font-size: 1.8rem;
+		font-style: italic;
+	}
+}
+.footer {
+	&__content {
+		display: flex;
+	}
+	&__copy {
+		font-size: 0.6rem;
+		padding: 1rem 0;
+		text-align: center;
+	}
+
+	&__text {
+		flex: 1;
+	}
+}
+.footer__pic {
+	height: 75px;
+	width: 75px;
+	object-fit: none;
+	object-position: center;
+}
+.logo {
+	max-width: 100%;
+	&__blog {
+		margin: -2rem auto -1rem;
+	}
+}
+.homepage-nav {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	font-size: 1.5rem;
+	justify-content: center;
+	text-align: center;
+	&__item {
+		margin: 1.5rem 0;
+		padding: 0.5rem 1rem;
+		&:hover {
+			color: #eb222f;
+		}
+	}
+}
