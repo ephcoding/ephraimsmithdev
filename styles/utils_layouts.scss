@@ -1,0 +1,28 @@
+@use './variables.scss';
+
+%container {
+	margin: 0 auto;
+	max-width: 1180px;
+}
+%flex_col {
+	display: flex;
+	flex-direction: column;
+}
+%flex_col-center {
+	@extend %flex_col;
+	justify-content: center;
+}
+%flex_row {
+	display: flex;
+}
+%flex_row-between {
+	@extend %flex_row;
+	justify-content: space-between;
+}
+%flex_row-center {
+	@extend %flex_row;
+	justify-content: center;
+}
+%grid {
+	display: grid;
+}

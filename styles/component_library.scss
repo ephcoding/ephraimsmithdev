@@ -1,12 +1,7 @@
-// --------------------
-// !! COMPONENT LIBRARY !!
-// - CSS imports ok
-// --------------------
-@use './Base';
-@use './Layout.scss';
-// @use './variables';
-@use './utils_layout.scss';
+@use './utils_layouts.scss';
+@use './utils_resets.scss';
 @use './utils_styles.scss';
+@use './variables';
 
 .blog-nav__list {
 	display: flex;
@@ -79,4 +74,22 @@
 			color: #eb222f;
 		}
 	}
+}
+%btn {
+}
+%h1 {
+	font-size: 3rem;
+}
+%h2 {
+	font-size: 2.5rem;
+}
+%h3 {
+	font-size: 2rem;
+}
+%h4 {
+	font-size: 1.5rem;
+}
+%nav-horizontal {
+}
+%nav-vertical {
 }
