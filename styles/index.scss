@@ -1,38 +1,5 @@
-// -----
-// Tryin' out hybrid custom CSS setup
-// (Sass + BEM + SMACSS)
-// -----
-
-// #region - 5 STYLE CATEGORIES(SMACSS)
-// Base.scss: defaults (config in my case)
-// Layout.scss: page section definitions
-// Module.scss: modular design parts (think components)
-// State.scss: scenario-based styles
-// Theme.scss: themes
-// #endregion - /5 STYLE CATEGORIES(SMACSS)
-
-// #region - BEM (block/element/modifier)
-// ---
-// .block__element--modifier
-// ---
-// *BLOCK
-// Naming: short (class) name, letters/digits/dashes
-// HTML: any DOM node
-// CSS: class selector ONLY, no tags/ids, doesn't depend on other blocks/element
-
-// *ELEMENT
-// Naming: <blockName> + '__' + <elementName>
-// HTML: any DOM node INSIDE block can be element
-// CSS: class selector ONLY, no tags/ids, doesn't depend on other blocks/element
-
-// *MODIFIER
-// Naming: <blockName> + [__<elementName>] + '--<state>' || <originalClass> + '--<state>'
-// HTML: only add to classes they modify, maintain og class name
-// CSS: use modifier class name as selector
-// #endregion - /BEM (block - elment - modifier)
-
-@use './Base.scss';
-@use './Layout.scss';
+@use './Baseline.scss'; // basic global resets
+@use './Layout.scss'; // site-wide structure
+@use './Theme.scss'; // colors & fonts
 @use './Components.scss';
-@use './State.scss';
-@use './Theme.scss';
+@use './Utils.scss'; // layout & style modules

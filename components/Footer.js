@@ -3,10 +3,9 @@ import { getCurrentYear } from '../utils/index';
 export default function Footer() {
 	return (
 		<footer className='footer'>
+			<h2>About</h2>
 			<div className='footer__content'>
 				<img
-					height='50px'
-					width='50px'
 					className='footer__pic'
 					src='/images/profile-pic.jpg'
 					alt='Ephraim Smith profile pic'

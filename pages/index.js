@@ -28,14 +28,14 @@ export default function HomePage({ posts }) {
 					</a>
 				</Link>
 			</nav> */}
-			<div className='blog-posts__cards'>
+			{/* <div className='blog-posts__cards'>
 				<h1>Latest Posts</h1>
 				<div className=''>
 					{posts.map((post, index) => (
 						<PostPreviewCard key={index} post={post} />
 					))}
 				</div>
-			</div>
+			</div> */}
 		</MetaContainer>
 	);
 }

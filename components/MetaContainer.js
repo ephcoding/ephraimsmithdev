@@ -1,5 +1,6 @@
-import Head from 'next/head';
 import Footer from './Footer';
+import Head from 'next/head';
+import Header from '@/components/Header';
 
 export default function MetaContainer({
 	title,
@@ -16,8 +17,9 @@ export default function MetaContainer({
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div className='page'>
+				<Header />
 				<div className='content'>
-					<main className='main'>{children}</main>
+					<main>{children}</main>
 				</div>
 				<Footer />
 			</div>

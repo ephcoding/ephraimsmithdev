@@ -1,23 +1,54 @@
-// -- PLACEHOLDERS
-%full-height {
-	height: 100%;
-}
-// -- UTILS
-.container {
-	width: 80%;
-	max-width: 1180px;
+%container {
 	margin: 0 auto;
+	max-width: 1180px;
 }
-// -- PAGE CONTENT LAYOUT
-#__next,
-.meta-container,
-.page {
-	@extend %full-height;
+%vh-full {
+	height: 100vh;
 }
-.page {
+// .page {
+// 	@extend %container;
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// #region FLEX LAYOUTS
+%flex_col {
+	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
+}
+%flex_col-center {
+	@extend %flex_col;
+	justify-content: center;
+}
+%flex_row {
+	@extend %container;
+	align-items: center;
+	display: flex;
+}
+%flex_row-between {
+	@extend %flex_row;
+	justify-content: space-between;
+}
+%flex_row-center {
+	@extend %flex_row;
+	justify-content: center;
+}
+// #endregion /FLEX LAYOUTS
+// -----
+// #region GRID LAYOUTS
+%grid {
+	@extend %container;
+	display: grid;
+}
+// #endregion GRID LAYOUTS
+// -----
+// #region FULL-HEIGHT PAGES W/ STICKY FOOTER
+.page {
+	@extend %flex_col;
+	@extend %vh-full;
 }
 .content {
 	flex: 1;
 }
+// #endregion FULL-HEIGHT PAGES W/ STICK FOOTER
