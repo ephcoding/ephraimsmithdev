@@ -1,6 +1,24 @@
-$color-background: #1f1f1f;
-$color-primary: #eb222f;
-$color-text-dk: #2f2f2f;
-$color-text-lt: #e9e9e9;
+$red: #eb222f;
+$red-dk: #800;
+$orange: #f80;
+$yellow: #ff0;
+$lime: #0f0;
+$green: #008000;
+$blue: #00f;
+$blue-dk: #000080;
+$pink: #f0f;
+$purple: #909;
+$black: #000;
+$black-off: #2f2f2f;
+$white: #fff;
+$white-off: #e9e9e9;
+$gray-lt: #c0c0c0;
+$gray: #999;
+$gray-dk: #444;
+// dependents
+$color_background-dk: $off-black;
+$color_background-lt: $off-white;
+$color_text-dk: $off-black;
+$color_text-lt: $off-white;
 
-$font-primary: Arial, Helvetica, sans-serif;
+$font-family_primary: Arial, Helvetica, sans-serif;
