@@ -1,4 +1,5 @@
 export const sortByDate = (a, b) => {
+	// TODO: understand .sort(sortByDate) logic
 	return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
 };
 

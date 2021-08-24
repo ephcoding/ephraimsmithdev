@@ -1,6 +1,12 @@
-// Component-Level Styles
+// --------------------
+// !! COMPONENT LIBRARY !!
+// - CSS imports ok
+// --------------------
 @use './Base';
 @use './Layout.scss';
+// @use './variables';
+@use './utils_layout.scss';
+@use './utils_styles.scss';
 
 .blog-nav__list {
 	display: flex;
