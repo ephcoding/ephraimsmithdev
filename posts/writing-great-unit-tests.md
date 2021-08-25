@@ -1,5 +1,5 @@
 ---
-title: 'Writing Great Unit Tests'
+title: 'Click-Bait Title...oh, wait'
 date: 'May 12, 2021'
 excerpt: 'We will look at 10 simple tips and tricks on writing unit tests in JavaScript'
 cover_image: '/images/posts/img7.jpg'
@@ -9,7 +9,6 @@ author_image: 'https://randomuser.me/api/portraits/men/11.jpg'
 ---
 
 <!-- Markdown generator - https://jaspervdj.be/lorem-markdownum/ -->
-
 
 Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
 nigro cornu genus duris linguae. Super hic deus ego adveniens nullumque Venerem

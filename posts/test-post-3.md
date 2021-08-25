@@ -1,11 +1,12 @@
 ---
-title: 'Django Crash Course'
-date: 'May 5, 2021'
-excerpt: 'Django is a very powerful, high level Python framework for building web applications'
-cover_image: '/images/posts/img3.jpg'
-category: 'Python'
-author: 'Sam Smith'
-author_image: 'https://randomuser.me/api/portraits/men/12.jpg'
+title: 'Click-Bait Title...oh, wait'
+subtitle: 'This is a longer, descriptive subtitle.'
+date: 'August 22, 2021'
+excerpt: 'Crash course to learn the React JavaScript library. We will look at components, hooks and more'
+cover_image: '/images/posts/img5.jpg'
+category: 'JavaScript'
+author: 'Jane Doe'
+author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
 ---
 
 <!-- Markdown generator - https://jaspervdj.be/lorem-markdownum/ -->

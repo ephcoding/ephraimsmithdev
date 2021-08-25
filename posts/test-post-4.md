@@ -1,6 +1,7 @@
 ---
-title: 'Python Book Review'
-date: 'May 7, 2021'
+title: 'Click-Bait Title...oh, wait'
+subtitle: 'This is a longer, descriptive subtitle.'
+date: 'August 21, 2021'
 excerpt: 'In this review, we will be looking at the new Python book from Oriley'
 cover_image: '/images/posts/img6.jpg'
 category: 'Python'

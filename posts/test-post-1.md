@@ -1,11 +1,12 @@
 ---
-title: 'Tailwind vs. Bootstrap'
-date: 'May 5, 2021'
-excerpt: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
-cover_image: '/images/posts/img2.jpg'
-category: 'CSS'
-author: 'Jane Doe'
-author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
+title: 'Click-Bait Title...oh, wait'
+subtitle: 'This is a longer, wittier, descriptivier subtitle for testing blog post archive logic.'
+date: 'August 24, 2021'
+excerpt: 'Django is a very powerful, high level Python framework for building web applications'
+cover_image: '/images/posts/img3.jpg'
+category: 'Python'
+author: 'Sam Smith'
+author_image: 'https://randomuser.me/api/portraits/men/12.jpg'
 ---
 
 <!-- Markdown generator - https://jaspervdj.be/lorem-markdownum/ -->
