@@ -9,16 +9,16 @@ export default function MetaContainer({
 	children,
 }) {
 	return (
-		<div id='MetaContainer' className='meta-container'>
+		<div id='MetaContainer'>
 			<Head>
 				<title>{title}</title>
 				<meta name='keywords' content={keywords} />
 				<meta name='description' content={description} />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className='page'>
+			<div className='baseline_page'>
 				<Header />
-				<div className='content'>
+				<div className='baseline_content'>
 					<main>{children}</main>
 				</div>
 				<Footer />
