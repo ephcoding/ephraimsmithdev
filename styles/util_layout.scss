@@ -1,7 +1,9 @@
-@use './variables.scss';
+@use './config.scss';
+@use './util_reset.scss';
 
 %container {
 	margin: 0 auto;
+	max-width: 80vw;
 	max-width: 1180px;
 }
 %flex_col {
@@ -13,6 +15,7 @@
 	justify-content: center;
 }
 %flex_row {
+	align-items: center;
 	display: flex;
 }
 %flex_row-between {
