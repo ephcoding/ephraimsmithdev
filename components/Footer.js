@@ -3,7 +3,9 @@ import { getCurrentYear } from '../utils/index';
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			<h2>About</h2>
+			<p>&copy; {getCurrentYear()} Ephraim Smith</p>
+
+			{/* <h2>About</h2>
 			<div className='footer__content'>
 				<img
 					className='footer__pic'
@@ -21,7 +23,7 @@ export default function Footer() {
 						{getCurrentYear()} Ephraim Smith
 					</p>
 				</div>
-			</div>
+			</div> */}
 		</footer>
 	);
 }
