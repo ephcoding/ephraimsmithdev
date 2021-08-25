@@ -5,11 +5,11 @@ export default function PostPreviewCard({ post }) {
 		<div id='PostPreviewCard' className='card'>
 			<div className='card__header'>
 				<Link href={`/blog/${post.slug}`}>
-					<h2 className='card__title'>
+					<h3 className='card__title'>
 						<a className='link'>{post.frontmatter.title}</a>
-					</h2>
+					</h3>
 				</Link>
-				<h3 className='card__subtitle'>{post.frontmatter.subtitle}</h3>
+				<h2 className='card__subtitle'>{post.frontmatter.subtitle}</h2>
 				<p className='card__date'>{post.frontmatter.date}</p>
 			</div>
 			<p className='card__excerpt'>{post.frontmatter.excerpt}</p>
