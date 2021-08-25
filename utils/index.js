@@ -4,3 +4,6 @@ export const sortByDate = (a, b) => {
 };
 
 export const getCurrentYear = () => new Date(Date.now()).getFullYear();
+
+export const getDateMonthName = (date) =>
+	date.toLocaleString('default', { month: 'long' });
