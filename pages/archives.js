@@ -9,7 +9,9 @@ export default function Archives({ posts }) {
 
 	return (
 		<MetaContainer>
-			<h2>{mostRecentMonth.toLocaleString('default', { month: 'long' })}</h2>
+			<h2 className='month_divider'>
+				{mostRecentMonth.toLocaleString('default', { month: 'long' })}
+			</h2>
 			<div className='archive_cards'>
 				{posts.map((post, index) => {
 					date = new Date(post.frontmatter.date);
@@ -19,7 +21,7 @@ export default function Archives({ posts }) {
 					previousMonth = postMonth;
 					return (
 						<>
-							{isNewMonth && <h2>{monthName}</h2>}
+							{isNewMonth && <h2 className='month_divider'>{monthName}</h2>}
 							{/* <PostPreviewCard key={index} post={post} /> */}
 							<div className='archive_card'>
 								<p className='row1'>
