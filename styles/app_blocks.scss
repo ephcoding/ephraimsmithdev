@@ -3,6 +3,14 @@
 @use './util_reset.scss';
 @use './util_style.scss';
 
+.archive_card {
+	padding: 2rem;
+	font-size: 2rem;
+	p {
+		display: flex;
+		justify-content: space-between;
+	}
+}
 .card {
 	// @extend %devborder_parent
 	border: 3px solid #fff;
@@ -10,7 +18,7 @@
 	max-width: 750px;
 	padding: 0.75rem;
 	&__date {
-		font-size: 0.8rem;
+		font-size: 1.6rem;
 		margin-bottom: 0.75rem;
 	}
 	&__excerpt {
@@ -22,10 +30,14 @@
 			color: #0f0;
 		}
 	}
+	&__subtitle {
+		@extend %h3;
+		font-style: italic;
+		margin-bottom: 0.5rem;
+	}
 	&__title {
 		color: config.$red;
-		font-size: 1.8rem;
-		font-style: italic;
+		@extend %h1;
 	}
 }
 .footer {
