@@ -9,11 +9,11 @@ export default function Header() {
 				</a>
 			</Link>
 			<nav>
-				<Link href='/archives'>
-					<a>archives</a>
-				</Link>
 				<Link href='/about'>
 					<a>about</a>
+				</Link>
+				<Link href='/archives'>
+					<a>archives</a>
 				</Link>
 			</nav>
 		</header>
