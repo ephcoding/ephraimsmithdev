@@ -3,6 +3,11 @@
 @use './util_reset.scss';
 @use './util_style.scss';
 
+.month_divider {
+	background-color: #777;
+	font-size: 2rem;
+	padding: 0 2rem;
+}
 .archive_card {
 	padding: 2rem;
 	font-size: 2rem;
