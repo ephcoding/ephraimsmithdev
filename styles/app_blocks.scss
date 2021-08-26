@@ -47,25 +47,33 @@
 }
 .footer {
 	@extend %flex_row-center;
-	@extend %devborder_parent;
+	// @extend %devborder_parent;
 	color: config.$color_text-lt;
 	height: 3rem;
 	p {
-		@extend %devborder_child;
+		// @extend %devborder_child;
 	}
 }
 header {
-	@extend %devborder_parent;
-	@extend %flex_row-between;
+	// @extend %devborder_parent;
+	// @extend %flex_row-between;
 
-	img {
-		@extend %devborder_child;
-		display: inline-block;
-		height: 10vh;
+	& > a {
+		// @extend %devborder_child;
+		display: block;
+		height: 20vh;
+		margin-top: -2vh;
+		text-align: center;
+
+		img {
+			max-height: 100%;
+		}
 	}
 
 	nav {
-		@extend %devborder_child;
+		// @extend %devborder_child;
+		display: flex;
+		justify-content: center;
 		padding: 1rem;
 		a {
 			@extend %nav_anchor;
