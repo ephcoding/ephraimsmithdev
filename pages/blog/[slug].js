@@ -23,13 +23,17 @@ export default function BlogPost({
 			<Header />
 
 			<article id='BlogPostPage' className='blog-post'>
+				<p className='blog-post_date'>{date}</p>
 				<h2 className='blog-post_title'>{title}</h2>
 				<h1 className='blog-post_subtitle'>{subtitle}</h1>
-				<p className='blog-post_date'>{date}</p>
+				<p className='blog-post_by'>by Ephraim Smith</p>
+				<div className='blog-post_line' />
+
 				<div className='blog-post_body'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</article>
+
 			<div className='blog-post_nav'>
 				<div className='btn_home_row'>
 					<div className='btn_home'>

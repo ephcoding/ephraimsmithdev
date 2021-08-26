@@ -15,10 +15,10 @@
 ## **Files**
 
 - `index.scss` only style module imported in app
-- `app_blocks.scss` single app stylesheet
-- `util_reset.scs` reset default tag styles at block level (BEM approach)
-- `util_layout.scss` layout-specific rules
-- `util_style.scss` stlye-specific rules
+- `app.scss` single app stylesheet
+- `resets.scs` reset default tag styles at block level (BEM approach)
+- `utilities.scss` layout-specific rules
+- `components.scss` stlye-specific rules
 - `baseline.scss` project-agnostic rules
 - `config.scss` variables
 
@@ -114,7 +114,7 @@ library components are built by `@extend`ing %placeholders from layout, reset, &
 `baseline.scss` styles are site-wide defaults that don't get `@use`d by any other CSS modules (files)
 
 ```
-(styles/baseline.scss)
+(style./defaults.scss)
 
 @use './variables';
 

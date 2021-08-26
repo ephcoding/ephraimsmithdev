@@ -9,13 +9,12 @@ export default function Archives({ posts }) {
 
 	return (
 		<MetaContainer>
-			<div className='btn_home_row'>
-				<div className='btn_home'>
-					<Link href='/'>
-						<a className='btn_home_link'>&lt; home</a>
-					</Link>
-				</div>
+			<div className='btn-row'>
+				<Link href='/'>
+					<a className='btn-nav_home-sm'>&lt; home</a>
+				</Link>
 			</div>
+
 			<div className='archives'>
 				{posts.map((post, index) => {
 					const blogPostDate = new Date(post.frontmatter.date);
@@ -46,12 +45,10 @@ export default function Archives({ posts }) {
 					);
 				})}
 			</div>
-			<div className='btn_home_row'>
-				<div className='btn_home'>
-					<Link href='/'>
-						<a className='btn_home_link'>&lt; home</a>
-					</Link>
-				</div>
+			<div className='btn-row'>
+				<Link href='/'>
+					<a className='btn-nav_home-sm'>&lt; home</a>
+				</Link>
 			</div>
 		</MetaContainer>
 	);

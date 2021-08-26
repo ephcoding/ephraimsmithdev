@@ -1,5 +1,5 @@
-@use './config.scss';
-@use './util_layout.scss';
+@use './configs.scss';
+@use './utilities.scss';
 
 // project-agnostic CSS rules
 
@@ -19,9 +19,9 @@
 	}
 }
 body {
-	background-color: config.$color_bg-dk;
-	color: config.$color_text-lt;
-	font-family: config.$font-primary;
+	background-color: configs.$color_bg-dk;
+	color: configs.$color_text-lt;
+	font-family: configs.$font-primary;
 }
 html {
 	font-size: 10px;

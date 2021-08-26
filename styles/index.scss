@@ -1,6 +1,6 @@
-@use './app_blocks.scss';
-@use './util_reset.scss';
-@use './util_layout.scss';
-@use './util_style.scss';
-@use './config.scss';
-@use './baseline.scss';
+@use './app.scss';
+@use './configs.scss';
+@use './defaults.scss';
+@use './resets.scss';
+@use './style_components.scss';
+@use './utilities.scss';
