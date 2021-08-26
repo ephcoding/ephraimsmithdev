@@ -10,14 +10,12 @@ export default function PostPreviewCard({ post }) {
 					</h3>
 				</Link>
 				<h2 className='card__subtitle'>{post.frontmatter.subtitle}</h2>
-				<p className='card__date'>{post.frontmatter.date}</p>
 			</div>
-			<p className='card__excerpt'>{post.frontmatter.excerpt}</p>
-			<p className='card__link'>
+			{/* <p className='card__excerpt'>{post.frontmatter.excerpt}</p> */}
+			<p className='card-footer'>
+			{post.frontmatter.date}
 				<Link href={`/blog/${post.slug}`}>
-					<a>
-						READ <span className='card__link-arrows'>{`>>`}</span>
-					</a>
+					<a className='card-footer__link'>{`READ >>`}</a>
 				</Link>
 			</p>
 		</div>
