@@ -12,20 +12,29 @@ export default function BlogPost({
 }) {
 	return (
 		<MetaContainer title={title}>
-			<span>
-				<Link href='/'>go back</Link>
-			</span>
-			<article id='BlogPostPage' className='post'>
-				<h1 className='post__title'>{title}</h1>
-				<h2 className='post__subtitle'>{subtitle}</h2>
+			<div className='btn_home_row'>
+				<div className='btn_home'>
+					<Link href='/'>
+						<a className='btn_home_link'>&lt; home</a>
+					</Link>
+				</div>
+			</div>
+			<article id='BlogPostPage' className='blog-post'>
+				<h3 className='blog-post_title'>{title}</h3>
+				<h2 className='blog-post_subtitle'>{subtitle}</h2>
 
 				<div className=''>
-					<div className='post__date'>{date}</div>
+					<div className='blog-post_date'>{date}</div>
 				</div>
-				<div className='post__body'>
+				<div className='blog-post_body'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</article>
+			<div className='archives-btn'>
+				<Link href='/archives'>
+					<a className='archives-btn_anchor'>archives &gt;</a>
+				</Link>
+			</div>
 		</MetaContainer>
 	);
 }

@@ -3,16 +3,26 @@
 
 %container {
 	margin: 0 auto;
-	max-width: 80vw;
+	padding: 0 1rem;
 	max-width: 1180px;
 }
+// #region --- FLEX
+
 %flex_col {
 	display: flex;
 	flex-direction: column;
 }
-%flex_col-center {
+%flex_col-center-x {
+	@extend %flex_col;
+	align-items: center;
+}
+%flex_col-center-y {
 	@extend %flex_col;
 	justify-content: center;
+}
+%flex_col-center {
+	@extend %flex_col-center-x;
+	@extend %flex_col-center-y;
 }
 %flex_row {
 	align-items: center;
@@ -26,6 +36,9 @@
 	@extend %flex_row;
 	justify-content: center;
 }
+
+// #endregion --- /FLEX
+
 %grid {
 	display: grid;
 }

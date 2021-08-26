@@ -13,6 +13,11 @@ export default function HomePage({ posts }) {
 				))}
 				{/* </div> */}
 			</div>
+			<div className='btn_archives'>
+				<Link href='/archives'>
+					<a className='btn_archives_link'>archives &gt;</a>
+				</Link>
+			</div>
 		</MetaContainer>
 	);
 }
@@ -20,7 +25,7 @@ export default function HomePage({ posts }) {
 export async function getStaticProps() {
 	return {
 		props: {
-			posts: getPosts().slice(0, 7),
+			posts: getPosts().slice(0, 5),
 		},
 	};
 }

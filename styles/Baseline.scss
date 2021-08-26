@@ -1,4 +1,7 @@
 @use './config.scss';
+@use './util_layout.scss';
+
+// project-agnostic CSS rules
 
 * {
 	box-sizing: border-box;
@@ -11,6 +14,7 @@
 	height: 100vh;
 	// TODO: update height to use JS-modified --vh px value (mobile vh hack)
 	.baseline_content {
+		@extend %container;
 		flex: 1;
 	}
 }

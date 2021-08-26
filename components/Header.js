@@ -5,21 +5,14 @@ export default function Header() {
 		<header className='header'>
 			<nav className='header-nav'>
 				<Link href='/'>
-					<a className='header-nav__logo-link'>
+					<a className='header-logo'>
 						<img
-							className='header-nav__logo'
+							className='header-logo_img'
 							src='/images/ephcoding-logo_1000x325.png'
 						/>
 					</a>
 				</Link>
-				<div className='sub-nav'>
-					<Link href='/about'>
-						<a className='sub-nav__link'>about</a>
-					</Link>
-					<Link href='/archives'>
-						<a className='sub-nav__link'>archives</a>
-					</Link>
-				</div>
+				{/* SUB-NAV moved to <index.js> */}
 			</nav>
 		</header>
 	);
