@@ -2,6 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import marked from 'marked';
+import Footer from '@/components/Footer';
+import Head from 'next/head';
+import Header from '@/components/Header';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
 
@@ -11,31 +14,38 @@ export default function BlogPost({
 	slug,
 }) {
 	return (
-		<MetaContainer title={title}>
-			<div className='btn_home_row'>
-				<div className='btn_home'>
-					<Link href='/'>
-						<a className='btn_home_link'>&lt; home</a>
-					</Link>
-				</div>
-			</div>
-			<article id='BlogPostPage' className='blog-post'>
-				<h3 className='blog-post_title'>{title}</h3>
-				<h2 className='blog-post_subtitle'>{subtitle}</h2>
+		<div className='blog-post_page'>
+			<Head>
+				<title>{title}</title>
+				{/* <meta name='keywords' content={keywords} /> */}
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
+			<Header />
 
-				<div className=''>
-					<div className='blog-post_date'>{date}</div>
-				</div>
+			<article id='BlogPostPage' className='blog-post'>
+				<h2 className='blog-post_title'>{title}</h2>
+				<h1 className='blog-post_subtitle'>{subtitle}</h1>
+				<p className='blog-post_date'>{date}</p>
 				<div className='blog-post_body'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</article>
-			<div className='archives-btn'>
-				<Link href='/archives'>
-					<a className='archives-btn_anchor'>archives &gt;</a>
-				</Link>
+			<div className='blog-post_nav'>
+				<div className='btn_home_row'>
+					<div className='btn_home'>
+						<Link href='/'>
+							<a className='btn_home_link'>&lt; home</a>
+						</Link>
+					</div>
+				</div>
+				<div className='btn_archives'>
+					<Link href='/archives'>
+						<a className='btn_archives_link'>archives &gt;</a>
+					</Link>
+				</div>
 			</div>
-		</MetaContainer>
+			<Footer />
+		</div>
 	);
 }
 

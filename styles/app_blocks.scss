@@ -8,13 +8,12 @@
 		@extend %container;
 		.header-logo {
 			display: block;
-			margin-top: 3rem;
-			margin-bottom: 4rem;
+			margin: 3rem;
 			text-align: center;
-		}
-		.header-logo_img {
-			max-height: 100%;
-			max-width: 100%;
+			&_img {
+				max-height: 100%;
+				max-width: 100%;
+			}
 		}
 	}
 }
@@ -51,11 +50,11 @@
 }
 .btn_archives {
 	@extend %flex_row-center;
-	background-color: config.$yellow;
 	margin-bottom: 2rem;
 	color: config.$color_text-dk;
 	&_link {
 		@extend %reset_anchor;
+		background-color: config.$yellow;
 		font-size: 2.5rem;
 		margin: 0 1rem;
 		padding: 0.5rem 0.75rem;
@@ -87,18 +86,20 @@
 }
 .blog-post {
 	@extend %container;
+	padding: 0 3rem;
+	&_date {
+		color: config.$color_text-subdued;
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		text-align: right;
+	}
 	&_title {
-		@extend %h1;
+		font-size: 2.8rem;
 		color: config.$red;
 	}
 	&_subtitle {
-		@extend %h3;
-		margin-bottom: 0.5rem;
-	}
-	&_date {
-		color: config.$color_text-subdued;
-		font-size: 1.6rem;
-		margin-bottom: 1rem;
+		font-size: 1.8rem;
+		margin-bottom: 3rem;
 	}
 	&_body {
 		font-size: 1.6rem;

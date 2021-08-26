@@ -48,6 +48,12 @@ _\* have these figured out BEFORE styling anything_
 
 <!-- #endregion /UPDATED FRAMEWORK NOTES -->
 
+<!-- #region NEXT.JS -->
+
+- need to figure out how to wrap code block text in .md files when the render
+
+<!-- #endregion /NEXT.JS -->
+
 ## **[ 21AUG24 ]**
 
 <!-- #region INITIAL FRAMEWORK NOTES -->
