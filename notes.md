@@ -1,4 +1,59 @@
-[ 21AUG24 ]
+## **[ 21AUG26 ]**
+
+<!-- #region UPDATED FRAMEWORK NOTES -->
+
+<details>
+<summary><strong>Updated CSS Framework Notes</strong></summary>
+
+# **CSS FRAMEWORK**
+
+## **General Approach**
+
+- 1 classname/element (clean markup)
+- 1 app-specific stylesheet fed by config/util modules
+
+## **Files**
+
+- `index.scss` only style module imported in app
+- `app_blocks.scss` single app stylesheet
+- `util_reset.scs` reset default tag styles at block level (BEM approach)
+- `util_layout.scss` layout-specific rules
+- `util_style.scss` stlye-specific rules
+- `baseline.scss` project-agnostic rules
+- `config.scss` variables
+
+## **Color/Font Management**
+
+- app-specific, hard-coded values (colors, fonts) assigned to literal variables
+- literal variables assigned to semantic variables (ipw: never change since they're use-case-based)
+
+**- Scheme**
+
+_\* have these figured out BEFORE styling anything_
+
+- harmony: relationship of primary colors
+  - monocromatic, triadic, etc.
+- pallete: web-safe color values
+
+**- Color & Font Values**
+
+- app-specific color palette / font values assigned hard-coded values
+
+**- Semantic Color & Font Values**
+
+- semantic variables that get consumed by app stylesheet
+- \<semantic variable\> <--> \<value variable\> relationship theoretically should never change
+
+</details>
+
+<!-- #endregion /UPDATED FRAMEWORK NOTES -->
+
+## **[ 21AUG24 ]**
+
+<!-- #region INITIAL FRAMEWORK NOTES -->
+
+<details>
+<summary><strong>Initial CSS Framework Notes</strong></summary>
 
 # **_CSS FRAMEWORK HIGH-LEVEL IDEA_**
 
@@ -68,3 +123,7 @@ body {
 ```
 
 jacking BEM's approach of 'resetting' at the block level, `utils_resets.scss` handles inherited %placeholders that reset layout & style properties when building library components
+
+</details>
+
+<!-- #endregion /INITIAL FRAMEWORK NOTES -->
