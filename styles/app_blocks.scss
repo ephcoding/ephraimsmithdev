@@ -3,11 +3,7 @@
 @use './util_reset.scss';
 @use './util_style.scss';
 
-.month_divider {
-	background-color: #777;
-	font-size: 2rem;
-	padding: 0 2rem;
-}
+
 .archive_card {
 	padding: 2rem;
 	font-size: 2rem;
@@ -18,65 +14,81 @@
 }
 .card {
 	// @extend %devborder_parent
-	border: 3px solid #fff;
-	margin: 1rem auto;
+	border: 2px solid #fff;
+	margin: 3rem auto;
 	max-width: 750px;
-	padding: 0.75rem;
-	&__date {
-		font-size: 1.6rem;
-		margin-bottom: 0.75rem;
-	}
-	&__excerpt {
-		margin-bottom: 1rem;
-	}
-	&__link {
-		text-align: right;
-		&-arrows {
-			color: #0f0;
-		}
-	}
-	&__subtitle {
-		@extend %h3;
-		font-style: italic;
-		margin-bottom: 0.5rem;
-	}
+	padding: 1.5rem;
+	width: 85vw;
 	&__title {
 		color: config.$red;
 		@extend %h1;
 	}
+	&__subtitle {
+		@extend %h3;
+		// color: config.$red;
+		font-style: italic;
+		margin-bottom: 0.5rem;
+	}
+	&-footer {
+		@extend %flex_row-between;
+		font-size: 1.5rem;
+		margin-top: 2rem;
+
+		&__link {
+			@extend %nav_anchor;
+			color: config.$lime;
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: right;
+		}	
+	}
+	
 }
 .footer {
 	@extend %flex_row-center;
 	// @extend %devborder_parent;
 	color: config.$color_text-lt;
+	font-size: 1.5rem;
 	height: 3rem;
-	p {
+	// p {
 		// @extend %devborder_child;
-	}
+	// }
 }
-header {
+.header-nav {
 	// @extend %devborder_parent;
-	// @extend %flex_row-between;
-
-	& > a {
+	&__logo-link {
 		// @extend %devborder_child;
 		display: block;
 		height: 20vh;
 		margin-top: -2vh;
-		text-align: center;
-
-		img {
-			max-height: 100%;
-		}
+		text-align: center;		
 	}
-
-	nav {
+	.header-nav__logo {
+			max-height: 100%;
+	}
+	.sub-nav {
 		// @extend %devborder_child;
-		display: flex;
-		justify-content: center;
-		padding: 1rem;
+		@extend %flex_row-center;
+		margin-bottom: 2rem;
 		a {
 			@extend %nav_anchor;
+			font-size: 3rem;
+		}
+	}
+}
+.month_divider {
+	background-color: #777;
+	font-size: 2rem;
+	padding: 0 2rem;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		&__title {
+			font-size: 3rem;
+		}
+		&__subtitle {
+			font-size: 2.5rem;
 		}
 	}
 }
