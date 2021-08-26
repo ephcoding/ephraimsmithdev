@@ -6,10 +6,13 @@ export default function Header() {
 			<nav className='header-nav'>
 				<Link href='/'>
 					<a className='header-nav__logo-link'>
-						<img className='header-nav__logo' src='/images/ephcoding-text-logo.png' />
+						<img
+							className='header-nav__logo'
+							src='/images/ephcoding-logo_1000x325.png'
+						/>
 					</a>
 				</Link>
-				<div className="sub-nav">
+				<div className='sub-nav'>
 					<Link href='/about'>
 						<a className='sub-nav__link'>about</a>
 					</Link>
