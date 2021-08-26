@@ -1,9 +1,12 @@
+// resets should be UNOPINIONATED / style-neutral
+// ie. if it's set here, I ALWAYS want it styled like this - across EVERY app
 @use './config.scss';
 %reset_anchor {
 	color: inherit;
 	text-decoration: none;
 	&:hover {
 		cursor: pointer;
+		text-decoration: underline;
 	}
 }
 %reset_box-sizing {
