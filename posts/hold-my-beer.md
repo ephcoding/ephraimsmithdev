@@ -11,7 +11,7 @@ I'm 37 with a wife and 2 kids. I left a 6-figure construction career in 2018 to 
 
 I had _zero_ software experience. So, the struggle's been very real. Here's a little more about me..
 
-- I over-analyse
+- I overanalyze
 - I procrastinate
 - I get up at 3:00 am every day to "get ahead" and have gotten nowhere
 - I avoid holding myself accountable by pretending to be too busy to get everything done
