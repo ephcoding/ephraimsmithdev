@@ -10,7 +10,7 @@ import MetaContainer from '@/components/MetaContainer';
 import PostPreviewCard from '@/components/PostPreviewCard';
 import Head from 'next/head';
 // import Pagination from '@/components/Pagination';
-import SearchInputField from './style_components.searchInputField';
+// import SearchInputField from './style_components.searchInputField';
 
 export default function DisplayPostsPage({ posts, numPages, currentPage }) {
 	return (
@@ -41,7 +41,7 @@ export default function DisplayPostsPage({ posts, numPages, currentPage }) {
 				</div>
 			</div>
 
-			<SearchInputField />
+			{/* <SearchInputField /> */}
 		</MetaContainer>
 	);
 }
