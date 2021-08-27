@@ -14,11 +14,9 @@ export default function PostPreviewCard({ post }) {
 			{/* <p className='card__excerpt'>{post.frontmatter.excerpt}</p> */}
 			<div className='card_footer'>
 				<span className='card_date'>{post.frontmatter.date}</span>
-				<div className='card_btn'>
-					<Link href={`/blog/${post.slug}`}>
-						<a className='card_link'>Read</a>
-					</Link>
-				</div>
+				<Link href={`/blog/${post.slug}`}>
+					<a className='btn_read-post'>Read</a>
+				</Link>
 			</div>
 		</div>
 	);

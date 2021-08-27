@@ -15,7 +15,7 @@ export default function HomePage({ posts }) {
 			</div>
 			<div className='row-end'>
 				<Link href='/archives'>
-					<a className='btn-nav_archives-sm'>archives &gt;</a>
+					<a className='btn-nav_archives'>archives &gt;</a>
 				</Link>
 			</div>
 		</MetaContainer>

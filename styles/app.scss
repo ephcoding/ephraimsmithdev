@@ -4,6 +4,9 @@
 @use './utilities.scss';
 
 // #region --- SHARED
+.btn-row {
+	margin-bottom: 2rem;
+}
 .row-center {
 	@extend %container;
 	display: flex;
@@ -16,39 +19,42 @@
 	justify-content: flex-end;
 	margin-bottom: 2rem;
 }
-.btn-nav_archives-sm {
-	@extend %btn-sm;
+.btn-nav_archives {
+	@extend %btn;
 	@extend %reset_anchor;
 	background: configs.$color_accent;
 	color: configs.$color_text-dk;
-	justify-self: right;
+	font-size: 1.8rem;
+	margin: 0 0.5rem;
+	width: 15rem;
 	&:hover {
 		transform: scale(1.05);
 		box-shadow: 0 3px 6px -3px #fff;
 	}
 }
-.btn-nav_home-sm {
-	@extend %btn-sm;
+.btn-nav_home {
+	@extend %btn;
 	@extend %reset_anchor;
 	background: configs.$color_accent;
 	color: configs.$color_text-dk;
-	margin-bottom: 2rem;
+	margin: 0 0.5rem;
+	width: 10rem;
 	&:hover {
 		transform: scale(1.05);
 		box-shadow: 0 3px 6px -3px #fff;
 	}
 }
-.btn-nav_home-lg {
-	@extend %btn-lg;
+.btn_read-post {
+	@extend %btn;
 	@extend %reset_anchor;
-	background: configs.$color_accent;
-	color: configs.$color_text-dk;
+	border: 2px solid configs.$color_accent;
+	margin: 0 0.5rem;
+	width: 10rem;
 	&:hover {
 		transform: scale(1.05);
 		box-shadow: 0 3px 6px -3px #fff;
 	}
 }
-
 .footer {
 	@extend %container;
 	@extend %flex_col-center;
@@ -142,13 +148,13 @@
 	&_by {
 		color: configs.$color_accent;
 		font-size: 1.2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 5rem;
 	}
 	&_line {
 		background-color: #fff;
 		height: 2px;
-		margin: 0 auto 2rem;
-		width: 200px;
+		margin: 0 auto 4rem;
+		width: 50vw;
 	}
 	&_body {
 		font-size: 1.6rem;
@@ -240,6 +246,25 @@
 		}
 		&_subtitle {
 			font-size: 1.5rem;
+		}
+	}
+}
+@media screen and (min-width: 780px) {
+	.blog-post {
+		&_date {
+			font-size: 2rem;
+		}
+		&_title {
+			font-size: 4.5rem;
+		}
+		&_subtitle {
+			font-size: 3rem;
+		}
+		&_by {
+			font-size: 2rem;
+		}
+		&_body {
+			font-size: 2.2rem;
 		}
 	}
 }

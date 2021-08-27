@@ -3,16 +3,8 @@
 @use './utilities.scss';
 
 %btn {
-	// @extend %flex_row-center;
 	display: inline-block;
-}
-%btn-sm {
-	@extend %btn;
 	font-size: 1.6rem;
 	padding: 0.5rem 1rem;
-}
-%btn-lg {
-	@extend %btn;
-	font-size: 2.5rem;
-	padding: 0.75rem 1.5rem;
+	text-align: center;
 }

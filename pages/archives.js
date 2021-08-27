@@ -11,7 +11,7 @@ export default function Archives({ posts }) {
 		<MetaContainer>
 			<div className='btn-row'>
 				<Link href='/'>
-					<a className='btn-nav_home-sm'>&lt; home</a>
+					<a className='btn-nav_home'>&lt; home</a>
 				</Link>
 			</div>
 
@@ -19,6 +19,7 @@ export default function Archives({ posts }) {
 				{posts.map((post, index) => {
 					const blogPostDate = new Date(post.frontmatter.date);
 					const blogPostMonth = blogPostDate.getMonth();
+					const blogPostYear = blogPostDate.getFullYear();
 					const blogPostMonthName = getDateMonthName(blogPostDate);
 					const isDiffMonth = blogPostMonth !== prevBlogPostMonth;
 					prevBlogPostMonth = blogPostMonth;
@@ -26,7 +27,9 @@ export default function Archives({ posts }) {
 					return (
 						<>
 							{isDiffMonth && (
-								<h2 className='archives_month'>{blogPostMonthName}</h2>
+								<h2 className='archives_month'>
+									{blogPostMonthName} {blogPostYear}
+								</h2>
 							)}
 							<div className='archives_card'>
 								<h3 className='archives_title'>
@@ -47,7 +50,7 @@ export default function Archives({ posts }) {
 			</div>
 			<div className='btn-row'>
 				<Link href='/'>
-					<a className='btn-nav_home-sm'>&lt; home</a>
+					<a className='btn-nav_home'>&lt; home</a>
 				</Link>
 			</div>
 		</MetaContainer>

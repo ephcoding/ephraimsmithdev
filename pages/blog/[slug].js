@@ -27,26 +27,20 @@ export default function BlogPost({
 				<h2 className='blog-post_title'>{title}</h2>
 				<h1 className='blog-post_subtitle'>{subtitle}</h1>
 				<p className='blog-post_by'>by Ephraim Smith</p>
-				<div className='blog-post_line' />
+				{/* <div className='blog-post_line' /> */}
 
 				<div className='blog-post_body'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</article>
 
-			<div className='blog-post_nav'>
-				<div className='btn_home_row'>
-					<div className='btn_home'>
-						<Link href='/'>
-							<a className='btn_home_link'>&lt; home</a>
-						</Link>
-					</div>
-				</div>
-				<div className='btn_archives'>
-					<Link href='/archives'>
-						<a className='btn_archives_link'>archives &gt;</a>
-					</Link>
-				</div>
+			<div className='row-center'>
+				<Link href='/'>
+					<a className='btn-nav_home'>&lt; home</a>
+				</Link>
+				<Link href='/archives'>
+					<a className='btn-nav_archives'>archives &gt;</a>
+				</Link>
 			</div>
 			<Footer />
 		</div>
