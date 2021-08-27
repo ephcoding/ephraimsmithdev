@@ -1,1 +1,0 @@
-export const posts = [{"slug":"hold-my-beer","frontmatter":{"title":"HOLD MY BEER","subtitle":"Throwing deuces to my comfort zone and starting a software blog.","date":"August 27, 2021","author":"Ephraim Smith"}}]

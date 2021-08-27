@@ -1,1 +1,1 @@
-![EPHCODDING Site Repo Banner](./gh-profile__ephcoding.png)
+![EPHCODDING Site Repo Banner](./public/gh-profile__ephcoding.png)
