@@ -22,7 +22,9 @@ I had _zero_ software experience. So, the struggle's been very real. Here's a li
 - I've strained my marriage as a result
 - I've missed valuable time with my kids
 - I've averaged 4 hours sleep/night convinced that more time in is more time out
+
   <br>
+
   This wasn't the plan. Or my intention.
 
 How'd I get here? I'm stalling. I care what people think. The second I build and put something out there, my time and emotional investment is fair game to criticism.
