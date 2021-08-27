@@ -17,6 +17,8 @@
 		"react-icons": "^4.2.0"
 	},
 	"devDependencies": {
-		"sass": "^1.38.0"
+		"autoprefixer": "^10.3.3",
+		"sass": "^1.38.0",
+		"tailwindcss": "^2.2.8"
 	}
 }

@@ -6,7 +6,6 @@ import Footer from '@/components/Footer';
 import Head from 'next/head';
 import Header from '@/components/Header';
 import Link from 'next/link';
-import MetaContainer from '@/components/MetaContainer';
 
 export default function BlogPost({
 	frontmatter: { title, subtitle, date },

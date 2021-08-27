@@ -22,13 +22,13 @@ I had _zero_ software experience. So, the struggle's been very real. Here's a li
 - I've strained my marriage as a result
 - I've missed valuable time with my kids
 - I've averaged 4 hours sleep/night convinced that more time in is more time out
-
-This wasn't the plan. Or my intention.
+  <br>
+  This wasn't the plan. Or my intention.
 
 How'd I get here? I'm stalling. I care what people think. The second I build and put something out there, my time and emotional investment is fair game to criticism.
 
 But I'm not getting any younger and the life I'm trying to create for my family isn't going to create itself.
 
-So, fuck it. Here's [https://www.ephcoding.com](ephcoding.com). The first thing I've built start-to-finish. Hopefully, I'll see you out there.
+So, fuck it. Here's [ephcoding.com](https://www.ephcoding.com). The first thing I've built start-to-finish. Hopefully, I'll see you out there.
 
-P.S. It's fugly. But then again, so am I.
+P.S. It's rough. But then again, so am I.

@@ -8,7 +8,7 @@ export default function Header() {
 					<a className='header-logo'>
 						<img
 							className='header-logo_img'
-							src='/images/ephcoding-logo_1000x325.png'
+							src='/ephcoding-logo_1000x325.png'
 						/>
 					</a>
 				</Link>

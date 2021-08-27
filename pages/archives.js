@@ -2,7 +2,6 @@ import { getDateMonthName } from '../utils';
 import { getPosts } from '@/lib/posts';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
-import PostPreviewCard from '@/components/PostPreviewCard';
 
 export default function Archives({ posts }) {
 	let prevBlogPostMonth;
