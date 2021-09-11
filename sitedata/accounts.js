@@ -2,7 +2,7 @@ export const accounts = [
 	{
 		label: 'Blog',
 		username: '',
-		url: '/',
+		url: '/blog',
 	},
 	// {
 	//   label: 'CodePen',
