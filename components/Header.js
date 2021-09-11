@@ -4,15 +4,14 @@ export default function Header() {
 	return (
 		<header className='header'>
 			<nav className='header-nav'>
-				<Link href='/'>
+				{/* <Link href='/'>
 					<a className='header-logo'>
 						<img
 							className='header-logo_img'
-							src='/ephcoding-logo_1000x325.png'
+							src='/ephcoding-icon-1000x1000.png'
 						/>
 					</a>
-				</Link>
-				{/* SUB-NAV moved to <index.js> */}
+				</Link> */}
 			</nav>
 		</header>
 	);
