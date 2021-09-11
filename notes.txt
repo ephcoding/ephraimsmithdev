@@ -1,0 +1,7 @@
+21SEPT11
+
+  - [?] nextjs | <Image/> importing static images doesnt work per docs example (https://nextjs.org/docs/api-reference/next/image#usage)
+
+  - 
+
+
