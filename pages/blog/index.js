@@ -1,4 +1,4 @@
-import { getDateMonthName } from '../utils';
+import { getDateMonthName } from '../../utils';
 import { getPosts } from '@/lib/posts';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
