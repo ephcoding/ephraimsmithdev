@@ -1,6 +1,4 @@
-import Footer from './Footer';
 import Head from 'next/head';
-import Header from '@/components/Header';
 
 export default function MetaContainer({
 	title,
@@ -16,13 +14,7 @@ export default function MetaContainer({
 				<meta name='description' content={description} />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className='baseline_page'>
-				<Header />
-				<div className='baseline_content'>
-					<main>{children}</main>
-				</div>
-				<Footer />
-			</div>
+			<main>{children}</main>
 		</div>
 	);
 }
@@ -31,5 +23,6 @@ MetaContainer.defaultProps = {
 	title: 'ephcoding.com',
 	keywords:
 		'react native, mobile apps, mobile development, android, ios, coding, programming, software, software development',
-	description: "Ephraim Smith's documented misadventures in software",
+	description:
+		"Ephraim Smith shares his experiences in building software applications and lessons he's learned along the way.",
 };
