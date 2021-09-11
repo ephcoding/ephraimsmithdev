@@ -9,7 +9,7 @@ export const NavMenu = () => {
 					href={account.url}
 					target='_blank'
 					className='text-white mx-4'
-					style={{ 'font-size': '3vw' }}
+					style={{ fontSize: '3vw' }}
 				>
 					{account.label}
 				</Nav.Link>
