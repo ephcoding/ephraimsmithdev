@@ -2,17 +2,16 @@ import { getDateMonthName } from '../../utils';
 import { getPosts } from '@/lib/posts';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
+import Nav from 'react-bootstrap/Nav';
 
 export default function Archives({ posts }) {
 	let prevBlogPostMonth;
 
 	return (
 		<MetaContainer>
-			<div className='btn-row'>
-				<Link href='/'>
-					<a className='btn-nav_home'>&lt; home</a>
-				</Link>
-			</div>
+			<Nav.Link href='/' className='nav-links'>
+				home
+			</Nav.Link>
 
 			<div className='archives'>
 				{posts.map((post, index) => {
@@ -30,7 +29,7 @@ export default function Archives({ posts }) {
 									{blogPostMonthName} {blogPostYear}
 								</h2>
 							)}
-							<div className='archives_card'>
+							<div className='text-white'>
 								<h3 className='archives_title'>
 									<Link href={`/blog/${post.slug}`}>
 										<a className='archives_title_link'>
@@ -46,11 +45,6 @@ export default function Archives({ posts }) {
 						</>
 					);
 				})}
-			</div>
-			<div className='btn-row'>
-				<Link href='/'>
-					<a className='btn-nav_home'>&lt; home</a>
-				</Link>
 			</div>
 		</MetaContainer>
 	);

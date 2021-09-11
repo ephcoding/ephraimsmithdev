@@ -6,6 +6,16 @@ export default function MetaContainer({
 	description,
 	children,
 }) {
+	// (function () {
+	// 	const vh = window.innerHeight * 0.01;
+	// 	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+	// 	document.addEventListener('resize', () => {
+	// 		const vh = window.innerHeight * 0.01;
+	// 		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	// 	});
+	// })();
+
 	return (
 		<div id='MetaContainer'>
 			<Head>
@@ -14,7 +24,10 @@ export default function MetaContainer({
 				<meta name='description' content={description} />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main>{children}</main>
+			{/* <main className='main-container container-fluid d-flex flex-column bg-dark'> */}
+			<main className='main-container bg-dark container-fluid d-flex flex-column vh-100'>
+				{children}
+			</main>
 		</div>
 	);
 }
