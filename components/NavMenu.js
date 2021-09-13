@@ -7,15 +7,19 @@ export const NavMenu = () => {
 			<Nav.Item as='li' key={account.label} style={{ margin: '0 1.5vmin' }}>
 				<Nav.Link
 					href={account.url}
-					target='_blank'
-					className='nav-links px-2'
+					target={account.target}
+					className='px-2'
 					style={{ fontSize: '5vmin' }}
 				>
-					{account.label}
+					{account.reactIcon ? account.reactIcon : account.label}
 				</Nav.Link>
 			</Nav.Item>
 		);
 	});
 
-	return <Nav as='ul'>{navlinks}</Nav>;
+	return (
+		<Nav id='MainNav' as='ul'>
+			{navlinks}
+		</Nav>
+	);
 };
