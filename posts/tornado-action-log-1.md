@@ -1,10 +1,10 @@
 ---
-title: 'REACT SPA: Tornado Action'
-subtitle: 'Log 1: getting off the ground'
-date: 'September 13, 2021'
-author: 'Ephraim Smith'
-keywords: 'tornado severe weather historical weather heatmap google maps'
-description: ''
+title: "REACT SPA: Tornado Action"
+subtitle: "Log 1: getting off the ground"
+date: "September 13, 2021"
+author: "Ephraim Smith"
+keywords: "tornado severe weather historical weather heatmap google maps"
+description: ""
 ---
 
 ### WHAT ARE YOU DOING
@@ -41,16 +41,16 @@ These are the concepts and approches I'm making a point to hone in on. The list 
 
 ### V1 FEATURES
 
-#### _User Search Functionality_
+#### | User Search Functionality
 
 - users can search for past tornado events by day, week, or month
 - user can filter tornado event results by intensity based on a tornado's MAX_SHEAR reading
 
-#### _Data Visualization_
+#### | Data Visualization
 
 - user can choose to see the locations plotted as a Google Maps heatmap or standard map with markers
 
-#### _Real-Time Severe Weather Alerts_
+#### | Real-Time Severe Weather Alerts
 
 - fixed component that displays active thunderstorm and tornado alerts for user's current location
 
@@ -64,36 +64,31 @@ NOAA | [data access](https://www.ncdc.noaa.gov/data-access)
 
 Here's what I'm using initially. We'll see what else gets added to the list.
 
-#### _Severe Weather Data Inventory_
+#### | Severe Weather Data Inventory
 
-<!-- ![Severe Weather Data Inventory API](/images/posts/20210916__swdi.png) -->
+Tornado signatures are fetched from the [SWDI](https://www.ncdc.noaa.gov/severe-weather/severe-weather-data-inventory) which acts as a single point of access to data from various resources. You're able to pull signatures (event-specific data) for hail, storms, and tornadoes. Storm reports and warnings are also available.
 
-<div class='d-flex'>
-  <p>
-  Tornado signatures are fetched from the <a href='https://www.ncdc.noaa.gov/severe-weather/severe-weather-data-inventory')>SWDI</a> which acts as a single point of access to data from various resources. You're able to pull signatures (event-specific data) for hail, storms, and tornadoes. Storm reports and warnings are also available.
-  </p>
-  <img class='post-img' alt='SWDI docs' src='/images/posts/20210916__swdi.png'/>
-</div>
+Data comes in different formats too: json, geoJson, csv, xml, shp, & kmz.
 
-Data comes in different formats too: [json](https://www.json.org/json-en.html), [geoJson](https://geojson.org/), csv, xml, shp, & [kmz](https://developers.google.com/kml/documentation/kmzarchives).
+SWDI [docs](https://www.ncdc.noaa.gov/swdiws/)
 
-API [docs](https://www.ncdc.noaa.gov/swdiws/)
+<img class='post-img' alt='SWDI docs' src='/images/posts/20210916__swdi.png'/>
 
-#### _National Weather Service Alerts_
+#### | National Weather Service Alerts
 
-![National Weather Service API](/images/posts/20210916__nws-api-for-alerts.png)
-
-Active severe weather alerts are accessed through the NWS [API Web Service](https://www.weather.gov/documentation/services-web-api#/default). All responses that contain geometry (coordinates) return GeoJson data by default.
+Active severe weather alerts are accessed through the NWS [API Web Service](https://www.weather.gov/documentation/services-web-api#/default) All responses that contain geometry (coordinates) return GeoJson data by default.
 
 API base URL | https://api.weather.gov
 
-#### _Google Maps JS API_
+<img class='post-img' alt='National Weather Service API' src='/images/posts/20210916__nws-api-for-alerts.png'/>
 
-![Google Maps JS API](/images/posts/20210916__google-maps-js-api.png)
+#### | Google Maps JS API
 
 This is where the rubber meets the road. For now, I'm using the coordinates returned from the Severe Weather Data Inventory to plot map markers and feed the heatmaps. Eventually I want to test ride using the KMZ virtual globe format.
 
 You'll be able to see in the code where I'm dynamically loading the API via the NPM package: [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader). I'll dive deeper into the Loader class in the next project log post.
+
+<img class='post-img' alt='Google Maps JS API' src='/images/posts/20210916__google-maps-js-api.png'/>
 
 ### SETUP / TECH
 
@@ -103,7 +98,7 @@ I normally write my own CSS but it's too easy, and likely, to get caught up in i
 
 So here's the list of dependencies (beyond default CRA dependencies) as they sit right meow:
 
-#### _Dependencies_
+#### | Dependencies
 
 - [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader) | lets you load the Google Maps API dynamically instead of inline in your HTML.
 - [axios](https://www.npmjs.com/package/axios) | HTTP client based on Promises for hitting the APIs
@@ -112,7 +107,7 @@ So here's the list of dependencies (beyond default CRA dependencies) as they sit
 - [chart.js](https://www.npmjs.com/package/chartjs) | functional chart library built on HTML5 canvas
 - [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2) | chart.js wrapped in React
 
-#### _Dev Dependencies_
+#### | Dev Dependencies
 
 - [Sass](https://www.npmjs.com/package/sass) | JS-compiled version of Sass CSS pre-processer
 
