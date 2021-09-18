@@ -17,7 +17,7 @@ export default function MetaContainer({
 	// })();
 
 	return (
-		<div id='MetaContainer' className='bg-dark text-white px-4 pt-4'>
+		<div id='MetaContainer' className='bg-dark text-white px-4'>
 			<Head>
 				<title>{title}</title>
 				<meta name='keywords' content={keywords} />

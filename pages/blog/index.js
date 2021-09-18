@@ -10,7 +10,7 @@ export default function Archives({ posts }) {
 
 	return (
 		<MetaContainer>
-			<div className='flex-fill'>
+			<div className='flex-fill pt-3'>
 				{posts.map((post, index) => {
 					const blogPostDate = new Date(post.frontmatter.date);
 					const blogPostMonth = blogPostDate.getMonth();
@@ -38,13 +38,13 @@ export default function Archives({ posts }) {
 						</>
 					);
 				})}
+				<Nav className='justify-content-center'>
+					<Nav.Link href='/' className='nav-link-btn'>
+						home
+					</Nav.Link>
+				</Nav>
 			</div>
 
-			<Nav className='justify-content-center'>
-				<Nav.Link href='/' className='nav-link-btn'>
-					home
-				</Nav.Link>
-			</Nav>
 			<Footer />
 		</MetaContainer>
 	);
