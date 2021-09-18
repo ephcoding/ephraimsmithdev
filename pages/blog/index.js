@@ -3,13 +3,14 @@ import { getPosts } from '@/lib/posts';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
 import Nav from 'react-bootstrap/Nav';
+import Footer from '@/components/Footer';
 
 export default function Archives({ posts }) {
 	let prevBlogPostMonth;
 
 	return (
 		<MetaContainer>
-			<div>
+			<div className='flex-fill'>
 				{posts.map((post, index) => {
 					const blogPostDate = new Date(post.frontmatter.date);
 					const blogPostMonth = blogPostDate.getMonth();
@@ -40,10 +41,11 @@ export default function Archives({ posts }) {
 			</div>
 
 			<Nav className='justify-content-center'>
-				<Nav.Link href='/' style={{ fontSize: '2.6vmax' }}>
+				<Nav.Link href='/' className='nav-link-btn'>
 					home
 				</Nav.Link>
 			</Nav>
+			<Footer />
 		</MetaContainer>
 	);
 }

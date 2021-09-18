@@ -17,7 +17,7 @@ export default function MetaContainer({
 	// })();
 
 	return (
-		<div id='MetaContainer'>
+		<div id='MetaContainer' className='bg-dark text-white px-4 pt-4'>
 			<Head>
 				<title>{title}</title>
 				<meta name='keywords' content={keywords} />
@@ -25,7 +25,7 @@ export default function MetaContainer({
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			{/* <main className='main-container container-fluid d-flex flex-column bg-dark'> */}
-			<main className='main-container bg-dark container-fluid d-flex flex-column vh-100'>
+			<main className='main-container container-fluid d-flex flex-column'>
 				{children}
 			</main>
 		</div>
