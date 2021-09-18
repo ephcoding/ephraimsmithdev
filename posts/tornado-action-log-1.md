@@ -1,33 +1,51 @@
 ---
-title: "REACT SPA: Tornado Action"
-subtitle: "Log 1: getting off the ground"
-date: "September 13, 2021"
-author: "Ephraim Smith"
-keywords: "tornado severe weather historical weather heatmap google maps"
-description: ""
+title: 'REACT SPA: Tornado Action'
+subtitle: 'Log 1: getting off the ground'
+date: 'September 13, 2021'
+author: 'Ephraim Smith'
+keywords: 'tornado severe weather historical weather heatmap google maps'
+description: ''
 ---
 
-### WHAT ARE YOU DOING
+### WHAT AM I DONG
 
-Like a lot of devs, I have a boneyard full of unfinished apps (aka: private repos). Mainly because I've always struggled with the idea of 'practice projects.' If I'm not personally invested in an idea, I won't finish it. Time is way too valuable.
+Alright. So, a few months ago I left my full-time gig as a QA Engineer to focus on getting my first dev job. I know. 'Crazy'. 'Dumb'. Whatever. But you'd be amazed at how much can get accomplished when you're not chasing dangled carrots everyday;)
 
-There's a time and place for tutorials and smaller projects. Especially, when you're brand new to code. The compartmentalization of concepts is important in maintaining forward momentum. But I'm not brand new to code anymore, and I'm trying to land my first Developer role.
+The last few months have been awesome. I've been learning about business, physical AND mental fitness, algo-trading, spending wayyy more time with the family, and going deep in **JavaScript** and **React** / **React Native**. But now it's time to go back to getting paid to learn.
 
-Employers don't want to see another To-Do list or vending machine anymore than I want to build one. Thankfully I learn better, and faster, when I'm a little overwhelmed. So my new approach to building and demonstrating my chops is to only build fullstack apps that get treated as stand-alone businesses. I know it might seem like a big jump, but my thought is this:
+Unfortunately, like a lot of devs I have a boneyard full of unfinished apps (aka: private repos). Mainly because I quickly lose interest in practice or tutorial projects. Yes, writing code is the only way to get good at writing code. But for me, that code has to be more than just an exercise. It has to serve a real purpose or solve a real problem, preferably for me:) With that in mind I'm taking a new approach moving forward. Full-scale, full-stack apps only. For this first one I'm building both web and native mobile versions. (want to get some more 1-on-1 time with React) After this project, it's gonna be all React Native.
 
-..muscle-memory comes from reps. If I focus on designing, developing, and deploying full-scale apps over and over again, I'm either going to get hired or start making my own money. _( unless I run out of money first:P )_
+If you work out or have ever played sports, you've heard the phrase 'it\'s all about the reps.' Painful, meaningful reps. If I start designing, developing, and deploying full-scale apps over and over again, I'm either going to get hired or start making my own money. _( ..as long as the funds don't run out first:P )_
 
 ### WHY TORNADOES?
 
-I'm not a weather 'nut' or wannabe meteoroligist (had to Google just how to spell it) so why Tornadoes? Because despite the former, tornadoes are still badass and there are tons of publicly-available weather-related web services. (Bonus: http proxy hacks need not apply as most of them allow cross-origin requests) **_STAY TUNED:_** I'm going to build out a list of cool APIs I come across.
+I'm not a weather 'nut' or wannabe meteoroligist (<-- had to Google how to even spell it) so why Tornadoes? Because despite the former, tornadoes are badass and there are tons of publicly-available weather-related web services. (Bonus: http proxy hacks need not apply as most of them allow cross-origin requests)
 
-The original high-level purpose of this project was to demonstrate my ability to consume API data and display it in a non-visually-offensive way with React. As with most of my projects, I decided to go full-tilt right out of the gate.
+The original high-level purpose of this project was to simply demo my ability to consume an API and display it in a 'non-visually-offensive' way with React.
 
-..oh yea, making a React Native version too.
+### V1 FEATURES
 
-### FOCUS AREAS RAPID FIRE
+#### | Search Functionality
 
-These are the concepts and approches I'm making a point to hone in on. The list is already too long but 'shoot for the stars hit the moon' yea?
+- users can search for past tornado events by day, week, or month
+- user can filter tornado event results by intensity based on a tornado's MAX_SHEAR value
+
+#### | Data Visualization
+
+- user can choose to see the locations plotted as a Google Maps heatmap or markers
+
+<figure>
+  <img class='post-img' alt='Tornado Action heatmap' src='/images/posts/20210918__heatmap-screenshot.png'/>
+  <figcaption class='text-center'>Heatmap of tornadoes with MAX_SHEAR > 100 knots for April 2021.</figcaption>
+</figure>
+
+#### | Real-Time Severe Weather Alerts
+
+- fixed component that displays active thunderstorm and tornado alerts for user's current location
+
+### RINGIN' IT OUT
+
+I want to get as much as I can out of Tornado Action so I made a list of concepts and technologies that I want to get some working experience with. The list is already too long and I have another list of stuff to add already. Shoot for the starts, hit the moon?
 
 - implement dependency injection to make testing easier
 - minimize state management overhead by leveraging React as much as possible
@@ -38,21 +56,6 @@ These are the concepts and approches I'm making a point to hone in on. The list 
 - using React Native
 - serverless data processes
 - testing with Jest
-
-### V1 FEATURES
-
-#### | User Search Functionality
-
-- users can search for past tornado events by day, week, or month
-- user can filter tornado event results by intensity based on a tornado's MAX_SHEAR reading
-
-#### | Data Visualization
-
-- user can choose to see the locations plotted as a Google Maps heatmap or standard map with markers
-
-#### | Real-Time Severe Weather Alerts
-
-- fixed component that displays active thunderstorm and tornado alerts for user's current location
 
 ### APIs / RESOURCES
 
@@ -72,7 +75,10 @@ Data comes in different formats too: json, geoJson, csv, xml, shp, & kmz.
 
 SWDI [docs](https://www.ncdc.noaa.gov/swdiws/)
 
-<img class='post-img' alt='SWDI docs' src='/images/posts/20210916__swdi.png'/>
+<figure>
+  <img class='post-img' alt='SWDI docs' src='/images/posts/20210916__swdi.png'/>
+  <figcaption class='text-center'>Screenshot of Severe Weather Data Inventory API docs</figcaption>
+</figure>
 
 #### | National Weather Service Alerts
 
@@ -80,7 +86,10 @@ Active severe weather alerts are accessed through the NWS [API Web Service](http
 
 API base URL | https://api.weather.gov
 
-<img class='post-img' alt='National Weather Service API' src='/images/posts/20210916__nws-api-for-alerts.png'/>
+<figure>
+  <img class='post-img' alt='National Weather Service API' src='/images/posts/20210916__nws-api-for-alerts.png'/>
+  <figcaption class='text-center'>Screenshot of National Weather Service API page</figcaption>
+</figure>
 
 #### | Google Maps JS API
 
@@ -88,17 +97,20 @@ This is where the rubber meets the road. For now, I'm using the coordinates retu
 
 You'll be able to see in the code where I'm dynamically loading the API via the NPM package: [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader). I'll dive deeper into the Loader class in the next project log post.
 
-<img class='post-img' alt='Google Maps JS API' src='/images/posts/20210916__google-maps-js-api.png'/>
+<figure>
+  <img class='post-img' alt='Google Maps JS API' src='/images/posts/20210916__google-maps-js-api.png'/>
+  <figcaption class='text-center'>Screenshot of Google Maps JS API page</figcaption>
+</figure>
 
 ### SETUP / TECH
 
-Tornado Action was created as a simple CRA app. Since V1's purely visual, there won't be any remote storage integrated. The plan is to come up with an excuse to use AWS S3 buckets with DynamoDB and Lambda functions. You know, the buzzwords.
+I spun up Tornado Action using create-react-app. Since V1's purely visual, there won't be any remote storage integrated. The plan is to come up with an excuse to use AWS S3 buckets with DynamoDB. You know, the buzzwords.
 
-I normally write my own CSS but it's too easy, and likely, to get caught up in it that I went with [react-bootstrap](https://react-bootstrap.github.io/). It's a time thing.
-
-So here's the list of dependencies (beyond default CRA dependencies) as they sit right meow:
+I normally write my own CSS but decided to roll with [react-bootstrap](https://react-bootstrap.github.io/) instead. It's a time thing.
 
 #### | Dependencies
+
+Here's the list of dependencies (beyond default CRA dependencies) as they sit right meow:
 
 - [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader) | lets you load the Google Maps API dynamically instead of inline in your HTML.
 - [axios](https://www.npmjs.com/package/axios) | HTTP client based on Promises for hitting the APIs
@@ -113,19 +125,14 @@ So here's the list of dependencies (beyond default CRA dependencies) as they sit
 
 ### FOLLOW PROGRESS
 
-I'll have the web version pushed by tonight so everyone can follow in real time. It's fugly and the punch list is already a mile long. Here's what I'll be attacking next:
+[tornadoaction.com](https://www.tornadoaction.com) is live if you want to follow the progress in real-time. These are just a few of the many punch-list items I'll be starting on over the next couple days:
 
-1. refactor component composition (to make my life easier when I get to #2)
+1. refactor component composition
 1. add Jest unit tests
 1. figure out how to cache maps to save on renders and requests
 1. translate current web functionality into React Native version
 
-If you want to follow Tornado Action's progress you have a few options.
-
-- tornadoaction.com
-- github.com/ephcoding/app\_\_tornado-action
-- twitter.com/ephcoding
-  - \#tornadoaction
+You can also check for updates on [Twitter](https://www.twitter.com/ephcoding) or check out the code on [Github](https://github.com/ephcoding/app__tornado-action).
 
 ### WRAP IT UP
 
