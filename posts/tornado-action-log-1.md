@@ -1,29 +1,32 @@
 ---
-title: 'REACT SPA: Tornado Action'
-subtitle: 'Log 1: getting off the ground'
-date: 'September 13, 2021'
-author: 'Ephraim Smith'
-keywords: 'tornado severe weather historical weather heatmap google maps'
-description: ''
+title: "REACT SPA: Tornado Action"
+subtitle: "Log 1: getting off the ground"
+date: "September 19, 2021"
+author: "Ephraim Smith"
+keywords: "tornado severe weather historical weather heatmap google maps"
+description: ""
 ---
 
 ### WHAT AM I DONG
 
-Alright. So, a few months ago I left my full-time gig as a QA Engineer to focus on getting my first dev job. I know. 'Crazy'. 'Dumb'. Whatever. But you'd be amazed at how much can get accomplished when you're not chasing dangled carrots everyday;)
+Like a lot of devs, I have a boneyard full of unfinished apps. Those projects you start with the intention of finishing over the weekend. But, inevitabley you find yourself in the repo settings with your tail between your legs changing the visibility to 'private'.
 
-The last few months have been awesome. I've been learning about business, physical AND mental fitness, algo-trading, spending wayyy more time with the family, and going deep in **JavaScript** and **React** / **React Native**. But now it's time to go back to getting paid to learn.
+To get better results moving forward, I needed a way to hold myself accountable. The whole 'learning in public' thing is becoming pretty common so I figured there must be something to it. What better way to incentivise completing a project than by telling everyone in internetland that's what you're going to do?
 
-Unfortunately, like a lot of devs I have a boneyard full of unfinished apps (aka: private repos). Mainly because I quickly lose interest in practice or tutorial projects. Yes, writing code is the only way to get good at writing code. But for me, that code has to be more than just an exercise. It has to serve a real purpose or solve a real problem, preferably for me:) With that in mind I'm taking a new approach moving forward. Full-scale, full-stack apps only. For this first one I'm building both web and native mobile versions. (want to get some more 1-on-1 time with React) After this project, it's gonna be all React Native.
+1. Instead of building a bunch of throw-away apps for the sake of practice, build and maintain a couple BIG ones so I can focus on the tech. (and maybe generate some income)
+2. Build them where everyone can see to increase the speed of the feedback loop. ie. exploit how much people love pointing out other's mistakes;)
 
-If you work out or have ever played sports, you've heard the phrase 'it\'s all about the reps.' Painful, meaningful reps. If I start designing, developing, and deploying full-scale apps over and over again, I'm either going to get hired or start making my own money. _( ..as long as the funds don't run out first:P )_
+So here we go..
 
 ### WHY TORNADOES?
 
-I'm not a weather 'nut' or wannabe meteoroligist (<-- had to Google how to even spell it) so why Tornadoes? Because despite the former, tornadoes are badass and there are tons of publicly-available weather-related web services. (Bonus: http proxy hacks need not apply as most of them allow cross-origin requests)
+I'm not secretly trying to become a meteorologist. Fuck, I had to Google how to spell it. Tornadoes are cool though. And over the last couple years I noticed that government agencies have tons of free, open-source datasets.
 
-The original high-level purpose of this project was to simply demo my ability to consume an API and display it in a 'non-visually-offensive' way with React.
+The gameplan for Tornado Action is to focus on visuals and the UI. Maps, charts, alerts, modals, etc.
 
 ### V1 FEATURES
+
+When I first came up with the idea for Tornado Action, my initial plan was to just 'consume and display some API data'. Let's just say it got away from me in a hurry. Here's what I'm thinking so far:
 
 #### | Search Functionality
 
@@ -32,7 +35,8 @@ The original high-level purpose of this project was to simply demo my ability to
 
 #### | Data Visualization
 
-- user can choose to see the locations plotted as a Google Maps heatmap or markers
+- users can choose to see the individual locations of tornadoes or plotted as a Google Maps heatmap or marker map.
+- users can see month over month or year over year tornado events on a bar graph using Chart.js
 
 <figure>
   <img class='post-img' alt='Tornado Action heatmap' src='/images/posts/20210918__heatmap-screenshot.png'/>
@@ -41,11 +45,11 @@ The original high-level purpose of this project was to simply demo my ability to
 
 #### | Real-Time Severe Weather Alerts
 
-- fixed component that displays active thunderstorm and tornado alerts for user's current location
+- provide an alert or banner that displays active thunderstorm and tornado alerts for user's current location
 
-### RINGIN' IT OUT
+### GET MY MONEY'S WORTH
 
-I want to get as much as I can out of Tornado Action so I made a list of concepts and technologies that I want to get some working experience with. The list is already too long and I have another list of stuff to add already. Shoot for the starts, hit the moon?
+I want to ring Tornado Action out for as much as I can.. so I made a list of concepts and technologies that I want to get some working experience with. The list is already too long and I have another list of stuff to add already.
 
 - implement dependency injection to make testing easier
 - minimize state management overhead by leveraging React as much as possible
