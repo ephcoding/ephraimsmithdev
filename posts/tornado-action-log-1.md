@@ -1,42 +1,41 @@
 ---
-title: "REACT SPA: Tornado Action"
-subtitle: "Log 1: getting off the ground"
-date: "September 19, 2021"
-author: "Ephraim Smith"
-keywords: "tornado severe weather historical weather heatmap google maps"
-description: ""
+title: 'REACT SPA: Tornado Action'
+subtitle: 'Log 1: getting off the ground'
+date: 'September 20, 2021'
+author: 'Ephraim Smith'
+keywords: 'tornado, severe weather, historical weather, heatmap, google maps'
+description: ''
 ---
 
 ### WHAT AM I DONG
 
-Like a lot of devs, I have a boneyard full of unfinished apps. Those projects you start with the intention of finishing over the weekend. But, inevitabley you find yourself in the repo settings with your tail between your legs changing the visibility to 'private'.
+Like a lot of devs, I have a boneyard full of unfinished apps. Those projects you start with the intention of finishing over the weekend. But, eventually you find yourself in the repo settings with your tail between your legs changing the visibility to 'private'.
 
-To get better results moving forward, I needed a way to hold myself accountable. The whole 'learning in public' thing is becoming pretty common so I figured there must be something to it. What better way to incentivise completing a project than by telling everyone in internetland that's what you're going to do?
+To get better results, I need a better way of holding myself accountable. The whole 'learning in public' thing is becoming pretty common so there's gotta be something to it. Let's give that a shot.
 
-1. Instead of building a bunch of throw-away apps for the sake of practice, build and maintain a couple BIG ones so I can focus on the tech. (and maybe generate some income)
-2. Build them where everyone can see to increase the speed of the feedback loop. ie. exploit how much people love pointing out other's mistakes;)
+Here's my plan. All two steps.
 
-So here we go..
+1. Only build and maintain a couple BIG apps. This way I can focus on the tech instead of having to come up with new 'practice project' ideas. Decision fatigue and analysis paralysis are real. So, let's take them out of the equation.
+
+2. Build them where a lot of eyes can see them. This speeds up the feedback loop. People love to argue and point out other people's 'mistakes'. Time to exploit that.
 
 ### WHY TORNADOES?
 
 I'm not secretly trying to become a meteorologist. Fuck, I had to Google how to spell it. Tornadoes are cool though. And over the last couple years I noticed that government agencies have tons of free, open-source datasets.
 
-The gameplan for Tornado Action is to focus on visuals and the UI. Maps, charts, alerts, modals, etc.
-
 ### V1 FEATURES
 
-When I first came up with the idea for Tornado Action, my initial plan was to just 'consume and display some API data'. Let's just say it got away from me in a hurry. Here's what I'm thinking so far:
+Here's my initial list of features:
 
 #### | Search Functionality
 
-- users can search for past tornado events by day, week, or month
-- user can filter tornado event results by intensity based on a tornado's MAX_SHEAR value
+- a user can search for past tornado events by day, week, or month
+- a user can filter tornado event results by intensity based on a tornado's MAX_SHEAR value (I'll get into the data in later posts)
 
 #### | Data Visualization
 
-- users can choose to see the individual locations of tornadoes or plotted as a Google Maps heatmap or marker map.
-- users can see month over month or year over year tornado events on a bar graph using Chart.js
+- users can choose to see tornado locations as markers or their geographical concentration via heatmap
+- users can see month over month or year over year tornado events on a bar graph
 
 <figure>
   <img class='post-img' alt='Tornado Action heatmap' src='/images/posts/20210918__heatmap-screenshot.png'/>
@@ -45,48 +44,46 @@ When I first came up with the idea for Tornado Action, my initial plan was to ju
 
 #### | Real-Time Severe Weather Alerts
 
-- provide an alert or banner that displays active thunderstorm and tornado alerts for user's current location
+- display active thunderstorm and tornado alerts for user's current location
 
 ### GET MY MONEY'S WORTH
 
-I want to ring Tornado Action out for as much as I can.. so I made a list of concepts and technologies that I want to get some working experience with. The list is already too long and I have another list of stuff to add already.
+I want to ring Tornado Action out for as much as I can. Here's a list of concepts and technologies that I'm focusing on.
 
-- implement dependency injection to make testing easier
-- minimize state management overhead by leveraging React as much as possible
-- improving component composition
-- better use of design patterns
-- TypeScript integration
-- data management with AWS
-- using React Native
-- serverless data processes
+- using dependency injection
+- React state management
+- component composition
+- design patterns
+- TypeScript
+- Amazon Web Services
+- React Native
+- serverless CI/CD & functions
 - testing with Jest
 
 ### APIs / RESOURCES
 
-Like I said, crazy amounts of data available. Here's a taste:
+Here's a couple of the huge datasets available I told you about earlier:
 
 NASA | [dataset visualization](https://data.nasa.gov/data_visualizations.html)
 
 NOAA | [data access](https://www.ncdc.noaa.gov/data-access)
 
-Here's what I'm using initially. We'll see what else gets added to the list.
-
 #### | Severe Weather Data Inventory
 
-Tornado signatures are fetched from the [SWDI](https://www.ncdc.noaa.gov/severe-weather/severe-weather-data-inventory) which acts as a single point of access to data from various resources. You're able to pull signatures (event-specific data) for hail, storms, and tornadoes. Storm reports and warnings are also available.
+Tornado signatures (events) are fetched from the [SWDI](https://www.ncdc.noaa.gov/severe-weather/severe-weather-data-inventory). The API is fed by a lot of different resources. Historical weather reports, NEXRAD (nex-gen radar), imagery. The list goes on.
 
-Data comes in different formats too: json, geoJson, csv, xml, shp, & kmz.
+The data's available in a few different formats too: json, geoJson, csv, xml, shp, & kmz.
 
-SWDI [docs](https://www.ncdc.noaa.gov/swdiws/)
+SWDI API [docs](https://www.ncdc.noaa.gov/swdiws/)
 
 <figure>
   <img class='post-img' alt='SWDI docs' src='/images/posts/20210916__swdi.png'/>
   <figcaption class='text-center'>Screenshot of Severe Weather Data Inventory API docs</figcaption>
 </figure>
 
-#### | National Weather Service Alerts
+#### | National Weather Service API
 
-Active severe weather alerts are accessed through the NWS [API Web Service](https://www.weather.gov/documentation/services-web-api#/default) All responses that contain geometry (coordinates) return GeoJson data by default.
+You can access all active weather alerts through the National Weather Service [API Web Service](https://www.weather.gov/documentation/services-web-api#/default). All responses that contain geometry (coordinates) return GeoJson data by default.
 
 API base URL | https://api.weather.gov
 
@@ -97,9 +94,9 @@ API base URL | https://api.weather.gov
 
 #### | Google Maps JS API
 
-This is where the rubber meets the road. For now, I'm using the coordinates returned from the Severe Weather Data Inventory to plot map markers and feed the heatmaps. Eventually I want to test ride using the KMZ virtual globe format.
+This is where the rubber meets the road. For now, I'm using the coordinates returned from the Severe Weather Data Inventory to plot map markers and feed the heatmaps. Eventually I want to try out the KMZ virtual globe format used a lot in Google Maps.
 
-You'll be able to see in the code where I'm dynamically loading the API via the NPM package: [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader). I'll dive deeper into the Loader class in the next project log post.
+You'll be able to see in the code where I'm dynamically loading the API via the NPM package: [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader).
 
 <figure>
   <img class='post-img' alt='Google Maps JS API' src='/images/posts/20210916__google-maps-js-api.png'/>
@@ -110,11 +107,11 @@ You'll be able to see in the code where I'm dynamically loading the API via the 
 
 I spun up Tornado Action using create-react-app. Since V1's purely visual, there won't be any remote storage integrated. The plan is to come up with an excuse to use AWS S3 buckets with DynamoDB. You know, the buzzwords.
 
-I normally write my own CSS but decided to roll with [react-bootstrap](https://react-bootstrap.github.io/) instead. It's a time thing.
+I normally write my own CSS but decided to roll with [react-bootstrap](https://react-bootstrap.github.io/) for Tornado Action. Trying to save some time.
 
 #### | Dependencies
 
-Here's the list of dependencies (beyond default CRA dependencies) as they sit right meow:
+Here's the list of dependencies in addition to the create-react-app defaults:
 
 - [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader) | lets you load the Google Maps API dynamically instead of inline in your HTML.
 - [axios](https://www.npmjs.com/package/axios) | HTTP client based on Promises for hitting the APIs
@@ -125,22 +122,22 @@ Here's the list of dependencies (beyond default CRA dependencies) as they sit ri
 
 #### | Dev Dependencies
 
-- [Sass](https://www.npmjs.com/package/sass) | JS-compiled version of Sass CSS pre-processer
+- [Sass](https://www.npmjs.com/package/sass) | JS-compiled version of Sass CSS pre-processor
 
 ### FOLLOW PROGRESS
 
-[tornadoaction.com](https://www.tornadoaction.com) is live if you want to follow the progress in real-time. These are just a few of the many punch-list items I'll be starting on over the next couple days:
+[tornadoaction.com](https://www.tornadoaction.com) is live if you want to follow the progress in real-time. Here's a couple upcoming tasks from my punch-list:
 
 1. refactor component composition
 1. add Jest unit tests
 1. figure out how to cache maps to save on renders and requests
 1. translate current web functionality into React Native version
 
-You can also check for updates on [Twitter](https://www.twitter.com/ephcoding) or check out the code on [Github](https://github.com/ephcoding/app__tornado-action).
+You can also follow me on [Twitter](https://www.twitter.com/ephcoding) and see the code on [Github](https://github.com/ephcoding/app__tornado-action).
 
 ### WRAP IT UP
 
-I'm doing this whole learn-in-public thing so I can build apps of value as soon as possible. If you see something broken, misinterpreted, lacking in approach/design, or flat out fucked up, I want to know. If you made it this far, thank you and congratulations. You've earned yourself a drink.
+If you see something broken, misinterpreted, lacking in approach/design, or flat out fucked up, I want to know.
 
 - Email | ephcoding@gmail.com
 - GitHub | [ephcoding](https://www.github.com/ephcoding)
