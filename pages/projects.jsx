@@ -7,7 +7,7 @@ export default function ProjectsPage() {
 			<h1>PROJECTS</h1>
 			<h2>Tornado Action</h2>
 			<h2>FreeCodeCamp Certification Projects</h2>
-			<Link href='https://ephcoding.github.io/freecodecamp'>Github Pages</Link>
+			<Link href='/freecodecamp'>FreeCodeCamp project page</Link>
 		</MetaContainer>
 	);
 }
