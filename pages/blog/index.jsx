@@ -38,10 +38,12 @@ export default function Archives({ posts }) {
 						</>
 					);
 				})}
-				<Nav className='justify-content-center'>
-					<Nav.Link href='/' className='nav-link-btn'>
-						home
-					</Nav.Link>
+				<Nav id='BlogPageNav' as='ul' className='justify-content-center mt-5'>
+					<Nav.Item as='li'>
+						<Nav.Link href='/' className='px-2 site-nav-btn'>
+							home
+						</Nav.Link>
+					</Nav.Item>
 				</Nav>
 			</div>
 

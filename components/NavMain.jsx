@@ -9,7 +9,6 @@ export const NavMain = () => {
 					href={navItem.url}
 					target={navItem.target}
 					className='px-2 site-nav-btn'
-					style={{ fontSize: '5vmin' }}
 				>
 					{navItem.label}
 				</Nav.Link>
