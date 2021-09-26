@@ -8,8 +8,8 @@ export const NavSocial = () => {
 				<Nav.Link
 					href={socLink.url}
 					target={socLink.target}
-					className='px-2 external-link'
-					style={{ fontSize: '5vmin' }}
+					className='external-link'
+					style={{ fontSize: '6vmin' }}
 				>
 					{socLink.reactIcon}
 				</Nav.Link>
@@ -18,7 +18,7 @@ export const NavSocial = () => {
 	});
 
 	return (
-		<Nav id='MainNav' as='ul'>
+		<Nav id='NavSocial' as='ul'>
 			{socNavLinks}
 		</Nav>
 	);

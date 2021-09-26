@@ -8,7 +8,7 @@ export const NavMain = () => {
 				<Nav.Link
 					href={navItem.url}
 					target={navItem.target}
-					className='px-2 site-nav-btn'
+					className='site-nav-btn'
 				>
 					{navItem.label}
 				</Nav.Link>
@@ -17,7 +17,7 @@ export const NavMain = () => {
 	});
 
 	return (
-		<Nav id='MainNav' as='ul'>
+		<Nav id='NavMain' as='ul'>
 			{mainNavLinks}
 		</Nav>
 	);
