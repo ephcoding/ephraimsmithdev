@@ -7,7 +7,7 @@ keywords: 'tornado, severe weather, historical weather, heatmap, google maps'
 description: ''
 ---
 
-### WHAT AM I DONG
+### WHAT AM I DOING
 
 Like a lot of devs, I have a boneyard full of unfinished apps. Those projects you start with the intention of finishing over the weekend. But, eventually you find yourself in the repo settings with your tail between your legs changing the visibility to 'private'.
 

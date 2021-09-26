@@ -8,6 +8,7 @@ import Header from '@/components/Header';
 import { NavBtn } from '@/components/NavBtn';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
+import { NavBlogPost } from '@/components/NavPostBottom';
 
 export default function BlogPost({
 	frontmatter: { title, subtitle, date, author, keywords, description },
@@ -34,10 +35,8 @@ export default function BlogPost({
 				{/* <div className=''> */}
 				<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				{/* </div> */}
-				<div className='d-flex justify-content-center'>
-					<NavBtn route='/' label='home' />
-					<NavBtn route='/blog' label='posts' />
-				</div>
+
+				<NavBlogPost />
 			</article>
 
 			<Footer />
