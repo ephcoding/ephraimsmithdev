@@ -13,8 +13,7 @@ const iconStyles = {
 
 export const accounts = [
 	{
-		label: 'BLOG',
-		icon: false,
+		label: 'blog',
 		reactIcon: null,
 		url: '/blog',
 		username: '',
@@ -22,14 +21,13 @@ export const accounts = [
 	},
 	// {
 	//   label: 'CodePen',
-	// icon: true,
+
 	// reactIcon:
 	//   url:
 	//   username: 'ephcoding',
 	// },
 	{
 		label: 'Github',
-		icon: true,
 		reactIcon: <FaGithub style={iconStyles} />,
 		url: 'https://github.com/ephcoding',
 		username: 'ephcoding',
@@ -37,7 +35,6 @@ export const accounts = [
 	},
 	{
 		label: 'LinkedIn',
-		icon: true,
 		reactIcon: <FaLinkedin style={iconStyles} />,
 		url: 'https://www.linkedin.com/in/ephraimjsmith',
 		username: 'ephraimjsmith',
@@ -49,7 +46,6 @@ export const accounts = [
 	// },
 	{
 		label: 'Twitter',
-		icon: true,
 		reactIcon: <FaTwitter style={iconStyles} />,
 		url: 'https://www.twitter.com/ephcoding',
 		username: 'ephcoding',

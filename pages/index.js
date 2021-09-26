@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Nav from 'react-bootstrap/Nav';
 import MetaContainer from '@/components/MetaContainer';
 import Footer from '@/components/Footer';
 import { accounts } from '../sitedata/accounts';
@@ -20,6 +21,11 @@ export default function HomePage() {
 					style={{ height: '45vmax', maxHeight: '600px', width: 'auto' }}
 				/>
 				<NavMenu />
+				{/* <Nav className='justify-content-center'>
+					<Nav.Link href='/projects' className='nav-link-btn'>
+						projects
+					</Nav.Link>
+				</Nav> */}
 			</div>
 			<Footer />
 		</MetaContainer>
