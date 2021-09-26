@@ -1,0 +1,28 @@
+html,
+body,
+container {
+	min-height: 100vh;
+}
+body {
+	/* position: relative; */
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('./bg-img.jpg') no-repeat center/cover;
+}
+a {
+	color: #223deb;
+	text-decoration: none;
+}
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+h1 {
+	font-family: 'Russo One', sans-serif;
+}
+.form-wrapper {
+	background: linear-gradient(rgba(255, 80, 0, 0.3), rgba(255, 80, 0, 0.3));
+	border-radius: 1.2rem;
+	padding: 2rem;
+}
+p.text-center {
+	font-size: 2.5vmax;
+}

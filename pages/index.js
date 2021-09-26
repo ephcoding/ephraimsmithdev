@@ -1,10 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import Nav from 'react-bootstrap/Nav';
 import MetaContainer from '@/components/MetaContainer';
+import { NavMain } from '@/components/NavMain';
+import { NavSocial } from '@/components/NavSocial';
 import Footer from '@/components/Footer';
-import { accounts } from '../sitedata/accounts';
-import { NavMenu } from '../components/NavMenu';
 
 export default function HomePage() {
 	return (
@@ -20,12 +17,8 @@ export default function HomePage() {
 					className='d-inline-block mx-auto'
 					style={{ height: '45vmax', maxHeight: '600px', width: 'auto' }}
 				/>
-				<NavMenu />
-				{/* <Nav className='justify-content-center'>
-					<Nav.Link href='/projects' className='nav-link-btn'>
-						projects
-					</Nav.Link>
-				</Nav> */}
+				<NavMain />
+				<NavSocial />
 			</div>
 			<Footer />
 		</MetaContainer>

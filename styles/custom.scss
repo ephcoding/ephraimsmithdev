@@ -10,6 +10,8 @@
 $eph-blue: #223deb;
 $eph-red: #eb222f;
 $eph-yellow: #ebe422;
+$eph-black: #2f2f2f;
+$eph-white: #e8e8e8;
 // #endregion EPH COLORS
 
 #MetaContainer,
@@ -32,13 +34,15 @@ a {
 	height: 100%;
 	place-items: center;
 
-	&:hover {
-		color: #fff;
-		border-bottom: 6px solid $eph-red;
-	}
+	// &:hover {
+	// 	color: $eph-black;
+	// 	border-bottom: 6px solid $eph-red;
+	// 	background: $eph-yellow;
+	// }
 }
-.nav-link.nav-link-btn {
+.site-nav-btn {
 	border: 2px solid $eph-yellow;
+	color: inherit;
 	font-size: 2.6vmin;
 	margin: 1.5rem 2.5rem;
 	text-align: center;
@@ -46,18 +50,35 @@ a {
 
 	&:hover {
 		background-color: $eph-yellow;
-		color: #000;
+		color: $eph-black;
 	}
 }
-.nav-link {
-	color: #fff;
-	&:active {
-		color: #fff;
-	}
+.external-link {
+	color: inherit;
+
 	&:hover {
-		color: darken($eph-red, 20%);
+		color: $eph-blue;
 	}
 }
+.main-nav-item,
+.social-nav-item {
+	color: $eph-white;
+}
+.main-nav-item:hover,
+.social-nav-item:hover {
+	background: $eph-yellow;
+}
+.nav-link.nav-link-btn {
+}
+// .nav-link {
+// 	color: $eph-white;
+// 	&:active {
+// 		color: $eph-white;
+// 	}
+// 	&:hover {
+// 		color: darken($eph-red, 20%);
+// 	}
+// }
 // #endregion
 h1 {
 	color: $eph-red;
@@ -86,7 +107,7 @@ h3 {
 .separator {
 	width: 30vw;
 	height: 5px;
-	background: #fff;
+	background: $eph-white;
 	margin: 3rem auto;
 }
 figcaption {
