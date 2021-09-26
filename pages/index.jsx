@@ -2,14 +2,15 @@ import MetaContainer from '@/components/MetaContainer';
 import { NavMain } from '@/components/NavMain';
 import { NavSocial } from '@/components/NavSocial';
 import Footer from '@/components/Footer';
+import { PAGE_META } from '../sitedata/page-meta-data';
 
 export default function HomePage() {
+	const {
+		home: { title, keywords, description },
+	} = PAGE_META;
+
 	return (
-		<MetaContainer
-			title='ephcoding.com'
-			keywords='software, react, react native, software development, software blog, coding, code, programming'
-			description='ephcoding.com is home to Ephraim Smith and his documented adventures in software'
-		>
+		<MetaContainer title={title} keywords={keywords} description={description}>
 			<div className='d-flex flex-column justify-content-center align-items-center text-center flex-fill'>
 				<img
 					src={'/ephcoding-icon-1000x1000.png'}
