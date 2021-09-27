@@ -5,7 +5,11 @@ import {
 	FaFreeCodeCamp,
 } from 'react-icons/fa';
 
-export const SOCIAL_LINKS = [
+const iconStyles = {
+	color: '$eph-white',
+};
+
+export const SOCIAL_NAV_LINKS = [
 	{
 		label: 'Github',
 		reactIcon: <FaGithub style={iconStyles} />,

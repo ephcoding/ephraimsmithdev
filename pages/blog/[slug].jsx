@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 import { NavBtn } from '@/components/NavBtn';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
-import { NavBlogPost } from '@/components/NavMenuItems__Main';
+import { NavBlogPost } from '@/components/NavMenuMain';
+import { NavMenuMain } from '@/components/NavMenuMain';
 
 export default function BlogPost({
 	frontmatter: { title, subtitle, date, author, keywords, description },
@@ -34,7 +35,7 @@ export default function BlogPost({
 				<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				{/* </div> */}
 
-				<NavBlogPost />
+				<NavMenuMain />
 			</article>
 
 			<Footer />

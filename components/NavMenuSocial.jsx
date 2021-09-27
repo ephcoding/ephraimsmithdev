@@ -1,10 +1,8 @@
-import { SOCIAL_LINKS } from '../sitedata/social-nav-item-data';
 import Nav from 'react-bootstrap/Nav';
+import { SOCIAL_NAV_LINKS } from '../sitedata/social-nav-item-data';
 
-export const SocialNavItems = () => {
-	const socialNavId = 'SocialNavMenu';
-
-	const socNavItems = SOCIAL_LINKS.map((socLink) => {
+export const NavMenuSocial = () => {
+	const socialNavItems = SOCIAL_NAV_LINKS.map((socLink) => {
 		return (
 			<Nav.Item as='li' key={socLink.label} style={{ margin: '0 1.5vmin' }}>
 				<Nav.Link
@@ -19,5 +17,9 @@ export const SocialNavItems = () => {
 		);
 	});
 
-	return { socialNavId, socNavItems };
+	return (
+		<Nav id='NavMenuSocial' as='ul' className='justify-content-center'>
+			{socialNavItems}
+		</Nav>
+	);
 };
