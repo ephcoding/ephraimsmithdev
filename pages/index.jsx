@@ -1,13 +1,16 @@
 import MetaContainer from '@/components/MetaContainer';
-import { NavMain } from '@/components/NavMain';
-import { NavSocial } from '@/components/NavSocial';
+import { META_CONTAINER_DATA } from '../sitedata/meta-container-data';
+import { NavMenu } from '@/components/NavMenu';
+import { MainNavItems } from '@/components/NavMenuItems__Main';
+import { SocialNavItems } from '@/components/NavMenuItems__Social';
 import Footer from '@/components/Footer';
-import { PAGE_META } from '../sitedata/page-meta-data';
 
 export default function HomePage() {
 	const {
 		home: { title, keywords, description },
-	} = PAGE_META;
+	} = META_CONTAINER_DATA;
+	const { mainNavItems, mainNavId } = MainNavItems;
+	const { socialNavItems, socialNavId } = SocialNavItems;
 
 	return (
 		<MetaContainer title={title} keywords={keywords} description={description}>
@@ -18,8 +21,8 @@ export default function HomePage() {
 					className='d-inline-block mx-auto'
 					style={{ height: '45vmax', maxHeight: '600px', width: 'auto' }}
 				/>
-				<NavMain />
-				<NavSocial />
+				<NavMenu navItems={mainNavItems} navId={mainNavId} />
+				<NavMenu navItems={socialNavItems} navId={socialNavId} />
 			</div>
 			<Footer />
 		</MetaContainer>
