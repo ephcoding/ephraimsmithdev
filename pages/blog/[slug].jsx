@@ -3,12 +3,11 @@ import path from 'path';
 import matter from 'gray-matter';
 import marked from 'marked';
 import Footer from '@/components/Footer';
-import Head from 'next/head';
-import Header from '@/components/Header';
 import { NavBtn } from '@/components/NavBtn';
 import Link from 'next/link';
 import MetaContainer from '@/components/MetaContainer';
-import { NavBlogPost } from '@/components/NavPostBottom';
+import { NavBlogPost } from '@/components/NavMenuMain';
+import { NavMenuMain } from '@/components/NavMenuMain';
 
 export default function BlogPost({
 	frontmatter: { title, subtitle, date, author, keywords, description },
@@ -36,7 +35,7 @@ export default function BlogPost({
 				<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				{/* </div> */}
 
-				<NavBlogPost />
+				<NavMenuMain />
 			</article>
 
 			<Footer />

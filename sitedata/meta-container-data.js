@@ -1,4 +1,4 @@
-export const PAGE_META = {
+export const META_CONTAINER_DATA = {
 	blog: {
 		title: 'Blog | ephcoding.com',
 		description: '',
