@@ -1,4 +1,5 @@
-import MetaContainer from '@/components/MetaContainer';
+import MetaContainer from "@/components/MetaContainer";
+import Link from "next/link";
 
 export default function FreeCodeCamp() {
 	return (
@@ -6,13 +7,23 @@ export default function FreeCodeCamp() {
 			<h1>FreeCodeCamp Projects</h1>
 			<ul>
 				<li>
-					<a href='/freecodecamp/survey-form'>Tribute Page</a>
+					<a href='./tribute-page/index.html'>Tribute Page</a>
 				</li>
 				<li>
-					<a href='/freecodecamp/tribute-page'>Survey Form</a>
+					<Link href='/freecodecamp/survey-form'>
+						<a>Survey Form</a>
+					</Link>
 				</li>
 			</ul>
-			<Nav id='NavBlogPost' as='ul' className='justify-content-center'>
+			<div>
+				<Link href='/projects'>
+					<a>{`<< Back`}</a>
+				</Link>
+			</div>
+			<div>
+				<Link href='/'>HOME</Link>
+			</div>
+			{/* <Nav id='NavBlogPost' as='ul' className='justify-content-center'>
 				<Nav.Item as='li' key='home' style={{ margin: '0 1.5vmin' }}>
 					<Nav.Link href={'/'} className='site-nav-btn'>
 						home
@@ -28,7 +39,7 @@ export default function FreeCodeCamp() {
 						posts
 					</Nav.Link>
 				</Nav.Item>
-			</Nav>
+			</Nav> */}
 		</MetaContainer>
 	);
 }
