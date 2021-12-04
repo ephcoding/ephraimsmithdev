@@ -1,0 +1,23 @@
+.ext-link {
+	color: inherit;
+
+	&:hover {
+		color: $blue;
+	}
+}
+h3 {
+	color: $blue;
+	font-weight: bolder;
+	// blog post title link
+	& .nav-link {
+		color: $red;
+
+		&:hover {
+			color: darken($red, 20%);
+		}
+	}
+}
+// #endregion
+h1 {
+	color: $red;
+}
