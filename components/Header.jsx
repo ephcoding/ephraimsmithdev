@@ -1,18 +1,11 @@
-import Link from 'next/link';
+import MainNav from "./MainNav";
+import SocialNav from "./SocialNav";
 
 export default function Header() {
 	return (
 		<header className='header'>
-			<nav className='header-nav'>
-				{/* <Link href='/'>
-					<a className='header-logo'>
-						<img
-							className='header-logo_img'
-							src='/ephcoding-icon-1000x1000.png'
-						/>
-					</a>
-				</Link> */}
-			</nav>
+			<MainNav />
+			<SocialNav />
 		</header>
 	);
 }
