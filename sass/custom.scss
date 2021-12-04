@@ -1,18 +1,8 @@
-// #region DYNAMIC VH
-// for mobile-height re-size later
-// main.main-container {
-// 	height: 100vh;
-// 	height: calc(var(--vh) * 100);
-// }
-// #endregion DYNAMIC VH
-
-// #region EPH COLORS
 $eph-blue: #223deb;
 $eph-red: #eb222f;
 $eph-yellow: #ebe422;
 $eph-black: #2f2f2f;
 $eph-white: #e8e8e8;
-// #endregion EPH COLORS
 
 #MetaContainer,
 main {
