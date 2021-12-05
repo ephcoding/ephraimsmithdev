@@ -9,10 +9,12 @@ export default function HomePage() {
 	} = META_CONTAINER_DATA;
 
 	return (
-		<MetaContainer
-			title={title}
-			keywords={keywords}
-			description={description}
-		></MetaContainer>
+		<MetaContainer title={title} keywords={keywords} description={description}>
+			<div className='home-page'>
+				<Header />
+				<main className='home-page__content'></main>
+				<Footer />
+			</div>
+		</MetaContainer>
 	);
 }
