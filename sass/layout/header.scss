@@ -1,12 +1,17 @@
-.branding {
-	align-items: center;
-	display: flex;
-}
 .header {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
+
+	.branding {
+		align-items: center;
+		display: flex;
+
+		.site-title {
+			display: inline-block;
+		}
+	}
 
 	&__nav {
 		align-items: center;
