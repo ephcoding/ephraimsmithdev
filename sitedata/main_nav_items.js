@@ -1,14 +1,14 @@
 export const MAIN_NAV_LINKS = [
 	{
-		LABEL: 'home',
-		URL: '/home',
+		LABEL: "home",
+		URL: "/",
 	},
 	{
-		LABEL: 'blog',
-		URL: '/blog',
+		LABEL: "posts",
+		URL: "/posts",
 	},
 	{
-		LABEL: 'projects',
-		URL: '/projects',
+		LABEL: "projects",
+		URL: "/projects",
 	},
 ];
