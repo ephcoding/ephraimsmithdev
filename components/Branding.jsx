@@ -4,7 +4,7 @@ const Branding = () => {
 	return (
 		<div className='branding'>
 			<ECLogo />
-			<span>Eph Coding</span>
+			<span className='site-title'>Eph Coding</span>
 		</div>
 	);
 };
