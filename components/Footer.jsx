@@ -1,13 +1,10 @@
-import { getCurrentYear } from '../utils/index';
-import Link from 'next/link';
+import { getCurrentYear } from "../utils/index";
+import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer
-			className='text-white text-center mt-4'
-			style={{ fontSize: '.7rem' }}
-		>
-			<p>&copy; {getCurrentYear()} Ephraim Smith | ephcoding.com</p>
+		<footer className='footer'>
+			<p>&copy; {getCurrentYear()} | ephcoding.com</p>
 		</footer>
 	);
 }
