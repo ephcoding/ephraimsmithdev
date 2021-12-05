@@ -7,6 +7,7 @@ import MainNav from "@/components/MainNav";
 export default function FreeCodeCamp() {
 	return (
 		<MetaContainer>
+			<MainNav />
 			<h1>FreeCodeCamp Projects</h1>
 			<ul className='fcc-projects'>
 				{FCC_PROJECT_LINKS.map(project => {
@@ -15,8 +16,6 @@ export default function FreeCodeCamp() {
 					);
 				})}
 			</ul>
-
-			<MainNav />
 
 			{/* DEV NAV */}
 			<div>
