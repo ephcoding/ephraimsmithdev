@@ -6,18 +6,18 @@ const MainNav = () => {
 		return (
 			<li
 				key={navItem.LABEL}
-				className='main-nav__item'
+				className='main-nav__li'
 				style={{ margin: "0 1.5vmin" }}
 			>
-				<Link href={navItem.URL} className='site-nav-btn'>
-					{navItem.LABEL}
+				<Link href={navItem.URL}>
+					<a className='nav-btn'>{navItem.LABEL}</a>
 				</Link>
 			</li>
 		);
 	});
 	return (
-		<nav id='MainNav' className='main-nav'>
-			{mainNavItems}
+		<nav id='MainNav'>
+			<ul className='main-nav'>{mainNavItems}</ul>
 		</nav>
 	);
 };
