@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const FccProjectLink = ({ projectMeta }) => {
-	const { title, repoLink, isLive, liveLink } = projectMeta;
+	const { repoLink, isLive, liveLink } = projectMeta;
 
 	let liveLinkEl = isLive ? (
 		<span>
@@ -14,7 +14,6 @@ const FccProjectLink = ({ projectMeta }) => {
 
 	return (
 		<li>
-			<h2>{title}</h2>
 			<Link href={repoLink}>
 				<a target='_blank'>GitHub</a>
 			</Link>
