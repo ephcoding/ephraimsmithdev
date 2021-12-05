@@ -7,7 +7,6 @@ import Header from "@/components/Header";
 export default function FreeCodeCamp() {
 	return (
 		<MetaContainer>
-			<Header />
 			<h1>FreeCodeCamp Projects</h1>
 			<ul className='fcc-projects'>
 				{FCC_PROJECT_LINKS.map(project => {

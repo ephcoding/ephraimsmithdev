@@ -1,9 +1,9 @@
-import { getDateMonthName } from '../../utils';
-import { getPosts } from '@/lib/posts';
-import Link from 'next/link';
-import MetaContainer from '@/components/MetaContainer';
-import Nav from 'react-bootstrap/Nav';
-import Footer from '@/components/Footer';
+import { getDateMonthName } from "../../utils";
+import { getPosts } from "@/lib/posts";
+import Link from "next/link";
+import MetaContainer from "@/components/MetaContainer";
+import Nav from "react-bootstrap/Nav";
+import Footer from "@/components/Footer";
 
 export default function Archives({ posts }) {
 	let prevBlogPostMonth;
@@ -46,8 +46,6 @@ export default function Archives({ posts }) {
 					</Nav.Item>
 				</Nav>
 			</div>
-
-			<Footer />
 		</MetaContainer>
 	);
 }
