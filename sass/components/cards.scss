@@ -1,13 +1,8 @@
-.fcc-projects {
-	display: grid;
+.fcc-projects__card {
+	background: #999;
+	border: 2px solid #000;
+	padding: 1rem;
 
-	&__card {
-		height: 200px;
-		width: 300px;
-		background: #999;
-		border: 2px solid #000;
-
-		h2 {
-		}
+	h2 {
 	}
 }
