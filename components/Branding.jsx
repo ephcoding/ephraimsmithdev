@@ -1,8 +1,12 @@
-import Image from "next/image";
-import ecLogo from "../public/ephcoding-icon-1000x1000.png";
+import ECLogo from "./ECLogo";
 
 const Branding = () => {
-  return <Image src={ecLogo} alt="ephcoding logo" />;
+	return (
+		<div className='branding'>
+			<ECLogo />
+			<span>Eph Coding</span>
+		</div>
+	);
 };
 
 export default Branding;
