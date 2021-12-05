@@ -34,15 +34,57 @@ const FCC_PROJECT_LINKS = [
 		liveLink: `${GH_PAGES_BASE}/technical-documentation-page`,
 	},
 	// JAVASCRIPT ALGORITHMS & DATA STRUCTURES CERTIFICATE
+	{
+		title: "Palindrome",
+		repoLink: `${GH_REPO_BASE}/palindrome-checker`,
+		isLive: false,
+		liveLink: `${GH_PAGES_BASE}/palindrome-checker`,
+	},
+	{
+		title: "Roman Numeral Converter",
+		repoLink: `${GH_REPO_BASE}/roman-numeral-converter`,
+		isLive: false,
+		liveLink: `${GH_PAGES_BASE}/roman-numeral-converter`,
+	},
+	{
+		title: "Caesars Cipher",
+		repoLink: `${GH_REPO_BASE}/caesars-cipher`,
+		isLive: false,
+		liveLink: `${GH_PAGES_BASE}/caesars-cipher`,
+	},
+	{
+		title: "Telephone Number Validator",
+		repoLink: `${GH_REPO_BASE}/telephone-number-validator`,
+		isLive: false,
+		liveLink: `${GH_PAGES_BASE}/telephone-number-validator`,
+	},
+	{
+		title: "Cash Register",
+		repoLink: `${GH_REPO_BASE}/cash-register`,
+		isLive: true,
+		liveLink: `${GH_PAGES_BASE}/cash-register`,
+	},
 	// FRONT END DEVELOPMENT LIBRARIES CERTIFICATE
+	{
+		title: "Random Quote Machine",
+		repoLink: `${GH_REPO_BASE}/random-quote-machine`,
+		isLive: true,
+		liveLink: `${GH_PAGES_BASE}/random-quote-machine`,
+	},
+	{
+		title: "Markdown Previewer",
+		repoLink: `${GH_REPO_BASE}/markdown-previewer`,
+		isLive: true,
+		liveLink: `${GH_PAGES_BASE}/markdown-previewer`,
+	},
+	{
+		title: "Drum Machine",
+		repoLink: `${GH_REPO_BASE}/drum-machine`,
+		isLive: true,
+		liveLink: `${GH_PAGES_BASE}/drum-machine`,
+	},
 	// DATA VISUALIZATION CERTIFICATE
 	// BACK END DEVELOPMENT & APIS CERTIFICATE
-	{
-		title: "Tribute Page",
-		repoLink: `${GH_REPO_BASE}/tribute-page`,
-		isLive: true,
-		liveLink: `${GH_PAGES_BASE}/tribute-page`,
-	},
 ];
 
 export default FCC_PROJECT_LINKS;
