@@ -6,24 +6,19 @@ const SocialNav = () => {
 		return (
 			<li
 				key={socLink.label}
-				className='social-nav__item'
+				className='social-nav__li'
 				style={{ margin: "0 1.5vmin" }}
 			>
-				<Link
-					href={socLink.url}
-					target='_blank'
-					className='ext-link'
-					style={{ fontSize: "6vmin" }}
-				>
-					{socLink.reactIcon}
+				<Link href={socLink.url} target='_blank' style={{ fontSize: "6vmin" }}>
+					<a className='ext-link'>{socLink.reactIcon}</a>
 				</Link>
 			</li>
 		);
 	});
 
 	return (
-		<nav id='SocialNav' className='social-nav'>
-			{socialNavItems}
+		<nav id='SocialNav'>
+			<ul className='social-nav'>{socialNavItems}</ul>
 		</nav>
 	);
 };
