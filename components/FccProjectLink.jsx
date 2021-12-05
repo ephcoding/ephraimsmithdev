@@ -13,12 +13,14 @@ const FccProjectLink = ({ projectMeta }) => {
 	) : null;
 
 	return (
-		<li>
-			<Link href={repoLink}>
-				<a target='_blank'>GitHub</a>
-			</Link>
+		<p>
+			<span>
+				<Link href={repoLink}>
+					<a target='_blank'>GitHub</a>
+				</Link>
+			</span>
 			{liveLinkEl}
-		</li>
+		</p>
 	);
 };
 
