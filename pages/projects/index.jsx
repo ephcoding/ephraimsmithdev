@@ -11,7 +11,7 @@ export default function ProjectsPage() {
 				</Link>
 			</div>
 			<div>
-				<Link href='/freecodecamp'>
+				<Link href='/projects/freecodecamp'>
 					<a>FreeCodeCamp</a>
 				</Link>
 			</div>
