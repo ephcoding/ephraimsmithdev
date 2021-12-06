@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../public/icon_orange.png";
 
-const PageBrandingLogo = logo => {
+const HeaderBrandingLogo = () => {
 	return (
 		<Link href='/' passHref>
 			<a>
 				<Image
 					src={logo}
-					alt='page logo'
-					className='page-branding-logo'
+					alt='ephcoding.com logo'
+					className='header-branding__logo'
 					height={50}
 					width={50}
 				/>
@@ -17,4 +18,4 @@ const PageBrandingLogo = logo => {
 	);
 };
 
-export default PageBrandingLogo;
+export default HeaderBrandingLogo;

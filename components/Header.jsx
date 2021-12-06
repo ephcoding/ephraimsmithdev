@@ -1,11 +1,11 @@
-import PageBranding from "./PageBranding";
+import HeaderBranding from "./HeaderBranding";
+import MainNav from "./MainNav";
 
-export default function Header({ pageBranding, navigation }) {
-	const { logo, pageTitle } = pageBranding;
+export default function Header() {
 	return (
 		<header className='header'>
-			<PageBranding logo={logo} pageTitle={pageTitle} />
-			{navigation}
+			<HeaderBranding />
+			<MainNav />
 		</header>
 	);
 }
