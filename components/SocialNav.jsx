@@ -1,16 +1,16 @@
 import { SOCIAL_NAV } from "../sitedata/navigation";
 import Link from "next/link";
+import { IconBase } from "react-icons/lib";
+import { FaIcons } from "react-icons/fa";
 
 const SocialNav = () => {
-	const socialNavItems = SOCIAL_NAV.map(socLink => {
+	const socialNavItems = SOCIAL_NAV.map(navItem => {
 		return (
-			<li
-				key={socLink.label}
-				className='social-nav__li'
-				style={{ margin: "0 1.5vmin" }}
-			>
-				<Link href={socLink.url} target='_blank' style={{ fontSize: "6vmin" }}>
-					<a className='ext-link'>{socLink.reactIcon}</a>
+			<li key={navItem.label} className='social-nav__li'>
+				<Link href={navItem.url}>
+					<a className='social-nav__li' target='_blank'>
+						{navItem.reactIcon}
+					</a>
 				</Link>
 			</li>
 		);
@@ -18,7 +18,6 @@ const SocialNav = () => {
 
 	return (
 		<nav id='SocialNav' className='social-nav'>
-			<span>FOLLOW: </span>
 			<ul className='social-nav-ul'>{socialNavItems}</ul>
 		</nav>
 	);
