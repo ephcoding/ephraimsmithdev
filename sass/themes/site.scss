@@ -1,8 +1,6 @@
-body {
+.page {
 	background: $black;
 	color: $white;
-}
-.page {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -11,4 +9,7 @@ body {
 		flex: 1;
 		padding: 1.5rem;
 	}
+}
+h2 {
+	margin: 1rem 0;
 }
