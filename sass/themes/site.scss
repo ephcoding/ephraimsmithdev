@@ -1,3 +1,14 @@
 body {
+	background: $black;
 	color: $white;
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	.content {
+		flex: 1;
+		padding: 1.5rem;
+	}
 }
