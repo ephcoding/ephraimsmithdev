@@ -9,21 +9,28 @@ import Link from "next/link";
 import MetaContainer from "@/components/MetaContainer";
 
 export default function BlogPost({
-	frontmatter: { title, subtitle, date, author, keywords, description },
+	frontmatter: {
+		leadTitle,
+		headingTitle,
+		description,
+		keywords,
+		author,
+		about,
+	},
 	content,
 	slug,
 }) {
-	const meta = { title, description, keywords };
+	const meta = { leadTitle, description, keywords };
 	return (
 		<MetaContainer meta={meta}>
 			<div className='blog-post'>
 				<Header />
 				<main className='blog-post__content'>
-					<article id={title} className='flex-fill pt-3'>
+					<article id={leadTitle} className='flex-fill pt-3'>
 						<h1 className='h1'>
-							<strong>{title}</strong>
+							<strong>{leadTitle}</strong>
 						</h1>
-						<h2 className=''>{subtitle}</h2>
+						<h2 className=''>{headingTitle}</h2>
 						<p className='fs-6'>by {author}</p>
 						<p className='text-end'>{date}</p>
 						<div className='separator'></div>
