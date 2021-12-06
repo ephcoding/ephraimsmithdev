@@ -1,12 +1,41 @@
-![EPHCODDING Site Repo Banner](./public/repo-banner__ephcoding-dot-com.png)
-![EPHCODDING Site Repo Banner](./public/section-banner__setup.png)
-![EPHCODDING Site Repo Banner](./public/section-banner__tech-used.png)
-![EPHCODDING Site Repo Banner](./public/section-banner__lessons-learned.png)
+![install ephcoding.com](./public/readme_install.png)
 
-## **ISSUES**
+clone repo
 
-### _Next <Images/> not loading_
+```shell
+git clone https://github.com/ephcoding/ephcoding-dot-com.git
+```
 
-Problem: note sure?
+install dependencies
 
-Solution: updated Next.js & React
+```shell
+npm i
+```
+
+![ephcoding.com build tools](./public/readme_setup.png)
+
+### **| `autoprefixer`**
+
+### **| `next`**
+
+### **| `sass`**
+
+### **| `marked`**
+
+### **| `gray-matter`**
+
+![use ephcoding.com](./public/readme_use-it.png)
+
+nav to project
+
+```shell
+cd <your/path>/ephcoding-dot-com
+```
+
+run dev environment
+
+```shell
+npm run dev
+```
+
+![contribute to ephcoding.com](./public/readme_contribute.png)
