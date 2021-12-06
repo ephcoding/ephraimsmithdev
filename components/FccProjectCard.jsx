@@ -5,8 +5,8 @@ const FccProjectCard = ({ projectMeta }) => {
 	return (
 		<li className='fcc-projects__card'>
 			<div className='card-content'>
-				<h2>{title}</h2>
 				<h3>{certificate}</h3>
+				<h2>{title}</h2>
 			</div>
 			<FccProjectLink projectMeta={projectMeta} />
 		</li>
