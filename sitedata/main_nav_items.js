@@ -4,8 +4,8 @@ export const MAIN_NAV_LINKS = [
 		URL: "/",
 	},
 	{
-		LABEL: "posts",
-		URL: "/posts",
+		LABEL: "blog",
+		URL: "/blog",
 	},
 	{
 		LABEL: "projects",
