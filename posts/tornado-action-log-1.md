@@ -1,10 +1,11 @@
 ---
-title: 'REACT SPA: Tornado Action'
-subtitle: 'Log 1: getting off the ground'
-date: 'September 20, 2021'
-author: 'Ephraim Smith'
-keywords: 'tornado, severe weather, historical weather, heatmap, google maps'
-description: ''
+leadTitle: "REACT SPA: Tornado Action"
+headingTitle: "Log 1: getting off the ground"
+date: "September 20, 2021"
+description: ""
+keywords: "tornado, severe weather, historical weather, heatmap, google maps"
+author: "Ephraim Smith"
+about: ""
 ---
 
 ### WHAT AM I DOING
