@@ -15,27 +15,30 @@ export const MAIN_NAV = [
 	},
 ];
 
-const iconStyles = {
-	color: "$black",
-	height: "1rem",
-};
+// const iconStyles = {
+// 	color: "$black",
+// 	height: "1rem",
+// };
 
 export const SOCIAL_NAV = [
 	{
 		label: "Github",
-		reactIcon: <FaGithub style={iconStyles} />,
+		reactIcon: <FaGithub size={30} title='GitHub icon' />,
+		title: "FaGithub",
 		url: "https://github.com/ephcoding",
 		username: "ephcoding",
 	},
 	{
 		label: "Twitter",
-		reactIcon: <FaTwitter style={iconStyles} />,
+		reactIcon: <FaTwitter size={30} title='Twitter icon' />,
+		title: "FaTwitter",
 		url: "https://www.twitter.com/ephcoding",
 		username: "ephcoding",
 	},
 	{
 		label: "LinkedIn",
-		reactIcon: <FaLinkedin style={iconStyles} />,
+		reactIcon: <FaLinkedin size={30} title='LinkedIn icon' />,
+		title: "FaLinkedin",
 		url: "https://www.linkedin.com/in/ephraimjsmith",
 		username: "ephraimjsmith",
 	},
