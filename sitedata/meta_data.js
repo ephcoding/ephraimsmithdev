@@ -1,16 +1,16 @@
-export const META_CONTAINER_DATA = {
+export const PAGE_META_DATA = {
 	blog: {
 		title: "Blog",
 		description: "",
 		keywords: "",
 	},
 	freecodecamp: {
-		title: "FreeCodeCamp",
+		title: "FreeCodeCamp Projects",
 		description: "",
 		keywords: "",
 	},
 	home: {
-		title: "Home",
+		title: "ephcoding.com",
 		description:
 			"ephcoding.com is home to Ephraim Smith and his documented adventures in software",
 		keywords:
