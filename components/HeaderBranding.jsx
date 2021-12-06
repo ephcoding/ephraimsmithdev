@@ -3,7 +3,7 @@ import HeaderBrandingLogo from "./HeaderBrandingLogo";
 const HeaderBranding = () => {
 	return (
 		<div className='page-branding'>
-			<HeaderBrandingLogo />
+			{/* <HeaderBrandingLogo /> */}
 			<span className='page-title'>Eph Coding</span>
 		</div>
 	);
