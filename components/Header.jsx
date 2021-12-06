@@ -8,7 +8,7 @@ export default function Header() {
 			<Branding />
 			<div className='header__nav'>
 				<MainNav />
-				<SocialNav />
+				{/* <SocialNav /> */}
 			</div>
 		</header>
 	);
