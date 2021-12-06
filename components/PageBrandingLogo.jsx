@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import ecLogo from "../public/icon_orange.png";
 
-const ECLogo = () => {
+const PageBrandingLogo = logo => {
 	return (
 		<Link href='/' passHref>
 			<a>
 				<Image
-					src={ecLogo}
-					alt='ephcoding logo'
-					className='ec-logo'
+					src={logo}
+					alt='page logo'
+					className='page-branding-logo'
 					height={50}
 					width={50}
 				/>
@@ -18,4 +17,4 @@ const ECLogo = () => {
 	);
 };
 
-export default ECLogo;
+export default PageBrandingLogo;
