@@ -1,4 +1,4 @@
-import { getCurrentYear } from "../utils/index";
+import { getCurrentYear } from "../utils/date";
 import Link from "next/link";
 import SocialNav from "@/components/SocialNav";
 
