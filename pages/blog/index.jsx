@@ -13,6 +13,9 @@ export default function Archives({ posts }) {
 			<div className='page blog-page'>
 				<Header />
 				<main className='content'>
+					<h1>
+						Blog<span className='white'> Posts</span>
+					</h1>
 					{posts.map((post, index) => {
 						return (
 							<div>

@@ -14,7 +14,9 @@ export default function FreeCodeCamp() {
 			<div className='page freecodecamp-page'>
 				<Header />
 				<main className='content'>
-					<h1>FreeCodeCamp Projects</h1>
+					<h1>
+						FreeCodeCamp <span className='white'>Projects</span>
+					</h1>
 
 					{FCC_PROJECT_META.map(({ certificate, projects }) => {
 						const projectCards = projects.map(project => (

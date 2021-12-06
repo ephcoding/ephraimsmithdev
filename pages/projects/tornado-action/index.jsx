@@ -12,7 +12,9 @@ const TornadoActionProject = () => {
 			<div className='page tornado-action-page'>
 				<Header />
 				<div className='content'>
-					<h1>Tornado Action</h1>
+					<h1>
+						<span className='white'>Tornado Action</span>
+					</h1>
 					<div>
 						<Link href='/projects'>
 							<a>{`<< Back`}</a>

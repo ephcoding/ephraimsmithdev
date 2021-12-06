@@ -12,7 +12,9 @@ export default function ProjectsPage() {
 			<div className='page projects-page'>
 				<Header />
 				<main className='content'>
-					<h1>PROJECTS</h1>
+					<h1>
+						Active<span className='white'> Projects</span>
+					</h1>
 					<div>
 						<Link href='/projects/tornado-action'>
 							<a>Tornado Action</a>
