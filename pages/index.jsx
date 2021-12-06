@@ -2,13 +2,13 @@ import MetaContainer from "@/components/MetaContainer";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PAGE_META_DATA } from "../sitedata/pages";
-import ECLogo from "@/components/ECLogo";
+import PageBrandingLogo from "@/components/PageBrandingLogo";
 import MainNav from "@/components/MainNav";
 
 export default function HomePage() {
 	const { home } = PAGE_META_DATA;
 	const pageBranding = {
-		logo: <ECLogo />,
+		logo: <PageBrandingLogo />,
 		pageTitle: home.title,
 	};
 
