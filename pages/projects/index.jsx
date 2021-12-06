@@ -9,9 +9,9 @@ export default function ProjectsPage() {
 
 	return (
 		<MetaContainer meta={projects}>
-			<div className='projects-page'>
+			<div className='page projects-page'>
 				<Header />
-				<main className='projects-page__content'>
+				<main className='content'>
 					<h1>PROJECTS</h1>
 					<div>
 						<Link href='/projects/tornado-action'>

@@ -6,13 +6,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PAGE_META_DATA } from "../../../sitedata/meta_data";
 
-export default function FreeCodeCamp() {
-	const { freecodecamp } = PAGE_META_DATA;
+export default function FreeCodeCamp(meta) {
 	return (
-		<MetaContainer meta={freecodecamp}>
-			<div className='freecodecamp-page'>
+		<MetaContainer meta={meta}>
+			<div className='page freecodecamp-page'>
 				<Header />
-				<main className='freecodecamp-page__content'>
+				<main className='content'>
 					<h1>FreeCodeCamp Projects</h1>
 					<ul className='fcc-projects'>
 						{FCC_PROJECT_LINKS.map(project => {

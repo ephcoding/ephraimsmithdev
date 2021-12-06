@@ -8,9 +8,9 @@ export default function HomePage() {
 
 	return (
 		<MetaContainer meta={home}>
-			<div className='home-page'>
+			<div className='page home-page'>
 				<Header />
-				<main className='home-page__content'></main>
+				<main className='content'></main>
 				<Footer />
 			</div>
 		</MetaContainer>
