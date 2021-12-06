@@ -1,23 +1,23 @@
-import { MAIN_NAV_LINKS } from "../sitedata/main_nav_items";
+import { MAIN_NAV } from "../sitedata/navigation";
 import Link from "next/link";
 
 const MainNav = () => {
-	const mainNavItems = MAIN_NAV_LINKS.map(navItem => {
+	const mainNavItems = MAIN_NAV.map(navItem => {
 		return (
 			<li
-				key={navItem.LABEL}
+				key={navItem.label}
 				className='main-nav__li'
 				style={{ margin: "0 1.5vmin" }}
 			>
-				<Link href={navItem.URL}>
-					<a className='nav-btn'>{navItem.LABEL}</a>
+				<Link href={navItem.url}>
+					<a className='nav-btn'>{navItem.label}</a>
 				</Link>
 			</li>
 		);
 	});
 	return (
-		<nav id='MainNav'>
-			<ul className='main-nav'>{mainNavItems}</ul>
+		<nav id='MainNav' className='main-nav'>
+			<ul className='main-nav-ul'>{mainNavItems}</ul>
 		</nav>
 	);
 };

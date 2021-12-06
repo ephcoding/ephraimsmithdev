@@ -1,8 +1,8 @@
-import { SOCIAL_NAV_LINKS } from "../sitedata/social_nav_items";
+import { SOCIAL_NAV } from "../sitedata/navigation";
 import Link from "next/link";
 
 const SocialNav = () => {
-	const socialNavItems = SOCIAL_NAV_LINKS.map(socLink => {
+	const socialNavItems = SOCIAL_NAV.map(socLink => {
 		return (
 			<li
 				key={socLink.label}
@@ -17,8 +17,9 @@ const SocialNav = () => {
 	});
 
 	return (
-		<nav id='SocialNav'>
-			<ul className='social-nav'>{socialNavItems}</ul>
+		<nav id='SocialNav' className='social-nav'>
+			<span>FOLLOW: </span>
+			<ul className='social-nav-ul'>{socialNavItems}</ul>
 		</nav>
 	);
 };
