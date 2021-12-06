@@ -5,12 +5,14 @@
 // -- CSS RESET by Eric Meyer
 // http://meyerweb.com/eric/tools/css/reset/
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+* {
+	box-sizing: border-box;
+}
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
 hr {
-	box-sizing: content-box;
 	height: 0;
 	overflow: visible;
 }
@@ -100,7 +102,6 @@ fieldset {
 	padding: 0.35em 0.75em 0.625em;
 }
 legend {
-	box-sizing: border-box;
 	color: inherit;
 	display: table;
 	max-width: 100%;
@@ -115,7 +116,6 @@ textarea {
 }
 [type="checkbox"],
 [type="radio"] {
-	box-sizing: border-box;
 	padding: 0;
 }
 [type="number"]::-webkit-inner-spin-button,
