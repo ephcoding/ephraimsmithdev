@@ -2,16 +2,16 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export const MAIN_NAV = [
 	{
-		LABEL: "home",
-		URL: "/",
+		label: "home",
+		url: "/",
 	},
 	{
-		LABEL: "blog",
-		URL: "/blog",
+		label: "blog",
+		url: "/blog",
 	},
 	{
-		LABEL: "projects",
-		URL: "/projects",
+		label: "projects",
+		url: "/projects",
 	},
 ];
 
