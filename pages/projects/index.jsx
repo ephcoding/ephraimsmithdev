@@ -2,7 +2,7 @@ import MetaContainer from "@/components/MetaContainer";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META_DATA } from "../../sitedata/meta_data";
+import { PAGE_META_DATA } from "../../sitedata/pages";
 
 export default function ProjectsPage() {
 	const { projects } = PAGE_META_DATA;

@@ -1,10 +1,10 @@
 import MetaContainer from "@/components/MetaContainer";
 import Link from "next/link";
-import FCC_PROJECT_META from "../../../sitedata/fcc_project_links.js";
+import FCC_PROJECT_META from "../../../sitedata/fcc_projects.js";
 import FccProjectCard from "@/components/FccProjectCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META_DATA } from "../../../sitedata/meta_data";
+import { PAGE_META_DATA } from "../../../sitedata/pages";
 
 export default function FreeCodeCamp() {
 	const { freecodecamp } = PAGE_META_DATA;
