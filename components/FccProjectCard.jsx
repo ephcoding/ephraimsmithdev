@@ -1,13 +1,14 @@
 import FccProjectLink from "@/components/FccProjectLink";
 
 const FccProjectCard = ({ projectMeta }) => {
-	const { title } = projectMeta;
+	const { title, certificate } = projectMeta;
 	return (
 		<li className='fcc-projects__card'>
-			{/* <div className='fcc-projects__card'> */}
-			<h2>{title}</h2>
+			<div className='card-content'>
+				<h2>{title}</h2>
+				<h3>{certificate}</h3>
+			</div>
 			<FccProjectLink projectMeta={projectMeta} />
-			{/* </div> */}
 		</li>
 	);
 };
