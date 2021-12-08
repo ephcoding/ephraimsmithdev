@@ -23,4 +23,9 @@ export const PAGE_META_DATA = {
 		description: "",
 		keywords: "",
 	},
+	tornado_action: {
+		title: "Tornado Action",
+		description: "",
+		keywords: "",
+	},
 };
