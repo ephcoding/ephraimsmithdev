@@ -1,11 +1,11 @@
-import HeaderBranding from "./HeaderBranding";
-import MainNav from "./MainNav";
+import ECLogo from "@/components/ECLogo";
+import Navigation from "./Navigation";
 
 export default function Header() {
 	return (
 		<header className='header'>
-			<HeaderBranding />
-			<MainNav />
+			<ECLogo />
+			<Navigation />
 		</header>
 	);
 }

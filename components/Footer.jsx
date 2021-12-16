@@ -1,10 +1,8 @@
-import SocialNav from "@/components/SocialNav";
-
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			<span>FOLLOW:</span>
-			<SocialNav />
+			Copyright &copy; {new Date().getFullYear()} | Ephraim Smith | Some Rights
+			Reserved.
 		</footer>
 	);
 }

@@ -1,10 +1,10 @@
 import Head from "next/head";
 
-export default function MetaContainer(props) {
+export default function Meta(props) {
 	const { title, description, keywords } = props.meta;
 
 	return (
-		<div id='MetaContainer' className='meta-container'>
+		<div id='Meta' className='meta'>
 			<Head>
 				<title>{title}</title>
 				<meta name='keywords' content={keywords} />

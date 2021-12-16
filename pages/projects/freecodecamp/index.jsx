@@ -1,16 +1,16 @@
-import MetaContainer from "@/components/MetaContainer";
+import Meta from "@/components/Meta";
 import Link from "next/link";
 import FCC_PROJECT_META from "../../../sitedata/fcc_projects.js";
-import FccProjectCard from "@/components/FccProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META_DATA } from "../../../sitedata/pages";
+import { PAGE_META } from "../../../sitedata/page-meta";
 
 export default function FreeCodeCamp() {
-	const { freecodecamp } = PAGE_META_DATA;
+	const { freecodecamp } = PAGE_META;
 
 	return (
-		<MetaContainer meta={freecodecamp}>
+		<Meta meta={freecodecamp}>
 			<div className='page freecodecamp-page'>
 				<Header />
 				<main className='content'>
@@ -20,7 +20,7 @@ export default function FreeCodeCamp() {
 
 					{FCC_PROJECT_META.map(({ certificate, projects }) => {
 						const projectCards = projects.map(project => (
-							<FccProjectCard key={project.repoLink} projectMeta={project} />
+							<ProjectCard key={project.repoLink} projectMeta={project} />
 						));
 
 						return (
@@ -33,6 +33,6 @@ export default function FreeCodeCamp() {
 				</main>
 				<Footer />
 			</div>
-		</MetaContainer>
+		</Meta>
 	);
 }

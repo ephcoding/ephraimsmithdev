@@ -1,18 +1,18 @@
-import MetaContainer from "@/components/MetaContainer";
+import Meta from "@/components/Meta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META_DATA } from "../sitedata/pages";
+import { PAGE_META } from "../sitedata/page-meta";
 
 export default function HomePage() {
-	const { home } = PAGE_META_DATA;
+	const { home } = PAGE_META;
 
 	return (
-		<MetaContainer meta={home}>
+		<Meta meta={home}>
 			<div className='page home-page'>
 				<Header />
 				<main className='content'></main>
 				<Footer />
 			</div>
-		</MetaContainer>
+		</Meta>
 	);
 }

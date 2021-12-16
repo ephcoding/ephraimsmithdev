@@ -1,6 +1,6 @@
 import FccProjectLink from "@/components/FccProjectLink";
 
-const FccProjectCard = ({ projectMeta }) => {
+const ProjectCard = ({ projectMeta }) => {
 	const { title, certificate } = projectMeta;
 	return (
 		<li className='fcc-projects__card'>
@@ -13,4 +13,4 @@ const FccProjectCard = ({ projectMeta }) => {
 	);
 };
 
-export default FccProjectCard;
+export default ProjectCard;

@@ -1,10 +1,6 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaBook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-export const MAIN_NAV = [
-	{
-		label: "home",
-		url: "/",
-	},
+export const NAVIGATION = [
 	{
 		label: "blog",
 		url: "/blog",
@@ -13,33 +9,24 @@ export const MAIN_NAV = [
 		label: "projects",
 		url: "/projects",
 	},
-];
-
-// const iconStyles = {
-// 	color: "$black",
-// 	height: "1rem",
-// };
-
-export const SOCIAL_NAV = [
 	{
-		label: "Github",
-		reactIcon: <FaGithub size={30} title='GitHub icon' />,
-		title: "FaGithub",
+		label: "resources",
+		url: "/resources",
+		icon: <FaBook size={20} title='resources' />,
+	},
+	{
+		label: "github",
 		url: "https://github.com/ephcoding",
-		username: "ephcoding",
+		icon: <FaGithub size={20} title='GitHub' />,
 	},
 	{
-		label: "Twitter",
-		reactIcon: <FaTwitter size={30} title='Twitter icon' />,
-		title: "FaTwitter",
+		label: "twitter",
 		url: "https://www.twitter.com/ephcoding",
-		username: "ephcoding",
+		icon: <FaTwitter size={20} title='Twitter' />,
 	},
 	{
-		label: "LinkedIn",
-		reactIcon: <FaLinkedin size={30} title='LinkedIn icon' />,
-		title: "FaLinkedin",
+		label: "linkedin",
 		url: "https://www.linkedin.com/in/ephraimjsmith",
-		username: "ephraimjsmith",
+		icon: <FaLinkedin size={20} title='LinkedIn' />,
 	},
 ];

@@ -1,14 +1,14 @@
-import MetaContainer from "@/components/MetaContainer";
+import Meta from "@/components/Meta";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META_DATA } from "../../sitedata/pages";
+import { PAGE_META } from "../../sitedata/page-meta";
 
 export default function ProjectsPage() {
-	const { projects } = PAGE_META_DATA;
+	const { projects } = PAGE_META;
 
 	return (
-		<MetaContainer meta={projects}>
+		<Meta meta={projects}>
 			<div className='page projects-page'>
 				<Header />
 				<main className='content'>
@@ -33,6 +33,6 @@ export default function ProjectsPage() {
 				</main>
 				<Footer />
 			</div>
-		</MetaContainer>
+		</Meta>
 	);
 }

@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { NavBtn } from "@/components/NavBtn";
 import Link from "next/link";
-import MetaContainer from "@/components/MetaContainer";
+import Meta from "@/components/Meta";
 
 export default function BlogPost({
 	frontmatter: {
@@ -22,7 +22,7 @@ export default function BlogPost({
 }) {
 	const meta = { leadTitle, description, keywords };
 	return (
-		<MetaContainer meta={meta}>
+		<Meta meta={meta}>
 			<div className='blog-post'>
 				<Header />
 				<main className='blog-post__content'>
@@ -41,7 +41,7 @@ export default function BlogPost({
 				</main>
 				<Footer />
 			</div>
-		</MetaContainer>
+		</Meta>
 	);
 }
 

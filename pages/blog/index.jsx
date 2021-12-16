@@ -1,15 +1,15 @@
 import { getPosts } from "@/lib/posts";
 import Link from "next/link";
-import MetaContainer from "@/components/MetaContainer";
+import Meta from "@/components/Meta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META_DATA } from "../../sitedata/pages";
+import { PAGE_META } from "../../sitedata/page-meta";
 
 export default function Archives({ posts }) {
-	const { blog } = PAGE_META_DATA;
+	const { blog } = PAGE_META;
 
 	return (
-		<MetaContainer meta={blog}>
+		<Meta meta={blog}>
 			<div className='page blog-page'>
 				<Header />
 				<main className='content'>
@@ -31,7 +31,7 @@ export default function Archives({ posts }) {
 				</main>
 				<Footer />
 			</div>
-		</MetaContainer>
+		</Meta>
 	);
 }
 

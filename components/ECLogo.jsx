@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/icon_orange.png";
 
-const HeaderBrandingLogo = () => {
+const ECLogo = () => {
 	return (
 		<Link href='/' passHref>
 			<a>
@@ -18,4 +18,4 @@ const HeaderBrandingLogo = () => {
 	);
 };
 
-export default HeaderBrandingLogo;
+export default ECLogo;

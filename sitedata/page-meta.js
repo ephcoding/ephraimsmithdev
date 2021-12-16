@@ -1,4 +1,4 @@
-export const PAGE_META_DATA = {
+export const PAGE_META = {
 	blog: {
 		title: "Blog Posts",
 		description: "",
@@ -19,12 +19,12 @@ export const PAGE_META_DATA = {
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
 	},
 	projects: {
-		title: "Active Projects",
+		title: "Projects",
 		description: "",
 		keywords: "",
 	},
-	tornado_action: {
-		title: "Tornado Action",
+	resources: {
+		title: "Resources",
 		description: "",
 		keywords: "",
 	},
