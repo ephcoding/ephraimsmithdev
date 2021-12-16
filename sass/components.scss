@@ -2,20 +2,7 @@
 // *********************************************************
 // ----- buttons
 // *********************************************************
-.nav-link {
-	// border: 2px solid $yellow;
-	color: inherit;
-	font-size: 5vmin;
-	margin: 0.5rem 0.75rem;
-	padding: 0 0.75rem;
-	text-align: center;
-	// width: 24vmax;
 
-	&:hover {
-		// background-color: $yellow;
-		// color: $black;
-	}
-}
 // *********************************************************
 // ----- cards
 // *********************************************************
@@ -24,7 +11,7 @@
 	flex-direction: column;
 
 	& .card-content {
-		background: $grey;
+		background: $charcoal;
 		color: $white;
 		flex: 1;
 		padding: 1rem;
@@ -114,8 +101,19 @@
 // *********************************************************
 // ----- links
 // *********************************************************
-.social-nav__li:hover {
-	color: $blue;
+.nav-link {
+	// border: 2px solid $yellow;
+	color: inherit;
+	font-size: 5vmin;
+	margin: 0.5rem 0.75rem;
+	padding: 0 0.75rem;
+	text-align: center;
+	// width: 24vmax;
+
+	&:hover {
+		// background-color: $yellow;
+		// color: $black;
+	}
 }
 // *********************************************************
 // ----- navigation

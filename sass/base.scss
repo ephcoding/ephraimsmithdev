@@ -1,3 +1,9 @@
+.link:hover {
+	color: $yellow;
+}
+.link.ext:hover {
+	color: $blue;
+}
 .white {
 	color: $white;
 }
