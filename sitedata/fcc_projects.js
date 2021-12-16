@@ -1,9 +1,16 @@
 const GH_REPO_BASE = "https://github.com/ephcoding";
 const GH_PAGES_BASE = "https://ephcoding.github.io";
 
+// CERTIFICATE TITLES
+const RWD = "RESPONSIVE WEB DESIGN";
+const JS = "JAVASCRIPT ALGORITHMS & DATA STRUCTURES";
+const FEDL = "FRONT END DEVELOPMENT LIBRARIES";
+const DV = "DATA VISUALIZATION";
+const BEDA = "BACKEND DEVELOPMENT AND APIS";
+
 const FCC_PROJECT_META = [
 	{
-		certificate: "RESPONSIVE WEB DESIGN",
+		certificate: RWD,
 		projects: [
 			{
 				title: "Tribute Page",
@@ -38,7 +45,7 @@ const FCC_PROJECT_META = [
 		],
 	},
 	{
-		certificate: "JAVASCRIPT ALGORITHMS & DATA STRUCTURES",
+		certificate: JS,
 		projects: [
 			{
 				title: "Palindrome",
@@ -73,7 +80,7 @@ const FCC_PROJECT_META = [
 		],
 	},
 	{
-		certificate: "FRONT END DEVELOPMENT LIBRARIES",
+		certificate: FEDL,
 		projects: [
 			{
 				title: "Random Quote Machine",

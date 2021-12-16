@@ -3,7 +3,7 @@ import Link from "next/link";
 import Meta from "@/components/Meta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../../sitedata/page-meta";
+import { PAGE_META } from "../../sitedata/meta";
 
 export default function Archives({ posts }) {
 	const { blog } = PAGE_META;

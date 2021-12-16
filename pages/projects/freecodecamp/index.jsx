@@ -4,7 +4,7 @@ import FCC_PROJECT_META from "../../../sitedata/fcc_projects.js";
 import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../../../sitedata/page-meta";
+import { PAGE_META } from "../../../sitedata/meta";
 
 export default function FreeCodeCamp() {
 	const { freecodecamp } = PAGE_META;

@@ -2,7 +2,7 @@ import Meta from "@/components/Meta";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../../../sitedata/page-meta";
+import { PAGE_META } from "../../../sitedata/meta";
 
 const TornadoAction = () => {
 	const { tornado_action } = PAGE_META;
