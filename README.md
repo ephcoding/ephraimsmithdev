@@ -24,7 +24,7 @@ npm i
 
 ### **| `gray-matter`**
 
-![use ephcoding.com](./public/readme_use-it.png)
+![use ephcoding.com](./public/readme_run-it.png)
 
 nav to project
 
@@ -38,4 +38,4 @@ run dev environment
 npm run dev
 ```
 
-![contribute to ephcoding.com](./public/readme_contribute.png)
+![contribute to ephcoding.com](./public/readme_connect.png)
