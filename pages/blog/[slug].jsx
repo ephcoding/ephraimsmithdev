@@ -23,7 +23,7 @@ export default function BlogPost({
 	const meta = { leadTitle, description, keywords };
 	return (
 		<Meta meta={meta}>
-			<div className='blog-post'>
+			<div className='page blog-post'>
 				<Header />
 				<main className='blog-post__content'>
 					<article id={leadTitle} className='flex-fill pt-3'>
@@ -31,8 +31,7 @@ export default function BlogPost({
 							<strong>{leadTitle}</strong>
 						</h1>
 						<h2 className=''>{headingTitle}</h2>
-						<p className='fs-6'>by {author}</p>
-						<p className='text-end'>{date}</p>
+						{/* <p className='text-end'>{date}</p> */}
 						<div className='separator'></div>
 						{/* <div className=''> */}
 						<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>

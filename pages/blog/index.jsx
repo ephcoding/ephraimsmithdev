@@ -14,14 +14,16 @@ export default function Archives({ posts }) {
 				<Header />
 				<main className='content'>
 					<h1>
-						Blog<span className='white'> Posts</span>
+						<span className='blue'>Blog</span> Posts
 					</h1>
 					{posts.map((post, index) => {
 						return (
 							<div>
 								<Link href={`/blog/${post.slug}`} passHref>
 									<a>
-										<h3>{post.frontmatter.leadTitle}</h3>
+										<h3 className='blog__post-'>
+											{post.frontmatter.leadTitle}
+										</h3>
 									</a>
 								</Link>
 								<h2>{post.frontmatter.headingTitle}</h2>

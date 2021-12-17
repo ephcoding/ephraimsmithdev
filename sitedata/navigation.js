@@ -1,4 +1,10 @@
-import { FaBook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+	FaBook,
+	FaGithub,
+	FaInstagram,
+	FaLinkedin,
+	FaTwitter,
+} from "react-icons/fa";
 
 export const NAVIGATION = [
 	{
@@ -18,6 +24,11 @@ export const NAVIGATION = [
 		label: "github",
 		url: "https://github.com/ephcoding",
 		icon: <FaGithub size={20} title='GitHub' />,
+	},
+	{
+		label: "instagram",
+		url: "https://www.instagram.com/ephcoding/",
+		icon: <FaInstagram size={20} title='GitHub' />,
 	},
 	{
 		label: "twitter",

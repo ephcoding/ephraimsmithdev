@@ -57,6 +57,7 @@
 // ----- footer
 // *********************************************************
 .footer {
+	color: $grey;
 	text-align: center;
 	padding: $sm 0;
 }
@@ -65,6 +66,7 @@
 // *********************************************************
 .header {
 	align-items: center;
+	color: $grey;
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
@@ -75,6 +77,12 @@
 
 		.nav__a {
 			display: inline-block;
+			padding: 0 0.75rem;
+			text-align: center;
+
+			&:hover {
+				color: $white;
+			}
 		}
 	}
 }
@@ -92,28 +100,4 @@
 	margin: 0 auto;
 	max-width: 700px;
 	width: 45vw;
-}
-// *********************************************************
-// ----- links
-// *********************************************************
-.nav__a {
-	// border: 2px solid $yellow;
-	color: inherit;
-	font-size: 5vmin;
-	padding: 0 0.75rem;
-	text-align: center;
-	// width: 24vmax;
-
-	&:hover {
-		// background-color: $yellow;
-		// color: $black;
-	}
-}
-// *********************************************************
-// ----- navigation
-// *********************************************************
-.main-nav-ul,
-.social-nav,
-.social-nav-ul {
-	display: flex;
 }

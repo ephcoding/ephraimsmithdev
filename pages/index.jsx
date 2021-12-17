@@ -10,7 +10,21 @@ export default function HomePage() {
 		<Meta meta={home}>
 			<div className='page home-page'>
 				<Header />
-				<main className='content'></main>
+				<main className='content'>
+					<h1>
+						<span className='blue'>Ephraim</span> Smith
+					</h1>
+					<article>
+						<p>Hey, guys. I'm Ephraim.</p>
+						<br />
+						<p>
+							I took the long way around to finding software. In a past life I
+							built houses, played Army, sold motorcycles, jumped out of
+							airplanes, played guitar, operated heavy equipment, and most
+							recently quality-assured software.
+						</p>
+					</article>
+				</main>
 				<Footer />
 			</div>
 		</Meta>

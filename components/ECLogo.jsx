@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/ephcoding-icon.png";
+import logo from "../public/ephcoding-grey.svg";
 
 const ECLogo = () => {
 	return (
