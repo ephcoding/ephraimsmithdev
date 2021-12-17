@@ -6,8 +6,8 @@ export const NAVIGATION = [
 		url: "/blog",
 	},
 	{
-		label: "projects",
-		url: "/projects",
+		label: "builds",
+		url: "/builds",
 	},
 	{
 		label: "resources",

@@ -5,23 +5,21 @@ import Footer from "@/components/Footer";
 import { PAGE_META } from "../../sitedata/meta";
 
 export default function ProjectsPage() {
-	const { projects } = PAGE_META;
+	const { builds } = PAGE_META;
 
 	return (
-		<Meta meta={projects}>
-			<div className='page projects-page'>
+		<Meta meta={builds}>
+			<div className='page builds-page'>
 				<Header />
 				<main className='content'>
-					<h1>
-						Active<span className='white'> Projects</span>
-					</h1>
+					<h1>{builds}</h1>
 					<div>
-						<Link href='/projects/tornado-action'>
+						<Link href='/builds/tornado-action'>
 							<a>Tornado Action</a>
 						</Link>
 					</div>
 					<div>
-						<Link href='/projects/freecodecamp'>
+						<Link href='/builds/freecodecamp'>
 							<a>FreeCodeCamp</a>
 						</Link>
 					</div>

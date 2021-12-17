@@ -69,18 +69,13 @@
 	justify-content: space-between;
 	padding: 1rem;
 
-	.page-branding {
+	.nav__ul {
 		align-items: center;
 		display: flex;
 
-		.site-title {
+		.nav__a {
 			display: inline-block;
 		}
-	}
-
-	&__nav {
-		align-items: center;
-		display: flex;
 	}
 }
 // *********************************************************
@@ -101,11 +96,10 @@
 // *********************************************************
 // ----- links
 // *********************************************************
-.nav-link {
+.nav__a {
 	// border: 2px solid $yellow;
 	color: inherit;
 	font-size: 5vmin;
-	margin: 0.5rem 0.75rem;
 	padding: 0 0.75rem;
 	text-align: center;
 	// width: 24vmax;

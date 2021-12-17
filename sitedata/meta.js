@@ -18,8 +18,8 @@ export const PAGE_META = {
 		keywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
 	},
-	projects: {
-		title: "Projects",
+	builds: {
+		title: "Builds",
 		description: "",
 		keywords: "",
 	},
