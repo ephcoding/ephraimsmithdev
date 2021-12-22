@@ -1,5 +1,6 @@
 import {
 	FaBook,
+	FaDiscord,
 	FaGithub,
 	FaInstagram,
 	FaLinkedin,

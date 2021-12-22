@@ -1,12 +1,12 @@
 ![install ephcoding.com](./public/readme_install.png)
 
-clone repo
+### **CLONE REPO**
 
 ```shell
 git clone https://github.com/ephcoding/ephcoding-dot-com.git
 ```
 
-install dependencies
+### **INSTALL DEPENDENCIES**
 
 ```shell
 npm i
@@ -26,13 +26,13 @@ npm i
 
 ![use ephcoding.com](./public/readme_run-it.png)
 
-nav to project
+### **NAV TO PROJECT**
 
 ```shell
 cd <your/path>/ephcoding-dot-com
 ```
 
-run dev environment
+### **RUN IT!**
 
 ```shell
 npm run dev
