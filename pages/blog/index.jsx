@@ -1,15 +1,15 @@
 import { getPosts } from "@/lib/posts";
 import Link from "next/link";
-import Meta from "@/components/Meta";
+import Page from "@/components/Page";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../../sitedata/meta";
+import { PAGE_INFO } from "../../sitedata/page_info";
 
 export default function Archives({ posts }) {
-	const { blog } = PAGE_META;
+	const { blog } = PAGE_INFO;
 
 	return (
-		<Meta meta={blog}>
+		<Page pageInfo={blog}>
 			<div className='page blog-page'>
 				<Header />
 				<main className='content'>
@@ -33,7 +33,7 @@ export default function Archives({ posts }) {
 				</main>
 				<Footer />
 			</div>
-		</Meta>
+		</Page>
 	);
 }
 

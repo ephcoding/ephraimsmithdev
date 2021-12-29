@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { NavBtn } from "@/components/NavBtn";
 import Link from "next/link";
-import Meta from "@/components/Meta";
+import Meta from "@/components/Page";
 
 export default function BlogPost({
 	frontmatter: {

@@ -1,32 +1,23 @@
-import Meta from "@/components/Meta";
+import Page from "@/components/Page";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../sitedata/meta";
+import { PAGE_INFO } from "../sitedata/page_info";
 
 export default function HomePage() {
-	const { home } = PAGE_META;
+	const { home } = PAGE_INFO;
 
 	return (
-		<Meta meta={home}>
-			<div className='page home-page'>
-				<Header />
-				<main className='content'>
-					<h1>
-						<span className='blue'>Ephraim</span> Smith
-					</h1>
-					<article>
-						<p>Hey, guys. I'm Ephraim.</p>
-						<br />
-						<p>
-							I took the long way around to finding software. In a past life I
-							built houses, played Army, sold motorcycles, jumped out of
-							airplanes, played guitar, operated heavy equipment, and most
-							recently quality-assured software.
-						</p>
-					</article>
-				</main>
-				<Footer />
-			</div>
-		</Meta>
+		<Page pageInfo={home}>
+			<article>
+				<p>Hey, guys. I'm Ephraim.</p>
+				<br />
+				<p>
+					I took the long way around to finding software. In a past life I built
+					houses, played Army, sold motorcycles, jumped out of airplanes, played
+					guitar, operated heavy equipment, and most recently quality-assured
+					software.
+				</p>
+			</article>
+		</Page>
 	);
 }
