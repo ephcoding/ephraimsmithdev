@@ -1,6 +1,4 @@
 import Page from "@/components/Page";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { PAGE_INFO } from "../sitedata/page_info";
 
 export default function HomePage() {

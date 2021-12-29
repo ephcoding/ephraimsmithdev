@@ -1,4 +1,4 @@
-import { getPosts } from "@/lib/posts";
+import { getPosts } from "src/lib/posts";
 import Link from "next/link";
 import Page from "@/components/Page";
 import Header from "@/components/Header";
