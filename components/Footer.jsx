@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			&copy; {new Date().getFullYear()} Ephraim Smith | ephcoding.com
+			&copy; {new Date().getFullYear()} ephraimsmith.dev
 		</footer>
 	);
 }
