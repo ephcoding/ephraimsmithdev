@@ -1,27 +1,17 @@
 import Page from "@/components/Page";
 import Link from "next/link";
-import { PAGE_INFO } from "../../sitedata/page_info";
+import PAGE_INFO from "../../sitedata/page_info";
+import PROJECT_CARD_INFO from "../../sitedata/active_projects";
+import Card from "@/components/Card";
 
 export default function ProjectsPage() {
-	const { projects } = PAGE_INFO;
+	const { projects: projectPageInfo } = PAGE_INFO;
 
-	return (
-		<Page pageInfo={projects}>
-			<div>
-				<Link href='/builds/tornado-action'>
-					<a>Tornado Action</a>
-				</Link>
-			</div>
-			<div>
-				<Link href='/builds/freecodecamp'>
-					<a>FreeCodeCamp</a>
-				</Link>
-			</div>
-			<div>
-				<Link href='/'>
-					<a>HOME</a>
-				</Link>
-			</div>
-		</Page>
-	);
+	const activeProjectsCards = PROJECT_CARD_INFO.map(project => (
+		<ul className='project-card-list'>
+			<Card cardMeta={project} />
+		</ul>
+	));
+
+	return <Page pageInfo={projectPageInfo}>{activeProjectsCards}</Page>;
 }

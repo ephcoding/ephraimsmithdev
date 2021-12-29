@@ -1,7 +1,7 @@
 import Meta from "@/components/Page";
 import Link from "next/link";
 import FCC_PROJECTS from "../../../sitedata/fcc_projects.js";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/Card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PAGE_INFO } from "../../../sitedata/page_info";

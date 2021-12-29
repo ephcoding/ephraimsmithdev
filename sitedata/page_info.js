@@ -1,4 +1,4 @@
-export const PAGE_INFO = {
+const PAGE_INFO = {
 	freecodecamp: {
 		cssClass: "fcc",
 		description: "",
@@ -36,3 +36,5 @@ export const PAGE_INFO = {
 		title: "Resources",
 	},
 };
+
+export default PAGE_INFO;
