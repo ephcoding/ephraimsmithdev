@@ -5,17 +5,11 @@ import {
 	FaLinkedin,
 	FaTwitter,
 } from "react-icons/fa";
-import ModevxIcon from "@/components/ModevxIcon";
 
 export const NAVIGATION = [
 	{
 		label: "projects",
 		url: "/projects",
-	},
-	{
-		label: "modevx",
-		url: "https://modevx.com",
-		icon: <ModevxIcon />,
 	},
 	{
 		label: "github",
