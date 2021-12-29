@@ -1,11 +1,11 @@
-import Meta from "@/components/Meta";
+import Meta from "@/components/Page";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../../sitedata/meta";
+import { PAGE_INFO } from "../../sitedata/page_info";
 
 export default function ProjectsPage() {
-	const { builds } = PAGE_META;
+	const { builds } = PAGE_INFO;
 
 	return (
 		<Meta meta={builds}>

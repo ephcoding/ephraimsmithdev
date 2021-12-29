@@ -1,13 +1,13 @@
-import Meta from "@/components/Meta";
+import Meta from "@/components/Page";
 import Link from "next/link";
 import FCC_PROJECT_META from "../../../sitedata/fcc_projects.js";
 import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_META } from "../../../sitedata/meta";
+import { PAGE_INFO } from "../../../sitedata/page_info";
 
 export default function FreeCodeCamp() {
-	const { freecodecamp } = PAGE_META;
+	const { freecodecamp } = PAGE_INFO;
 
 	return (
 		<Meta meta={freecodecamp}>
