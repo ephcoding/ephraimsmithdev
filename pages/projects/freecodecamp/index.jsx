@@ -1,6 +1,6 @@
 import Meta from "@/components/Page";
 import Link from "next/link";
-import FCC_PROJECT_META from "../../../sitedata/fcc_projects.js";
+import FCC_PROJECTS from "../../../sitedata/fcc_projects.js";
 import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,7 +18,7 @@ export default function FreeCodeCamp() {
 						FreeCodeCamp <span className='white'>Projects</span>
 					</h1>
 
-					{FCC_PROJECT_META.map(({ certificate, projects }) => {
+					{FCC_PROJECTS.map(({ certificate, projects }) => {
 						const projectCards = projects.map(project => (
 							<ProjectCard key={project.repoLink} projectMeta={project} />
 						));

@@ -8,7 +8,7 @@ const FEDL = "FRONT END DEVELOPMENT LIBRARIES";
 const DV = "DATA VISUALIZATION";
 const BEDA = "BACKEND DEVELOPMENT AND APIS";
 
-const FCC_PROJECT_META = [
+const FCC_PROJECTS = [
 	{
 		certificate: RWD,
 		projects: [
@@ -110,4 +110,4 @@ const FCC_PROJECT_META = [
 	},
 ];
 
-export default FCC_PROJECT_META;
+export default FCC_PROJECTS;
