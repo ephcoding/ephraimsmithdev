@@ -5,15 +5,24 @@ import {
 	FaLinkedin,
 	FaTwitter,
 } from "react-icons/fa";
+import Image from "next/image";
+// import ModevxIcon from "../components/ModevxIcon";
+// import "../sass/variables.scss";
 
 export const NAVIGATION = [
 	{
-		label: "blog",
-		url: "/blog",
+		label: "projects",
+		url: "/projects",
 	},
 	{
-		label: "builds",
-		url: "/builds",
+		label: "modevx",
+		url: "https://modevx.com",
+		// icon: <ModevxIcon height={25} width={25} fill={`${$grey}`} />,
+	},
+	{
+		label: "github",
+		url: "https://github.com/ephraimsmith",
+		icon: <FaGithub size={20} title='github' />,
 	},
 	{
 		label: "resources",
@@ -21,23 +30,19 @@ export const NAVIGATION = [
 		icon: <FaBook size={20} title='resources' />,
 	},
 	{
-		label: "github",
-		url: "https://github.com/ephcoding",
-		icon: <FaGithub size={20} title='GitHub' />,
-	},
-	{
-		label: "instagram",
-		url: "https://www.instagram.com/ephcoding/",
-		icon: <FaInstagram size={20} title='GitHub' />,
-	},
-	{
 		label: "twitter",
-		url: "https://www.twitter.com/ephcoding",
-		icon: <FaTwitter size={20} title='Twitter' />,
+		url: "https://www.twitter.com/_ephraimsmith",
+		icon: <FaTwitter size={20} title='twitter' />,
 	},
 	{
 		label: "linkedin",
 		url: "https://www.linkedin.com/in/ephraimjsmith",
-		icon: <FaLinkedin size={20} title='LinkedIn' />,
+		icon: <FaLinkedin size={20} title='linkedin' />,
 	},
+
+	// {
+	// 	label: "instagram",
+	// 	url: "https://www.instagram.com/ephcoding/",
+	// 	icon: <FaInstagram size={20} title='GitHub' />,
+	// },
 ];
