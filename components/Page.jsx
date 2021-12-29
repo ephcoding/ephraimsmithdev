@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Header from "./Header";
+import Footer from "./Footer";
 
-export default function Meta(props) {
-	const { title, description, keywords } = props.meta;
+export default function Page({ pageInfo, children }) {
+	const { cssClass, description, heading, keywords, title } = pageInfo;
 
 	return (
 		<div id='Meta' className='meta'>
@@ -23,9 +25,15 @@ export default function Meta(props) {
 					media='screen,projection'
 				/>
 			</Head>
-			{props.children}
-			{/* <!--JavaScript at end of body for optimized loading--> */}
-			<script type='text/javascript' src='js/materialize.min.js'></script>
+			<div className={`page ${cssClass}-page`}>
+				<Header title={heading} />
+				<main className='content'>
+					{children}
+					{/* <!--JavaScript at end of body for optimized loading--> */}
+					<script type='text/javascript' src='js/materialize.min.js'></script>
+				</main>
+				<Footer />
+			</div>
 		</div>
 	);
 }
