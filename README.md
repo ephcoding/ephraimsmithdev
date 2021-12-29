@@ -1,41 +1,22 @@
-![install ephcoding.com](./public/readme_install.png)
+![ephraimsmith.dev repo title](./public/readme_title.png)
 
-clone repo
+## **OBJECTIVE**
 
-```shell
-git clone https://github.com/ephcoding/ephcoding-dot-com.git
-```
+My little corner of the internet where I share stuff I build and trade knowledge with people from all over the world.
 
-install dependencies
+## **MVP FUNCTIONALITY**
 
-```shell
-npm i
-```
+- project summaries with links
+- basic nav: projects, social, resources
 
-![ephcoding.com build tools](./public/readme_setup.png)
+![ephraimsmith.dev project setup section](./public/readme_status.png)
 
-### **| `autoprefixer`**
+### **_Research_**
 
-### **| `next`**
+- [ ]
 
-### **| `sass`**
+### **_Development_**
 
-### **| `marked`**
+- [ ]
 
-### **| `gray-matter`**
-
-![use ephcoding.com](./public/readme_use-it.png)
-
-nav to project
-
-```shell
-cd <your/path>/ephcoding-dot-com
-```
-
-run dev environment
-
-```shell
-npm run dev
-```
-
-![contribute to ephcoding.com](./public/readme_contribute.png)
+![ephraimsmith.dev project setup section](./public/readme_resources.png)
