@@ -72,9 +72,10 @@ export const PAGES = {
 };
 export const PROJECTS = [
 	{
+		name: "ALSTR",
 		description:
 			'Short for "Algo-Trading Strategy", ALSTR will be a full platform for managing my personal algo-trading strategies.  Learning all the things with this project.  Frontend, backend, APIs, security, data storage and caching, and cloud architecture.',
-		name: "ALSTR",
+		focusArea: "",
 		urls: {
 			appStore: null,
 			repo: "https://www.github.com/ephraimsmith/alstr",
@@ -82,9 +83,10 @@ export const PROJECTS = [
 		},
 	},
 	{
+		name: "Tornado Action",
 		description:
 			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-		name: "Tornado Action",
+		focusArea: "",
 		urls: {
 			appStore: "https://www.tornadoaction.com",
 			repo: "https://www.github.com/ephraimsmith/tornado-action",
@@ -92,9 +94,10 @@ export const PROJECTS = [
 		},
 	},
 	{
+		name: "ROVERCAM",
 		description:
 			"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-		name: "ROVERCAM",
+		focusArea: "",
 		urls: {
 			appStore: "",
 			repo: "https://www.github.com/modevx/rovercam",
@@ -102,10 +105,11 @@ export const PROJECTS = [
 		},
 	},
 	{
+		name: "VORTX",
 		bgImgClass: "bg_tornado-at-farm",
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  The Storm Prediction Center provides severe weather data reports in CSV format.",
-		name: "VORTX",
+		focusArea: "API construction",
 		urls: {
 			appStore: "",
 			repo: "https://www.github.com/ephraimsmith/vortx",
@@ -113,9 +117,10 @@ export const PROJECTS = [
 		},
 	},
 	// {
+	// name: "FreeCodeCamp",
 	// 	description:
 	// 		"Free online platform for learning web design from top to bottom.  Great tool for filling in knowledge gaps and generating ideas for new projects.",
-	// 	name: "FreeCodeCamp",
+	// focusArea: '',
 	// 	urls: {
 	// { appStore: "" },
 	// { repo: "" },
