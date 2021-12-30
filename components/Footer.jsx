@@ -1,8 +1,13 @@
+import Navigation from "./Navigation";
+
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			&copy; {new Date().getFullYear()} ephraimsmith
-			<span className='blue'>.dev</span>
+			<Navigation />
+			<hr className='footer-hr' />
+			<div className='copyright'>
+				&copy; {new Date().getFullYear()} ephraimsmith.dev
+			</div>
 		</footer>
 	);
 }

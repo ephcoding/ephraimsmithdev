@@ -12,18 +12,6 @@ export default function Page({ pageInfo, children }) {
 				<meta name='keywords' content={keywords} />
 				<meta name='description' content={description} />
 				<link rel='icon' href='/favicon.ico' />
-				{/* <!--Import Google Icon Font--> */}
-				<link
-					href='https://fonts.googleapis.com/icon?family=Material+Icons'
-					rel='stylesheet'
-				/>
-				{/* <!--Import materialize.css--> */}
-				<link
-					type='text/css'
-					rel='stylesheet'
-					href='css/materialize.min.css'
-					media='screen,projection'
-				/>
 			</Head>
 			<div className={`page ${cssClass}-page`}>
 				<Header title={heading} />

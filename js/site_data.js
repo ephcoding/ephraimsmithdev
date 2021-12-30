@@ -1,4 +1,11 @@
-import { FaBook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+	FaGithub,
+	FaHammer,
+	FaHome,
+	FaLinkedin,
+	FaToolbox,
+	FaTwitter,
+} from "react-icons/fa";
 
 // GITHUB BASE URLS
 const GH_REPO_BASE = "https://github.com/ephraimsmith";
@@ -114,18 +121,24 @@ export const FCC_PROJECTS = [
 ];
 export const NAV_ITEMS = [
 	{
+		label: "home",
+		url: "/",
+		icon: <FaHome size={22} title='ephraimsmith.dev' />,
+	},
+	{
 		label: "projects",
 		url: "/projects",
+		icon: <FaHammer size={20} title='projects' />,
+	},
+	{
+		label: "toolbox",
+		url: "/toolbox",
+		icon: <FaToolbox size={20} title='toolbox' />,
 	},
 	{
 		label: "github",
 		url: "https://github.com/ephraimsmith",
 		icon: <FaGithub size={20} title='github' />,
-	},
-	{
-		label: "resources",
-		url: "/resources",
-		icon: <FaBook size={20} title='resources' />,
 	},
 	{
 		label: "twitter",
@@ -162,15 +175,21 @@ export const PAGES = {
 	projects: {
 		cssClass: "projects",
 		description: "",
-		heading: { first: "ACTIVE", second: "PROJECTS" },
+		heading: {
+			first: <FaHammer size={30} title='projects' />,
+			second: "PROJECTS",
+		},
 		intro: "",
 		keywords: "",
 		title: "Ephraim Smith | Projects",
 	},
-	resources: {
-		cssClass: "resources",
+	toolbox: {
+		cssClass: "toolbox",
 		description: "",
-		heading: { first: "GO-TO", second: "RESOURCES" },
+		heading: {
+			first: <FaToolbox size={30} title='toolbox' />,
+			second: "TOOLBOX",
+		},
 		intro: "",
 		keywords: "",
 		title: "Resources",
@@ -219,5 +238,31 @@ export const PROJECTS = [
 			{ repo: "" },
 			{ website: "https://www.freeCodeCamp.org/ephraimsmith" },
 		],
+	},
+];
+export const TOOLS = [
+	{
+		area: "HTML/CSS",
+		resources: [{ name: "", url: "" }],
+	},
+	{
+		area: "JavaScript",
+		resources: [{ name: "", url: "" }],
+	},
+	{
+		area: "UI / Design",
+		resources: [{ name: "", url: "" }],
+	},
+	{
+		area: "APIs",
+		resources: [{ name: "", url: "" }],
+	},
+	{
+		area: "Tooling",
+		resources: [{ name: "", url: "" }],
+	},
+	{
+		area: "Utilities",
+		resources: [{ name: "", url: "" }],
 	},
 ];

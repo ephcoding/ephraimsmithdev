@@ -13,7 +13,7 @@ const Navigation = () => {
 	});
 
 	return (
-		<nav id='Navigation' className='nav'>
+		<nav className='nav'>
 			<ul className='nav__ul'>{navItems}</ul>
 		</nav>
 	);

@@ -2,7 +2,7 @@ import Page from "@/components/Page";
 import { PAGES } from "../js/site_data";
 
 export default function Home() {
-	const { home } = PAGES;
+	const { toolbox } = PAGES;
 
-	return <Page pageInfo={home}></Page>;
+	return <Page pageInfo={toolbox}></Page>;
 }

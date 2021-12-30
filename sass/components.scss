@@ -2,7 +2,6 @@
 
 .card {
 }
-
 .fcc-projects__card {
 	display: flex;
 	flex-direction: column;
@@ -50,23 +49,33 @@
 	grid-template-columns: repeat(auto-fit, (minmax(275px, 1fr)));
 	justify-items: stretch;
 }
-
 .footer {
-	text-align: center;
+	color: $grey;
 	padding: $sm 0;
-}
+	text-align: center;
 
+	&-hr {
+		color: $blue;
+		width: 5rem;
+	}
+}
 .header {
 	align-items: center;
 	color: $white;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 1rem;
-
+}
+.header h1,
+.nav {
+	margin: 0 auto 1rem;
+}
+.nav {
 	.nav__ul {
-		align-items: center;
 		color: $grey;
 		display: flex;
+		justify-content: center;
 
 		.nav__a {
 			display: inline-block;
@@ -79,7 +88,6 @@
 		}
 	}
 }
-
 .post-img {
 	box-shadow: 0 2px 8px -3px #888;
 	border-radius: 10px;

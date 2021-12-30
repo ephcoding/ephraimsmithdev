@@ -30,7 +30,8 @@ Build my corner of the internet where I share stuff I build and trade knowledge 
 
 ## **Docs**
 
-- [Next.js](https://nextjs.org/docs/getting-started)
+- Next.js | [getting started](https://nextjs.org/docs/getting-started)
+- Next.js | [Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
 
 ## **Videos**
 
