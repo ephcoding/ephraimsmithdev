@@ -2,6 +2,7 @@
 notes.txt
 todo.txt
 package-lock.json
+yarn.lock
 
 # dependencies
 /node_modules
