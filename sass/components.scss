@@ -1,6 +1,42 @@
 @import "./variables.scss";
 
 .card {
+	color: $grey;
+	border-radius: 3px;
+	display: flex;
+	margin: $lg auto;
+	max-width: 650px;
+	width: 75%;
+
+	&-text {
+		padding: $sm;
+		width: 75%;
+	}
+
+	h2 {
+		font-size: $md;
+	}
+	p {
+		font-size: $xs;
+	}
+	.project-links {
+		align-items: center;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		padding: $sm $sm $sm 0;
+
+		.project-link {
+			align-items: center;
+			display: flex;
+		}
+	}
+	&:hover {
+		box-shadow: 0 0 8px 2px $grey;
+		color: $white;
+		transform: scale(1.02);
+	}
 }
 .fcc-projects__card {
 	display: flex;
@@ -68,7 +104,7 @@
 	padding: 1rem;
 }
 .header h1,
-.nav {
+.header .nav {
 	margin: 0 auto 1rem;
 }
 .nav {

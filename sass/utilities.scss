@@ -1,3 +1,4 @@
+@import "./variables.scss";
 // *********************************************************
 // ----- PLACEHOLDERS
 // *********************************************************
@@ -16,3 +17,12 @@
 // *********************************************************
 // ----- SEMANTIC CLASSES
 // *********************************************************
+.card.bg_tornado-at-farm {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../public/tornado-at-farm.jpg") 50% 55% / cover;
+
+	&:hover {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url("../public/tornado-at-farm.jpg") 50% 55% / cover;
+	}
+}
