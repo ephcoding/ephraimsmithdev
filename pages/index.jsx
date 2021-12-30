@@ -4,13 +4,15 @@ import Link from "next/link";
 import Page from "@/components/Page";
 
 export default function Home() {
-  const { home } = PAGES;
+	const { home } = PAGES;
 
-  const projectCards = PROJECTS.map((project) => (
-    <ul className="project-card-list">
-      <Card cardMeta={project} key={project.name} />
-    </ul>
-  ));
+	const projectCards = PROJECTS.map(project => (
+		<Card cardMeta={project} key={project.name} />
+	));
 
-  return <Page pageInfo={home}>{projectCards}</Page>;
+	return (
+		<Page pageInfo={home}>
+			<ul className='project-card-list'>{projectCards}</ul>
+		</Page>
+	);
 }
