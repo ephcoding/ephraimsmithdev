@@ -1,17 +1,16 @@
-import Page from "@/components/Page";
-import Link from "next/link";
-import PAGE_INFO from "../../sitedata/page_info";
-import PROJECT_CARD_INFO from "../../sitedata/active_projects";
+import { PAGES, PROJECTS } from "../../js/site_data";
 import Card from "@/components/Card";
+import Link from "next/link";
+import Page from "@/components/Page";
 
 export default function ProjectsPage() {
-	const { projects: projectPageInfo } = PAGE_INFO;
+	const { projects: projectPageInfo } = PAGES;
 
-	const activeProjectsCards = PROJECT_CARD_INFO.map(project => (
+	const projectCards = PROJECTS.map(project => (
 		<ul className='project-card-list'>
 			<Card cardMeta={project} />
 		</ul>
 	));
 
-	return <Page pageInfo={projectPageInfo}>{activeProjectsCards}</Page>;
+	return <Page pageInfo={projectPageInfo}>{projectCards}</Page>;
 }

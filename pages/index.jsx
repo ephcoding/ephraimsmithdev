@@ -1,8 +1,8 @@
 import Page from "@/components/Page";
-import { PAGE_INFO } from "../sitedata/page_info";
+import { PAGES } from "../js/site_data";
 
 export default function HomePage() {
-	const { home } = PAGE_INFO;
+	const { home } = PAGES;
 
 	return <Page pageInfo={home}></Page>;
 }

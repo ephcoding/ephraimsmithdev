@@ -1,10 +1,13 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { sortByDate } from "@/utils/date";
 
 const files = fs.readdirSync(path.join("posts"));
 
+export const getCurrentYear = () => new Date(Date.now()).getFullYear();
+export const getDateMonthName = date => {
+	date.toLocaleString("default", { month: "long" });
+};
 export function getPosts() {
 	const posts = files.map(filename => {
 		const slug = filename.replace(".md", "");
@@ -24,3 +27,6 @@ export function getPosts() {
 
 	return posts.sort(sortByDate);
 }
+export const sortByDate = (a, b) => {
+	return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+};
