@@ -1,9 +1,8 @@
 import {
 	FaGithub,
-	FaHammer,
+	FaTools,
 	FaHome,
 	FaLinkedin,
-	FaToolbox,
 	FaTwitter,
 } from "react-icons/fa";
 
@@ -18,107 +17,6 @@ const FRONTEND = "FRONT END DEVELOPMENT LIBRARIES";
 const DATAVIZ = "DATA VISUALIZATION";
 const BACKEND = "BACKEND DEVELOPMENT AND APIS";
 
-export const FCC_PROJECTS = [
-	{
-		certificate: RESP,
-		projects: [
-			{
-				title: "Tribute Page",
-				repoLink: `${GH_REPO_BASE}/tribute-page`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/tribute-page`,
-			},
-			{
-				title: "Survey Form",
-				repoLink: `${GH_REPO_BASE}/survey-form`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/survey-form`,
-			},
-			{
-				title: "Product Landing Page",
-				repoLink: `${GH_REPO_BASE}/product-landing-page`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/product-landing-page`,
-			},
-			{
-				title: "Technical Documentation Page",
-				repoLink: `${GH_REPO_BASE}/technical-documentation-page`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/technical-documentation-page`,
-			},
-			{
-				title: "Portfolio Page",
-				repoLink: `${GH_REPO_BASE}/portfolio-page`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/technical-documentation-page`,
-			},
-		],
-	},
-	{
-		certificate: JS,
-		projects: [
-			{
-				title: "Palindrome",
-				repoLink: `${GH_REPO_BASE}/palindrome-checker`,
-				isLive: false,
-				liveLink: `${GH_PAGES_BASE}/palindrome-checker`,
-			},
-			{
-				title: "Roman Numeral Converter",
-				repoLink: `${GH_REPO_BASE}/roman-numeral-converter`,
-				isLive: false,
-				liveLink: `${GH_PAGES_BASE}/roman-numeral-converter`,
-			},
-			{
-				title: "Caesars Cipher",
-				repoLink: `${GH_REPO_BASE}/caesars-cipher`,
-				isLive: false,
-				liveLink: `${GH_PAGES_BASE}/caesars-cipher`,
-			},
-			{
-				title: "Telephone Number Validator",
-				repoLink: `${GH_REPO_BASE}/telephone-number-validator`,
-				isLive: false,
-				liveLink: `${GH_PAGES_BASE}/telephone-number-validator`,
-			},
-			{
-				title: "Cash Register",
-				repoLink: `${GH_REPO_BASE}/cash-register`,
-				isLive: false,
-				liveLink: `${GH_PAGES_BASE}/cash-register`,
-			},
-		],
-	},
-	{
-		certificate: FRONTEND,
-		projects: [
-			{
-				title: "Random Quote Machine",
-				repoLink: `${GH_REPO_BASE}/random-quote-machine`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/random-quote-machine`,
-			},
-			{
-				title: "Markdown Previewer",
-				repoLink: `${GH_REPO_BASE}/markdown-previewer`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/markdown-previewer`,
-			},
-			{
-				title: "Drum Machine",
-				repoLink: `${GH_REPO_BASE}/drum-machine`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/drum-machine`,
-			},
-			{
-				title: "JavaScript Calculator",
-				repoLink: `${GH_REPO_BASE}/js-calculator`,
-				isLive: true,
-				liveLink: `${GH_PAGES_BASE}/js-calculator`,
-			},
-		],
-	},
-];
 export const NAV_ITEMS = [
 	{
 		label: "home",
@@ -126,9 +24,9 @@ export const NAV_ITEMS = [
 		icon: <FaHome size={22} title='ephraimsmith.dev' />,
 	},
 	{
-		label: "toolbox",
-		url: "/toolbox",
-		icon: <FaToolbox size={20} title='toolbox' />,
+		label: "tools",
+		url: "/tools",
+		icon: <FaTools size={20} title='tools' />,
 	},
 	{
 		label: "github",
@@ -147,109 +45,105 @@ export const NAV_ITEMS = [
 	},
 ];
 export const PAGES = {
-	freecodecamp: {
-		cssClass: "fcc",
-		description: "",
-		heading: { first: "FreeCodeCamp", second: "Projects" },
-		intro: "",
-		keywords:
-			"freeCodeCamp, Responsive Design, JavaScript, React, D3.js, d3js, D3, HTML, CSS, HTML5, CSS3",
-
-		title: "FreeCodeCamp Projects",
-	},
 	home: {
 		cssClass: "home",
-		description:
-			"ephcoding.com is home to Ephraim Smith and his documented adventures in software",
-		heading: { first: "EPHRAIM", second: "SMITH" },
-		intro: "",
-		keywords:
+		pageHeading: {
+			first: "EPHRAIM",
+			second: "SMITH",
+		},
+		pageIntro:
+			"Like a lot of people, I learn by breaking things.  And I've learned a ton about software in the last couple years thanks to other people sharing their experiences and mistakes with me.  To pay it forward, I'm going to start sharing my continued learning, mistakes, and natural ability to break anything, with the world.",
+		metaDescription: "",
+		metaKeywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
-		title: "ephraimsmith.dev",
+		metaTitle: "ephraimsmith.dev",
 	},
-	projects: {
-		cssClass: "projects",
-		description: "",
-		heading: {
-			first: <FaHammer size={30} title='projects' />,
-			second: "PROJECTS",
+	tools: {
+		cssClass: "tools",
+		pageHeading: {
+			first: "MY",
+			second: "TOOLS",
 		},
-		intro: "",
-		keywords: "",
-		title: "Ephraim Smith | Projects",
-	},
-	toolbox: {
-		cssClass: "toolbox",
-		description: "",
-		heading: {
-			first: <FaToolbox size={30} title='toolbox' />,
-			second: "TOOLBOX",
-		},
-		intro: "",
-		keywords: "",
-		title: "Resources",
+		pageIntro: "",
+		metaDescription: "",
+		metaKeywords: "",
+		metaTitle: "Ephraim Smith | Tools",
 	},
 };
 export const PROJECTS = [
+	// {
+	// 	description:
+	// 		'Short for "Algo-Trading Strategy", ALSTR will be a full platform for managing my personal algo-trading strategies.  Learning all the things with this project.  Frontend, backend, APIs, security, data storage and caching, and cloud architecture.',
+	// 	name: "ALSTR",
+	// 	urls: {
+	// 		appStore: null,
+	// 		repo: "https://www.github.com/ephraimsmith/alstr",
+	// 		site: null,
+	// 	},
+	// },
+	// {
+	// 	description:
+	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+	// 	name: "Tornado Action",
+	// 	urls: {
+	// {appStore: "https://www.tornadoaction.com"},
+	// { repo: "https://www.github.com/ephraimsmith/tornado-action" },
+	// {site: ""}
+
+	// 	],
+	// },
+	// {
+	// 	description:
+	// 		"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
+	// 	name: "ROVERCAM",
+	// 	urls: {
+	// {appStore: ""},
+	// { repo: "https://www.github.com/modevx/rovercam" }, { site: "" }],
+	// 	// site: "https://www.rovercamapp.com",
+	// },
 	{
-		description:
-			'Short for "Algo-Trading Strategy", ALSTR will be a full platform for managing my personal algo-trading strategies.  Learning all the things with this project.  Frontend, backend, APIs, security, data storage and caching, and cloud architecture.',
-		name: "ALSTR",
-		URLs: [
-			{ repo: "https://www.github.com/ephraimsmith/alstr" },
-			{ website: "" },
-		],
-	},
-	{
-		description:
-			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-		name: "Tornado Action",
-		URLs: [
-			{ repo: "https://www.github.com/ephraimsmith/tornado-action" },
-			{ website: "https://www.tornadoaction.com" },
-		],
-	},
-	{
-		description:
-			"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-		name: "ROVERCAM",
-		URLs: [{ repo: "https://www.github.com/modevx/rovercam" }, { website: "" }],
-		// website: "https://www.rovercamapp.com",
-	},
-	{
+		bgImgClass: "bg_tornado-at-farm",
 		description:
 			"REST API that will allow developers to access over 65,000 historical tornado events from 1950-2019.  The Storm Prediction Center provides this data in CSV format.  The plan is to stash this mountain of data in a PostgreSQL database in the cloud.  Eventually I hope to add dyamic updates that will feed the VORTX database as newly published storm reports are released from the National Weather Service.",
 		name: "VORTX",
-		URLs: [
-			{ repo: "https://www.github.com/ephraimsmith/vortx" },
-			{ website: "" },
-		],
+		urls: {
+			appStore: "",
+			repo: "https://www.github.com/ephraimsmith/vortx",
+			site: "",
+		},
 	},
-	{
-		description:
-			"Free online platform for learning web design from top to bottom.  Great tool for filling in knowledge gaps and generating ideas for new projects.",
-		name: "FreeCodeCamp",
-		URLs: [
-			{ repo: "" },
-			{ website: "https://www.freeCodeCamp.org/ephraimsmith" },
-		],
-	},
+	// {
+	// 	description:
+	// 		"Free online platform for learning web design from top to bottom.  Great tool for filling in knowledge gaps and generating ideas for new projects.",
+	// 	name: "FreeCodeCamp",
+	// 	urls: {
+	// { appStore: "" },
+	// { repo: "" },
+	// 		{ site: "https://www.freeCodeCamp.org/ephraimsmith" },
+	// 	},
+	// },
 ];
 export const TOOLS = [
 	{
 		tool: "EZGif",
-		value: "",
-		url: "",
+		value: '"Animated GIFs made easy"',
+		url: "https://ezgif.com/",
 	},
 	{
-		tool: "12-Factor App",
-		value: "",
-		url: "",
+		tool: "The Twelve-Factor App",
+		value: "serious about building a SaaS product?  start here.",
+		url: "https://12factor.net/",
+	},
+	{
+		tool: "Awesome CTO",
+		value:
+			'"A curated and opinionated list of resources for Chief Technology Officers and VP R&D"',
+		url: "https://github.com/kuchin/awesome-cto",
 	},
 	{
 		tool: "createapp.dev",
-		value: "",
-		url: "",
+		value: "generates project build configs based on your selected packages",
+		url: "https://createapp.dev/",
 	},
 	{
 		tool: "Can I Use",
@@ -342,18 +236,109 @@ export const TOOLS = [
 		url: "https://cards-dev.twitter.com/validator",
 	},
 	{
-		tool: "NASA APIs",
+		tool: "Canva",
 		value: "",
-		url: "",
+		url: "https://www.canva.com",
+	},
+];
+export const FCC_PROJECTS = [
+	{
+		certificate: RESP,
+		projects: [
+			{
+				title: "Tribute Page",
+				repoLink: `${GH_REPO_BASE}/tribute-page`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/tribute-page`,
+			},
+			{
+				title: "Survey Form",
+				repoLink: `${GH_REPO_BASE}/survey-form`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/survey-form`,
+			},
+			{
+				title: "Product Landing Page",
+				repoLink: `${GH_REPO_BASE}/product-landing-page`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/product-landing-page`,
+			},
+			{
+				title: "Technical Documentation Page",
+				repoLink: `${GH_REPO_BASE}/technical-documentation-page`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
+			},
+			{
+				title: "Portfolio Page",
+				repoLink: `${GH_REPO_BASE}/portfolio-page`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
+			},
+		],
 	},
 	{
-		tool: "NASA APIs",
-		value: "",
-		url: "",
+		certificate: JS,
+		projects: [
+			{
+				title: "Palindrome",
+				repoLink: `${GH_REPO_BASE}/palindrome-checker`,
+				isLive: false,
+				appStore: `${GH_PAGES_BASE}/palindrome-checker`,
+			},
+			{
+				title: "Roman Numeral Converter",
+				repoLink: `${GH_REPO_BASE}/roman-numeral-converter`,
+				isLive: false,
+				appStore: `${GH_PAGES_BASE}/roman-numeral-converter`,
+			},
+			{
+				title: "Caesars Cipher",
+				repoLink: `${GH_REPO_BASE}/caesars-cipher`,
+				isLive: false,
+				appStore: `${GH_PAGES_BASE}/caesars-cipher`,
+			},
+			{
+				title: "Telephone Number Validator",
+				repoLink: `${GH_REPO_BASE}/telephone-number-validator`,
+				isLive: false,
+				appStore: `${GH_PAGES_BASE}/telephone-number-validator`,
+			},
+			{
+				title: "Cash Register",
+				repoLink: `${GH_REPO_BASE}/cash-register`,
+				isLive: false,
+				appStore: `${GH_PAGES_BASE}/cash-register`,
+			},
+		],
 	},
 	{
-		tool: "NASA APIs",
-		value: "",
-		url: "",
+		certificate: FRONTEND,
+		projects: [
+			{
+				title: "Random Quote Machine",
+				repoLink: `${GH_REPO_BASE}/random-quote-machine`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/random-quote-machine`,
+			},
+			{
+				title: "Markdown Previewer",
+				repoLink: `${GH_REPO_BASE}/markdown-previewer`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/markdown-previewer`,
+			},
+			{
+				title: "Drum Machine",
+				repoLink: `${GH_REPO_BASE}/drum-machine`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/drum-machine`,
+			},
+			{
+				title: "JavaScript Calculator",
+				repoLink: `${GH_REPO_BASE}/js-calculator`,
+				isLive: true,
+				appStore: `${GH_PAGES_BASE}/js-calculator`,
+			},
+		],
 	},
 ];
