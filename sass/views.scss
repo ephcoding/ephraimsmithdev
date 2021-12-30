@@ -1,16 +1,20 @@
+@import "./variables.scss";
+
 .page {
-	background: $black;
-	color: $white;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  background: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-family: $font_primary, Arial, Helvetica, sans-serif;
+  // font-family: $font_secondary, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 
-	.content {
-		flex: 1;
-		padding: 1.5rem;
+  .content {
+    flex: 1;
+    padding: 1.5rem;
 
-		article {
-			line-height: 1.7;
-		}
-	}
+    article {
+      line-height: 1.7;
+    }
+  }
 }

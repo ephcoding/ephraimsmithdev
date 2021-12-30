@@ -21,5 +21,13 @@ $xl: 4rem;
 // *********************************************************
 // ----- TYPOGRAPHY
 // *********************************************************
-$font_primary: "";
-$font_secondary: "";
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BlackHanSans";
+  src: url("../public/fonts/BlackHanSans-Regular.ttf") format("truetype");
+}
+$font_primary: "Roboto";
+$font_secondary: "BlackHanSans";
