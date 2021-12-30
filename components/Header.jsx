@@ -4,7 +4,8 @@ export default function Header({ title: { first, second } }) {
 	return (
 		<header className='header'>
 			<h1>
-				<span className='blue'>{first}</span> {second}
+				{first ? first : null}{" "}
+				<span className='blue'>{second ? second : null}</span>
 			</h1>
 			<Navigation />
 		</header>
