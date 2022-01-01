@@ -29,3 +29,12 @@
 		// width: 90vw;
 	}
 }
+.tools-page {
+	.tools-list {
+		margin: 0 auto;
+		max-width: 500px;
+		.tools-li {
+			margin-bottom: $sm;
+		}
+	}
+}

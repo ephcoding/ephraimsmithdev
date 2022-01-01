@@ -53,3 +53,9 @@
 			url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
 	}
 }
+.link__external {
+	color: $grey;
+	&:hover {
+		color: $yellow;
+	}
+}
