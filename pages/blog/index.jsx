@@ -1,4 +1,4 @@
-import { getPosts } from "src/lib/posts";
+// import { getPosts } from "../../js/util_funcs";
 import Link from "next/link";
 import Page from "@/components/Page";
 import Header from "@/components/Header";
@@ -37,10 +37,10 @@ export default function Archives({ posts }) {
 	);
 }
 
-export async function getStaticProps() {
-	return {
-		props: {
-			posts: getPosts(),
-		},
-	};
-}
+// export async function getStaticProps() {
+// 	return {
+// 		props: {
+// 			posts: getPosts(),
+// 		},
+// 	};
+// }

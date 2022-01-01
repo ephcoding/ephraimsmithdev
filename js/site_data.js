@@ -48,8 +48,8 @@ export const PAGES = {
 	home: {
 		cssClass: "home",
 		pageHeading: {
-			first: "EPHRAIM",
-			second: "SMITH",
+			first: "EPHRAIMSMITH",
+			second: ".DEV",
 		},
 		// pageIntro:
 		// 	"Like a lot of people, I learn by breaking things.  And I've learned a ton about software in the last couple years thanks to other people sharing their experiences and mistakes with me.  To pay it forward, I'm going to start sharing my continued learning, mistakes, and natural ability to break anything, with the world.",
@@ -61,7 +61,7 @@ export const PAGES = {
 	tools: {
 		cssClass: "tools",
 		pageHeading: {
-			first: "MY",
+			first: "MY ",
 			second: "TOOLS",
 		},
 		pageIntro: "",
@@ -76,8 +76,8 @@ export const PROJECTS = [
 		assets: [],
 		bgImgClass: "bg_alstr",
 		description:
-			'Short for "Algo-Trading Strategy", ALSTR will be a full platform for managing my personal algo-trading strategies.  Learning all the things with this project.  Frontend, backend, APIs, security, data storage and caching, and cloud architecture.',
-		tags: ["Architecture", "Cloud"],
+			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+		tags: ["Architecture", "Serverless"],
 		urls: {
 			appStore: null,
 			repo: "https://www.github.com/ephraimsmith/alstr",
@@ -137,14 +137,9 @@ export const PROJECTS = [
 ];
 export const TOOLS = [
 	{
-		name: "EZGif",
-		url: "https://ezgif.com/",
-		description: '"Animated GIFs made easy"',
-	},
-	{
-		name: "The Twelve-Factor App",
-		url: "https://12factor.net/",
-		description: "serious about building a SaaS product?  start here.",
+		name: "Architecture Diagrams (AWS)",
+		url: "https://aws.amazon.com/architecture/reference-architecture-diagrams/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-tech-category=*all&awsf.whitepapers-industries=*all&solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc",
+		description: "",
 	},
 	{
 		name: "Awesome CTO",
@@ -153,63 +148,7 @@ export const TOOLS = [
 			"A curated and opinionated list of resources for Chief Technology Officers and VP R&D",
 	},
 	{
-		name: "createapp.dev",
-		url: "https://createapp.dev/",
-		description:
-			"generates project build configs based on your selected packages",
-	},
-	{
-		name: "Can I Use",
-		url: "",
-		description: "",
-	},
-	{
 		name: "AwesomeOpenSource",
-		url: "",
-		description: "",
-	},
-	{
-		name: "Flexbox Froggy",
-		url: "",
-		description: "",
-	},
-	{
-		name: "Grid Garden",
-		url: "",
-		description: "",
-	},
-	{
-		name: "devhints.io cheat sheets",
-		url: "",
-		description: "",
-	},
-	{
-		name: "Design Patterns",
-		url: "https://refactoring.guru/design-patterns",
-		description: "",
-	},
-	{
-		name: "CSS-Tricks",
-		url: "",
-		description: "",
-	},
-	{
-		name: "FreeCodeCamp",
-		url: "https://freecodecamp.org",
-		description: "",
-	},
-	{
-		name: "W3Schools",
-		url: "https://www.w3schools.com",
-		description: "",
-	},
-	{
-		name: "SMACSS",
-		url: "",
-		description: "",
-	},
-	{
-		name: "OOCSS",
 		url: "",
 		description: "",
 	},
@@ -219,8 +158,59 @@ export const TOOLS = [
 		description: "",
 	},
 	{
-		name: "openbase.com",
-		url: "https://openbase.com/",
+		name: "Can I Use",
+		url: "",
+		description: "",
+	},
+	{
+		name: "Canva",
+		url: "https://www.canva.com",
+		description: "",
+	},
+	{
+		name: "createapp.dev",
+		url: "https://createapp.dev/",
+		description:
+			"generates project build configs based on your selected packages",
+	},
+	{
+		name: "CSS-Tricks",
+		url: "",
+		description: "",
+	},
+	{
+		name: "Design Patterns",
+		url: "https://refactoring.guru/design-patterns",
+		description: "",
+	},
+	{
+		name: "devhints.io cheat sheets",
+		url: "",
+		description: "",
+	},
+	{
+		name: "EZGif",
+		url: "https://ezgif.com/",
+		description: '"Animated GIFs made easy"',
+	},
+	{
+		name: "Flexbox Froggy",
+		url: "",
+		description: "",
+	},
+	{
+		name: "FreeCodeCamp",
+		url: "https://freecodecamp.org",
+		description: "",
+	},
+	{
+		name: "Grid Garden",
+		url: "",
+		description: "",
+	},
+	{
+		name: "Lighthouse (Google)",
+		url: "",
 		description: "",
 	},
 	{
@@ -234,14 +224,24 @@ export const TOOLS = [
 		description: "",
 	},
 	{
-		name: "AWS Architecture Diagrams",
-		url: "https://aws.amazon.com/architecture/reference-architecture-diagrams/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-tech-category=*all&awsf.whitepapers-industries=*all&solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc",
+		name: "OOCSS",
+		url: "",
 		description: "",
 	},
 	{
-		name: "Google Lighthouse",
+		name: "openbase.com",
+		url: "https://openbase.com/",
+		description: "",
+	},
+	{
+		name: "SMACSS",
 		url: "",
 		description: "",
+	},
+	{
+		name: "Twelve-Factor App",
+		url: "https://12factor.net/",
+		description: "serious about building a SaaS product?  start here.",
 	},
 	{
 		name: "Twitter Card Validator",
@@ -249,8 +249,8 @@ export const TOOLS = [
 		description: "",
 	},
 	{
-		name: "Canva",
-		url: "https://www.canva.com",
+		name: "W3Schools",
+		url: "https://www.w3schools.com",
 		description: "",
 	},
 ];

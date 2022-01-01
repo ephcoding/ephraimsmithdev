@@ -1,13 +1,14 @@
 @import "./variables.scss";
 
 .card {
-	color: $grey;
+	color: $white;
 	border-radius: 3px;
 	display: flex;
 	margin: $lg auto;
-	padding: $lg;
+	padding: $md;
 	&-text {
 		flex: 3;
+		margin-right: $md;
 		h2 {
 			font-size: $md;
 		}
@@ -25,11 +26,10 @@
 				display: flex;
 				flex-wrap: wrap;
 				.tag {
-					background-color: $charcoal;
+					background-color: $black;
 					border-radius: 8px;
-					box-shadow: inset #000 0 0 8px 5px;
-					// color: $black;
-					margin-right: $xs;
+					box-shadow: inset $blue 0 0 9px;
+					margin: 0 $xs $xs 0;
 					padding: 0.4rem 0.75rem;
 				}
 			}
@@ -40,9 +40,8 @@
 			}
 		}
 	}
-
 	.project-links {
-		align-items: flex-start;
+		align-items: center;
 		display: flex;
 		flex: 1;
 		flex-direction: column;
@@ -50,8 +49,14 @@
 
 		.project-link {
 			align-items: center;
+			border: 2px solid $white;
 			display: flex;
-			padding-left: 25%;
+			justify-content: center;
+			padding: $xs $sm;
+			width: 100%;
+			&:hover {
+				background-color: $blue;
+			}
 
 			& span {
 				margin-left: 0.7rem;
@@ -63,53 +68,6 @@
 	box-shadow: 0 2px 8px 2px $grey;
 	color: $white;
 	transform: scale(1.02);
-}
-.fcc-projects__card {
-	display: flex;
-	flex-direction: column;
-
-	& .card-content {
-		background: $charcoal;
-		color: $white;
-		flex: 1;
-		padding: 1rem;
-	}
-	.fcc-project__links {
-		.project-link {
-			color: $black;
-			display: inline-block;
-			padding: 0.25rem;
-			text-align: center;
-			vertical-align: middle;
-
-			&.github,
-			&.live {
-				width: 50%;
-			}
-			&.github,
-			&.github--full {
-				background: $white;
-			}
-			&.live {
-				background: #0f0;
-			}
-			&.github--full {
-				width: 100%;
-			}
-			& > span {
-				display: inline-block;
-				margin-left: 5px;
-				vertical-align: middle;
-			}
-		}
-	}
-}
-.fcc-projects {
-	align-items: stretch;
-	display: grid;
-	gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, (minmax(275px, 1fr)));
-	justify-items: stretch;
 }
 .footer {
 	color: $grey;
@@ -159,3 +117,50 @@
 	max-width: 700px;
 	width: 45vw;
 }
+// .fcc-projects__card {
+// 	display: flex;
+// 	flex-direction: column;
+
+// 	& .card-content {
+// 		background: $charcoal;
+// 		color: $white;
+// 		flex: 1;
+// 		padding: 1rem;
+// 	}
+// 	.fcc-project__links {
+// 		.project-link {
+// 			color: $black;
+// 			display: inline-block;
+// 			padding: 0.25rem;
+// 			text-align: center;
+// 			vertical-align: middle;
+
+// 			&.github,
+// 			&.live {
+// 				width: 50%;
+// 			}
+// 			&.github,
+// 			&.github--full {
+// 				background: $white;
+// 			}
+// 			&.live {
+// 				background: #0f0;
+// 			}
+// 			&.github--full {
+// 				width: 100%;
+// 			}
+// 			& > span {
+// 				display: inline-block;
+// 				margin-left: 5px;
+// 				vertical-align: middle;
+// 			}
+// 		}
+// 	}
+// }
+// .fcc-projects {
+// 	align-items: stretch;
+// 	display: grid;
+// 	gap: 1.5rem;
+// 	grid-template-columns: repeat(auto-fit, (minmax(275px, 1fr)));
+// 	justify-items: stretch;
+// }

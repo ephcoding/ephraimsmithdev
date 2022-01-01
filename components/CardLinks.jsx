@@ -19,7 +19,7 @@ const CardLinks = ({ links }) => {
 				<Link href={repo}>
 					<a target='_blank' className='project-link'>
 						<FaGithub size={20} title='GitHub' />
-						<span>repo</span>
+						<span>code</span>
 					</a>
 				</Link>
 			) : null}
@@ -27,7 +27,7 @@ const CardLinks = ({ links }) => {
 				<Link href={site}>
 					<a target='_blank' className='project-link'>
 						<FaTv size={20} title='Website' />
-						<span>live</span>
+						<span>website</span>
 					</a>
 				</Link>
 			) : null}

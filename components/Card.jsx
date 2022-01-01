@@ -22,10 +22,10 @@ const Card = ({ cardMeta }) => {
 				<p className='project-description'>{description}</p>
 				<div className='text-footer'>
 					<div className='tags'>{cardTags}</div>
-					<div>
+					{/* <div>
 						<span>{assetLogos.length ? "powered by: " : null}</span>
 						<div className='assets'>{assetLogos}</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<CardLinks links={urls} />
