@@ -1,61 +1,46 @@
-import { getDateMonthName } from '../../utils';
-import { getPosts } from '@/lib/posts';
-import Link from 'next/link';
-import MetaContainer from '@/components/MetaContainer';
-import Nav from 'react-bootstrap/Nav';
-import Footer from '@/components/Footer';
+// import { getPosts } from "../../js/util_funcs";
+import Link from "next/link";
+import Page from "@/components/Page";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { PAGE_INFO } from "../../sitedata/page_info";
 
 export default function Archives({ posts }) {
-	let prevBlogPostMonth;
+	const { blog } = PAGE_INFO;
 
 	return (
-		<MetaContainer>
-			<div className='flex-fill pt-3'>
-				{posts.map((post, index) => {
-					const blogPostDate = new Date(post.frontmatter.date);
-					const blogPostMonth = blogPostDate.getMonth();
-					const blogPostYear = blogPostDate.getFullYear();
-					const blogPostMonthName = getDateMonthName(blogPostDate);
-					const isDiffMonth = blogPostMonth !== prevBlogPostMonth;
-					prevBlogPostMonth = blogPostMonth;
-
-					return (
-						<>
-							{!isDiffMonth && (
-								<h2>
-									{blogPostMonthName} {blogPostYear}
-								</h2>
-							)}
-							<div className='text-white'>
-								<h3 className='h1 my-0'>
-									<Link href={`/blog/${post.slug}`}>
-										<a className='nav-link px-0 '>{post.frontmatter.title}</a>
-									</Link>
-								</h3>
-								<h2>{post.frontmatter.subtitle}</h2>
-								<p>{post.frontmatter.date}</p>
+		<Page pageInfo={blog}>
+			<div className='page blog-page'>
+				<Header />
+				<main className='content'>
+					<h1>
+						<span className='blue'>Blog</span> Posts
+					</h1>
+					{posts.map((post, index) => {
+						return (
+							<div>
+								<Link href={`/blog/${post.slug}`} passHref>
+									<a>
+										<h3 className='blog__post-'>
+											{post.frontmatter.leadTitle}
+										</h3>
+									</a>
+								</Link>
+								<h2>{post.frontmatter.headingTitle}</h2>
 							</div>
-						</>
-					);
-				})}
-				<Nav id='BlogPageNav' as='ul' className='justify-content-center mt-5'>
-					<Nav.Item as='li'>
-						<Nav.Link href='/' className='px-2 site-nav-btn'>
-							home
-						</Nav.Link>
-					</Nav.Item>
-				</Nav>
+						);
+					})}
+				</main>
+				<Footer />
 			</div>
-
-			<Footer />
-		</MetaContainer>
+		</Page>
 	);
 }
 
-export async function getStaticProps() {
-	return {
-		props: {
-			posts: getPosts(),
-		},
-	};
-}
+// export async function getStaticProps() {
+// 	return {
+// 		props: {
+// 			posts: getPosts(),
+// 		},
+// 	};
+// }

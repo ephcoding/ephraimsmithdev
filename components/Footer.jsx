@@ -1,13 +1,13 @@
-import { getCurrentYear } from '../utils/index';
-import Link from 'next/link';
+import Navigation from "./Navigation";
 
 export default function Footer() {
 	return (
-		<footer
-			className='text-white text-center mt-4'
-			style={{ fontSize: '.7rem' }}
-		>
-			<p>&copy; {getCurrentYear()} Ephraim Smith | ephcoding.com</p>
+		<footer className='footer'>
+			<Navigation />
+			<hr className='footer-hr' />
+			<div className='copyright'>
+				&copy; {new Date().getFullYear()} ephraimsmith.dev
+			</div>
 		</footer>
 	);
 }

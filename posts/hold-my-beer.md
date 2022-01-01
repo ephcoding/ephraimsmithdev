@@ -1,8 +1,11 @@
 ---
-title: 'HOLD MY BEER'
-subtitle: 'Throwing deuces to my comfort zone and starting a software blog.'
-date: 'August 27, 2021'
-author: 'Ephraim Smith'
+leadTitle: "HOLD MY BEER"
+headingTitle: "Throwing deuces to my comfort zone and starting a software blog."
+date: "August 27, 2021"
+description: ""
+keywords: ""
+author: "Ephraim Smith"
+about: ""
 ---
 
 Hey guys. I'm Ephraim Smith. An aspiring mobile developer. My goal with ephcoding.com is to help others trying to break into software by sharing everything I build and learn.

@@ -1,18 +1,13 @@
-import Link from 'next/link';
+import Navigation from "./Navigation";
 
-export default function Header() {
+export default function Header({ title: { first, second } }) {
 	return (
 		<header className='header'>
-			<nav className='header-nav'>
-				{/* <Link href='/'>
-					<a className='header-logo'>
-						<img
-							className='header-logo_img'
-							src='/ephcoding-icon-1000x1000.png'
-						/>
-					</a>
-				</Link> */}
-			</nav>
+			<h1>
+				{first ? first : null}
+				<span className='blue'>{second ? second : null}</span>
+			</h1>
+			<Navigation />
 		</header>
 	);
 }
