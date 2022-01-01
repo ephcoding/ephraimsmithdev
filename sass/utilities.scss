@@ -36,12 +36,12 @@
 	}
 }
 .card.bg_tornado-action {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-		url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+		url("../public/bg_tornado-white-rope.png") 50% 55% / cover;
 
 	&:hover {
-		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-			url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+			url("../public/bg_tornado-white-rope.png") 50% 55% / cover;
 	}
 }
 .card.bg_vortx {

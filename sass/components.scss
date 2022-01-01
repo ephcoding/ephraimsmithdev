@@ -15,16 +15,28 @@
 			// font-size: $sm;
 			padding: $sm 0;
 		}
-		.tags {
-			display: flex;
-			flex-wrap: wrap;
-			.tag {
-				background-color: $charcoal;
-				border-radius: 8px;
-				box-shadow: inset #000 0 0 8px 5px;
-				// color: $black;
-				margin-right: $xs;
-				padding: 0.4rem 0.75rem;
+		.text-footer {
+			&,
+			& > div {
+				display: flex;
+				justify-content: space-between;
+			}
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				.tag {
+					background-color: $charcoal;
+					border-radius: 8px;
+					box-shadow: inset #000 0 0 8px 5px;
+					// color: $black;
+					margin-right: $xs;
+					padding: 0.4rem 0.75rem;
+				}
+			}
+			& .asset {
+				height: $md;
+				margin-left: $sm;
+				width: auto;
 			}
 		}
 	}

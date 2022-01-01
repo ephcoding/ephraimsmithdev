@@ -73,6 +73,7 @@ export const PAGES = {
 export const PROJECTS = [
 	{
 		name: "ALSTR",
+		assets: [],
 		bgImgClass: "bg_alstr",
 		description:
 			'Short for "Algo-Trading Strategy", ALSTR will be a full platform for managing my personal algo-trading strategies.  Learning all the things with this project.  Frontend, backend, APIs, security, data storage and caching, and cloud architecture.',
@@ -85,6 +86,7 @@ export const PROJECTS = [
 	},
 	{
 		name: "ROVERCAM",
+		assets: ["/logo_nasa.png"],
 		bgImgClass: "bg_rovercam",
 		description:
 			"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
@@ -97,6 +99,7 @@ export const PROJECTS = [
 	},
 	{
 		name: "TORNADO ACTION",
+		assets: ["/logo_noaa.png"],
 		bgImgClass: "bg_tornado-action",
 		description:
 			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
@@ -109,6 +112,7 @@ export const PROJECTS = [
 	},
 	{
 		name: "VORTX",
+		assets: ["/logo_nws.png"],
 		bgImgClass: "bg_vortx",
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  The Storm Prediction Center provides severe weather data reports in CSV format.",
