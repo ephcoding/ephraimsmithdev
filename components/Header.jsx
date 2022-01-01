@@ -1,10 +1,12 @@
-import ECLogo from "@/components/ECLogo";
 import Navigation from "./Navigation";
 
-export default function Header() {
+export default function Header({ title: { first, second } }) {
 	return (
 		<header className='header'>
-			<ECLogo />
+			<h1>
+				{first ? first : null}
+				<span className='blue'>{second ? second : null}</span>
+			</h1>
 			<Navigation />
 		</header>
 	);

@@ -1,10 +1,8 @@
-import { NAVIGATION } from "../sitedata/navigation";
+import { NAV_ITEMS } from "../js/site_data";
 import Link from "next/link";
 
 const Navigation = () => {
-	const mainNavItems = NAVIGATION.map(navItem => {
-		const { label, url, icon } = navItem;
-
+	const navItems = NAV_ITEMS.map(({ label, url, icon }) => {
 		return (
 			<li key={label} className='nav__li'>
 				<Link href={url}>
@@ -13,9 +11,10 @@ const Navigation = () => {
 			</li>
 		);
 	});
+
 	return (
-		<nav id='Navigation' className='nav'>
-			<ul className='nav__ul'>{mainNavItems}</ul>
+		<nav className='nav'>
+			<ul className='nav__ul'>{navItems}</ul>
 		</nav>
 	);
 };

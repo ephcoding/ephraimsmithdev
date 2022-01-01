@@ -1,79 +1,101 @@
-@import "./utils/variables.scss";
-// *********************************************************
-// ----- buttons
-// *********************************************************
+@import "./variables.scss";
 
-// *********************************************************
-// ----- cards
-// *********************************************************
-.fcc-projects__card {
+.card {
+	color: $white;
+	border-radius: 3px;
 	display: flex;
-	flex-direction: column;
-
-	& .card-content {
-		background: $charcoal;
-		color: $white;
-		flex: 1;
-		padding: 1rem;
+	margin: $lg auto;
+	padding: $md;
+	&-text {
+		flex: 3;
+		margin-right: $md;
+		h2 {
+			font-size: $md;
+		}
+		.project-description {
+			// font-size: $sm;
+			padding: $sm 0;
+		}
+		.text-footer {
+			&,
+			& > div {
+				display: flex;
+				justify-content: space-between;
+			}
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				.tag {
+					background-color: $black;
+					border-radius: 8px;
+					box-shadow: inset $blue 0 0 9px;
+					margin: 0 $xs $xs 0;
+					padding: 0.4rem 0.75rem;
+				}
+			}
+			& .asset {
+				height: $md;
+				margin-left: $sm;
+				width: auto;
+			}
+		}
 	}
-	.fcc-project__links {
-		.project-link {
-			color: $black;
-			display: inline-block;
-			padding: 0.25rem;
-			text-align: center;
-			vertical-align: middle;
+	.project-links {
+		align-items: center;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: space-evenly;
 
-			&.github,
-			&.live {
-				width: 50%;
+		.project-link {
+			align-items: center;
+			border: 2px solid $white;
+			display: flex;
+			justify-content: center;
+			padding: $xs $sm;
+			width: 100%;
+			&:hover {
+				background-color: $blue;
 			}
-			&.github,
-			&.github--full {
-				background: $white;
-			}
-			&.live {
-				background: #0f0;
-			}
-			&.github--full {
-				width: 100%;
-			}
-			& > span {
-				display: inline-block;
-				margin-left: 5px;
-				vertical-align: middle;
+
+			& span {
+				margin-left: 0.7rem;
 			}
 		}
 	}
 }
-.fcc-projects {
-	align-items: stretch;
-	display: grid;
-	gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, (minmax(275px, 1fr)));
-	justify-items: stretch;
+.card:hover {
+	box-shadow: 0 2px 8px 2px $grey;
+	color: $white;
+	transform: scale(1.02);
 }
-// *********************************************************
-// ----- footer
-// *********************************************************
 .footer {
 	color: $grey;
-	text-align: center;
 	padding: $sm 0;
+	text-align: center;
+
+	&-hr {
+		color: $blue;
+		width: 5rem;
+	}
 }
-// *********************************************************
-// ----- header
-// *********************************************************
 .header {
 	align-items: center;
-	color: $grey;
+	color: $white;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 1rem;
-
+}
+.header h1,
+.header .nav {
+	margin: 0 auto 1rem;
+}
+.nav {
 	.nav__ul {
-		align-items: center;
+		color: $grey;
 		display: flex;
+		justify-content: center;
 
 		.nav__a {
 			display: inline-block;
@@ -86,12 +108,6 @@
 		}
 	}
 }
-// *********************************************************
-// ----- images
-// *********************************************************
-.ec-logo {
-	display: inline-block;
-}
 .post-img {
 	box-shadow: 0 2px 8px -3px #888;
 	border-radius: 10px;
@@ -101,3 +117,50 @@
 	max-width: 700px;
 	width: 45vw;
 }
+// .fcc-projects__card {
+// 	display: flex;
+// 	flex-direction: column;
+
+// 	& .card-content {
+// 		background: $charcoal;
+// 		color: $white;
+// 		flex: 1;
+// 		padding: 1rem;
+// 	}
+// 	.fcc-project__links {
+// 		.project-link {
+// 			color: $black;
+// 			display: inline-block;
+// 			padding: 0.25rem;
+// 			text-align: center;
+// 			vertical-align: middle;
+
+// 			&.github,
+// 			&.live {
+// 				width: 50%;
+// 			}
+// 			&.github,
+// 			&.github--full {
+// 				background: $white;
+// 			}
+// 			&.live {
+// 				background: #0f0;
+// 			}
+// 			&.github--full {
+// 				width: 100%;
+// 			}
+// 			& > span {
+// 				display: inline-block;
+// 				margin-left: 5px;
+// 				vertical-align: middle;
+// 			}
+// 		}
+// 	}
+// }
+// .fcc-projects {
+// 	align-items: stretch;
+// 	display: grid;
+// 	gap: 1.5rem;
+// 	grid-template-columns: repeat(auto-fit, (minmax(275px, 1fr)));
+// 	justify-items: stretch;
+// }
