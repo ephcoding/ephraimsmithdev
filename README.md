@@ -6,17 +6,27 @@ Build my corner of the internet where I share stuff I build and trade knowledge 
 
 ## **MVP FUNCTIONALITY**
 
-- projects page
-- resources page
 - basic nav
+- home page with project cards
+- tools page
 
 ![ephraimsmith.dev project status section](./public/readme_status.png)
 
-- [ ] basic nav: projects, social, resources
-- [ ] landing page
+- [ ] basic nav: home, tools, social
+- [ ] home page with project cards
+- [ ] tools page
 - [ ] site meta
-- [ ] projects page
-- [ ] resources page
+
+<details>
+<summary>Punch List</summary>
+
+- [ ] convert project card bg classes to placeholders
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+</details>
 
 ![ephraimsmith.dev resources section](./public/readme_resources.png)
 

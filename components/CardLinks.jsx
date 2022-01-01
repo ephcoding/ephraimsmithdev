@@ -5,10 +5,6 @@ import Link from "next/link";
 const CardLinks = ({ links }) => {
 	const { appStore, repo, site } = links;
 
-	useEffect(() => {
-		console.log(repo);
-	});
-
 	return (
 		<div className='project-links'>
 			{appStore ? (

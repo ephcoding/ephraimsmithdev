@@ -13,11 +13,19 @@
 		flex: 1;
 		margin: 0 auto;
 		max-width: 980px;
-		padding: 1.5rem;
-		width: 80vw;
+		width: 90vw;
 
 		article {
 			line-height: 1.7;
 		}
+	}
+}
+// *********************************************************
+// ----- PAGES
+// *********************************************************
+.home-page {
+	.project-card-list {
+		// margin: 0 auto;
+		// width: 90vw;
 	}
 }

@@ -17,12 +17,39 @@
 // *********************************************************
 // ----- SEMANTIC CLASSES
 // *********************************************************
-.card.bg_tornado-at-farm {
+.card.bg_alstr {
+	background: linear-gradient(rgba(0, 255, 153, 0.07), rgba(0, 0, 0, 0.7)),
+		url("../public/bg_charts.jpg") 50% 55% / cover;
+
+	&:hover {
+		background: linear-gradient(rgba(0, 255, 153, 0.06), rgba(0, 0, 0, 0.6)),
+			url("../public/bg_charts.jpg") 50% 55% / cover;
+	}
+}
+.card.bg_rovercam {
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-		url("../public/tornado-at-farm.jpg") 50% 55% / cover;
+		url("../public/bg_mars-glowing.jpg") 50% 55% / cover;
 
 	&:hover {
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-			url("../public/tornado-at-farm.jpg") 50% 55% / cover;
+			url("../public/bg_mars-glowing.jpg") 50% 55% / cover;
+	}
+}
+.card.bg_tornado-action {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
+
+	&:hover {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
+	}
+}
+.card.bg_vortx {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
+
+	&:hover {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url("../public/bg_tornado-at-farm.jpg") 50% 55% / cover;
 	}
 }

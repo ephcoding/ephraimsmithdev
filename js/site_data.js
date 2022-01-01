@@ -51,8 +51,8 @@ export const PAGES = {
 			first: "EPHRAIM",
 			second: "SMITH",
 		},
-		pageIntro:
-			"Like a lot of people, I learn by breaking things.  And I've learned a ton about software in the last couple years thanks to other people sharing their experiences and mistakes with me.  To pay it forward, I'm going to start sharing my continued learning, mistakes, and natural ability to break anything, with the world.",
+		// pageIntro:
+		// 	"Like a lot of people, I learn by breaking things.  And I've learned a ton about software in the last couple years thanks to other people sharing their experiences and mistakes with me.  To pay it forward, I'm going to start sharing my continued learning, mistakes, and natural ability to break anything, with the world.",
 		metaDescription: "",
 		metaKeywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
@@ -73,9 +73,10 @@ export const PAGES = {
 export const PROJECTS = [
 	{
 		name: "ALSTR",
+		bgImgClass: "bg_alstr",
 		description:
 			'Short for "Algo-Trading Strategy", ALSTR will be a full platform for managing my personal algo-trading strategies.  Learning all the things with this project.  Frontend, backend, APIs, security, data storage and caching, and cloud architecture.',
-		focusArea: "",
+		tags: ["Architecture", "Cloud"],
 		urls: {
 			appStore: null,
 			repo: "https://www.github.com/ephraimsmith/alstr",
@@ -83,21 +84,11 @@ export const PROJECTS = [
 		},
 	},
 	{
-		name: "Tornado Action",
-		description:
-			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-		focusArea: "",
-		urls: {
-			appStore: "https://www.tornadoaction.com",
-			repo: "https://www.github.com/ephraimsmith/tornado-action",
-			site: "",
-		},
-	},
-	{
 		name: "ROVERCAM",
+		bgImgClass: "bg_rovercam",
 		description:
 			"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-		focusArea: "",
+		tags: ["Mobile"],
 		urls: {
 			appStore: "",
 			repo: "https://www.github.com/modevx/rovercam",
@@ -105,11 +96,23 @@ export const PROJECTS = [
 		},
 	},
 	{
+		name: "TORNADO ACTION",
+		bgImgClass: "bg_tornado-action",
+		description:
+			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+		tags: ["Data Visualization", "Frontend Framework"],
+		urls: {
+			appStore: "",
+			repo: "https://www.github.com/ephraimsmith/tornado-action",
+			site: "https://www.tornadoaction.com",
+		},
+	},
+	{
 		name: "VORTX",
-		bgImgClass: "bg_tornado-at-farm",
+		bgImgClass: "bg_vortx",
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  The Storm Prediction Center provides severe weather data reports in CSV format.",
-		focusArea: "API construction",
+		tags: ["API", "Node.js"],
 		urls: {
 			appStore: "",
 			repo: "https://www.github.com/ephraimsmith/vortx",
@@ -120,7 +123,7 @@ export const PROJECTS = [
 	// name: "FreeCodeCamp",
 	// 	description:
 	// 		"Free online platform for learning web design from top to bottom.  Great tool for filling in knowledge gaps and generating ideas for new projects.",
-	// focusArea: '',
+	// tags: '',
 	// 	urls: {
 	// { appStore: "" },
 	// { repo: "" },
