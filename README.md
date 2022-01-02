@@ -8,22 +8,29 @@ Build my corner of the internet where I share my projects and trade knowledge wi
 
 ## **MVP FUNCTIONALITY**
 
-- basic nav
-- home page with project cards
-- tools page
+- [x] basic nav
+- [x] home page with project cards
+- [x] tools page
 
 ![ephraimsmith.dev project status section](./public/readme_status.png)
+
+<details>
+<summary><em>Current Punch List</em></summary>
+
+- [ ] create Sass placeholders for project card bg styles
+- [ ] sweep site meta data
+
+</details>
+
+<details>
+<summary><em>Versions</em></summary>
+
+### **0.0.1 (MVP)**
 
 - [x] basic nav: home, tools, social
 - [x] home page with project cards
 - [x] tools page
-- [ ] site meta
-
-<details>
-<summary>Punch List</summary>
-
-- [ ] create Sass placeholders for project card bg styles
-- [ ] sweep site meta data
+- [x] site meta
 
 </details>
 
