@@ -3,7 +3,7 @@ import Link from "next/link";
 import Page from "@/components/Page";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { PAGE_INFO } from "../../sitedata/page_info";
+import { PAGE_INFO } from "../../js/site_data";
 
 export default function Archives({ posts }) {
   const { blog } = PAGE_INFO;
