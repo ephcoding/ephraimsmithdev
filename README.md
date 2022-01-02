@@ -25,7 +25,7 @@ Build my corner of the internet where I share my projects and trade knowledge wi
 <details>
 <summary><em>Versions</em></summary>
 
-### **0.0.1 (MVP)**
+### **22JAN02 | 0.0.1 (MVP)**
 
 - [x] basic nav: home, tools, social
 - [x] home page with project cards
