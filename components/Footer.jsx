@@ -6,7 +6,7 @@ export default function Footer() {
 			<Navigation />
 			<hr className='footer-hr' />
 			<div className='copyright'>
-				&copy; {new Date().getFullYear()} ephraimsmith.dev
+				&copy; {new Date().getFullYear()} Ephraim Smith | ephraimsmith.dev
 			</div>
 		</footer>
 	);
