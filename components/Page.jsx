@@ -25,7 +25,7 @@ export default function Page({ pageInfo, children }) {
 				<meta
 					property='og:image'
 					name='image'
-					content='/repo-preview-ephraimsmith-dot-dev.png'
+					content='https://www.ephraimsmith.dev/repo-preview-ephraimsmith-dot-dev.png'
 				/>
 				<meta
 					name='description'
@@ -42,7 +42,7 @@ export default function Page({ pageInfo, children }) {
 				/> */}
 				<meta
 					name='twitter:image'
-					content='/repo-preview-ephraimsmith-dot-dev.png'
+					content='https://www.ephraimsmith.dev/repo-preview-ephraimsmith-dot-dev.png'
 				/>
 				<meta
 					name='twitter:description'
