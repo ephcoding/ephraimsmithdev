@@ -71,45 +71,45 @@ export const PAGES = {
 	},
 };
 export const PROJECTS = [
-	{
-		name: "ALSTR",
-		assets: [],
-		bgImgClass: "bg_alstr",
-		description:
-			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-		tags: ["Architecture", "Serverless"],
-		urls: {
-			appStore: null,
-			repo: "https://www.github.com/ephraimsmith/alstr",
-			site: null,
-		},
-	},
-	{
-		name: "ROVERCAM",
-		assets: ["/logo_nasa.png"],
-		bgImgClass: "bg_rovercam",
-		description:
-			"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-		tags: ["Mobile"],
-		urls: {
-			appStore: "",
-			repo: "https://www.github.com/modevx/rovercam",
-			site: "https://www.rovercamapp.com",
-		},
-	},
-	{
-		name: "TORNADO ACTION",
-		assets: ["/logo_noaa.png"],
-		bgImgClass: "bg_tornado-action",
-		description:
-			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-		tags: ["Data Visualization", "Frontend Framework"],
-		urls: {
-			appStore: "",
-			repo: "https://www.github.com/ephraimsmith/tornado-action",
-			site: "https://www.tornadoaction.com",
-		},
-	},
+	// {
+	// 	name: "ALSTR",
+	// 	assets: [],
+	// 	bgImgClass: "bg_alstr",
+	// 	description:
+	// 		"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+	// 	tags: ["Architecture", "Serverless"],
+	// 	urls: {
+	// 		appStore: null,
+	// 		repo: "https://www.github.com/ephraimsmith/alstr",
+	// 		site: null,
+	// 	},
+	// },
+	// {
+	// 	name: "ROVERCAM",
+	// 	assets: ["/logo_nasa.png"],
+	// 	bgImgClass: "bg_rovercam",
+	// 	description:
+	// 		"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
+	// 	tags: ["Mobile"],
+	// 	urls: {
+	// 		appStore: "",
+	// 		repo: "https://www.github.com/modevx/rovercam",
+	// 		site: "https://www.rovercamapp.com",
+	// 	},
+	// },
+	// {
+	// 	name: "TORNADO ACTION",
+	// 	assets: ["/logo_noaa.png"],
+	// 	bgImgClass: "bg_tornado-action",
+	// 	description:
+	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+	// 	tags: ["Data Visualization", "Frontend Framework"],
+	// 	urls: {
+	// 		appStore: "",
+	// 		repo: "https://www.github.com/ephraimsmith/tornado-action",
+	// 		site: "https://www.tornadoaction.com",
+	// 	},
+	// },
 	{
 		name: "VORTX",
 		assets: ["/logo_nws.png"],
