@@ -42,7 +42,7 @@ export default function Page({ pageInfo, children }) {
 				/> */}
 				<meta
 					name='twitter:image'
-					content='https://repository-images.githubusercontent.com/378638394/7f8970e2-6225-45e2-b3cb-bed47e9f853e'
+					content='/repo-preview-ephraimsmith-dot-dev.png'
 				/>
 				<meta
 					name='twitter:description'
