@@ -1,28 +1,45 @@
+<!-- #region INTRO -->
+
 ![ephraimsmith.dev repo title](./public/readme_title.png)
 
+<<<<<<< HEAD
+=======
+## **OBJECTIVE**
+
+Build my corner of the internet where I share my projects and trade knowledge with people all over the world.
+
+>>>>>>> prod
 ## **MVP FUNCTIONALITY**
 
-- basic nav
-- home page with project cards
-- tools page
+- [x] basic nav
+- [x] home page with project cards
+- [x] tools page
 
 ![ephraimsmith.dev project status section](./public/readme_status.png)
 
-- [ ] basic nav: home, tools, social
-- [ ] home page with project cards
-- [ ] tools page
-- [ ] site meta
-
 <details>
-<summary>Punch List</summary>
+<summary><em>Current Punch List</em></summary>
 
-- [ ] convert project card bg classes to placeholders
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] create Sass placeholders for project card bg styles
+- [ ] sweep site meta data
 
 </details>
+
+<details>
+<summary><em>Versions</em></summary>
+
+### **22JAN02 | 0.0.1 (MVP)**
+
+- [x] basic nav: home, tools, social
+- [x] home page with project cards
+- [x] tools page
+- [x] site meta
+
+</details>
+
+<!-- #endregion /INTRO -->
+
+<!-- #region RESOURCES -->
 
 ![ephraimsmith.dev resources section](./public/readme_resources.png)
 
@@ -35,8 +52,14 @@
 
 - []()
 
+<!-- #endregion /RESOURCES -->
+
+<!-- #region SHOUT-OUTS -->
+
 ![ephraimsmith.dev project shout-outs section](./public/readme_shout-outs.png)
 
 ## **Brad Traversy** [![GitHub followers](https://img.shields.io/github/followers/bradtraversy?label=Follow&style=social)](https://github.com/bradtraversy) [![Twitter Follow](https://img.shields.io/twitter/follow/traversymedia?label=Follow&style=social)](https://twitter.com/traversymedia)
 
 ## **Kevin Cunningham** [![GitHub followers](https://img.shields.io/github/followers/doingandlearning?label=Follow&style=social)](https://github.com/doingandlearning) [![Twitter Follow](https://img.shields.io/twitter/follow/dolearning?label=Follow&style=social)](https://twitter.com/dolearning)
+
+<!-- #endregion /SHOUT-OUTS -->
