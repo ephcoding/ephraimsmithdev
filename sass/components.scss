@@ -2,7 +2,7 @@
 
 .card {
 	color: $white;
-	border-radius: 3px;
+	border-radius: $xs;
 	margin: $lg auto;
 	padding: $md;
 	&:hover {
@@ -44,7 +44,7 @@
 	}
 	&__tag {
 		background-color: $blue;
-		border-radius: 8px;
+		border-radius: $xs;
 		box-shadow: inset $black 0 0 12px 4px;
 		display: inline-block;
 		margin: 0 $xs $xs 0;

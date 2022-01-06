@@ -9,15 +9,14 @@
 	// font-family: $font_secondary, Arial, Helvetica, sans-serif;
 	min-height: 100vh;
 
-	.content {
+	& .content {
 		flex: 1;
 		margin: 0 auto;
 		max-width: 980px;
 		width: 90vw;
-
-		article {
-			line-height: 1.7;
-		}
+	}
+	&-intro {
+		text-align: center;
 	}
 }
 // *********************************************************
