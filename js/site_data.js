@@ -51,8 +51,8 @@ export const PAGES = {
 			first: "EPHRAIMSMITH",
 			second: ".DEV",
 		},
-		// pageIntro:
-		// 	"Like a lot of people, I learn by breaking things.  And I've learned a ton about software in the last couple years thanks to other people sharing their experiences and mistakes with me.  To pay it forward, I'm going to start sharing my continued learning, mistakes, and natural ability to break anything, with the world.",
+		pageIntro:
+			"The projects below are either under active development or have at least an MVP deployed.",
 		metaDescription: "",
 		metaKeywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
