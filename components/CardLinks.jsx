@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { FaGithub, FaMobileAlt, FaTv } from "react-icons/fa";
 import Link from "next/link";
 
@@ -6,10 +5,10 @@ const CardLinks = ({ links }) => {
 	const { appStore, repo, site } = links;
 
 	return (
-		<div className='project-links'>
+		<div className='card__links'>
 			{appStore ? (
 				<Link href={appStore}>
-					<a target='_blank' className='project-link'>
+					<a target='_blank' className='card__link'>
 						<FaMobileAlt size={20} title='AppStore' />
 						<span>app store</span>
 					</a>
@@ -17,7 +16,7 @@ const CardLinks = ({ links }) => {
 			) : null}
 			{repo ? (
 				<Link href={repo}>
-					<a target='_blank' className='project-link'>
+					<a target='_blank' className='card__link'>
 						<FaGithub size={20} title='GitHub' />
 						<span>code</span>
 					</a>
