@@ -116,7 +116,7 @@ export const PROJECTS = [
 		bgImgClass: "bg_vortx",
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  The Storm Prediction Center provides severe weather data reports in CSV format.",
-		tags: ["API", "Node.js"],
+		tags: ["API design", "API documentation", "RDB design", "Node.js"],
 		urls: {
 			appStore: "",
 			repo: "https://www.github.com/ephraimsmith/vortx",
