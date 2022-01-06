@@ -52,7 +52,7 @@ export default function Page({ pageInfo, children }) {
 			<div className={`page ${cssClass}-page`}>
 				<Header title={pageHeading} />
 				<main className='content'>
-					<p className='pPageIntro'>{pageIntro}</p>
+					<p className='page-intro'>{pageIntro}</p>
 					{children}
 				</main>
 				<Footer />

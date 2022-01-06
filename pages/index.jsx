@@ -12,7 +12,7 @@ export default function Home() {
 
 	return (
 		<Page pageInfo={home}>
-			<ul className='project-card-list'>{projectCards}</ul>
+			<ul className='project-card__list'>{projectCards}</ul>
 		</Page>
 	);
 }
