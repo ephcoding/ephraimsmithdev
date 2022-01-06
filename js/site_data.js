@@ -64,7 +64,8 @@ export const PAGES = {
 			first: "MY ",
 			second: "TOOLS",
 		},
-		pageIntro: "",
+		pageIntro:
+			"This is a list of tools that I use regularly or used a lot at some point.",
 		metaDescription: "",
 		metaKeywords: "",
 		metaTitle: "Ephraim Smith | Tools",
