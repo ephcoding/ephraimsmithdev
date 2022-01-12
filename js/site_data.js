@@ -72,19 +72,19 @@ export const PAGES = {
 	},
 };
 export const PROJECTS = [
-	// {
-	// 	name: "ALSTR",
-	// 	assets: [],
-	// 	bgImgClass: "bg_alstr",
-	// 	description:
-	// 		"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-	// 	tags: ["Architecture", "Serverless"],
-	// 	urls: {
-	// 		appStore: null,
-	// 		repo: "https://www.github.com/ephraimsmith/alstr",
-	// 		site: null,
-	// 	},
-	// },
+	{
+		name: "ALSTR",
+		assets: [],
+		bgImgClass: "bg_alstr",
+		description:
+			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+		tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
+		urls: {
+			appStore: null,
+			repo: "https://www.github.com/ephcoding/alstr",
+			site: null,
+		},
+	},
 	// {
 	// 	name: "ROVERCAM",
 	// 	assets: ["/logo_nasa.png"],
@@ -116,11 +116,11 @@ export const PROJECTS = [
 		assets: ["/logo_nws.png"],
 		bgImgClass: "bg_vortx",
 		description:
-			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  The Storm Prediction Center provides severe weather data reports in CSV format.",
+			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
 		tags: ["API design", "API documentation", "RDB design", "Node.js"],
 		urls: {
 			appStore: "",
-			repo: "https://www.github.com/ephraimsmith/vortx",
+			repo: "https://www.github.com/ephcoding/vortx",
 			site: "",
 		},
 	},
