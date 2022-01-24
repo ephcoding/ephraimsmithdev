@@ -35,7 +35,7 @@ export default function Page({ pageInfo, children }) {
 				<meta name='author' content='Ephraim Smith' />
 				{/* Twitter Meta */}
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:creator' content='@ephcoding' />
+				<meta name='twitter:creator' content='@ephraimsmithdev' />
 				{/* <meta
 					name='twitter:site'
 					content='[@Your-twitter-site-handle (optional)]'
