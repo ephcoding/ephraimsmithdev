@@ -26,22 +26,22 @@ export const NAV_ITEMS = [
 	{
 		label: "tools",
 		url: "/tools",
-		icon: <FaTools size={20} title='tools' />,
+		icon: <FaTools size={20} title='Tools' />,
 	},
 	{
 		label: "github",
-		url: "https://github.com/ephcoding",
-		icon: <FaGithub size={20} title='github' />,
+		url: "https://github.com/ephraimsmithdev",
+		icon: <FaGithub size={20} title='Check out my projects on GitHub' />,
 	},
 	{
 		label: "twitter",
-		url: "https://www.twitter.com/ephcoding",
-		icon: <FaTwitter size={20} title='twitter' />,
+		url: "https://www.twitter.com/_modevx",
+		icon: <FaTwitter size={20} title='Follow on Twitter' />,
 	},
 	{
 		label: "linkedin",
-		url: "https://www.linkedin.com/in/ephcoding",
-		icon: <FaLinkedin size={20} title='linkedin' />,
+		url: "https://www.linkedin.com/in/ephraimjsmith",
+		icon: <FaLinkedin size={20} title='Connect on LinkedIn' />,
 	},
 ];
 export const PAGES = {
@@ -51,8 +51,8 @@ export const PAGES = {
 			first: "EPHRAIMSMITH",
 			second: ".DEV",
 		},
-		pageIntro:
-			"The projects below are either under active development or have at least an MVP deployed.",
+		// pageIntro:
+		// 	"The projects below are either under active development or have at least an MVP deployed.",
 		metaDescription: "",
 		metaKeywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
@@ -81,23 +81,23 @@ export const PROJECTS = [
 		tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
 		urls: {
 			appStore: null,
-			repo: "https://www.github.com/ephcoding/alstr",
+			repo: "https://www.github.com/ephraimsmithdev/alstr",
 			site: null,
 		},
 	},
-	// {
-	// 	name: "ROVERCAM",
-	// 	assets: ["/logo_nasa.png"],
-	// 	bgImgClass: "bg_rovercam",
-	// 	description:
-	// 		"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-	// 	tags: ["Mobile"],
-	// 	urls: {
-	// 		appStore: "",
-	// 		repo: "https://www.github.com/modevx/rovercam",
-	// 		site: "https://www.rovercamapp.com",
-	// 	},
-	// },
+	{
+		name: "ROVERCAM",
+		assets: ["/logo_nasa.png"],
+		bgImgClass: "bg_rovercam",
+		description:
+			"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
+		tags: ["Mobile"],
+		urls: {
+			appStore: "",
+			repo: "https://www.github.com/modevx/rovercam",
+			// site: "https://www.rovercamapp.com",
+		},
+	},
 	// {
 	// 	name: "TORNADO ACTION",
 	// 	assets: ["/logo_noaa.png"],
@@ -120,7 +120,7 @@ export const PROJECTS = [
 		tags: ["API design", "API documentation", "RDB design", "Node.js"],
 		urls: {
 			appStore: "",
-			repo: "https://www.github.com/ephcoding/vortx",
+			repo: "https://www.github.com/ephraimsmithdev/vortx",
 			site: "",
 		},
 	},
