@@ -3,10 +3,12 @@
 .card {
 	color: $white;
 	border-radius: $xs;
+	box-shadow: 0 2px 8px 1px #000;
 	margin: $lg auto;
 	padding: $md;
 	&:hover {
-		box-shadow: 0 2px 8px 2px $grey;
+		box-shadow: 0 2px 5px 1px #000, 0 4px 10px 2px #000, 0 6px 20px 3px #000,
+			0 8px 30px 4px #000;
 		color: $white;
 		transform: scale(1.02);
 	}
