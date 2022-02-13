@@ -6,7 +6,9 @@ const Navigation = () => {
 		return (
 			<li key={label} className='nav__li'>
 				<Link href={url}>
-					<a className='nav__a'>{icon ? icon : label}</a>
+					<a className='nav__a' target='_blank'>
+						{icon ? icon : label}
+					</a>
 				</Link>
 			</li>
 		);
