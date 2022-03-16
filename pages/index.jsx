@@ -1,4 +1,4 @@
-import { PAGES, PROJECTS } from "../js/site_data";
+import { PAGES, PROJECTS } from "../site_data/site_data";
 import Card from "@/components/Card";
 import Link from "next/link";
 import Page from "@/components/Page";

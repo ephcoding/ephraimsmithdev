@@ -1,4 +1,4 @@
-import { NAV_ITEMS } from "../js/site_data";
+import { NAV_ITEMS } from "../site_data/site_data";
 import Link from "next/link";
 
 const Navigation = () => {
