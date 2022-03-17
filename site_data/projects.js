@@ -174,18 +174,17 @@ export const WEB_APPS = [
 		isLive: true,
 		appStore: `${GH_PAGES_BASE}/js-calculator`,
 	},
+	// {
+	//   name: "ALSTR",
+	//   assets: [],
+	//   bgImgClass: "bg_alstr",
+	//   description:
+	//     "ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+	//   tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
+	//   urls: {
+	//     appStore: null,
+	//     repo: "https://www.github.com/ephcoding/alstr",
+	//     site: null,
+	//   },
+	// },
 ];
-
-// {
-//   name: "ALSTR",
-//   assets: [],
-//   bgImgClass: "bg_alstr",
-//   description:
-//     "ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-//   tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
-//   urls: {
-//     appStore: null,
-//     repo: "https://www.github.com/ephcoding/alstr",
-//     site: null,
-//   },
-// },
