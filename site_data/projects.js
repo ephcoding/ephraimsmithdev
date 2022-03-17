@@ -13,7 +13,8 @@ const GH_PAGES_BASE = "https://ephraimsmith.github.io";
  *    links: [
  *        <GitHubLink/>,
  *        <WebLink/>,
- *        <AppStoreLink/>
+ *        <AppStoreLink/>,
+ *        <PlayStoreLink/>
  *    ]
  * }
  *
@@ -128,6 +129,14 @@ export const JS_ALGO_DATA_STRUCTURES = [
 ];
 
 export const MOBILE_APPS = [
+	{
+		title: "ROVERCAM",
+		imgURI: "",
+		description: "",
+		tech: ["React Native"],
+		links: [],
+	},
+	// --------------------
 	// {
 	// 	name: "ROVERCAM",
 	// 	assets: ["/logo_nasa.png"],

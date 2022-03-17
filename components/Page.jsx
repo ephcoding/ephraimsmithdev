@@ -13,7 +13,7 @@ export default function Page({ pageInfo, children }) {
 	} = pageInfo;
 
 	return (
-		<div id='Meta' className='meta'>
+		<>
 			<Head>
 				<title>{metaTitle}</title>
 				<meta name='keywords' content={metaKeywords} />
@@ -49,14 +49,11 @@ export default function Page({ pageInfo, children }) {
 					content='Ephraim Smith | sharing software, mistakes, bad dad jokes, and lessons learned with the world.  Probably not in that order.'
 				/>
 			</Head>
-			<div className={`page ${cssClass}-page`}>
+			<div className='flex flex-col min-h-screen bg-neutral-800 text-white'>
 				<Header title={pageHeading} />
-				<main className='content'>
-					<p className='page-intro'>{pageIntro}</p>
-					{children}
-				</main>
+				<main className='grow'>{children}</main>
 				<Footer />
 			</div>
-		</div>
+		</>
 	);
 }
