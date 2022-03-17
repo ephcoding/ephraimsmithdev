@@ -1,14 +1,14 @@
 import Page from "@/components/Page";
 import Link from "next/link";
-import { PAGES, TOOLS } from "../../site_data/site_data";
+import { TOOLS_LIST, PAGE_META } from "../../site_data";
+
 // import { sortHighLow } from "@/js/util_funcs";
 
 const Tools = () => {
-	const { tools } = PAGES;
-
 	// const sortedTools = TOOLS.sort(({ name }) => sortHighLow(this.name, name));
+	const { tools } = PAGE_META;
 
-	const dTools = TOOLS.map(({ name, url, description }) => (
+	const dTools = TOOLS_LIST.map(({ name, url, description }) => (
 		<li key={name} className='tools-li'>
 			<Link href={url}>
 				<a target='_blank' className='link__external'>
@@ -20,7 +20,9 @@ const Tools = () => {
 	));
 
 	return (
-		<Page pageInfo={tools}>{<ul className='tools-list'>{dTools}</ul>}</Page>
+		<Page pageInfo={tools}>
+			<ul className='tools-list'>{dTools}</ul>
+		</Page>
 	);
 };
 
