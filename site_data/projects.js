@@ -2,6 +2,23 @@
 const GH_REPO_BASE = "https://github.com/ephraimsmith";
 const GH_PAGES_BASE = "https://ephraimsmith.github.io";
 
+/**
+ * PROJECT TEMPLATE
+ *
+ * {
+ *    title:
+ *    imgURI:
+ *    description:
+ *    tech:
+ *    links: [
+ *        <GitHubLink/>,
+ *        <WebLink/>,
+ *        <AppStoreLink/>
+ *    ]
+ * }
+ *
+ */
+
 export const APIS = [
 	{
 		name: "VORTX",
@@ -147,6 +164,12 @@ export const WEB_APPS = [
 	},
 	{
 		title: "JavaScript Calculator",
+		repoLink: `${GH_REPO_BASE}/js-calculator`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/js-calculator`,
+	},
+	{
+		title: "Pomodoro Clock",
 		repoLink: `${GH_REPO_BASE}/js-calculator`,
 		isLive: true,
 		appStore: `${GH_PAGES_BASE}/js-calculator`,

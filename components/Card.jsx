@@ -1,8 +1,8 @@
 import CardLinks from "@/components/CardLinks";
 import CardTags from "@/components/CardTags";
 
-const Card = ({ cardMeta }) => {
-	const { bgImgClass, description, name, tags, urls } = cardMeta;
+const Card = ({ card }) => {
+	const { bgImgClass, description, name, tags, urls } = card;
 
 	return (
 		<li className={`card ${bgImgClass}`}>
