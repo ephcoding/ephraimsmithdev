@@ -2,53 +2,7 @@
 const GH_REPO_BASE = "https://github.com/ephraimsmith";
 const GH_PAGES_BASE = "https://ephraimsmith.github.io";
 
-// FCC CERTIFICATE TITLES
-const RWD = "RESPONSIVE WEB DESIGN";
-const JS = "JAVASCRIPT ALGORITHMS & DATA STRUCTURES";
-const FRONTEND = "FRONT END DEVELOPMENT LIBRARIES";
-const DATAVIZ = "DATA VISUALIZATION";
-const BACKEND = "BACKEND DEVELOPMENT AND APIS";
-
-export const PROJECTS = [
-	{
-		name: "ALSTR",
-		assets: [],
-		bgImgClass: "bg_alstr",
-		description:
-			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-		tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
-		urls: {
-			appStore: null,
-			repo: "https://www.github.com/ephcoding/alstr",
-			site: null,
-		},
-	},
-	// {
-	// 	name: "ROVERCAM",
-	// 	assets: ["/logo_nasa.png"],
-	// 	bgImgClass: "bg_rovercam",
-	// 	description:
-	// 		"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-	// 	tags: ["Mobile"],
-	// 	urls: {
-	// 		appStore: "",
-	// 		repo: "https://www.github.com/modevx/rovercam",
-	// 		site: "https://www.rovercamapp.com",
-	// 	},
-	// },
-	// {
-	// 	name: "TORNADO ACTION",
-	// 	assets: ["/logo_noaa.png"],
-	// 	bgImgClass: "bg_tornado-action",
-	// 	description:
-	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-	// 	tags: ["Data Visualization", "Frontend Framework"],
-	// 	urls: {
-	// 		appStore: "",
-	// 		repo: "https://www.github.com/ephraimsmith/tornado-action",
-	// 		site: "https://www.tornadoaction.com",
-	// 	},
-	// },
+export const APIS = [
 	{
 		name: "VORTX",
 		assets: ["/logo_nws.png"],
@@ -62,6 +16,54 @@ export const PROJECTS = [
 			site: "",
 		},
 	},
+];
+
+export const DESIGN = [
+	{
+		title: "Tribute Page",
+		repoLink: `${GH_REPO_BASE}/tribute-page`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/tribute-page`,
+	},
+	{
+		title: "Survey Form",
+		repoLink: `${GH_REPO_BASE}/survey-form`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/survey-form`,
+	},
+	{
+		title: "Product Landing Page",
+		repoLink: `${GH_REPO_BASE}/product-landing-page`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/product-landing-page`,
+	},
+	{
+		title: "Technical Documentation Page",
+		repoLink: `${GH_REPO_BASE}/technical-documentation-page`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
+	},
+	{
+		title: "Portfolio Page",
+		repoLink: `${GH_REPO_BASE}/portfolio-page`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
+	},
+
+	// {
+	// 	name: "TORNADO ACTION",
+	// 	assets: ["/logo_noaa.png"],
+	// 	bgImgClass: "bg_tornado-action",
+	// 	description:
+	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+	// 	tags: ["Data Visualization", "Frontend Framework"],
+	// 	urls: {
+	// 		appStore: "",
+	// 		repo: "https://www.github.com/ephraimsmith/tornado-action",
+	// 		site: "https://www.tornadoaction.com",
+	// 	},
+	// },
+
 	// {
 	// name: "FreeCodeCamp",
 	// 	description:
@@ -75,104 +77,92 @@ export const PROJECTS = [
 	// },
 ];
 
-export const FCC_PROJECTS = [
+export const JS_ALGO_DATA_STRUCTURES = [
 	{
-		certificate: RWD,
-		projects: [
-			{
-				title: "Tribute Page",
-				repoLink: `${GH_REPO_BASE}/tribute-page`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/tribute-page`,
-			},
-			{
-				title: "Survey Form",
-				repoLink: `${GH_REPO_BASE}/survey-form`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/survey-form`,
-			},
-			{
-				title: "Product Landing Page",
-				repoLink: `${GH_REPO_BASE}/product-landing-page`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/product-landing-page`,
-			},
-			{
-				title: "Technical Documentation Page",
-				repoLink: `${GH_REPO_BASE}/technical-documentation-page`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
-			},
-			{
-				title: "Portfolio Page",
-				repoLink: `${GH_REPO_BASE}/portfolio-page`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
-			},
-		],
+		title: "Palindrome",
+		repoLink: `${GH_REPO_BASE}/palindrome-checker`,
+		isLive: false,
+		appStore: `${GH_PAGES_BASE}/palindrome-checker`,
 	},
 	{
-		certificate: JS,
-		projects: [
-			{
-				title: "Palindrome",
-				repoLink: `${GH_REPO_BASE}/palindrome-checker`,
-				isLive: false,
-				appStore: `${GH_PAGES_BASE}/palindrome-checker`,
-			},
-			{
-				title: "Roman Numeral Converter",
-				repoLink: `${GH_REPO_BASE}/roman-numeral-converter`,
-				isLive: false,
-				appStore: `${GH_PAGES_BASE}/roman-numeral-converter`,
-			},
-			{
-				title: "Caesars Cipher",
-				repoLink: `${GH_REPO_BASE}/caesars-cipher`,
-				isLive: false,
-				appStore: `${GH_PAGES_BASE}/caesars-cipher`,
-			},
-			{
-				title: "Telephone Number Validator",
-				repoLink: `${GH_REPO_BASE}/telephone-number-validator`,
-				isLive: false,
-				appStore: `${GH_PAGES_BASE}/telephone-number-validator`,
-			},
-			{
-				title: "Cash Register",
-				repoLink: `${GH_REPO_BASE}/cash-register`,
-				isLive: false,
-				appStore: `${GH_PAGES_BASE}/cash-register`,
-			},
-		],
+		title: "Roman Numeral Converter",
+		repoLink: `${GH_REPO_BASE}/roman-numeral-converter`,
+		isLive: false,
+		appStore: `${GH_PAGES_BASE}/roman-numeral-converter`,
 	},
 	{
-		certificate: FRONTEND,
-		projects: [
-			{
-				title: "Random Quote Machine",
-				repoLink: `${GH_REPO_BASE}/random-quote-machine`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/random-quote-machine`,
-			},
-			{
-				title: "Markdown Previewer",
-				repoLink: `${GH_REPO_BASE}/markdown-previewer`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/markdown-previewer`,
-			},
-			{
-				title: "Drum Machine",
-				repoLink: `${GH_REPO_BASE}/drum-machine`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/drum-machine`,
-			},
-			{
-				title: "JavaScript Calculator",
-				repoLink: `${GH_REPO_BASE}/js-calculator`,
-				isLive: true,
-				appStore: `${GH_PAGES_BASE}/js-calculator`,
-			},
-		],
+		title: "Caesars Cipher",
+		repoLink: `${GH_REPO_BASE}/caesars-cipher`,
+		isLive: false,
+		appStore: `${GH_PAGES_BASE}/caesars-cipher`,
+	},
+	{
+		title: "Telephone Number Validator",
+		repoLink: `${GH_REPO_BASE}/telephone-number-validator`,
+		isLive: false,
+		appStore: `${GH_PAGES_BASE}/telephone-number-validator`,
+	},
+	{
+		title: "Cash Register",
+		repoLink: `${GH_REPO_BASE}/cash-register`,
+		isLive: false,
+		appStore: `${GH_PAGES_BASE}/cash-register`,
 	},
 ];
+
+export const MOBILE_APPS = [
+	// {
+	// 	name: "ROVERCAM",
+	// 	assets: ["/logo_nasa.png"],
+	// 	bgImgClass: "bg_rovercam",
+	// 	description:
+	// 		"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
+	// 	tags: ["Mobile"],
+	// 	urls: {
+	// 		appStore: "",
+	// 		repo: "https://www.github.com/modevx/rovercam",
+	// 		site: "https://www.rovercamapp.com",
+	// 	},
+	// },
+];
+
+export const WEB_APPS = [
+	{
+		title: "Random Quote Machine",
+		repoLink: `${GH_REPO_BASE}/random-quote-machine`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/random-quote-machine`,
+	},
+	{
+		title: "Markdown Previewer",
+		repoLink: `${GH_REPO_BASE}/markdown-previewer`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/markdown-previewer`,
+	},
+	{
+		title: "Drum Machine",
+		repoLink: `${GH_REPO_BASE}/drum-machine`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/drum-machine`,
+	},
+	{
+		title: "JavaScript Calculator",
+		repoLink: `${GH_REPO_BASE}/js-calculator`,
+		isLive: true,
+		appStore: `${GH_PAGES_BASE}/js-calculator`,
+	},
+];
+
+// {
+//   name: "ALSTR",
+//   assets: [],
+//   bgImgClass: "bg_alstr",
+//   description:
+//     "ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+//   tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
+//   urls: {
+//     appStore: null,
+//     repo: "https://www.github.com/ephcoding/alstr",
+//     site: null,
+//   },
+// },
