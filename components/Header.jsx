@@ -1,13 +1,12 @@
+import { SITE_NAV } from "../site_data";
 import NavList from "./NavList";
 
-export default function Header({ title: { first, second } }) {
+const Header = ({ title: { first, second } }) => {
 	return (
 		<header className='border border-green-600 flex justify-between'>
-			<h1>
-				{first ? first : null}
-				<span className='blue'>{second ? second : null}</span>
-			</h1>
-			<NavList />
+			<NavList nav={SITE_NAV} />
 		</header>
 	);
-}
+};
+
+export default Header;

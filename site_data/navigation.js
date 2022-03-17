@@ -6,21 +6,20 @@ import {
 	FaTwitter,
 } from "react-icons/fa";
 
-const SITE = {};
-
-const SOCIAL = {};
-
-export const NAV_ITEMS = [
+const SITE_NAV = [
 	{
 		label: "home",
 		url: "/",
-		icon: <FaHome size={22} title='ephraimsmith.dev' />,
+		title: "ephraimsmith.dev",
 	},
 	{
 		label: "tools",
 		url: "/tools",
-		icon: <FaTools size={20} title='tools' />,
+		title: "tools",
 	},
+];
+
+const SOCIAL_NAV = [
 	{
 		label: "github",
 		url: "https://github.com/ephcoding",
@@ -37,3 +36,5 @@ export const NAV_ITEMS = [
 		icon: <FaLinkedin size={20} title='linkedin' />,
 	},
 ];
+
+export { SITE_NAV, SOCIAL_NAV };

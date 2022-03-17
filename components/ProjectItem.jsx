@@ -2,7 +2,7 @@ import Image from "next/image";
 import CardLinks from "@/components/ProjectLinks";
 // import CardTags from "@/components/CardTags";
 
-const ProjectListItem = ({ project }) => {
+const ProjectItem = ({ project }) => {
 	const { title, imgURL, description, tech, links } = project;
 
 	return (
@@ -24,4 +24,4 @@ const ProjectListItem = ({ project }) => {
 	);
 };
 
-export default ProjectListItem;
+export default ProjectItem;

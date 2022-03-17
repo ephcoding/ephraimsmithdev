@@ -1,5 +1,5 @@
 import { PAGE_META, MOBILE_APPS } from "../site_data";
-import ProjectListItem from "@/components/ProjectListItem";
+import ProjectItem from "@/components/ProjectItem";
 import Link from "next/link";
 import Page from "@/components/Page";
 import ProjectList from "@/components/ProjectList";

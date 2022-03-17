@@ -1,22 +1,14 @@
-import { NAV_ITEMS } from "../site_data";
+import NavItem from "./NavItem";
 import Link from "next/link";
 
-const NavList = () => {
-	const navItems = NAV_ITEMS.map(({ label, url, icon }) => {
-		return (
-			<li key={label} className='nav__li'>
-				<Link href={url}>
-					<a className='nav__a'>{icon ? icon : label}</a>
-				</Link>
-			</li>
-		);
-	});
-
+export default function NavList({ nav }) {
 	return (
-		<nav className=''>
-			<ul className='flex'>{navItems}</ul>
+		<nav>
+			<ul className='flex'>
+				{nav.map(navItem => (
+					<span>{navItem.label}</span>
+				))}
+			</ul>
 		</nav>
 	);
-};
-
-export default NavList;
+}
