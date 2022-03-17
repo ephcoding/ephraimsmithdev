@@ -51,7 +51,7 @@ export default function Page({ pageInfo, children }) {
 			</Head>
 			<div className='flex flex-col min-h-screen bg-neutral-800 text-white'>
 				<Header title={pageHeading} />
-				<main className='grow'>{children}</main>
+				<main className='border border-green-600 grow'>{children}</main>
 				<Footer />
 			</div>
 		</>

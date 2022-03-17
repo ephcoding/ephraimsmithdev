@@ -1,12 +1,12 @@
 import Image from "next/image";
-import CardLinks from "@/components/CardLinks";
+import CardLinks from "@/components/ProjectLinks";
 // import CardTags from "@/components/CardTags";
 
 const ProjectListItem = ({ project }) => {
 	const { title, imgURL, description, tech, links } = project;
 
 	return (
-		<li className={`card`} key={title}>
+		<li className='border border-red-500' key={title}>
 			<div className='card__content'>
 				<div className='card__text'>
 					<h2 className='text-red-500'>{title}</h2>
