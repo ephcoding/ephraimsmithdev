@@ -1,10 +1,10 @@
-import { PAGES, PROJECTS } from "../site_data/site_data";
+import { PAGE_META, PROJECTS } from "../site_data";
 import Card from "@/components/Card";
 import Link from "next/link";
 import Page from "@/components/Page";
 
 export default function Home() {
-	const { home } = PAGES;
+	const { home } = PAGE_META;
 
 	const projectCards = PROJECTS.map(project => (
 		<Card cardMeta={project} key={project.name} />
