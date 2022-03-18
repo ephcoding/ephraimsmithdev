@@ -1,8 +1,9 @@
 import {
-	PAGE_META,
+	APIS,
 	DESIGN,
 	JAVASCRIPT,
 	MOBILE_APPS,
+	PAGE_META,
 	WEB_APPS,
 } from "../site_data";
 import ProjectItem from "@/components/ProjectItem";
@@ -15,6 +16,8 @@ export default function Home() {
 
 	return (
 		<Page pageInfo={home}>
+			<h2 className='text-4xl font-bold my-4'>APIs</h2>
+			<ProjectList projects={APIS} />
 			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>
 			<ProjectList projects={DESIGN} />
 			<h2 className='text-4xl font-bold my-4'>JAVASCRIPT</h2>

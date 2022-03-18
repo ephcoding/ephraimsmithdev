@@ -33,11 +33,16 @@ const GH_PAGES_BASE = "https://ephraimsmith.github.io";
 export const APIS = [
 	{
 		title: "VORTX",
-		imgURI: ["/logo_nws.png"],
+		imgURI: "p-vortx.jpg",
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
 		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQl"],
-		links: [],
+		links: [
+			{
+				label: "GitHub",
+				url: "https://github.com/ephraimsmithdev/vortx",
+			},
+		],
 	},
 ];
 
@@ -145,24 +150,24 @@ export const MOBILE_APPS = [
 	{
 		title: "ROVERCAM",
 		imgURI: "p-rovercam.png",
-		description: "",
+		description:
+			"ROVERCAM is a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
 		tech: ["React Native"],
-		links: [{ label: "", url: "" }],
+		links: [
+			{
+				label: "GitHub",
+				url: "https://github.com/modevx/rovercam",
+			},
+			// {
+			// 	label: "Play Store",
+			// 	url: "https://github.com/modevx/rovercam"
+			// },
+			// {
+			// 	label: "App Store",
+			// 	url: "https://github.com/modevx/rovercam"
+			// },
+		],
 	},
-	// --------------------
-	// {
-	// 	name: "ROVERCAM",
-	// 	assets: ["/logo_nasa.png"],
-	// 	bgImgClass: "bg_rovercam",
-	// 	description:
-	// 		"ROVERCAM's a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-	// 	tags: ["Mobile"],
-	// 	urls: {
-	// 		appStore: "",
-	// 		repo: "https://www.github.com/modevx/rovercam",
-	// 		site: "https://www.rovercamapp.com",
-	// 	},
-	// },
 ];
 
 export const WEB_APPS = [
@@ -246,28 +251,28 @@ export const WEB_APPS = [
 			},
 		],
 	},
-	// {
-	//   title: "ALSTR",
-	//   imgURI: '',
-	//   description:
-	//     "ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-	//   tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
-	//   links: {
-	//     appStore: null,
-	//     repo: "https://www.github.com/ephcoding/alstr",
-	//     site: null,
-	//   },
-	// },
-	// {
-	// 	title: "TORNADO ACTION",
-	// 	imgURI: '',
-	// 	description:
-	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on freely available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-	// 	tech: ["Data Visualization", "Frontend Framework"],
-	// 	links: {
-	// 		appStore: "",
-	// 		repo: "https://www.github.com/ephraimsmith/tornado-action",
-	// 		site: "https://www.tornadoaction.com",
-	// 	},
-	// },
+	{
+		title: "ALSTR",
+		imgURI: "p-alstr.jpg",
+		description:
+			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+		tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
+		links: {
+			appStore: null,
+			repo: "https://www.github.com/ephcoding/alstr",
+			site: null,
+		},
+	},
+	{
+		title: "TORNADO ACTION",
+		imgURI: "p-tornado-action.png",
+		description:
+			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on freely available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+		tech: ["Data Visualization", "Frontend Framework"],
+		links: {
+			appStore: "",
+			repo: "https://www.github.com/ephraimsmith/tornado-action",
+			site: "https://www.tornadoaction.com",
+		},
+	},
 ];
