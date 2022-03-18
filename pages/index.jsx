@@ -17,7 +17,7 @@ export default function Home() {
 		<Page pageInfo={home}>
 			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>
 			<ProjectList projects={DESIGN} />
-			<h2 className='text-4xl font-bold my-4'>JavaScript</h2>
+			<h2 className='text-4xl font-bold my-4'>JAVASCRIPT</h2>
 			<ProjectList projects={JAVASCRIPT} />
 			<h2 className='text-4xl font-bold my-4'>MOBILE APPS</h2>
 			<ProjectList projects={MOBILE_APPS} />

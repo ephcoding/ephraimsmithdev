@@ -44,28 +44,28 @@ export const APIS = [
 export const DESIGN = [
 	{
 		title: "Tribute Page",
-		imgURI: "",
+		imgURI: "p-tribute-page.png",
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/tribute-page` }],
 	},
 	{
 		title: "Survey Form",
-		imgURI: "",
+		imgURI: "p-survey-form.png",
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/survey-form` }],
 	},
 	{
 		title: "Product Landing Page",
-		imgURI: "",
+		imgURI: "p-product-landing-page.png",
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/product-landing-page` }],
 	},
 	{
 		title: "Technical Documentation Page",
-		imgURI: "",
+		imgURI: "p-tech-docs-page.png",
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [
@@ -74,7 +74,7 @@ export const DESIGN = [
 	},
 	{
 		title: "Portfolio Page",
-		imgURI: "",
+		imgURI: "p-portfolio-page.png",
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/portfolio-page` }],
@@ -168,7 +168,7 @@ export const MOBILE_APPS = [
 export const WEB_APPS = [
 	{
 		title: "Random Quote Machine",
-		imgURI: "",
+		imgURI: "p-quote-generator.png",
 		description: "",
 		tech: [""],
 		links: [
@@ -184,7 +184,7 @@ export const WEB_APPS = [
 	},
 	{
 		title: "Markdown Previewer",
-		imgURI: "",
+		imgURI: "p-markdown-previewer.png",
 		description: "",
 		tech: [""],
 		links: [
@@ -200,7 +200,7 @@ export const WEB_APPS = [
 	},
 	{
 		title: "Drum Machine",
-		imgURI: "",
+		imgURI: "p-drum-machine.png",
 		description: "",
 		tech: [""],
 		links: [
@@ -216,7 +216,7 @@ export const WEB_APPS = [
 	},
 	{
 		title: "JavaScript Calculator",
-		imgURI: "",
+		imgURI: "p-calculator.png",
 		description: "",
 		tech: [""],
 		links: [
@@ -232,7 +232,7 @@ export const WEB_APPS = [
 	},
 	{
 		title: "Pomodoro Clock",
-		imgURI: "",
+		imgURI: "p-pomodoro-clock.png",
 		description: "",
 		tech: [""],
 		links: [
@@ -262,7 +262,7 @@ export const WEB_APPS = [
 	// 	title: "TORNADO ACTION",
 	// 	imgURI: '',
 	// 	description:
-	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on freely available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
 	// 	tech: ["Data Visualization", "Frontend Framework"],
 	// 	links: {
 	// 		appStore: "",
