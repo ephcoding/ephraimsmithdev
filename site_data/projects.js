@@ -1,5 +1,15 @@
+import Link from "next/link";
+import {
+	FaGithub,
+	FaTools,
+	FaHome,
+	FaLinkedin,
+	FaMobileAlt,
+	FaTv,
+	FaTwitter,
+} from "react-icons/fa";
 // GITHUB BASE URLS
-const GH_REPO_BASE = "https://github.com/ephraimsmith";
+const GH_REPO_BASE = "https://github.com/ephraimsmithdev";
 const GH_PAGES_BASE = "https://ephraimsmith.github.io";
 
 /**
@@ -9,8 +19,8 @@ const GH_PAGES_BASE = "https://ephraimsmith.github.io";
  *    title:
  *    imgURI:
  *    description:
- *    tech:
- *    links: [
+ *    tech: string[]
+ *    links: component[
  *        <GitHubLink/>,
  *        <WebLink/>,
  *        <AppStoreLink/>,
@@ -39,33 +49,58 @@ export const APIS = [
 export const DESIGN = [
 	{
 		title: "Tribute Page",
-		repoLink: `${GH_REPO_BASE}/tribute-page`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/tribute-page`,
+		imgURI: "",
+		description: "",
+		tech: ["HTML", "CSS"],
+		links: [
+			<Link href={`${GH_REPO_BASE}/tribute-page`} passHref>
+				<FaGithub size={20} title='GitHub' />
+			</Link>,
+		],
 	},
 	{
 		title: "Survey Form",
-		repoLink: `${GH_REPO_BASE}/survey-form`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/survey-form`,
+		imgURI: "",
+		description: "",
+		tech: ["HTML", "CSS"],
+		links: [
+			<Link href={`${GH_REPO_BASE}/survey-form`}>
+				<FaGithub size={20} title='GitHub' />
+			</Link>,
+		],
 	},
 	{
 		title: "Product Landing Page",
-		repoLink: `${GH_REPO_BASE}/product-landing-page`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/product-landing-page`,
+		imgURI: "",
+		description: "",
+		tech: ["HTML", "CSS"],
+		links: [
+			<Link href={`${GH_REPO_BASE}/product-landing-page`}>
+				<FaGithub size={20} title='GitHub' />
+			</Link>,
+		],
 	},
 	{
 		title: "Technical Documentation Page",
-		repoLink: `${GH_REPO_BASE}/technical-documentation-page`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
+		imgURI: "",
+		description: "",
+		tech: ["HTML", "CSS"],
+		links: [
+			<Link href={`${GH_REPO_BASE}/technical-documentation-page`}>
+				<FaGithub size={20} title='GitHub' />
+			</Link>,
+		],
 	},
 	{
 		title: "Portfolio Page",
-		repoLink: `${GH_REPO_BASE}/portfolio-page`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/technical-documentation-page`,
+		imgURI: "",
+		description: "",
+		tech: ["HTML", "CSS"],
+		links: [
+			<Link href={`${GH_REPO_BASE}/portfolio-page`}>
+				<FaGithub size={20} title='GitHub' />
+			</Link>,
+		],
 	},
 
 	// {
