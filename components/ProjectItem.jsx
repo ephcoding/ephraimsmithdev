@@ -17,7 +17,7 @@ const ProjectItem = ({ project }) => {
 				<figcaption>{description}</figcaption>
 			</figure>
 			<ProjectTags cardTags={tech} />
-			<ProjectLinks links={links} />
+			{/* <ProjectLinks links={links} /> */}
 		</li>
 	);
 };

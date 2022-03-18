@@ -5,7 +5,7 @@ const NavItem = ({ navItem }) => {
 
 	return (
 		<li>
-			<Link href={url} passHref>
+			<Link href={url}>
 				<a>{label}</a>
 			</Link>
 		</li>

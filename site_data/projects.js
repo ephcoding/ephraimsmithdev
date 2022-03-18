@@ -32,17 +32,12 @@ const GH_PAGES_BASE = "https://ephraimsmith.github.io";
 
 export const APIS = [
 	{
-		name: "VORTX",
-		assets: ["/logo_nws.png"],
-		bgImgClass: "bg_vortx",
+		title: "VORTX",
+		imgURI: ["/logo_nws.png"],
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
-		tags: ["API design", "API documentation", "RDB design", "Node.js"],
-		urls: {
-			appStore: "",
-			repo: "https://www.github.com/ephcoding/vortx",
-			site: "",
-		},
+		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQl"],
+		links: {},
 	},
 ];
 
@@ -53,7 +48,7 @@ export const DESIGN = [
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [
-			<Link href={`${GH_REPO_BASE}/tribute-page`} passHref>
+			<Link href={`${GH_REPO_BASE}/tribute-page`}>
 				<FaGithub size={20} title='GitHub' />
 			</Link>,
 		],
@@ -133,33 +128,60 @@ export const DESIGN = [
 export const JS_ALGO_DATA_STRUCTURES = [
 	{
 		title: "Palindrome",
-		repoLink: `${GH_REPO_BASE}/palindrome-checker`,
-		isLive: false,
-		appStore: `${GH_PAGES_BASE}/palindrome-checker`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/palindrome-checker`,
+			},
+		],
 	},
 	{
 		title: "Roman Numeral Converter",
-		repoLink: `${GH_REPO_BASE}/roman-numeral-converter`,
-		isLive: false,
-		appStore: `${GH_PAGES_BASE}/roman-numeral-converter`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{ label: "GitHub", url: `${GH_REPO_BASE}/roman-numeral-converter` },
+		],
 	},
 	{
 		title: "Caesars Cipher",
-		repoLink: `${GH_REPO_BASE}/caesars-cipher`,
-		isLive: false,
-		appStore: `${GH_PAGES_BASE}/caesars-cipher`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/caesars-cipher`,
+			},
+		],
 	},
 	{
 		title: "Telephone Number Validator",
-		repoLink: `${GH_REPO_BASE}/telephone-number-validator`,
-		isLive: false,
-		appStore: `${GH_PAGES_BASE}/telephone-number-validator`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/telephone-number-validator`,
+			},
+		],
 	},
 	{
 		title: "Cash Register",
-		repoLink: `${GH_REPO_BASE}/cash-register`,
-		isLive: false,
-		appStore: `${GH_PAGES_BASE}/cash-register`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/cash-register`,
+			},
+		],
 	},
 ];
 
@@ -169,7 +191,7 @@ export const MOBILE_APPS = [
 		imgURI: "",
 		description: "",
 		tech: ["React Native"],
-		links: [],
+		links: [{ label: "", url: "" }],
 	},
 	// --------------------
 	// {
@@ -190,42 +212,91 @@ export const MOBILE_APPS = [
 export const WEB_APPS = [
 	{
 		title: "Random Quote Machine",
-		repoLink: `${GH_REPO_BASE}/random-quote-machine`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/random-quote-machine`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/random-quote-machine`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/random-quote-machine`,
+			},
+		],
 	},
 	{
 		title: "Markdown Previewer",
-		repoLink: `${GH_REPO_BASE}/markdown-previewer`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/markdown-previewer`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/markdown-previewer`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/markdown-previewer`,
+			},
+		],
 	},
 	{
 		title: "Drum Machine",
-		repoLink: `${GH_REPO_BASE}/drum-machine`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/drum-machine`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/drum-machine`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/drum-machine`,
+			},
+		],
 	},
 	{
 		title: "JavaScript Calculator",
-		repoLink: `${GH_REPO_BASE}/js-calculator`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/js-calculator`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/js-calculator`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/js-calculator`,
+			},
+		],
 	},
 	{
 		title: "Pomodoro Clock",
-		repoLink: `${GH_REPO_BASE}/js-calculator`,
-		isLive: true,
-		appStore: `${GH_PAGES_BASE}/js-calculator`,
+		imgURI: "",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/pomodoro`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/pomodoro`,
+			},
+		],
 	},
 	// {
-	//   name: "ALSTR",
-	//   assets: [],
-	//   bgImgClass: "bg_alstr",
+	//   title: "ALSTR",
+	//   imgURI: '',
 	//   description:
 	//     "ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-	//   tags: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
-	//   urls: {
+	//   tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
+	//   links: {
 	//     appStore: null,
 	//     repo: "https://www.github.com/ephcoding/alstr",
 	//     site: null,
