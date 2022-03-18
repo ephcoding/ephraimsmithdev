@@ -1,13 +1,18 @@
 import Link from "next/link";
 import {
+	FaCss3,
 	FaGithub,
-	FaTools,
 	FaHome,
+	FaHtml5,
 	FaLinkedin,
 	FaMobileAlt,
+	FaReact,
+	FaSass,
+	FaTools,
 	FaTv,
 	FaTwitter,
 } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
 // GITHUB BASE URLS
 const GH_REPO_BASE = "https://github.com/ephraimsmithdev";
 const GH_PAGES_BASE = "https://ephraimsmithdev.github.io";
