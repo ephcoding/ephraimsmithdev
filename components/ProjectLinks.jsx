@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 
 const ProjectLinks = ({ links }) => {
-	return <div>{links.map(link => link)}</div>;
+	return <div></div>;
 };
 
 export default ProjectLinks;

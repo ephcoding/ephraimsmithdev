@@ -37,7 +37,7 @@ export const APIS = [
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
 		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQl"],
-		links: {},
+		links: [],
 	},
 ];
 
@@ -47,33 +47,21 @@ export const DESIGN = [
 		imgURI: "",
 		description: "",
 		tech: ["HTML", "CSS"],
-		links: [
-			<Link href={`${GH_REPO_BASE}/tribute-page`}>
-				<FaGithub size={20} title='GitHub' />
-			</Link>,
-		],
+		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/tribute-page` }],
 	},
 	{
 		title: "Survey Form",
 		imgURI: "",
 		description: "",
 		tech: ["HTML", "CSS"],
-		links: [
-			<Link href={`${GH_REPO_BASE}/survey-form`}>
-				<FaGithub size={20} title='GitHub' />
-			</Link>,
-		],
+		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/survey-form` }],
 	},
 	{
 		title: "Product Landing Page",
 		imgURI: "",
 		description: "",
 		tech: ["HTML", "CSS"],
-		links: [
-			<Link href={`${GH_REPO_BASE}/product-landing-page`}>
-				<FaGithub size={20} title='GitHub' />
-			</Link>,
-		],
+		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/product-landing-page` }],
 	},
 	{
 		title: "Technical Documentation Page",
@@ -81,9 +69,7 @@ export const DESIGN = [
 		description: "",
 		tech: ["HTML", "CSS"],
 		links: [
-			<Link href={`${GH_REPO_BASE}/technical-documentation-page`}>
-				<FaGithub size={20} title='GitHub' />
-			</Link>,
+			{ label: "GitHub", url: `${GH_REPO_BASE}/technical-documentation-page` },
 		],
 	},
 	{
@@ -91,38 +77,8 @@ export const DESIGN = [
 		imgURI: "",
 		description: "",
 		tech: ["HTML", "CSS"],
-		links: [
-			<Link href={`${GH_REPO_BASE}/portfolio-page`}>
-				<FaGithub size={20} title='GitHub' />
-			</Link>,
-		],
+		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/portfolio-page` }],
 	},
-
-	// {
-	// 	name: "TORNADO ACTION",
-	// 	assets: ["/logo_noaa.png"],
-	// 	bgImgClass: "bg_tornado-action",
-	// 	description:
-	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
-	// 	tags: ["Data Visualization", "Frontend Framework"],
-	// 	urls: {
-	// 		appStore: "",
-	// 		repo: "https://www.github.com/ephraimsmith/tornado-action",
-	// 		site: "https://www.tornadoaction.com",
-	// 	},
-	// },
-
-	// {
-	// name: "FreeCodeCamp",
-	// 	description:
-	// 		"Free online platform for learning web design from top to bottom.  Great tool for filling in knowledge gaps and generating ideas for new projects.",
-	// tags: '',
-	// 	urls: {
-	// { appStore: "" },
-	// { repo: "" },
-	// 		{ site: "https://www.freeCodeCamp.org/ephraimsmith" },
-	// 	},
-	// },
 ];
 
 export const JS_ALGO_DATA_STRUCTURES = [
@@ -301,5 +257,17 @@ export const WEB_APPS = [
 	//     repo: "https://www.github.com/ephcoding/alstr",
 	//     site: null,
 	//   },
+	// },
+	// {
+	// 	title: "TORNADO ACTION",
+	// 	imgURI: '',
+	// 	description:
+	// 		"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on free/publicly available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
+	// 	tech: ["Data Visualization", "Frontend Framework"],
+	// 	links: {
+	// 		appStore: "",
+	// 		repo: "https://www.github.com/ephraimsmith/tornado-action",
+	// 		site: "https://www.tornadoaction.com",
+	// 	},
 	// },
 ];

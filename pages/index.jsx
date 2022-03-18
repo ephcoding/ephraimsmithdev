@@ -1,4 +1,4 @@
-import { PAGE_META, DESIGN } from "../site_data";
+import { PAGE_META, DESIGN, WEB_APPS } from "../site_data";
 import ProjectItem from "@/components/ProjectItem";
 import Link from "next/link";
 import Page from "@/components/Page";
@@ -11,6 +11,8 @@ export default function Home() {
 		<Page pageInfo={home}>
 			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>
 			<ProjectList projects={DESIGN} />
+			<h2 className='text-4xl font-bold my-4'>WEB APPS</h2>
+			<ProjectList projects={WEB_APPS} />
 		</Page>
 	);
 }
