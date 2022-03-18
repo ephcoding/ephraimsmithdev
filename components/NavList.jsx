@@ -6,7 +6,7 @@ export default function NavList({ nav }) {
 		<nav>
 			<ul className='flex'>
 				{nav.map(navItem => (
-					<span>{navItem.label}</span>
+					<NavItem key={navItem.url} navItem={navItem} />
 				))}
 			</ul>
 		</nav>

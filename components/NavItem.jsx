@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 const NavItem = ({ navItem }) => {
+	const { url, label } = navItem;
+
 	return (
 		<li>
-			<Link href={navItem.url} passHref>
-				<a>{navItem.label}</a>
+			<Link href={url} passHref>
+				<a>{label}</a>
 			</Link>
 		</li>
 	);
