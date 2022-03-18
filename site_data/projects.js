@@ -36,7 +36,7 @@ export const APIS = [
 		imgURI: "p-vortx.jpg",
 		description:
 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
-		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQl"],
+		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQL"],
 		links: [
 			{
 				label: "GitHub",
@@ -172,34 +172,15 @@ export const MOBILE_APPS = [
 
 export const WEB_APPS = [
 	{
-		title: "Random Quote Machine",
-		imgURI: "p-quote-generator.png",
-		description: "",
-		tech: [""],
+		title: "ALSTR",
+		imgURI: "p-alstr.jpg",
+		description:
+			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+		tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
 		links: [
 			{
 				label: "GitHub",
-				url: `${GH_REPO_BASE}/random-quote-machine`,
-			},
-			{
-				label: "App",
-				url: `${GH_PAGES_BASE}/random-quote-machine`,
-			},
-		],
-	},
-	{
-		title: "Markdown Previewer",
-		imgURI: "p-markdown-previewer.png",
-		description: "",
-		tech: [""],
-		links: [
-			{
-				label: "GitHub",
-				url: `${GH_REPO_BASE}/markdown-previewer`,
-			},
-			{
-				label: "App",
-				url: `${GH_PAGES_BASE}/markdown-previewer`,
+				url: "https://www.github.com/ephraimsmithdev/alstr",
 			},
 		],
 	},
@@ -236,6 +217,22 @@ export const WEB_APPS = [
 		],
 	},
 	{
+		title: "Markdown Previewer",
+		imgURI: "p-markdown-previewer.png",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/markdown-previewer`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/markdown-previewer`,
+			},
+		],
+	},
+	{
 		title: "Pomodoro Clock",
 		imgURI: "p-pomodoro-clock.png",
 		description: "",
@@ -252,16 +249,20 @@ export const WEB_APPS = [
 		],
 	},
 	{
-		title: "ALSTR",
-		imgURI: "p-alstr.jpg",
-		description:
-			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-		tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
-		links: {
-			appStore: null,
-			repo: "https://www.github.com/ephcoding/alstr",
-			site: null,
-		},
+		title: "Random Quote Machine",
+		imgURI: "p-quote-generator.png",
+		description: "",
+		tech: [""],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/random-quote-machine`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/random-quote-machine`,
+			},
+		],
 	},
 	{
 		title: "TORNADO ACTION",
@@ -269,10 +270,11 @@ export const WEB_APPS = [
 		description:
 			"Visual-first web app for all things tornado-related.  I wanted to build a UI-heavy, engaging application that was both fun and practical.  To keep costs down I honed in on freely available datasets.  Between NOAA, NASA, the National Weather Service, and the Storm Prediction Center, it's APIs-for-days...",
 		tech: ["Data Visualization", "Frontend Framework"],
-		links: {
-			appStore: "",
-			repo: "https://www.github.com/ephraimsmith/tornado-action",
-			site: "https://www.tornadoaction.com",
-		},
+		links: [
+			{
+				label: "GitHub",
+				url: "https://www.github.com/ephraimsmithdev/tornado-action",
+			},
+		],
 	},
 ];

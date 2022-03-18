@@ -10,7 +10,19 @@ import {
 import Link from "next/link";
 
 const ProjectLinks = ({ links }) => {
-	return <div></div>;
+	return (
+		<div className='flex justify-around mt-2'>
+			{links.map(link => {
+				// const { label, url } = link;
+
+				return (
+					<Link href={link.url} key={link.label}>
+						<a target='_blank'>{link.label}</a>
+					</Link>
+				);
+			})}
+		</div>
+	);
 };
 
 export default ProjectLinks;

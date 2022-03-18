@@ -20,12 +20,12 @@ export default function Home() {
 			<ProjectList projects={APIS} />
 			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>
 			<ProjectList projects={DESIGN} />
+			<h2 className='text-4xl font-bold my-4'>WEB APPS</h2>
+			<ProjectList projects={WEB_APPS} />
 			<h2 className='text-4xl font-bold my-4'>JAVASCRIPT</h2>
 			<ProjectList projects={JAVASCRIPT} />
 			<h2 className='text-4xl font-bold my-4'>MOBILE APPS</h2>
 			<ProjectList projects={MOBILE_APPS} />
-			<h2 className='text-4xl font-bold my-4'>WEB APPS</h2>
-			<ProjectList projects={WEB_APPS} />
 		</Page>
 	);
 }
