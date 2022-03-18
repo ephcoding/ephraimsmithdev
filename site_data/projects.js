@@ -50,28 +50,32 @@ export const DESIGN = [
 	{
 		title: "Tribute Page",
 		imgURI: "p-tribute-page.png",
-		description: "",
+		description:
+			"Being the first project I ever coded, this project remains unchanged.  To appreciate where we are, we have to remember where we started.",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/tribute-page` }],
 	},
 	{
 		title: "Survey Form",
 		imgURI: "p-survey-form.png",
-		description: "",
+		description:
+			"Responsive survey form design.  Written in pure HTML and CSS.",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/survey-form` }],
 	},
 	{
 		title: "Product Landing Page",
 		imgURI: "p-product-landing-page.png",
-		description: "",
+		description:
+			"Responsive landing page design for the fictitious rock luthier business, 'Axesmith'.  Written in pure HTML and CSS.",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/product-landing-page` }],
 	},
 	{
 		title: "Technical Documentation Page",
 		imgURI: "p-tech-docs-page.png",
-		description: "",
+		description:
+			"Responsive technical documentation page design.  Written in pure HTML and CSS.",
 		tech: ["HTML", "CSS"],
 		links: [
 			{ label: "GitHub", url: `${GH_REPO_BASE}/technical-documentation-page` },
@@ -80,7 +84,8 @@ export const DESIGN = [
 	{
 		title: "Portfolio Page",
 		imgURI: "p-portfolio-page.png",
-		description: "",
+		description:
+			"Responsive portfolio site design.  Currently building a mobile app product landing page template based on this project.  Written in pure HTML and CSS.",
 		tech: ["HTML", "CSS"],
 		links: [{ label: "GitHub", url: `${GH_REPO_BASE}/portfolio-page` }],
 	},
