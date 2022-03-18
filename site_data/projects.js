@@ -188,7 +188,7 @@ export const WEB_APPS = [
 		title: "ALSTR",
 		imgURI: "p-alstr.jpg",
 		description:
-			"ALSTR ( Algo-Strategy ) is a long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+			"ALSTR ( Algo-Strategy ) is my long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
 		tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
 		links: [
 			{
@@ -198,26 +198,11 @@ export const WEB_APPS = [
 		],
 	},
 	{
-		title: "Drum Machine",
-		imgURI: "p-drum-machine.png",
-		description: "",
-		tech: [""],
-		links: [
-			{
-				label: "GitHub",
-				url: `${GH_REPO_BASE}/drum-machine`,
-			},
-			{
-				label: "App",
-				url: `${GH_PAGES_BASE}/drum-machine`,
-			},
-		],
-	},
-	{
-		title: "JavaScript Calculator",
+		title: "Calculator",
 		imgURI: "p-calculator.png",
-		description: "",
-		tech: [""],
+		description:
+			"Tired of using a standard-looking calculator?  Check out this one with a natural wood finish.",
+		tech: ["CSS", "GitHub Pages", "React", "Sass"],
 		links: [
 			{
 				label: "GitHub",
@@ -230,10 +215,28 @@ export const WEB_APPS = [
 		],
 	},
 	{
+		title: "Drum Machine",
+		imgURI: "p-drum-machine.png",
+		description:
+			"Using 1 hand and your keyboard, make...err some noise with either the 'Big and Heavy' or 'Pearl' drum kits.  Built with React and Sass",
+		tech: ["CSS", "GitHub Pages", "React", "Sass"],
+		links: [
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/drum-machine`,
+			},
+			{
+				label: "App",
+				url: `${GH_PAGES_BASE}/drum-machine`,
+			},
+		],
+	},
+	{
 		title: "Markdown Previewer",
 		imgURI: "p-markdown-previewer.png",
-		description: "",
-		tech: [""],
+		description:
+			"Learning markdown?  Just need to check the output of some weird syntax?  Have 'Markdown Previewer' show you what that markdown's going to look like.",
+		tech: ["CSS", "GitHub Pages", "marked", "React", "Sass"],
 		links: [
 			{
 				label: "GitHub",
@@ -248,8 +251,9 @@ export const WEB_APPS = [
 	{
 		title: "Pomodoro Clock",
 		imgURI: "p-pomodoro-clock.png",
-		description: "",
-		tech: [""],
+		description:
+			"Get productive.  Pomodoro-style!  Tailor your work and break times for maximum productivity.  Manually set up the tooling for React, Sass, and GitHub deployment using Parcel.",
+		tech: ["CSS", "GitHub Pages", "Parcel", "React", "Sass"],
 		links: [
 			{
 				label: "GitHub",
@@ -264,8 +268,9 @@ export const WEB_APPS = [
 	{
 		title: "Random Quote Machine",
 		imgURI: "p-quote-generator.png",
-		description: "",
-		tech: [""],
+		description:
+			"Find some motivation, or entertainment, from some of the smartest people in technology.  Browse quotes while enjoying background images from NASA.",
+		tech: ["APIs", "Axios", "GitHub Pages", "React"],
 		links: [
 			{
 				label: "GitHub",
