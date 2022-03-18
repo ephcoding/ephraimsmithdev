@@ -8,10 +8,10 @@ const ProjectItem = ({ project }) => {
 
 	return (
 		<li
-			className='bg-neutral-900 shadow-lg rounded-md py-3 shadow-slate-400/50'
+			className='bg-neutral-300 rounded-md pb-3 shadow-lg shadow-slate-400/50 text-black'
 			key={title}
 		>
-			<h3 className='border-b border-b-yellow-300 text-center text-xl uppercase'>
+			<h3 className='font-bold px-2 py-3 text-center text-xl uppercase'>
 				{title}
 			</h3>
 			<Image
@@ -21,7 +21,7 @@ const ProjectItem = ({ project }) => {
 				width={225}
 				layout='responsive'
 			/>
-			<div className='border-t border-t-yellow-300 flex flex-col h-100 px-2'>
+			<div className='flex flex-col h-100 px-2'>
 				<p className='grow my-2 text-sm'>{description}</p>
 				<ProjectTech technologies={tech} />
 				<ProjectLinks links={links} />

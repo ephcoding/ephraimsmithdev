@@ -49,7 +49,7 @@ export default function Page({ pageInfo, children }) {
 					content='Ephraim Smith | sharing software, mistakes, bad dad jokes, and lessons learned with the world.  Probably not in that order.'
 				/>
 			</Head>
-			<div className='flex flex-col min-h-screen px-4 py-2 bg-neutral-800 text-white'>
+			<div className='flex flex-col min-h-screen px-4 py-2 bg-neutral-900 text-white'>
 				<Header title={pageHeading} />
 				<main className='container mx-auto grow'>{children}</main>
 				<Footer />

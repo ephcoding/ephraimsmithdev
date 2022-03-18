@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 // GITHUB BASE URLS
 const GH_REPO_BASE = "https://github.com/ephraimsmithdev";
-const GH_PAGES_BASE = "https://ephraimsmith.github.io";
+const GH_PAGES_BASE = "https://ephraimsmithdev.github.io";
 
 /**
  * PROJECT TEMPLATE
@@ -93,59 +93,67 @@ export const DESIGN = [
 
 export const JAVASCRIPT = [
 	{
-		title: "Palindrome",
+		title: "Palindrome Checker",
 		imgURI: "",
-		description: "",
-		tech: [""],
+		description:
+			"Forwards or backwards, Palindrome Checker will make sure you're the same!",
+		tech: ["JavaScript", "Algorithms", "Data Structures"],
 		links: [
 			{
 				label: "GitHub",
-				url: `${GH_REPO_BASE}/palindrome-checker`,
+				url: `${GH_REPO_BASE}/freecodecamp-javascript-certificate/blob/main/06_palindrome-checker.js`,
 			},
 		],
 	},
 	{
 		title: "Roman Numeral Converter",
 		imgURI: "",
-		description: "",
-		tech: [""],
+		description:
+			"Algorithm written in JavaScript that translates numbers into Roman numerals.",
+		tech: ["JavaScript", "Algorithms", "Data Structures"],
 		links: [
-			{ label: "GitHub", url: `${GH_REPO_BASE}/roman-numeral-converter` },
+			{
+				label: "GitHub",
+				url: `${GH_REPO_BASE}/freecodecamp-javascript-certificate/blob/main/07_roman-numeral-converter.js`,
+			},
 		],
 	},
 	{
 		title: "Caesars Cipher",
 		imgURI: "",
-		description: "",
-		tech: [""],
+		description:
+			"Cipher decoder.  JavaScript algorithm that processes and returns decoded ciphers with a 13-character offset.",
+		tech: ["JavaScript", "Algorithms", "Data Structures"],
 		links: [
 			{
 				label: "GitHub",
-				url: `${GH_REPO_BASE}/caesars-cipher`,
+				url: `${GH_REPO_BASE}/freecodecamp-javascript-certificate/blob/main/08_caesars_cipher.js`,
 			},
 		],
 	},
 	{
 		title: "Telephone Number Validator",
 		imgURI: "",
-		description: "",
-		tech: [""],
+		description:
+			"JavaScript algorithm that utilizes RegEx to verify that a phone number matches one of many commonly used formats.",
+		tech: ["JavaScript", "Algorithms", "Data Structures"],
 		links: [
 			{
 				label: "GitHub",
-				url: `${GH_REPO_BASE}/telephone-number-validator`,
+				url: `${GH_REPO_BASE}/freecodecamp-javascript-certificate/blob/main/09_telephone-number-validator.js`,
 			},
 		],
 	},
 	{
 		title: "Cash Register",
 		imgURI: "",
-		description: "",
-		tech: [""],
+		description:
+			"Not good at making change?  It's all good.  This JavaScript cash register algorithm will handle that drawer for you.",
+		tech: ["JavaScript", "Algorithms", "Data Structures"],
 		links: [
 			{
 				label: "GitHub",
-				url: `${GH_REPO_BASE}/cash-register`,
+				url: `${GH_REPO_BASE}/freecodecamp-javascript-certificate/blob/main/10_cash_register.js`,
 			},
 		],
 	},
@@ -156,7 +164,7 @@ export const MOBILE_APPS = [
 		title: "ROVERCAM",
 		imgURI: "p-rovercam.png",
 		description:
-			"ROVERCAM is a cross-platform mobile app built with React Native that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
+			"ROVERCAM is a cross-platform mobile app that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
 		tech: ["React Native"],
 		links: [
 			{
