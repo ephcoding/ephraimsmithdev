@@ -7,20 +7,14 @@ import {
 	FaTv,
 	FaTwitter,
 } from "react-icons/fa";
-import Link from "next/link";
+import ProjectLink from "./ProjectLink";
 
 const ProjectLinks = ({ links }) => {
 	return (
 		<div className='flex justify-around mt-2'>
-			{links.map(link => {
-				// const { label, url } = link;
-
-				return (
-					<Link href={link.url} key={link.label}>
-						<a target='_blank'>{link.label}</a>
-					</Link>
-				);
-			})}
+			{links.map(link => (
+				<ProjectLink link={link} />
+			))}
 		</div>
 	);
 };
