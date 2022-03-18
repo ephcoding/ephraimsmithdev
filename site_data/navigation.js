@@ -6,6 +6,29 @@ import {
 	FaTwitter,
 } from "react-icons/fa";
 
+const PROJECTS_NAV = [
+	{
+		label: "Responsive Design",
+		url: "#design",
+		title: "Responsive Web Design",
+	},
+	{
+		label: "JavaScript",
+		url: "#javascript",
+		title: "JavaScript",
+	},
+	{
+		label: "Mobile",
+		url: "#mobile",
+		title: "Mobile Apps",
+	},
+	{
+		label: "Web Apps",
+		url: "#web-apps",
+		title: "Web Apps",
+	},
+];
+
 const SITE_NAV = [
 	{
 		label: "home",

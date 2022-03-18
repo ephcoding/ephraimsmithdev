@@ -81,7 +81,7 @@ export const DESIGN = [
 	},
 ];
 
-export const JS_ALGO_DATA_STRUCTURES = [
+export const JAVASCRIPT = [
 	{
 		title: "Palindrome",
 		imgURI: "",
