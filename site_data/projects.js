@@ -144,7 +144,7 @@ export const JAVASCRIPT = [
 export const MOBILE_APPS = [
 	{
 		title: "ROVERCAM",
-		imgURI: "",
+		imgURI: "p-rovercam.png",
 		description: "",
 		tech: ["React Native"],
 		links: [{ label: "", url: "" }],
