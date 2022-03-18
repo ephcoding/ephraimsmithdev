@@ -5,7 +5,9 @@
 	"scripts": {
 		"dev": "rm -rf ./.next/cache && next dev -p 3004",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
 	},
 	"dependencies": {
 		"gray-matter": "^4.0.3",
@@ -13,10 +15,13 @@
 		"next": "^12.0.7",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
-		"react-icons": "^4.2.0"
+		"react-icons": "^4.2.0",
+		"storybook-addon-next-router": "^3.1.1"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.17.7",
 		"autoprefixer": "^10.4.4",
+		"babel-loader": "^8.2.3",
 		"eslint": "8.6.0",
 		"eslint-config-next": "12.0.7",
 		"postcss": "^8.4.12",
