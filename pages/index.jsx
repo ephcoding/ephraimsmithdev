@@ -1,18 +1,31 @@
-import { PAGES, PROJECTS } from "../js/site_data";
-import Card from "@/components/Card";
+import {
+	APIS,
+	DESIGN,
+	JAVASCRIPT,
+	MOBILE_APPS,
+	PAGE_META,
+	WEB_APPS,
+} from "../site_data";
+import ProjectItem from "@/components/ProjectItem";
 import Link from "next/link";
 import Page from "@/components/Page";
+import ProjectList from "@/components/ProjectList";
 
 export default function Home() {
-	const { home } = PAGES;
-
-	const projectCards = PROJECTS.map(project => (
-		<Card cardMeta={project} key={project.name} />
-	));
+	const { home } = PAGE_META;
 
 	return (
 		<Page pageInfo={home}>
-			<ul className='project-card__list'>{projectCards}</ul>
+			<h2 className='text-4xl font-bold my-4'>APIs</h2>
+			<ProjectList projects={APIS} />
+			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>
+			<ProjectList projects={DESIGN} />
+			<h2 className='text-4xl font-bold my-4'>WEB APPS</h2>
+			<ProjectList projects={WEB_APPS} />
+			<h2 className='text-4xl font-bold my-4'>JAVASCRIPT</h2>
+			<ProjectList projects={JAVASCRIPT} />
+			<h2 className='text-4xl font-bold my-4'>MOBILE APPS</h2>
+			<ProjectList projects={MOBILE_APPS} />
 		</Page>
 	);
 }
