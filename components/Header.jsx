@@ -1,5 +1,5 @@
-import { SITE_NAV } from "../site_data";
 import Link from "next/link";
+import { SITE_NAV } from "../constants";
 
 const NavItem = ({ navItem }) => {
 	const { url, label } = navItem;
@@ -12,6 +12,7 @@ const NavItem = ({ navItem }) => {
 		</li>
 	);
 };
+
 const NavList = ({ nav }) => {
 	return (
 		<nav>
@@ -24,12 +25,10 @@ const NavList = ({ nav }) => {
 	);
 };
 
-const Header = ({ title: { first, second } }) => {
+export const Header = ({ title: { first, second } }) => {
 	return (
 		<header className='border border-green-600 flex justify-between'>
 			<NavList nav={SITE_NAV} />
 		</header>
 	);
 };
-
-export default Header;
