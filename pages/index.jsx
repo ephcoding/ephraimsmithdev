@@ -5,11 +5,8 @@ import {
 	MOBILE_APPS,
 	PAGE_META,
 	WEB_APPS,
-} from "../site_data";
-import ProjectItem from "@/components/ProjectItem";
-import Link from "next/link";
-import Page from "@/components/Page";
-import ProjectList from "@/components/ProjectList";
+} from "../constants";
+import { Page, ProjectList } from "../components";
 
 export default function Home() {
 	const { home } = PAGE_META;
