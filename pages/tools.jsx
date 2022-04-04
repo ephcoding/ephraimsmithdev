@@ -1,10 +1,10 @@
-import Page from "@/components/Page";
 import Link from "next/link";
-import { TOOLS_LIST, PAGE_META } from "../site_data";
+import { Page } from "../components";
+import { TOOLS_LIST, PAGE_META } from "../constants";
 
 // import { sortHighLow } from "@/js/util_funcs";
 
-const Tools = () => {
+export default function Tools() {
 	// const sortedTools = TOOLS.sort(({ name }) => sortHighLow(this.name, name));
 	const { tools } = PAGE_META;
 
@@ -24,6 +24,4 @@ const Tools = () => {
 			<ul className='tools-list'>{dTools}</ul>
 		</Page>
 	);
-};
-
-export default Tools;
+}
