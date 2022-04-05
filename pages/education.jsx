@@ -1,19 +1,8 @@
-import Link from "next/link";
-import {
-	APIS,
-	RESPONSIVE,
-	JAVASCRIPT,
-	MOBILE_APPS,
-	PAGE_META,
-	WEB_APPS,
-} from "../constants";
-import { Page, ProjectList } from "../components";
-import { TOOLS_LIST, PAGE_META } from "../constants";
+import { EDUCATION, PAGE_META } from "../constants";
 
 // import { sortHighLow } from "@/js/util_funcs";
 
 export default function EducationPage() {
-	// const sortedTools = TOOLS.sort(({ name }) => sortHighLow(this.name, name));
 	const { projects } = PAGE_META;
 
 	return (

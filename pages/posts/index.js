@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import Post from "@/components/Post";
-import { getPosts } from "@/lib/posts";
+import { Post } from "../../components";
+import { getPosts } from "../../lib";
 
 export default function BlogPostsPage({
 	posts,

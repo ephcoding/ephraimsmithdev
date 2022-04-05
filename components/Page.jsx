@@ -2,14 +2,7 @@ import Head from "next/head";
 import { Footer, Header } from "./";
 
 export const Page = ({ pageInfo, children }) => {
-	const {
-		cssClass,
-		pageHeading,
-		pageIntro,
-		metaDescription,
-		metaKeywords,
-		metaTitle,
-	} = pageInfo;
+	const { heading, description, keywords, title } = pageInfo;
 
 	return (
 		<>
