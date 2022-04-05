@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
 	APIS,
 	DESIGN,
@@ -7,12 +8,16 @@ import {
 	WEB_APPS,
 } from "../constants";
 import { Page, ProjectList } from "../components";
+import { TOOLS_LIST, PAGE_META } from "../constants";
 
-export default function Home() {
-	const { home } = PAGE_META;
+// import { sortHighLow } from "@/js/util_funcs";
+
+export default function Projects() {
+	// const sortedTools = TOOLS.sort(({ name }) => sortHighLow(this.name, name));
+	const { projects } = PAGE_META;
 
 	return (
-		<Page pageInfo={home}>
+		<Page pageInfo={projects}>
 			<h2 className='text-4xl font-bold my-4'>APIs</h2>
 			<ProjectList projects={APIS} />
 			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>

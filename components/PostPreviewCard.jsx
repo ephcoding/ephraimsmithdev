@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PostPreviewCard({ post }) {
+export const PostPreviewCard = ({ post }) => {
 	return (
 		<div id='PostPreviewCard' className='card'>
 			<div className='card_header'>
@@ -20,4 +20,4 @@ export default function PostPreviewCard({ post }) {
 			</div>
 		</div>
 	);
-}
+};

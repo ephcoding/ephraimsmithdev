@@ -36,9 +36,24 @@ const SITE_NAV = [
 		title: "ephraimsmith.dev",
 	},
 	{
+		label: "posts",
+		url: "/posts",
+		title: "posts",
+	},
+	{
+		label: "projects",
+		url: "/projects",
+		title: "projects",
+	},
+	{
 		label: "tools",
 		url: "/tools",
 		title: "tools",
+	},
+	{
+		label: "connect",
+		url: "/connect",
+		title: "connect",
 	},
 ];
 

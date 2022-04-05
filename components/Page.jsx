@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
+import { Footer, Header } from "./";
 
-export default function Page({ pageInfo, children }) {
+export const Page = ({ pageInfo, children }) => {
 	const {
 		cssClass,
 		pageHeading,
@@ -56,4 +55,4 @@ export default function Page({ pageInfo, children }) {
 			</div>
 		</>
 	);
-}
+};
