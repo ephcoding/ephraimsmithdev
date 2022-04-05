@@ -30,31 +30,33 @@ const PROJECTS_NAV = [
 ];
 
 const SITE_NAV = [
+	// home = projects
 	{
-		label: "home",
-		url: "/",
+		label: "projects",
+		href: "/",
 		title: "ephraimsmith.dev",
 	},
 	{
-		label: "posts",
-		url: "/posts",
-		title: "posts",
+		label: "training",
+		href: "/training",
+		title: "training",
 	},
-	{
-		label: "projects",
-		url: "/projects",
-		title: "projects",
-	},
-	{
-		label: "tools",
-		url: "/tools",
-		title: "tools",
-	},
-	{
-		label: "connect",
-		url: "/connect",
-		title: "connect",
-	},
+	// {
+	// 	label: "posts",
+	// 	href: "/posts",
+	// 	title: "posts",
+	// },
+
+	// {
+	// 	label: "tools",
+	// 	href: "/tools",
+	// 	title: "tools",
+	// },
+	// {
+	// 	label: "connect",
+	// 	href: "/connect",
+	// 	title: "connect",
+	// },
 ];
 
 const SOCIAL_NAV = [
