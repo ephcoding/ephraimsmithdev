@@ -35,23 +35,23 @@ const GH_PAGES_BASE = "https://ephraimsmithdev.github.io";
  *
  */
 
-export const APIS = [
-	{
-		title: "VORTX",
-		imgURI: "p-vortx.jpg",
-		description:
-			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
-		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQL"],
-		links: [
-			{
-				label: "GitHub",
-				url: "https://github.com/ephraimsmithdev/vortx",
-			},
-		],
-	},
-];
+// export const APIS = [
+// 	{
+// 		title: "VORTX",
+// 		imgURI: "p-vortx.jpg",
+// 		description:
+// 			"VORTX is a REST API that will give developers access to over 65,000 historical tornado events.  VORTX will pull double-duty as the initial data source for my upcoming project, tornadoaction.com.",
+// 		tech: ["GraphQL", "Hasura", "Knex", "PostgreSQL"],
+// 		links: [
+// 			{
+// 				label: "GitHub",
+// 				url: "https://github.com/ephraimsmithdev/vortx",
+// 			},
+// 		],
+// 	},
+// ];
 
-export const DESIGN = [
+export const RESPONSIVE = [
 	{
 		title: "Tribute Page",
 		imgURI: "p-tribute-page.png",
@@ -164,44 +164,44 @@ export const JAVASCRIPT = [
 	},
 ];
 
-export const MOBILE_APPS = [
-	{
-		title: "ROVERCAM",
-		imgURI: "p-rovercam.png",
-		description:
-			"ROVERCAM is a cross-platform mobile app that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
-		tech: ["React Native"],
-		links: [
-			{
-				label: "GitHub",
-				url: "https://github.com/modevx/rovercam",
-			},
-			// {
-			// 	label: "Play Store",
-			// 	url: "https://github.com/modevx/rovercam"
-			// },
-			// {
-			// 	label: "App Store",
-			// 	url: "https://github.com/modevx/rovercam"
-			// },
-		],
-	},
-];
+// export const MOBILE_APPS = [
+// 	{
+// 		title: "ROVERCAM",
+// 		imgURI: "p-rovercam.png",
+// 		description:
+// 			"ROVERCAM is a cross-platform mobile app that gives users access to thousands of photos taken on Mars by the 4 Mars Rovers: Curiosity, Opportunity, Perseverance, and Spirit.",
+// 		tech: ["React Native"],
+// 		links: [
+// 			{
+// 				label: "GitHub",
+// 				url: "https://github.com/modevx/rovercam",
+// 			},
+// 			// {
+// 			// 	label: "Play Store",
+// 			// 	url: "https://github.com/modevx/rovercam"
+// 			// },
+// 			// {
+// 			// 	label: "App Store",
+// 			// 	url: "https://github.com/modevx/rovercam"
+// 			// },
+// 		],
+// 	},
+// ];
 
 export const WEB_APPS = [
-	{
-		title: "ALSTR",
-		imgURI: "p-alstr.jpg",
-		description:
-			"ALSTR ( Algo-Strategy ) is my long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
-		tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
-		links: [
-			{
-				label: "GitHub",
-				url: "https://www.github.com/ephraimsmithdev/alstr",
-			},
-		],
-	},
+	// {
+	// 	title: "ALSTR",
+	// 	imgURI: "p-alstr.jpg",
+	// 	description:
+	// 		"ALSTR ( Algo-Strategy ) is my long-term project where I'll develop a platform for implementing my own algorithmic stock trading strategies.",
+	// 	tech: ["Cloud Architecture", "Event-Driven Data", "Websockets"],
+	// 	links: [
+	// 		{
+	// 			label: "GitHub",
+	// 			url: "https://www.github.com/ephraimsmithdev/alstr",
+	// 		},
+	// 	],
+	// },
 	{
 		title: "Calculator",
 		imgURI: "p-calculator.png",

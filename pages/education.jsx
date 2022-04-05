@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {
 	APIS,
-	DESIGN,
+	RESPONSIVE,
 	JAVASCRIPT,
 	MOBILE_APPS,
 	PAGE_META,
@@ -12,7 +12,7 @@ import { TOOLS_LIST, PAGE_META } from "../constants";
 
 // import { sortHighLow } from "@/js/util_funcs";
 
-export default function Projects() {
+export default function EducationPage() {
 	// const sortedTools = TOOLS.sort(({ name }) => sortHighLow(this.name, name));
 	const { projects } = PAGE_META;
 
@@ -21,7 +21,7 @@ export default function Projects() {
 			<h2 className='text-4xl font-bold my-4'>APIs</h2>
 			<ProjectList projects={APIS} />
 			<h2 className='text-4xl font-bold my-4'>RESPONSIVE WEB DESIGN</h2>
-			<ProjectList projects={DESIGN} />
+			<ProjectList projects={RESPONSIVE} />
 			<h2 className='text-4xl font-bold my-4'>WEB APPS</h2>
 			<ProjectList projects={WEB_APPS} />
 			<h2 className='text-4xl font-bold my-4'>JAVASCRIPT</h2>

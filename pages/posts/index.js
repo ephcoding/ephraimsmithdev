@@ -1,10 +1,14 @@
 import fs from "fs";
 import path from "path";
-import Layout from "@/components/Layout";
 import Post from "@/components/Post";
 import { getPosts } from "@/lib/posts";
 
-export default function BlogPage({ posts, numPages, currentPage, categories }) {
+export default function BlogPostsPage({
+	posts,
+	numPages,
+	currentPage,
+	categories,
+}) {
 	return (
 		<Layout>
 			<div className='flex justify-between flex-col md:flex-row'>

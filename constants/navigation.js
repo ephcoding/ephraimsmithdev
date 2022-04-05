@@ -37,16 +37,15 @@ const SITE_NAV = [
 		title: "ephraimsmith.dev",
 	},
 	{
-		label: "training",
-		href: "/training",
-		title: "training",
+		label: "posts",
+		href: "/posts",
+		title: "posts",
 	},
-	// {
-	// 	label: "posts",
-	// 	href: "/posts",
-	// 	title: "posts",
-	// },
-
+	{
+		label: "education",
+		href: "/education",
+		title: "education",
+	},
 	// {
 	// 	label: "tools",
 	// 	href: "/tools",
