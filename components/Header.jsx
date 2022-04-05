@@ -84,7 +84,7 @@ export const Header = () => {
 
 					{/* ///// MOBILE MENU NAV ITEMS ///// */}
 					<Disclosure.Panel className='sm:hidden'>
-						<div className='px-2 pt-2 pb-3 space-y-1'>
+						<div className='px-2 pt-2 pb-3 space-y-1 text-right'>
 							{SITE_NAV.map(item => (
 								<Disclosure.Button
 									key={item.label}
