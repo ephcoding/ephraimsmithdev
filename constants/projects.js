@@ -83,16 +83,7 @@ export default [
 		description:
 			"Using 1 hand and your keyboard, make...err some noise with either the 'Big and Heavy' or 'Pearl' drum kits.  Built with React and Sass",
 		tech_labels: ["CSS", "GitHub Pages", "React", "Sass"],
-		href: [
-			{
-				label: "GitHub",
-				url: `${GH_REPO_BASE}/drum-machine`,
-			},
-			{
-				label: "App",
-				url: `${GH_PAGES_BASE}/drum-machine`,
-			},
-		],
+		href: `${GH_PAGES_BASE}/drum-machine`,
 	},
 	{
 		title: "Landing Page Template",

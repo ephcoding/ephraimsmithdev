@@ -48,7 +48,10 @@ const ProjectItem = ({ project }) => {
 			<ProjectTech technologies={tech_labels} />
 			<p className='text-xs my-3'>{project.description}</p>
 			<Link href={project.href}>
-				<a className='bg-gradient-to-r from-lime-300 to-green-600 mt-3 flex flex-col h-100 px-2'>
+				<a
+					className='bg-gradient-to-r from-lime-300 to-green-600 mt-3 flex flex-col h-100 px-2'
+					target='_blank'
+				>
 					<span className='grow my-2 text-center'>SEE IT LIVE</span>
 				</a>
 			</Link>
