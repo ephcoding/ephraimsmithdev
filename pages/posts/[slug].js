@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 import CategoryLabel from "@/components/CategoryLabel";
 
 export default function PostPage({
-	frontmatter: { title, category, date, cover_image, author, author_image },
+	frontmatter: { title, date, cover_image, author, author_image },
 	content,
 	slug,
 }) {
@@ -17,7 +17,6 @@ export default function PostPage({
 			<div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
 				<div className='flex justify-between items-center mt-4'>
 					<h1 className='text-5xl mb-7'>{title}</h1>
-					<CategoryLabel>{category}</CategoryLabel>
 				</div>
 				<img src={cover_image} alt='' className='w-full rounded' />
 

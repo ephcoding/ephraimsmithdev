@@ -6,7 +6,7 @@ export const PAGE_META = {
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
 		title: "ephraimsmith.dev",
 	},
-	posts: {
+	blog_posts: {
 		heading: "Posts",
 		description: "",
 		keywords:
