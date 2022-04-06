@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProjectLink = ({ link }) => {
 	return (
-		<Link href={link.url} key={link.label}>
+		<Link href={link.url}>
 			<a target='_blank'>{link.label}</a>
 		</Link>
 	);
@@ -13,7 +13,7 @@ const ProjectLinks = ({ links }) => {
 	return (
 		<div className='flex justify-around mt-2'>
 			{links.map(link => (
-				<ProjectLink link={link} />
+				<ProjectLink link={link} key={link.url} />
 			))}
 		</div>
 	);
