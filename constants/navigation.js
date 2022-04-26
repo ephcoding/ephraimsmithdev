@@ -32,19 +32,24 @@ const PROJECTS_NAV = [
 const SITE_NAV = [
 	// home = projects
 	{
-		label: "projects",
+		label: "home",
 		href: "/",
 		title: "ephraimsmith.dev",
 	},
 	{
-		label: "posts",
-		href: "/posts",
-		title: "posts",
-	},
-	{
-		label: "education",
+		label: "learn",
 		href: "/education",
 		title: "education",
+	},
+	{
+		label: "build",
+		href: "/build",
+		title: "build",
+	},
+	{
+		label: "share",
+		href: "/share",
+		title: "share",
 	},
 	// {
 	// 	label: "tools",
