@@ -9,14 +9,13 @@ export default function HomePage() {
 
 	return (
 		<Page pageInfo={home}>
+			<h2 className='text-3xl font-bold text-gray-800 dark:text-gray-100'>
+				learn. build. document.
+			</h2>
 			<section>
 				<div className='container px-6 py-8 mx-auto'>
 					<div className='items-center lg:flex'>
 						<div className='lg:w-1/2'>
-							<h2 className='text-3xl font-bold text-gray-800 dark:text-gray-100'>
-								learn. build. document.
-							</h2>
-
 							<p className='mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md'>
 								Hi I am jane , software engineer , Lorem ipsum, dolor sit amet
 								consectetur adipisicing elit. Illum in sed non alias, fugiat,
