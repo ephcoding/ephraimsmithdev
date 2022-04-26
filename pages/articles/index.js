@@ -5,11 +5,11 @@ import { PAGE_META } from "../../constants";
 import { Page, Article } from "../../components";
 
 const Articles = ({ articles }) => {
-	const { share } = PAGE_META;
+	const { document } = PAGE_META;
 
 	console.log("articles >>:\n", articles);
 	return (
-		<Page pageInfo={share}>
+		<Page pageInfo={document}>
 			<div className='flex justify-between flex-col md:flex-row'>
 				<div className='w-3/4 mr-10'>
 					<h1 className='text-5xl border-b-4 p-5 font-bold'>document</h1>

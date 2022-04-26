@@ -1,7 +1,12 @@
-import React from "react";
+import { Page } from "../../components/";
+import { PAGE_META } from "../../constants";
 
-const BuildPage = () => {
-	return <div>BuildPage</div>;
-};
+export default function BuildPage() {
+	const { build } = PAGE_META;
 
-export default BuildPage;
+	return (
+		<Page pageInfo={build}>
+			<h1>build</h1>
+		</Page>
+	);
+}
