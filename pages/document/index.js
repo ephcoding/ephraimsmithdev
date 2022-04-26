@@ -4,7 +4,7 @@ import { getPosts } from "../../lib";
 import { PAGE_META } from "../../constants";
 import { Page, Post } from "../../components";
 
-export default function BlogPostsPage({ posts }) {
+export default function Articles({ posts }) {
 	const { blog_posts } = PAGE_META;
 
 	return (
