@@ -1,13 +1,13 @@
 import { Page } from "../components";
-import { EDUCATION, PAGE_META } from "../constants";
+import { PAGE_META } from "../constants";
 
 // import { sortHighLow } from "@/js/util_funcs";
 
 export default function LearnPage() {
-	const { education } = PAGE_META;
+	const { learn } = PAGE_META;
 
 	return (
-		<Page pageInfo={education}>
+		<Page pageInfo={learn}>
 			<h1>learn</h1>
 		</Page>
 	);
