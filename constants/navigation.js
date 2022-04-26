@@ -38,8 +38,8 @@ const SITE_NAV = [
 	},
 	{
 		label: "learn",
-		href: "/education",
-		title: "education",
+		href: "/learn",
+		title: "learn",
 	},
 	{
 		label: "build",
@@ -47,15 +47,15 @@ const SITE_NAV = [
 		title: "build",
 	},
 	{
-		label: "share",
-		href: "/share",
-		title: "share",
+		label: "document",
+		href: "/document",
+		title: "document",
 	},
-	// {
-	// 	label: "tools",
-	// 	href: "/tools",
-	// 	title: "tools",
-	// },
+	{
+		label: "tools",
+		href: "/tools",
+		title: "tools",
+	},
 	// {
 	// 	label: "connect",
 	// 	href: "/connect",
