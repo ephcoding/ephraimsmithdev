@@ -48,7 +48,7 @@ const SITE_NAV = [
 	},
 	{
 		label: "document",
-		href: "/document",
+		href: "/articles",
 		title: "document",
 	},
 	{

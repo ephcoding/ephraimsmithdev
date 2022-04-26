@@ -4,26 +4,33 @@ export const PAGE_META = {
 		description: "",
 		keywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
-		title: "ephraimsmith.dev",
+		title: "ephraimsmith.dev | home",
 	},
-	blog_posts: {
-		heading: "Posts",
+	learn: {
+		heading: "Learn",
 		description: "",
 		keywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
-		title: "ephraimsmith.dev",
+		title: "ephraimsmith.dev | learn",
+	},
+	share: {
+		heading: "share",
+		description: "",
+		keywords:
+			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
+		title: "ephraimsmith.dev | share",
 	},
 	education: {
-		heading: "Education",
+		heading: "Document",
 		description: "",
 		keywords:
 			"react native, mobile apps, mobile development, android, ios, coding, programming, software, software development",
-		title: "ephraimsmith.dev",
+		title: "ephraimsmith.dev | document",
 	},
 	tools: {
 		heading: "Tools",
 		description: "",
 		keywords: "",
-		title: "Ephraim Smith | Tools",
+		title: "Ephraim Smith | tools",
 	},
 };

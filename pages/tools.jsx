@@ -21,6 +21,7 @@ export default function Tools() {
 
 	return (
 		<Page pageInfo={tools}>
+			<h1>tools</h1>
 			<ul className='tools-list'>{dTools}</ul>
 		</Page>
 	);

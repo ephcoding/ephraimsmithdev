@@ -6,5 +6,9 @@ import { EDUCATION, PAGE_META } from "../constants";
 export default function LearnPage() {
 	const { education } = PAGE_META;
 
-	return <Page pageInfo={education}></Page>;
+	return (
+		<Page pageInfo={education}>
+			<h1>learn</h1>
+		</Page>
+	);
 }

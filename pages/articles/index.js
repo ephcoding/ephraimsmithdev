@@ -4,14 +4,15 @@ import { getArticles } from "../../lib";
 import { PAGE_META } from "../../constants";
 import { Page, Article } from "../../components";
 
-export default function Document({ articles }) {
-	const { blog_posts } = PAGE_META;
+const Articles = ({ articles }) => {
+	const { share } = PAGE_META;
 
+	console.log("articles >>:\n", articles);
 	return (
-		<Page pageInfo={blog_posts}>
+		<Page pageInfo={share}>
 			<div className='flex justify-between flex-col md:flex-row'>
 				<div className='w-3/4 mr-10'>
-					<h1 className='text-5xl border-b-4 p-5 font-bold'>Blog</h1>
+					<h1 className='text-5xl border-b-4 p-5 font-bold'>document</h1>
 
 					<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
 						{articles.map((article, index) => (
@@ -22,14 +23,16 @@ export default function Document({ articles }) {
 			</div>
 		</Page>
 	);
-}
+};
+
+export default Articles;
 
 // export async function getStaticPaths() {
-// 	const files = fs.readdirSync(path.join("posts"));
-// 	const paths = files.map(file => {
+// 	const files = fs.readdirSync(path.join("articles"));
+// 	const paths = files.map((file) => {
 // 		return {
 // 			params: {
-// 				slug: file.replace(".md", ""),
+// 				article_slug: file.replace(".md", ""),
 // 			},
 // 		};
 // 	});
