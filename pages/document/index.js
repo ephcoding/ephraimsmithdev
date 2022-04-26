@@ -1,10 +1,10 @@
 // import fs from "fs";
 import path from "path";
-import { getPosts } from "../../lib";
+import { getArticles } from "../../lib";
 import { PAGE_META } from "../../constants";
-import { Page, Post } from "../../components";
+import { Page, Article } from "../../components";
 
-export default function Articles({ posts }) {
+export default function Document({ articles }) {
 	const { blog_posts } = PAGE_META;
 
 	return (
@@ -14,8 +14,8 @@ export default function Articles({ posts }) {
 					<h1 className='text-5xl border-b-4 p-5 font-bold'>Blog</h1>
 
 					<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-						{posts.map((post, index) => (
-							<Post key={index} post={post} />
+						{articles.map((article, index) => (
+							<Article key={index} article={article} />
 						))}
 					</div>
 				</div>
@@ -42,7 +42,7 @@ export default function Articles({ posts }) {
 export async function getStaticProps() {
 	return {
 		props: {
-			posts: getPosts(),
+			articles: getArticles(),
 		},
 	};
 }
