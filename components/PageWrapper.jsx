@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Footer, Header } from "./";
+import { Footer, Header } from "components";
 
 export const Page = ({ pageInfo, children }) => {
 	const { heading, description, keywords, title } = pageInfo;

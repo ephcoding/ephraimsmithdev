@@ -3,9 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 import Link from "next/link";
-import Layout from "@/components/Layout";
+import Layout from "components";
 
-export default function PostPage({
+export default function Article({
 	frontmatter: { title, date, cover_image, author, author_image },
 	content,
 	slug,
@@ -65,7 +65,7 @@ export async function getStaticProps({ params: { slug } }) {
 		props: {
 			frontmatter,
 			content,
-			article_slug,
+			slug,
 		},
 	};
 }

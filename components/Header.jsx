@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import { SITE_NAV } from "../constants";
+import { SITE_NAV } from "../site-data";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
@@ -20,7 +20,7 @@ const NavList = ({ nav }) => {
 	return (
 		<nav>
 			<ul className='flex'>
-				{nav.map(navItem => (
+				{nav.map((navItem) => (
 					<NavItem key={navItem.url} navItem={navItem} />
 				))}
 			</ul>
@@ -34,7 +34,7 @@ function classNames(...classes) {
 
 export const Header = () => {
 	return (
-		<Disclosure as='nav'>
+		<Disclosure>
 			{({ open }) => (
 				<>
 					{/* ///// CONTAINER ///// */}
@@ -48,7 +48,7 @@ export const Header = () => {
 								{/* ///// NAV ITEMS ///// */}
 								<div className='hidden sm:inline-block sm:ml-6'>
 									<div className='flex space-x-4'>
-										{SITE_NAV.map(item => (
+										{SITE_NAV.map((item) => (
 											<Link href={item.href} key={item.label}>
 												<a
 													className={classNames(
@@ -67,7 +67,7 @@ export const Header = () => {
 								</div>
 							</div>
 
-							{/* ///// MOBILE MENU BTN ///// 
+							{/* ///// MOBILE MENU BTN /////
 							hidden at 'sm' breakpoint (640px) */}
 							<div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
 								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
@@ -85,7 +85,7 @@ export const Header = () => {
 					{/* ///// MOBILE MENU NAV ITEMS ///// */}
 					<Disclosure.Panel className='sm:hidden'>
 						<div className='px-2 pt-2 pb-3 space-y-1 text-right'>
-							{SITE_NAV.map(item => (
+							{SITE_NAV.map((item) => (
 								<Disclosure.Button
 									key={item.label}
 									as='a'
