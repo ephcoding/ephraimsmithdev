@@ -1,8 +1,9 @@
+import { defaultProps } from "react";
 import Head from "next/head";
 import { Footer, Header } from "components";
 
-export const Page = ({ pageInfo, children }) => {
-	const { heading, description, keywords, title } = pageInfo;
+export const PageWrapper = ({ pageInfo = {}, children }) => {
+	const { description, keywords, title } = pageInfo;
 
 	return (
 		<>
@@ -42,10 +43,16 @@ export const Page = ({ pageInfo, children }) => {
 				/>
 			</Head>
 			<div className='flex flex-col min-h-screen px-4 py-2 bg-neutral-700 text-white'>
-				<Header title={heading} />
+				<Header title={title} />
 				<main className='container mx-auto grow'>{children}</main>
 				<Footer />
 			</div>
 		</>
 	);
 };
+
+// PageWrapper.defaultProps = {
+// 	description: "",
+// 	keywords: "",
+// 	title: "",
+// };

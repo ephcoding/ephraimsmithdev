@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Article = ({ article, compact }) => {
 	return (
@@ -20,7 +20,7 @@ export const Article = ({ article, compact }) => {
 			</div>
 
 			<div className='mt-2'>
-				<Link href={`/blog/${article.slug}`}>
+				<Link href={`/PageWrapper/${article.slug}`}>
 					<a className='text-2xl text-gray-700 font-bold hover:underline'>
 						{article.frontmatter.title}
 					</a>
@@ -30,11 +30,11 @@ export const Article = ({ article, compact }) => {
 
 			{!compact && (
 				<div className='flex justify-between items-center mt-6'>
-					<Link href={`/blog/${article.slug}`}>
+					<Link href={`/articles/${article.slug}`}>
 						<a className='text-gray-900 hover:text-blue-600'>Read More</a>
 					</Link>
 					<div className='flex items-center'>
-						<img
+						<Image
 							src={article.frontmatter.author_image}
 							alt=''
 							className='mx-4 w-10 h-10 object-cover rounded-full hidden sm:block'
