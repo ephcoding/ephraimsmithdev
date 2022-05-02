@@ -1,13 +1,14 @@
 import { Navigation } from "components";
 
-function classNames(...classes) {
-	return classes.filter(Boolean).join(" ");
-}
-
 export const Header = () => {
 	return (
-		<header class='shadow-sm'>
-			<Navigation />
+		<header>
+			<div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 '>
+				<div className='relative flex items-center justify-between h-16 '>
+					<h1 className='font-bold'>EPHRAIM SMITH</h1>
+					<Navigation />
+				</div>
+			</div>
 		</header>
 	);
 };
