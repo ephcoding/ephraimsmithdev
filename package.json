@@ -1,6 +1,6 @@
 {
-	"name": "ephcoding.com",
-	"version": "0.1.0",
+	"name": "ephraimsmith.dev",
+	"version": "0.0.3",
 	"private": true,
 	"scripts": {
 		"dev": "rm -rf ./.next/cache && next dev -p 3004",

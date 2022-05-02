@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProjectLink = ({ link }) => {
 	return (
-		<Link href={link.url} key={link.label}>
+		<Link href={link.url}>
 			<a target='_blank'>{link.label}</a>
 		</Link>
 	);
@@ -13,7 +13,7 @@ const ProjectLinks = ({ links }) => {
 	return (
 		<div className='flex justify-around mt-2'>
 			{links.map(link => (
-				<ProjectLink link={link} />
+				<ProjectLink link={link} key={link.url} />
 			))}
 		</div>
 	);
@@ -30,35 +30,38 @@ const ProjectTech = ({ technologies }) => {
 };
 
 const ProjectItem = ({ project }) => {
-	const { title, imgURI, description, tech, links } = project;
+	const { title, src, description, tech_labels, links } = project;
 
 	return (
 		<li
-			className='bg-neutral-300 rounded-md pb-3 shadow-lg shadow-slate-400/50 text-black'
+			className='p-3 rounded-md shadow-xl shadow-neutral-800 bg-neutral-600'
 			key={title}
 		>
-			<h3 className='font-bold px-2 py-3 text-center text-xl uppercase'>
-				{title}
-			</h3>
 			<Image
-				src={`/${imgURI}`}
+				src={`/${src}`}
 				alt={`${title} image`}
 				height={150}
 				width={225}
 				layout='responsive'
 			/>
-			<div className='flex flex-col h-100 px-2'>
-				<p className='grow my-2 text-sm'>{description}</p>
-				<ProjectTech technologies={tech} />
-				<ProjectLinks links={links} />
-			</div>
+			<h2 className='font-bold text-sm uppercase'>{title}</h2>
+			<ProjectTech technologies={tech_labels} />
+			<p className='text-xs my-3'>{project.description}</p>
+			<Link href={project.href}>
+				<a
+					className='bg-gradient-to-r from-lime-300 to-green-600 mt-3 flex flex-col h-100 px-2'
+					target='_blank'
+				>
+					<span className='grow my-2 text-center'>SEE IT LIVE</span>
+				</a>
+			</Link>
 		</li>
 	);
 };
 
 export const ProjectList = ({ projects }) => {
 	return (
-		<ul className='grid gap-8 grid-col-1 sm:grid-cols-2 md:grid-cols-3'>
+		<ul className='grid gap-8 grid-col-1 sm:grid-cols-2 lg:grid-cols-3'>
 			{projects.map(project => (
 				<ProjectItem key={project.title} project={project} />
 			))}

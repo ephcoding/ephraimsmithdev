@@ -1,22 +1,15 @@
 import Head from "next/head";
-import { Footer, Header } from "./";
+import { Footer, Header } from "components";
 
 export const Page = ({ pageInfo, children }) => {
-	const {
-		cssClass,
-		pageHeading,
-		pageIntro,
-		metaDescription,
-		metaKeywords,
-		metaTitle,
-	} = pageInfo;
+	const { heading, description, keywords, title } = pageInfo;
 
 	return (
 		<>
 			<Head>
-				<title>{metaTitle}</title>
-				<meta name='keywords' content={metaKeywords} />
-				<meta name='description' content={metaDescription} />
+				<title>{title}</title>
+				<meta name='keywords' content={keywords} />
+				<meta name='description' content={description} />
 				<link rel='icon' href='/favicon.ico' />
 				{/* LinkedIn Meta */}
 				<meta property='og:title' name='title' content='ephraimsmith.dev' />
@@ -48,8 +41,8 @@ export const Page = ({ pageInfo, children }) => {
 					content='Ephraim Smith | sharing software, mistakes, bad dad jokes, and lessons learned with the world.  Probably not in that order.'
 				/>
 			</Head>
-			<div className='flex flex-col min-h-screen px-4 py-2 bg-neutral-900 text-white'>
-				<Header title={pageHeading} />
+			<div className='flex flex-col min-h-screen px-4 py-2 bg-neutral-700 text-white'>
+				<Header title={heading} />
 				<main className='container mx-auto grow'>{children}</main>
 				<Footer />
 			</div>

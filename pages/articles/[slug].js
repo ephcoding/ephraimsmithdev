@@ -3,11 +3,10 @@ import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 import Link from "next/link";
-import Layout from "@/components/Layout";
-import CategoryLabel from "@/components/CategoryLabel";
+import Layout from "components";
 
-export default function PostPage({
-	frontmatter: { title, category, date, cover_image, author, author_image },
+export default function Article({
+	frontmatter: { title, date, cover_image, author, author_image },
 	content,
 	slug,
 }) {
@@ -17,7 +16,6 @@ export default function PostPage({
 			<div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
 				<div className='flex justify-between items-center mt-4'>
 					<h1 className='text-5xl mb-7'>{title}</h1>
-					<CategoryLabel>{category}</CategoryLabel>
 				</div>
 				<img src={cover_image} alt='' className='w-full rounded' />
 
@@ -44,9 +42,9 @@ export default function PostPage({
 export async function getStaticPaths() {
 	const files = fs.readdirSync(path.join("posts"));
 
-	const paths = files.map(filename => ({
+	const paths = files.map((filename) => ({
 		params: {
-			slug: filename.replace(".md", ""),
+			article_slug: filename.replace(".md", ""),
 		},
 	}));
 
@@ -58,7 +56,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
 	const markdownWithMeta = fs.readFileSync(
-		path.join("posts", slug + ".md"),
+		path.join("articles", slug + ".md"),
 		"utf-8"
 	);
 
