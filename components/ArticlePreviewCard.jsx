@@ -50,7 +50,7 @@ export const ArticlePreviewCard = ({ article }) => {
 				quality={100}
 			/>
 			<div className='absolute top-0 right-0 bottom-0 left-0 p-4 bg-stone-800/50'>
-				<h3 className='uppercase font-bold w-3/4'>{title}</h3>
+				<h3 className='uppercase font-bold w-3/4 mb-2'>{title}</h3>
 				<h2 className='text-sm w-3/4'>{sub_title}</h2>
 			</div>
 			<TagIconCornerTab thisTag={thisTag} />
