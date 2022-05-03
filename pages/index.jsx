@@ -22,7 +22,9 @@ export async function getStaticProps() {
 			"utf-8"
 		);
 
-		return { markdownFileContent };
+		const { data: frontmatter } = matter(markdownFileContent);
+
+		return { slug, frontmatter };
 	});
 
 	console.log(">> pages/index.js: getStaticProps() >>", posts);
