@@ -2,5 +2,5 @@ export * from "./Footer";
 export * from "./Header";
 export * from "./Navigation";
 export * from "./PageWrapper";
-export * from "./PostPreviewCard";
+export * from "./ArticlePreviewCard";
 export * from "./ProjectList";
