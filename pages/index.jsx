@@ -21,7 +21,7 @@ export default function HomePage({ articles }) {
 
 			<h2 className='text-3xl font-bold uppercase'>Latest Articles</h2>
 
-			<div className='sm:grid sm:grid-cols-2 sm:gap-5'>
+			<div className='md:grid md:grid-cols-2 md:gap-5'>
 				{articles.map((article) => (
 					<ArticlePreviewCard article={article} key={article.slug} />
 				))}
