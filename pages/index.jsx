@@ -19,7 +19,7 @@ export default function HomePage({ articles }) {
 
 			<input className='block mx-auto' placeholder='search articles..' />
 
-			<div>
+			<div className='sm:grid sm:grid-cols-2 sm:gap-5'>
 				{articles.map((article) => (
 					<ArticlePreviewCard article={article} />
 				))}
