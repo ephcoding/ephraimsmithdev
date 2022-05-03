@@ -11,38 +11,32 @@ export default function HomePage({ articles }) {
 
 	return (
 		<PageWrapper pageInfo={home}>
-			<IntroSection />
 			<SearchBar />
-			<h2 className='text-3xl font-bold uppercase'>Latest Articles</h2>
+			<h2 className='text-xl font-bold uppercase my-8'>Latest</h2>
 			<LatestArticlesSection articles={articles} />
 		</PageWrapper>
 	);
 }
 
-const IntroSection = () => {
-	return (
-		<section
-			id='intro'
-			className='min-w-[250px] w-1/2 text-center mx-auto mb-10'
-		>
-			This is some intro text. This is some intro text. This is some intro text.
-			This is some intro text. This is some intro text. This is some intro text.
-			This is some intro text. This is some intro text.
-		</section>
-	);
-};
-
 const SearchBar = () => {
 	return (
-		<div>
-			<input className='block mx-auto' placeholder='search articles..' />
+		<div className='my-4'>
+			<input
+				id=''
+				className='block mx-auto p-2'
+				placeholder='search articles..'
+			/>
 		</div>
 	);
 };
 
+const TagSelector = () => {
+	return <div></div>;
+};
+
 const LatestArticlesSection = ({ articles }) => {
 	return (
-		<div className='md:grid md:grid-cols-2 md:gap-5'>
+		<div className='space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-5'>
 			{articles.map((article) => (
 				<ArticlePreviewCard article={article} key={article.slug} />
 			))}
