@@ -11,24 +11,38 @@ export default function HomePage({ articles }) {
 
 	return (
 		<PageWrapper pageInfo={home}>
-			<p>
-				This is some intro text. This is some intro text. This is some intro
-				text. This is some intro text. This is some intro text. This is some
-				intro text. This is some intro text. This is some intro text.
-			</p>
-
-			<input className='block mx-auto' placeholder='search articles..' />
-
-			<h2 className='text-3xl font-bold uppercase'>Latest Articles</h2>
-
-			<div className='md:grid md:grid-cols-2 md:gap-5'>
-				{articles.map((article) => (
-					<ArticlePreviewCard article={article} key={article.slug} />
-				))}
-			</div>
+			<SearchBar />
+			<h2 className='text-xl font-bold uppercase my-8'>Latest</h2>
+			<LatestArticlesSection articles={articles} />
 		</PageWrapper>
 	);
 }
+
+const SearchBar = () => {
+	return (
+		<div className='my-4'>
+			<input
+				id=''
+				className='block mx-auto p-2'
+				placeholder='search articles..'
+			/>
+		</div>
+	);
+};
+
+const TagSelector = () => {
+	return <div></div>;
+};
+
+const LatestArticlesSection = ({ articles }) => {
+	return (
+		<div className='space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-5'>
+			{articles.map((article) => (
+				<ArticlePreviewCard article={article} key={article.slug} />
+			))}
+		</div>
+	);
+};
 
 export async function getStaticProps() {
 	// const articles = await getArticleSlugsAndFrMatOnServer();
