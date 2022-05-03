@@ -56,7 +56,7 @@ const MainNavMobileMenuBtn = ({ open }) => {
 			<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-white'>
 				<span className='sr-only'>Open main menu</span>
 				{open ? (
-					<XIcon className='block h-6 w-6' aria-hidden='true' />
+					<XIcon className='block h-6 w-6 text-red-500' aria-hidden='true' />
 				) : (
 					<MenuIcon className='block h-6 w-6' aria-hidden='true' />
 				)}
@@ -67,13 +67,13 @@ const MainNavMobileMenuBtn = ({ open }) => {
 
 const MainNavMobileMenuItems = ({ navItems }) => {
 	return (
-		<Disclosure.Panel className='absolute inset-y-12 right-0 sm:hidden'>
-			<div className='px-2 pt-2 pb-3 space-y-1'>
+		<Disclosure.Panel className='absolute inset-y-14 w-full right-0 sm:hidden z-50'>
+			<div className='px-2 pt-2 pb-3 space-y-1 bg-stone-700 rounded-md border-2 border-white'>
 				{navItems.map((item) => (
 					<Link key={item.name} href={item.href} passHref>
 						<Disclosure.Button
 							as='a'
-							className='block text-white px-3 py-2 text-base text-right'
+							className='block text-white px-3 py-2 text-base text-right hover:bg-stone-800'
 						>
 							{item.name}
 						</Disclosure.Button>
