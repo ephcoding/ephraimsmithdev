@@ -39,22 +39,48 @@ export const ArticlePreviewCard = ({ article }) => {
 
 	return (
 		<div
-			className={`relative p-4 overflow-hidden h-56 shadow-white shadow-md rounded bg-neutral-800 mb-3`}
+			className={`relative p-4 overflow-hidden h-56 shadow-black shadow-xl rounded bg-stone-700`}
 		>
 			{/* BACKGROUND IMAGE */}
-
-			<h3 className='uppercase font-bold'>{title}</h3>
-			<h2 className='card_subtitle'>{sub_title}</h2>
-
-			<div className='absolute top-0 right-0 overflow-hidden h-24 w-24'>
-				<div
-					className={`bg-gradient-to-br ${thisTag.bg_color} to-neutral-700 h-48 w-48 absolute top-0 -right-24 origin-top-left -rotate-45 border-2 border-white`}
-				></div>
+			<Image
+				alt='Mountains'
+				src={cover_image}
+				layout='fill'
+				objectFit='cover'
+				quality={100}
+			/>
+			<div className='absolute top-0 right-0 bottom-0 left-0 p-4 bg-stone-800/50'>
+				<h3 className='uppercase font-bold w-3/4'>{title}</h3>
+				<h2 className='text-sm w-3/4'>{sub_title}</h2>
 			</div>
+			<TagIconCornerTab thisTag={thisTag} />
+		</div>
+	);
+};
 
-			<div className='absolute top-4 right-4'>
-				<thisTag.icon size={25} color='white' />
-			</div>
+const TagIconCornerTab = ({ thisTag }) => {
+	return (
+		<>
+			<CornerTab thisTag={thisTag} />
+			<TagIcon thisTag={thisTag} />
+		</>
+	);
+};
+
+const CornerTab = ({ thisTag }) => {
+	return (
+		<div className='absolute top-0 right-0 overflow-hidden h-24 w-24'>
+			<div
+				className={`bg-gradient-to-br ${thisTag.bg_color} to-neutral-700 h-48 w-48 absolute top-0 -right-24 origin-top-left -rotate-45 border-4 border-white shadow-black shadow-lg`}
+			></div>
+		</div>
+	);
+};
+
+const TagIcon = ({ thisTag }) => {
+	return (
+		<div className='absolute top-4 right-4 hover:scale-105'>
+			<thisTag.icon size={25} color='white' />
 		</div>
 	);
 };
