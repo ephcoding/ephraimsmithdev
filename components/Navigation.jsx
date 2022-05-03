@@ -18,21 +18,21 @@ const navItems = [
 	},
 ];
 
-export function Navigation() {
+export function MainNav() {
 	return (
 		<Disclosure as='nav'>
 			{({ open }) => (
 				<>
-					<MobileNavMenuBtn open={open} />
-					<HorizontalNavItems navItems={navItems} />
-					<MobileNavDropDownItems navItems={navItems} />
+					<MainNavMobileMenuBtn open={open} />
+					<MainNavItems navItems={navItems} />
+					<MainNavMobileMenuItems navItems={navItems} />
 				</>
 			)}
 		</Disclosure>
 	);
 }
 
-const HorizontalNavItems = ({ navItems }) => {
+const MainNavItems = ({ navItems }) => {
 	return (
 		<div className='flex-1 flex items-center justify-center sm:justify-end'>
 			<div className='hidden sm:block sm:ml-6'>
@@ -50,7 +50,7 @@ const HorizontalNavItems = ({ navItems }) => {
 	);
 };
 
-const MobileNavMenuBtn = ({ open }) => {
+const MainNavMobileMenuBtn = ({ open }) => {
 	return (
 		<div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
 			<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-white'>
@@ -65,7 +65,7 @@ const MobileNavMenuBtn = ({ open }) => {
 	);
 };
 
-const MobileNavDropDownItems = ({ navItems }) => {
+const MainNavMobileMenuItems = ({ navItems }) => {
 	return (
 		<Disclosure.Panel className='absolute inset-y-12 right-0 sm:hidden'>
 			<div className='px-2 pt-2 pb-3 space-y-1'>
