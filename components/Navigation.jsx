@@ -70,14 +70,14 @@ const MainNavMobileMenuItems = ({ navItems }) => {
 		<Disclosure.Panel className='absolute inset-y-12 right-0 sm:hidden'>
 			<div className='px-2 pt-2 pb-3 space-y-1'>
 				{navItems.map((item) => (
-					<Disclosure.Button
-						key={item.name}
-						as='a'
-						href={item.href}
-						className='block text-white px-3 py-2 text-base text-right'
-					>
-						{item.name}
-					</Disclosure.Button>
+					<Link key={item.name} href={item.href} passHref>
+						<Disclosure.Button
+							as='a'
+							className='block text-white px-3 py-2 text-base text-right'
+						>
+							{item.name}
+						</Disclosure.Button>
+					</Link>
 				))}
 			</div>
 		</Disclosure.Panel>
