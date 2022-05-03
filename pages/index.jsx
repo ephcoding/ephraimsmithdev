@@ -19,10 +19,14 @@ export default function HomePage({ articles }) {
 
 			<input className='block mx-auto' placeholder='search articles..' />
 
+			<h2 className='text-3xl font-bold uppercase'>Latest Articles</h2>
+
 			<div className='sm:grid sm:grid-cols-2 sm:gap-5'>
-				{articles.map((article) => (
-					<ArticlePreviewCard article={article} />
-				))}
+				{
+					articles.map((article) => (
+						<ArticlePreviewCard article={article} key={article.slug} />
+					))[0]
+				}
 			</div>
 		</PageWrapper>
 	);
