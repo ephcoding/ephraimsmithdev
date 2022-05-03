@@ -1,5 +1,5 @@
 ---
-cover_image: ""
+cover_image: "/bg_mars-glowing.jpg"
 title: "REACT SPA: Tornado Action"
 sub_title: "Log 1: getting off the ground"
 date: "September 20, 2021"

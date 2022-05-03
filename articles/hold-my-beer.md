@@ -1,5 +1,5 @@
 ---
-cover_image: ""
+cover_image: "/bg_mars-glowing.jpg"
 title: "HOLD MY BEER"
 sub_title: "Throwing deuces to my comfort zone and starting a software blog."
 date: "August 27, 2021"
