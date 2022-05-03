@@ -39,7 +39,7 @@ const MainNavItems = ({ navItems }) => {
 				<div className='flex space-x-4'>
 					{navItems.map((item) => (
 						<Link key={item.name} href={item.href} passHref>
-							<a className='text-gray-300' target={item.target}>
+							<a className='text-gray-300 hover:scale-105' target={item.target}>
 								{item.name}
 							</a>
 						</Link>

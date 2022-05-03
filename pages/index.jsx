@@ -11,24 +11,44 @@ export default function HomePage({ articles }) {
 
 	return (
 		<PageWrapper pageInfo={home}>
-			<p>
-				This is some intro text. This is some intro text. This is some intro
-				text. This is some intro text. This is some intro text. This is some
-				intro text. This is some intro text. This is some intro text.
-			</p>
-
-			<input className='block mx-auto' placeholder='search articles..' />
-
+			<IntroSection />
+			<SearchBar />
 			<h2 className='text-3xl font-bold uppercase'>Latest Articles</h2>
-
-			<div className='md:grid md:grid-cols-2 md:gap-5'>
-				{articles.map((article) => (
-					<ArticlePreviewCard article={article} key={article.slug} />
-				))}
-			</div>
+			<LatestArticlesSection articles={articles} />
 		</PageWrapper>
 	);
 }
+
+const IntroSection = () => {
+	return (
+		<section
+			id='intro'
+			className='min-w-[250px] w-1/2 text-center mx-auto mb-10'
+		>
+			This is some intro text. This is some intro text. This is some intro text.
+			This is some intro text. This is some intro text. This is some intro text.
+			This is some intro text. This is some intro text.
+		</section>
+	);
+};
+
+const SearchBar = () => {
+	return (
+		<div>
+			<input className='block mx-auto' placeholder='search articles..' />
+		</div>
+	);
+};
+
+const LatestArticlesSection = ({ articles }) => {
+	return (
+		<div className='md:grid md:grid-cols-2 md:gap-5'>
+			{articles.map((article) => (
+				<ArticlePreviewCard article={article} key={article.slug} />
+			))}
+		</div>
+	);
+};
 
 export async function getStaticProps() {
 	// const articles = await getArticleSlugsAndFrMatOnServer();
