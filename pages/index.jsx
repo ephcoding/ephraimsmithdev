@@ -2,8 +2,9 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import matter from "gray-matter";
-import { PAGE_META } from "../site-data";
+import { PAGE_META } from "site-data";
 import { ArticlePreviewCard, PageWrapper } from "components";
+// import { getArticleSlugsAndFrMatOnServer } from "lib";
 
 export default function HomePage({ articles }) {
 	const { home } = PAGE_META;
@@ -28,6 +29,8 @@ export default function HomePage({ articles }) {
 }
 
 export async function getStaticProps() {
+	// const articles = await getArticleSlugsAndFrMatOnServer();
+
 	const files = fs.readdirSync(path.join("articles"));
 
 	const articles = files.map((filename) => {
@@ -42,8 +45,6 @@ export async function getStaticProps() {
 
 		return { slug, frontmatter };
 	});
-
-	console.log(">> pages/index.js: getStaticProps() >>", articles);
 
 	return {
 		props: { articles },
