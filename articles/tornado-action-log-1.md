@@ -2,7 +2,7 @@
 cover_image: "/bg_mars-glowing.jpg"
 title: "REACT SPA: Tornado Action"
 sub_title: "Log 1: getting off the ground"
-tag: "PostgreSQL"
+tag: "pg"
 date: "September 20, 2021"
 description: ""
 keywords: "tornado, severe weather, historical weather, heatmap, google maps"
@@ -39,7 +39,7 @@ Here's my initial list of features:
 - users can see month over month or year over year tornado events on a bar graph
 
 <figure>
-  <img class='post-img' alt='Tornado Action heatmap' src='/images/posts/20210918__heatmap-screenshot.png'/>
+  <img class='post-img' alt='Tornado Action heatmap' src='/images/articles/20210918__heatmap-screenshot.png'/>
   <figcaption class='text-center'>Heatmap of tornadoes with MAX_SHEAR > 100 knots for April 2021.</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ The data's available in a few different formats too: json, geoJson, csv, xml, sh
 SWDI API [docs](https://www.ncdc.noaa.gov/swdiws/)
 
 <figure>
-  <img class='post-img' alt='SWDI docs' src='/images/posts/20210916__swdi.png'/>
+  <img class='post-img' alt='SWDI docs' src='/images/articles/20210916__swdi.png'/>
   <figcaption class='text-center'>Screenshot of Severe Weather Data Inventory API docs</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ You can access all active weather alerts through the National Weather Service [A
 API base URL | https://api.weather.gov
 
 <figure>
-  <img class='post-img' alt='National Weather Service API' src='/images/posts/20210916__nws-api-for-alerts.png'/>
+  <img class='post-img' alt='National Weather Service API' src='/images/articles/20210916__nws-api-for-alerts.png'/>
   <figcaption class='text-center'>Screenshot of National Weather Service API page</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ This is where the rubber meets the road. For now, I'm using the coordinates retu
 You'll be able to see in the code where I'm dynamically loading the API via the NPM package: [@googlemaps/js-api-loader](https://www.npmjs.com/package/@googlemaps/js-api-loader).
 
 <figure>
-  <img class='post-img' alt='Google Maps JS API' src='/images/posts/20210916__google-maps-js-api.png'/>
+  <img class='post-img' alt='Google Maps JS API' src='/images/articles/20210916__google-maps-js-api.png'/>
   <figcaption class='text-center'>Screenshot of Google Maps JS API page</figcaption>
 </figure>
 
