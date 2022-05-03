@@ -3,18 +3,34 @@ import path from "path";
 import Link from "next/link";
 import matter from "gray-matter";
 import { PAGE_META } from "../site-data";
-import { PageWrapper } from "components";
+import { ArticlePreviewCard, PageWrapper } from "components";
 
-export default function HomePage({ posts }) {
+export default function HomePage({ articles }) {
 	const { home } = PAGE_META;
 
-	return <PageWrapper pageInfo={home}></PageWrapper>;
+	return (
+		<PageWrapper pageInfo={home}>
+			<p>
+				This is some intro text. This is some intro text. This is some intro
+				text. This is some intro text. This is some intro text. This is some
+				intro text. This is some intro text. This is some intro text.
+			</p>
+
+			<input className='block mx-auto' placeholder='search articles..' />
+
+			<div>
+				{articles.map((article) => (
+					<ArticlePreviewCard article={article} />
+				))}
+			</div>
+		</PageWrapper>
+	);
 }
 
 export async function getStaticProps() {
 	const files = fs.readdirSync(path.join("articles"));
 
-	const posts = files.map((filename) => {
+	const articles = files.map((filename) => {
 		const slug = filename.replace(".md", "");
 
 		const markdownFileContent = fs.readFileSync(
@@ -27,9 +43,9 @@ export async function getStaticProps() {
 		return { slug, frontmatter };
 	});
 
-	console.log(">> pages/index.js: getStaticProps() >>", posts);
+	console.log(">> pages/index.js: getStaticProps() >>", articles);
 
 	return {
-		props: { posts },
+		props: { articles },
 	};
 }
