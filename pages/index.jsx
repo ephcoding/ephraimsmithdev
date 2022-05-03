@@ -1,10 +1,11 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import matter from "gray-matter";
 import { PAGE_META } from "../site-data";
 import { PageWrapper } from "components";
 
-export default function HomePage({ props }) {
+export default function HomePage({ posts }) {
 	const { home } = PAGE_META;
 
 	return <PageWrapper pageInfo={home}></PageWrapper>;
@@ -13,9 +14,20 @@ export default function HomePage({ props }) {
 export async function getStaticProps() {
 	const files = fs.readdirSync(path.join("articles"));
 
-	console.log(">> pages/index.js: getStaticProps() >>", files);
+	const posts = files.map((filename) => {
+		const slug = filename.replace(".md", "");
+
+		const markdownFileContent = fs.readFileSync(
+			path.join("articles", filename),
+			"utf-8"
+		);
+
+		return { markdownFileContent };
+	});
+
+	console.log(">> pages/index.js: getStaticProps() >>", posts);
 
 	return {
-		props: {},
+		props: { posts },
 	};
 }
