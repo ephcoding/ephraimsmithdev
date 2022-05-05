@@ -46,7 +46,7 @@ const TagLabel = ({ date, tagAssets, tagName }) => {
 				<tagAssets.tagIcon size={20} color='white' />
 				<span className='ml-3'>{tagName}</span>
 			</div>
-			<p>{date}</p>
+			<p className='text-sm'>{date}</p>
 		</div>
 	);
 };
