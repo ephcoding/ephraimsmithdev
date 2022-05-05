@@ -6,6 +6,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				jest: "#cc4615",
 				js: "#f7df1e",
 				node: "#66cc33",
 				pg: "#336791",
