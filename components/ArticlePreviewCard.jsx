@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-	SiPostgresql,
-	SiNodedotjs,
-	SiJavascript,
-	SiTypescript,
-} from "react-icons/si";
+import { getBgColorAndIcon } from "components/utils";
 
 export const ArticlePreviewCard = ({ article }) => {
 	const {
@@ -13,29 +8,7 @@ export const ArticlePreviewCard = ({ article }) => {
 		frontmatter: { cover_image, title, sub_title, tag, date },
 	} = article;
 
-	const tagMap = {
-		js: {
-			bg_color: "from-js",
-			icon: SiJavascript,
-		},
-		node: {
-			bg_color: "from-node",
-			icon: SiNodedotjs,
-		},
-		pg: {
-			bg_color: "from-pg",
-			icon: SiPostgresql,
-		},
-		ts: {
-			bg_color: "from-ts",
-			icon: SiTypescript,
-		},
-	};
-
-	// [?] why doesn't THIS work:
-	// ((const tagIcon = tagMap[tag].icon;))
-	// but this DOES??
-	const thisTag = tagMap[tag];
+	const tagAssets = getBgColorAndIcon(tag);
 
 	return (
 		<div
@@ -58,34 +31,34 @@ export const ArticlePreviewCard = ({ article }) => {
 				<h2 className='text-sm w-3/4'>{sub_title}</h2>
 			</div>
 			{/* <Link href={`/articles/${slug}`}></Link> */}
-			<TagIconCornerTab thisTag={thisTag} />
+			<TagIconCornerTab tagAssets={tagAssets} />
 		</div>
 	);
 };
 
-const TagIconCornerTab = ({ thisTag }) => {
+const TagIconCornerTab = ({ tagAssets }) => {
 	return (
 		<>
-			<CornerTab thisTag={thisTag} />
-			<TagIcon thisTag={thisTag} />
+			<CornerTab tagAssets={tagAssets} />
+			<TagIcon tagAssets={tagAssets} />
 		</>
 	);
 };
 
-const CornerTab = ({ thisTag }) => {
+const CornerTab = ({ tagAssets }) => {
 	return (
 		<div className='absolute top-0 right-0 overflow-hidden h-24 w-24 '>
 			<div
-				className={`bg-gradient-to-br ${thisTag.bg_color} to-neutral-700 h-48 w-48 absolute top-0 -right-24 origin-top-left -rotate-45 border-4 border-white shadow-black shadow-lg`}
+				className={`bg-gradient-to-br ${tagAssets.bg_color} to-neutral-700 h-48 w-48 absolute top-0 -right-24 origin-top-left -rotate-45 border-4 border-white shadow-black shadow-lg`}
 			></div>
 		</div>
 	);
 };
 
-const TagIcon = ({ thisTag }) => {
+const TagIcon = ({ tagAssets }) => {
 	return (
 		<div className='absolute top-4 right-4'>
-			<thisTag.icon size={25} color='white' />
+			<tagAssets.icon size={25} color='white' />
 		</div>
 	);
 };
