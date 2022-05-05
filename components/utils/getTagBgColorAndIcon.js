@@ -1,12 +1,17 @@
 import {
+	SiJest,
 	SiPostgresql,
 	SiNodedotjs,
 	SiJavascript,
 	SiTypescript,
 } from "react-icons/si";
 
-export const getBgColorAndIcon = (tag) => {
+export const getTagBgColorAndIcon = (tag) => {
 	const tagMap = {
+		jest: {
+			bg_color: "from-jest",
+			icon: SiJest,
+		},
 		js: {
 			bg_color: "from-js",
 			icon: SiJavascript,
@@ -25,5 +30,7 @@ export const getBgColorAndIcon = (tag) => {
 		},
 	};
 
-	return tagMap[tag];
+	const tagAssests = tagMap[tag];
+
+	return tagAssests;
 };

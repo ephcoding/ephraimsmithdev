@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getBgColorAndIcon } from "components/utils";
+import { getTagBgColorAndIcon } from "components/utils";
 
 export const ArticlePreviewCard = ({ article }) => {
 	const {
@@ -8,7 +8,7 @@ export const ArticlePreviewCard = ({ article }) => {
 		frontmatter: { cover_image, title, sub_title, tag, date },
 	} = article;
 
-	const tagAssets = getBgColorAndIcon(tag);
+	const tagAssets = getTagBgColorAndIcon(tag);
 
 	return (
 		<div

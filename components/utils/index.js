@@ -1,1 +1,1 @@
-export * from "./getArticleTag";
+export * from "./getTagBgColorAndIcon";
