@@ -10,6 +10,7 @@ module.exports = {
 				js: "#f7df1e",
 				node: "#66cc33",
 				pg: "#336791",
+				react: "#61DAFB",
 				ts: "#007ACC",
 			},
 		},

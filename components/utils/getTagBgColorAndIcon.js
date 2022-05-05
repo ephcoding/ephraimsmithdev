@@ -1,8 +1,9 @@
 import {
-	SiJest,
-	SiPostgresql,
-	SiNodedotjs,
 	SiJavascript,
+	SiJest,
+	SiNodedotjs,
+	SiPostgresql,
+	SiReact,
 	SiTypescript,
 } from "react-icons/si";
 
@@ -23,6 +24,10 @@ export const getTagBgColorAndIcon = (tag) => {
 		pg: {
 			bg_color: "from-pg",
 			icon: SiPostgresql,
+		},
+		react: {
+			bg_color: "from-react",
+			icon: SiReact,
 		},
 		ts: {
 			bg_color: "from-ts",
