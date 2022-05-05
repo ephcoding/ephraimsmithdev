@@ -2,7 +2,7 @@
 cover_image: "/bg_mars-glowing.jpg"
 title: "Concept Definition Article Template"
 sub_title: "Using this template for explaining the things."
-tag: "js"
+tag: "JavaScript"
 date: "January 1, 2020"
 description: "this is a description for the template explaining the thing."
 keywords: "keyword 1, keyword 2, keyword 3"

@@ -2,7 +2,7 @@
 cover_image: "/bg_mars-glowing.jpg"
 title: "List Article Template"
 sub_title: "Using this template for explaining the things."
-tag: "react"
+tag: "React"
 date: "June 15, 2021"
 description: "this is a description for the template explaining the thing."
 keywords: "keyword 1, keyword 2, keyword 3"

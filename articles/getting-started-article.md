@@ -2,7 +2,7 @@
 cover_image: "/bg_mars-glowing.jpg"
 title: "Getting Started/Beginner Article Template"
 sub_title: "Using this template for explaining the things."
-tag: "node"
+tag: "NodeJS"
 date: "December 31, 2020"
 description: "this is a description for the template explaining the thing."
 keywords: "keyword 1, keyword 2, keyword 3"
