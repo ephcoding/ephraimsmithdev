@@ -6,10 +6,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				js: "#f7df1e",
-				node: "#66cc33",
-				pg: "#336791",
-				ts: "#007ACC",
+				javascript: "#f7df1e",
+				jest: "#cc4615",
+				nodejs: "#66cc33",
+				postgresql: "#336791",
+				react: "#61DAFB",
+				reactnative: "#61DAFB",
+				typescript: "#007ACC",
 			},
 		},
 	},

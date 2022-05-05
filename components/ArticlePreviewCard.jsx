@@ -1,11 +1,7 @@
+import PropTypes from "prop-types";
 import Image from "next/image";
 import Link from "next/link";
-import {
-	SiPostgresql,
-	SiNodedotjs,
-	SiJavascript,
-	SiTypescript,
-} from "react-icons/si";
+import { generateTagBgColorIcon } from "components/utils";
 
 export const ArticlePreviewCard = ({ article }) => {
 	const {
@@ -13,74 +9,64 @@ export const ArticlePreviewCard = ({ article }) => {
 		frontmatter: { cover_image, title, sub_title, tag, date },
 	} = article;
 
-	const tagMap = {
-		js: {
-			bg_color: "from-js",
-			icon: SiJavascript,
-		},
-		node: {
-			bg_color: "from-node",
-			icon: SiNodedotjs,
-		},
-		pg: {
-			bg_color: "from-pg",
-			icon: SiPostgresql,
-		},
-		ts: {
-			bg_color: "from-ts",
-			icon: SiTypescript,
-		},
-	};
+	const tagAssets = generateTagBgColorIcon(tag);
 
-	// [?] why doesn't THIS work:
-	// ((const tagIcon = tagMap[tag].icon;))
-	// but this DOES??
-	const thisTag = tagMap[tag];
-
+	// 'relative' class contains bg-img
 	return (
 		<div
-			className={`relative p-4 overflow-hidden h-56 shadow-black shadow-xl rounded bg-stone-700`}
+			className={`relative overflow-hidden h-64 shadow-black shadow-xl rounded`}
 		>
-			{/* BACKGROUND IMAGE */}
-			<Image
-				alt='Mountains'
-				src={cover_image}
-				layout='fill'
-				objectFit='cover'
-				quality={100}
-			/>
-			<div className='absolute top-0 right-0 bottom-0 left-0 p-4 bg-stone-800/50'>
-				<h3 className='uppercase font-bold w-3/4 mb-2'>{title}</h3>
-				<h2 className='text-sm w-3/4'>{sub_title}</h2>
+			<BackgroundImage src={cover_image} />
+			<div className='absolute top-0 right-0 bottom-0 left-0 bg-stone-800/80'>
+				<TagLabel date={date} tagAssets={tagAssets} tagName={tag} />
+				<CardText date={date} slug={slug} subTitle={sub_title} title={title} />
 			</div>
-			<TagIconCornerTab thisTag={thisTag} />
 		</div>
 	);
 };
 
-const TagIconCornerTab = ({ thisTag }) => {
+const BackgroundImage = ({ src }) => {
 	return (
-		<>
-			<CornerTab thisTag={thisTag} />
-			<TagIcon thisTag={thisTag} />
-		</>
+		<Image
+			alt='article preview card background image'
+			src={src}
+			layout='fill'
+			objectFit='cover'
+			quality={100}
+		/>
 	);
 };
 
-const CornerTab = ({ thisTag }) => {
+const TagLabel = ({ date, tagAssets, tagName }) => {
 	return (
-		<div className='absolute top-0 right-0 overflow-hidden h-24 w-24'>
-			<div
-				className={`bg-gradient-to-br ${thisTag.bg_color} to-neutral-700 h-48 w-48 absolute top-0 -right-24 origin-top-left -rotate-45 border-4 border-white shadow-black shadow-lg`}
-			></div>
+		<div
+			className={`flex items-center justify-between px-5 py-2 bg-gradient-to-r ${tagAssets.bgColor} to-neutral-700 border-b-2 border-white shadow-black shadow-md mb-2`}
+		>
+			<div className='flex items-center text-base'>
+				<tagAssets.tagIcon size={20} color='white' />
+				<span className='ml-3'>{tagName}</span>
+			</div>
+			<p className='text-sm'>{date}</p>
 		</div>
 	);
 };
 
-const TagIcon = ({ thisTag }) => {
+const CardText = ({ date, slug, subTitle, title }) => {
 	return (
-		<div className='absolute top-4 right-4 hover:scale-105'>
-			<thisTag.icon size={25} color='white' />
+		<div className='p-3'>
+			<Link href={`/articles/${slug}`} passHref>
+				<a className='block text-xl mb-2 uppercase font-bold' as='h3'>
+					{title}
+				</a>
+			</Link>
+			<h2 className='text-sm'>{subTitle}</h2>
 		</div>
 	);
+};
+
+CardText.propTypes = {
+	date: PropTypes.objectOf(Date).isRequired,
+	slug: PropTypes.string.isRequired,
+	subTitle: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
 };
