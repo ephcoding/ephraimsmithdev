@@ -51,7 +51,7 @@ const TagLabel = ({ date, tagAssets, tagName }) => {
 	);
 };
 
-const CardText = ({ date, slug, subTitle, title }) => {
+const CardText = ({ slug, subTitle, title }) => {
 	return (
 		<div className='p-3'>
 			<Link href={`/articles/${slug}`} passHref>
@@ -65,7 +65,6 @@ const CardText = ({ date, slug, subTitle, title }) => {
 };
 
 CardText.propTypes = {
-	date: PropTypes.objectOf(Date).isRequired,
 	slug: PropTypes.string.isRequired,
 	subTitle: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,

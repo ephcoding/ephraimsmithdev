@@ -4,7 +4,7 @@ import Link from "next/link";
 import matter from "gray-matter";
 import { PAGE_META } from "site-data";
 import { ArticlePreviewCard, PageWrapper } from "components";
-// import { getArticleSlugsAndFrMatOnServer } from "lib";
+import { sortByDate } from "lib";
 
 export default function HomePage({ articles }) {
 	const { home } = PAGE_META;
@@ -45,8 +45,6 @@ const LatestArticlesSection = ({ articles }) => {
 };
 
 export async function getStaticProps() {
-	// const articles = await getArticleSlugsAndFrMatOnServer();
-
 	const files = fs.readdirSync(path.join("articles"));
 
 	const articles = files.map((filename) => {
