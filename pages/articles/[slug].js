@@ -16,7 +16,7 @@ export default function Article({
 			<Link href='/'>Go Back</Link>
 			<div className='w-full px-10 py-6 mt-6'>
 				<div className='flex justify-between items-center mt-4'>
-					<h1 className='text-5xl mb-7'>{title}</h1>
+					<h1>{title}</h1>
 				</div>
 				<Image
 					src={cover_image}
