@@ -3,7 +3,7 @@ import { Header } from "components";
 
 export const PageWrapper = ({ title, keywords, description, children }) => {
 	return (
-		<div className='bg-stone-800 text-slate-100'>
+		<div className='bg-stone-800 text-slate-100 min-h-screen'>
 			<Head>
 				<meta name='keywords' content={keywords} />
 				<meta name='description' content={description} />
