@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Header = () => {
 	return (
-		<header className='bg-gray-900 text-gray-100 shadow w-full'>
+		<header className='w-full'>
 			<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
 				<HeaderBranding />
 				<HeaderNav />
@@ -50,7 +50,7 @@ const HeaderNav = () => {
 	return (
 		<nav className='flex flex-wrap md:w-4/5 items-center justify-end text-base md:ml-auto'>
 			{navItems.map((item) => (
-				<HeaderNavItem navItem={item} />
+				<HeaderNavItem key={item.name} navItem={item} />
 			))}
 		</nav>
 	);

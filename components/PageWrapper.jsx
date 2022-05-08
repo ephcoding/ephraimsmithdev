@@ -3,7 +3,7 @@ import { Header } from "components";
 
 export const PageWrapper = ({ title, keywords, description, children }) => {
 	return (
-		<div>
+		<div className='bg-stone-800 text-slate-100'>
 			<Head>
 				<meta name='keywords' content={keywords} />
 				<meta name='description' content={description} />
@@ -21,5 +21,5 @@ export const PageWrapper = ({ title, keywords, description, children }) => {
 PageWrapper.defaultProps = {
 	title: "ephraimsmith.dev",
 	keywords: "build, learn, repeat",
-	description: "overcoming analysis paralysis by shipping code every day",
+	excerpt: "overcoming analysis paralysis by shipping code every day",
 };
