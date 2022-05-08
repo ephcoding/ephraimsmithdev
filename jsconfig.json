@@ -1,0 +1,6 @@
+// allows all import routes to start with root-most folder
+{
+	"compilerOptions": {
+		"baseUrl": "."
+	}
+}
