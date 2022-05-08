@@ -5,7 +5,7 @@ sub_title: "Using this template for explaining the things."
 project: "Project Name"
 tag: "TypeScript"
 date: "June 15, 2021"
-description: "this is a description for the template explaining the thing."
+excerpt: "this is a description for the template explaining the thing."
 keywords: "keyword 1, keyword 2, keyword 3"
 ---
 
