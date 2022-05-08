@@ -1,1 +1,2 @@
-export * from "./variables";
+export * from "./site-config";
+export * from "./site-data";
