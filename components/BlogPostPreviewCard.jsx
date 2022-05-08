@@ -14,24 +14,6 @@ export const BlogPostPreviewCard = ({
 	blog_post: { slug, frontmatter },
 	compact,
 }) => {
-	return (
-		<div className='w-full px-10 py-6 bg-stone-300 shadow-md mt-6 rounded-lg'>
-			<ImageWithTechTag
-				imgURL={frontmatter.cover_image}
-				tag={frontmatter.tag}
-			/>
-			<div className='flex justify-between items-center'>
-				<span className='font-light text-gray-600'>{frontmatter.date}</span>
-				<ProjectTag>{frontmatter.project}</ProjectTag>
-			</div>
-
-			<BodyText title={frontmatter.title} excerpt={frontmatter.excerpt} />
-			<ReadItButton slug={slug} />
-		</div>
-	);
-};
-
-const ImageWithTechTag = ({ compact, imgURL, tag }) => {
 	const colorMap = {
 		javascript: "border-[#f7df1e]",
 		jest: "border-[#cc4615]",
@@ -42,47 +24,69 @@ const ImageWithTechTag = ({ compact, imgURL, tag }) => {
 		typescript: "border-[#007ACC]",
 	};
 
-	const borderColor = colorMap[tag.toLowerCase()];
-
-	return (
-		<>
-			{!compact && (
-				<div
-					className={`relative mb-4 h-[150px] w-[300] rounded-lg border-4 ${borderColor}`}
-				>
-					<Image
-						src={imgURL}
-						alt='preview card image'
-						layout='fill'
-						objectFit='cover'
-						className='rounded'
-					/>
-					<TechTag tag={tag} border_color={borderColor} />
-				</div>
-			)}
-		</>
-	);
-};
-
-const TechTag = ({ border_color, tag }) => {
-	const iconMap = {
-		javascript: <SiJavascript size={25} color='#f7df1e' />,
-		jest: <SiJest size={25} color='#cc4615' />,
-		nodejs: <SiNodedotjs size={25} color='#66cc33' />,
-		postgresql: <SiPostgresql size={25} color='#336791' />,
-		react: <SiReact size={25} color='#61DAFB' />,
-		reactnative: <SiReact size={25} color='#61DAFB' />,
-		typescript: <SiTypescript size={25} color='#007ACC' />,
-	};
+	const borderColor = colorMap[frontmatter.tag.toLowerCase()];
 
 	return (
 		<div
-			className={`absolute bottom-0 right-0 bg-black p-2 rounded-br rounded-tl-lg border-t-4 border-l-4 ${border_color}`}
+			className={`w-full px-10 py-6 shadow-md shadow-white mt-6 rounded-lg border-t-4 ${borderColor}`}
 		>
-			{iconMap[tag.toLowerCase()]}
+			<BackgroundImage imgURL={frontmatter.cover_image} tag={frontmatter.tag} />
+
+			<div className='flex justify-between items-center'>
+				<span className='font-light'>{frontmatter.date}</span>
+				<ProjectTag>{frontmatter.project}</ProjectTag>
+			</div>
+
+			<BodyText title={frontmatter.title} excerpt={frontmatter.excerpt} />
+			<ReadItButton slug={slug} />
 		</div>
 	);
 };
+
+const BackgroundImage = ({ color, compact, imgURL, tag }) => {
+	const iconMap = {
+		javascript: SiJavascript,
+		jest: SiJest,
+		nodejs: SiNodedotjs,
+		postgresql: SiPostgresql,
+		react: SiReact,
+		reactnative: SiReact,
+		typescript: SiTypescript,
+	};
+
+	const colorMap = {
+		javascript: "bg-[#f7df1e]",
+		jest: "bg-[#cc4615]",
+		nodejs: "bg-[#66cc33]",
+		postgresql: "bg-[#336791]",
+		react: "bg-[#61DAFB]",
+		reactnative: "bg-[#61DAFB]",
+		typescript: "bg-[#007ACC]",
+	};
+
+	const BgIcon = iconMap[tag.toLowerCase()];
+	const bgColor = colorMap[tag.toLowerCase()];
+
+	return (
+		<div
+			className={`relative w-full h-32 flex flex-col items-center justify-center mx-auto mb-4 rounded-lg ${bgColor}`}
+		>
+			<BgIcon size={60} color='text-slate-800' />
+			<p>{tag}</p>
+			{/* <div
+				className={`absolute top-0 right-0 bottom-0 left-0  rounded-lg`}
+			></div> */}
+		</div>
+	);
+};
+
+// const TechTag = ({ border_color, tag }) => {
+// 	return (
+// 		<div className='absolute top-0 right-0 bg-black p-2 rounded-bl rounded-tr'>
+// 			{iconMap[tag.toLowerCase()]}
+// 		</div>
+// 	);
+// };
 
 const ProjectTag = ({ children }) => {
 	return (
@@ -94,26 +98,20 @@ const BodyText = ({ slug, title, excerpt }) => {
 	return (
 		<div className='mt-2'>
 			<Link href={`/blog/${slug}`}>
-				<a className='text-2xl text-gray-700 font-bold hover:underline'>
-					{title}
-				</a>
+				<a className='text-2xl font-bold hover:underline'>{title}</a>
 			</Link>
-			<p className='mt-2 text-gray-600'>{excerpt}</p>
+			<p className='mt-2'>{excerpt}</p>
 		</div>
 	);
 };
 
 const ReadItButton = ({ compact, slug }) => {
 	return (
-		<>
-			{!compact && (
-				<div className='flex justify-between items-center mt-6'>
-					<Link href={`/blog/${slug}`}>
-						<a className='text-gray-900 hover:text-blue-600'>Read More</a>
-					</Link>
-				</div>
-			)}
-		</>
+		<div className='mt-6 flex justify-end'>
+			<Link href={`/blog/${slug}`}>
+				<a className='hover:text-blue-600'>Read More</a>
+			</Link>
+		</div>
 	);
 };
 
