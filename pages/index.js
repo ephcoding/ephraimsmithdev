@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BlogPostPreviewCard, PageWrapper } from "components";
-import { getPosts } from "utils";
+import { getSortedBlogPostSlugsAndFrontmatter } from "utils";
 
 export default function HomePage({ blog_posts }) {
 	return (
@@ -25,7 +25,7 @@ export default function HomePage({ blog_posts }) {
 export async function getStaticProps() {
 	return {
 		props: {
-			blog_posts: getPosts(),
+			blog_posts: getSortedBlogPostSlugsAndFrontmatter(),
 		},
 	};
 }
