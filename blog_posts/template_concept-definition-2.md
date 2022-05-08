@@ -2,7 +2,7 @@
 cover_image: "/images/blog_post/img1.jpg"
 title: "Concept Definition Article Template"
 sub_title: "Using this template for explaining the things."
-tag: "Jest"
+tag: "JavaScript"
 project: "Project Name"
 date: "January 1, 2020"
 excerpt: "this is a description for the template explaining the thing."
