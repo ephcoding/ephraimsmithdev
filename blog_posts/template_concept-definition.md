@@ -1,5 +1,5 @@
 ---
-cover_image: "/bg_mars-glowing.jpg"
+cover_image: "/images/blog_post/img1.jpg"
 title: "Concept Definition Article Template"
 sub_title: "Using this template for explaining the things."
 tag: "JavaScript"
