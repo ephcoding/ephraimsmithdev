@@ -27,9 +27,9 @@ const HeaderBranding = () => {
 const HeaderBrandingIcon = () => {
 	return (
 		<Image
-			src='/images/site/eph-icon-500.png'
-			width={40}
-			height={40}
+			src='/images/site/eph-icon-1000.png'
+			width={30}
+			height={30}
 			alt='ephraimsmith.dev icon'
 		/>
 	);
