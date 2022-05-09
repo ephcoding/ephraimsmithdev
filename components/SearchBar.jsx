@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
-import { BlogPostPreviewCard, SearchResults } from "components";
+import { BlogPostPreviewCard } from "components";
 
 export const SearchBar = () => {
 	const [searchTerm, setSearchTerm] = useState("");
@@ -12,8 +12,12 @@ export const SearchBar = () => {
 				setSearchResults([]);
 			} else {
 				const res = await fetch(`/api/search?q=${searchTerm}`);
-				const { results } = await res.json();
-				setSearchResults(results);
+
+				const results = await res.json();
+
+				console.log(">> SearchBar.jsx: [results] >>\n", results);
+
+				// setSearchResults(results);
 			}
 		};
 
@@ -21,7 +25,7 @@ export const SearchBar = () => {
 	}, [searchTerm]);
 
 	return (
-		<div className='relative p-4'>
+		<div className='relative p-4 w-3/4'>
 			<div className='container mx-auto flex items-center justify-center md:justify-end'>
 				<div className='relative text-gray-600 w-72'>
 					<form>
@@ -39,8 +43,6 @@ export const SearchBar = () => {
 					</form>
 				</div>
 			</div>
-
-			{/* <SearchResults results={searchResults} /> */}
 		</div>
 	);
 };
