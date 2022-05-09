@@ -1,7 +1,12 @@
 import PropTypes from "prop-types";
+import { PageWrapper } from "components";
 
 const SearchPostsByTagPage = (props) => {
-	return <div>SearchPostsByTagPage</div>;
+	return (
+		<PageWrapper>
+			<h1>SearchPostsByTagPage</h1>
+		</PageWrapper>
+	);
 };
 
 SearchPostsByTagPage.propTypes = {};
