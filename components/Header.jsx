@@ -39,11 +39,7 @@ const HeaderNav = () => {
 	const navItems = [
 		{
 			name: "blog",
-			href: "/",
-		},
-		{
-			name: "projects",
-			href: "/projects",
+			href: "/blog",
 		},
 	];
 
