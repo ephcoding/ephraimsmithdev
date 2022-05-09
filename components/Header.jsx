@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { SearchBar } from "components";
 
 export const Header = () => {
 	return (
 		<header className='w-full'>
-			<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+			<div className='container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row md:justify-between'>
 				<HeaderBranding />
-				<HeaderNav />
+				<SearchBar />
+				{/* <HeaderNav /> */}
 			</div>
 		</header>
 	);
