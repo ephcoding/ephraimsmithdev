@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
+import Image from "next/image";
+import Link from "next/link";
 import matter from "gray-matter";
 import { marked } from "marked";
-import Link from "next/link";
 import { PageWrapper } from "components";
 
 const BlogPostPage = ({
@@ -19,7 +20,7 @@ const BlogPostPage = ({
 					<h1 className='text-5xl mb-7'>{title}</h1>
 					<p>{tag}</p>
 				</div>
-				<img src={cover_image} alt='' className='w-full rounded' />
+				<Image src={cover_image} alt='' className='w-full rounded' />
 
 				<div className='mt-2'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>

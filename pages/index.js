@@ -1,14 +1,19 @@
-import { useRef } from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { sortByDate } from "utils";
 import Link from "next/link";
 import { BlogPostPreviewCard, PageWrapper, SearchBar } from "components";
 import { BLOG_POST_TAGS } from "constants";
-import { getSortedBlogPostSlugsAndFrontmatter, getTagIcon } from "utils";
+import { getSlugsWithFrMat, getTagIcon } from "utils";
 
 export default function HomePage({ blog_posts }) {
-	const tagFilterIcons = BLOG_POST_TAGS.map((tagName) => {
-		const TagIcon = getTagIcon(tagName, 20);
-		return <TagIcon />;
-	});
+	// const tagFilterIcons = BLOG_POST_TAGS.map((tagName) => {
+	// 	const TagIcon = getTagIcon(tagName, 20);
+	// 	return <TagIcon key={tagName} />;
+	// });
+
+	// console.log(BLOG_POST_TAGS);
 
 	return (
 		<PageWrapper>
@@ -24,9 +29,27 @@ export default function HomePage({ blog_posts }) {
 }
 
 export async function getStaticProps() {
+	const fileNames = fs.readdirSync(path.join("blog_posts"));
+
+	const slugsAndFrontmatterObjARR = fileNames.map((filename) => {
+		const blogPostSlug = filename.replace(".md", "");
+
+		const blogPostContent = fs.readFileSync(
+			path.join("blog_posts", filename),
+			"utf-8"
+		);
+
+		const { data: frontmatter } = matter(blogPostContent);
+
+		return {
+			blogPostSlug,
+			frontmatter,
+		};
+	});
+
 	return {
 		props: {
-			blog_posts: getSortedBlogPostSlugsAndFrontmatter(),
+			blog_posts: slugsAndFrontmatterObjARR.sort(sortByDate),
 		},
 	};
 }
