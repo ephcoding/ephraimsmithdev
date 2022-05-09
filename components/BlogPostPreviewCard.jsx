@@ -15,7 +15,7 @@ dayjs.extend(localizedFormat);
 
 export const BlogPostPreviewCard = ({
 	blog_post: {
-		slug,
+		blogPostSlug,
 		frontmatter: { cover_image, title, sub_title, tag, project, date, excerpt },
 	},
 }) => {
@@ -28,7 +28,6 @@ export const BlogPostPreviewCard = ({
 		reactnative: "border-[#61DAFB]",
 		typescript: "border-[#007ACC]",
 	};
-
 	const borderColor = colorMap[tag.toLowerCase()];
 
 	return (
@@ -42,8 +41,8 @@ export const BlogPostPreviewCard = ({
 				<CardProjectTag>{project}</CardProjectTag>
 			</div>
 
-			<CardTitles title={title} excerpt={excerpt} />
-			<CardReadButton slug={slug} />
+			<CardTitles slug={blogPostSlug} title={title} excerpt={excerpt} />
+			<CardReadButton blogPostSlug={blogPostSlug} />
 		</div>
 	);
 };
@@ -72,7 +71,7 @@ const CardCoverImage = ({ cover_image, tag }) => {
 	const iconColor = colorMap[tag.toLowerCase()];
 
 	return (
-		<Link href={`/blog/tag/${tag}`} passHref>
+		<Link href={`/blog/tag/${tag.toLowerCase()}`} passHref>
 			<div className={`relative h-32 w-full mb-4`}>
 				<Image
 					src={cover_image}
@@ -122,10 +121,10 @@ const CardTitles = ({ slug, title, excerpt }) => {
 	);
 };
 
-const CardReadButton = ({ compact, slug }) => {
+const CardReadButton = ({ compact, blogPostSlug }) => {
 	return (
 		<div className='mt-6 flex justify-end'>
-			<Link href={`/blog/${slug}`}>
+			<Link href={`/blog/${blogPostSlug}`} passHref>
 				<a className='hover:text-stone-800 hover:bg-white focus:bg-white border-2 border-white px-4 py-2 rounded'>
 					Read It!
 				</a>
