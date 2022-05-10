@@ -15,8 +15,16 @@ dayjs.extend(localizedFormat);
 
 export const BlogPostPreviewCard = ({
 	blog_post: {
-		blogPostSlug,
-		frontmatter: { cover_image, title, sub_title, tag, project, date, excerpt },
+		blog_post_slug,
+		blog_post_meta: {
+			cover_image,
+			title,
+			sub_title,
+			tag,
+			project,
+			date,
+			excerpt,
+		},
 	},
 }) => {
 	const tagMap = {
@@ -70,10 +78,10 @@ export const BlogPostPreviewCard = ({
 				<p className='ml-2'>{tag}</p>
 			</div>
 			<CardCoverImage cover_image={cover_image} tag={tag} />
-			<CardTitles slug={blogPostSlug} title={title} excerpt={excerpt} />
+			<CardTitles slug={blog_post_slug} title={title} excerpt={excerpt} />
 			<div className='flex items-center justify-between mt-8'>
 				<CardDate date={date} />
-				<CardReadButton slug={blogPostSlug} />
+				<CardReadButton slug={blog_post_slug} />
 			</div>
 		</div>
 	);
