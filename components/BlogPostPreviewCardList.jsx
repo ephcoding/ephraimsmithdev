@@ -13,7 +13,19 @@ import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 dayjs.extend(localizedFormat);
 
-export const BlogPostPreviewCard = ({
+export const BlogPostPreviewCardList = ({ blog_posts }) => {
+	return (
+		<>
+			{blog_posts.length > 0
+				? blog_posts.map((post, index) => (
+						<BlogPostPreviewCard key={index} blog_post={post} />
+				  ))
+				: "No cached blog posts.."}
+		</>
+	);
+};
+
+const BlogPostPreviewCard = ({
 	blog_post: {
 		blog_post_slug,
 		blog_post_meta: {
@@ -86,7 +98,6 @@ export const BlogPostPreviewCard = ({
 		</div>
 	);
 };
-
 const CardCoverImage = ({ cover_image, tag }) => {
 	return (
 		<div className={`relative h-32 w-full mb-4`}>
@@ -131,4 +142,4 @@ const CardReadButton = ({ compact, slug }) => {
 	);
 };
 
-BlogPostPreviewCard.propTypes = {};
+BlogPostPreviewCardList.propTypes = {};
