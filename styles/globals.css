@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.content-styles h1,
+.content-styles h2,
+.content-styles h3 {
+	margin-bottom: 20px;
+}
