@@ -30,7 +30,7 @@ const search = (req, res) => {
 
 	const searchTermLC = req.query.q.toLowerCase();
 
-	const results = blog_posts.filter(
+	const filteredBlogPosts = blog_posts.filter(
 		({ blog_post_meta: { title, excerpt, tag, project } }) =>
 			[title, excerpt, tag, project].some((field) => {
 				const metaField = field.toLowerCase();
@@ -39,7 +39,7 @@ const search = (req, res) => {
 			})
 	);
 
-	res.status(200).json(JSON.stringify({ results }));
+	res.status(200).json(JSON.stringify({ filteredBlogPosts }));
 };
 
 export default search;

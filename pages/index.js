@@ -14,8 +14,11 @@ export default function HomePage({ blog_posts }) {
 		<PageWrapper>
 			<SearchBar setResultsCallback={setSearchResults} />
 			<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-				{/* <CachedBlogPosts posts={blog_posts} /> */}
-				{/* <BlogPostSearchResults posts={results} /> */}
+				{searchResults.length > 0 ? (
+					<BlogPostSearchResults posts={searchResults} />
+				) : (
+					<CachedBlogPosts posts={blog_posts} />
+				)}
 			</div>
 		</PageWrapper>
 	);
@@ -33,14 +36,13 @@ const CachedBlogPosts = ({ posts }) => {
 	);
 };
 const BlogPostSearchResults = ({ posts }) => {
-	console.log(posts);
-	// if (posts.length === 0) return <></>;
-
 	return (
 		<>
-			{/* {posts.map((post, index) => (
-				<BlogPostPreviewCard key={index} blog_post={post} />
-			))} */}
+			{posts.length > 0
+				? posts.map((post, index) => (
+						<BlogPostPreviewCard key={index} blog_post={post} />
+				  ))
+				: "No posts matching that search..."}
 		</>
 	);
 };

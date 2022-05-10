@@ -10,11 +10,10 @@ export const SearchBar = ({ setResultsCallback }) => {
 				setResultsCallback([]);
 			} else {
 				const res = await fetch(`/api/search?q=${searchTerm}`);
-				const { results } = await res.json();
+				const searchResultsJSON = await res.json();
+				const { filteredBlogPosts } = JSON.parse(searchResultsJSON);
 
-				console.log(">> useSearchResults.jsx: [results] >>\n", results);
-
-				setResultsCallback(results);
+				setResultsCallback(filteredBlogPosts);
 			}
 		};
 
