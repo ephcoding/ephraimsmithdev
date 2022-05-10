@@ -5,16 +5,9 @@ import { sortByDate } from "utils";
 import Link from "next/link";
 import { BlogPostPreviewCard, PageWrapper, SearchBar } from "components";
 import { BLOG_POST_TAGS } from "constants";
-import { getSlugsWithFrMat, getTagIcon } from "utils";
+import { getSlugsWithFrMat } from "utils";
 
 export default function HomePage({ blog_posts }) {
-	// const tagFilterIcons = BLOG_POST_TAGS.map((tagName) => {
-	// 	const TagIcon = getTagIcon(tagName, 20);
-	// 	return <TagIcon key={tagName} />;
-	// });
-
-	// console.log(BLOG_POST_TAGS);
-
 	return (
 		<PageWrapper>
 			<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
