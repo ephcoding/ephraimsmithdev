@@ -1,6 +1,10 @@
 import {
+	SiCss3,
+	SiGraphql,
+	SiHtml5,
 	SiJavascript,
 	SiJest,
+	SiNextdotjs,
 	SiNodedotjs,
 	SiPostgresql,
 	SiReact,
@@ -8,6 +12,18 @@ import {
 } from "react-icons/si";
 
 export const TAG_ICON_MAP = {
+	css: {
+		color: "#264de4 ",
+		icon: "SiCss3",
+	},
+	graphql: {
+		color: "#E10098",
+		icon: SiGraphql,
+	},
+	html: {
+		color: "#E34E26",
+		icon: "SiHtml5",
+	},
 	javascript: {
 		color: "#f7df1e",
 		icon: SiJavascript,
@@ -15,6 +31,10 @@ export const TAG_ICON_MAP = {
 	jest: {
 		color: "#cc4615",
 		icon: SiJest,
+	},
+	nextjs: {
+		color: "#333",
+		icon: SiNextdotjs,
 	},
 	nodejs: {
 		color: "#66cc33",
