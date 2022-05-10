@@ -73,7 +73,7 @@ export const BlogPostPreviewCard = ({
 			<CardTitles slug={blogPostSlug} title={title} excerpt={excerpt} />
 			<div className='flex items-center justify-between mt-8'>
 				<CardDate date={date} />
-				<CardReadButton blogPostSlug={blogPostSlug} />
+				<CardReadButton slug={blogPostSlug} />
 			</div>
 		</div>
 	);
@@ -99,7 +99,7 @@ const CardCoverImage = ({ cover_image, tag }) => {
 const CardTitles = ({ slug, title, excerpt }) => {
 	return (
 		<div className='mt-2'>
-			<Link href={`/blog/${slug}`}>
+			<Link href={`/${slug}`}>
 				<a className='text-xl font-bold hover:underline'>{title}</a>
 			</Link>
 			<p className='mt-2 text-sm'>{excerpt}</p>
@@ -113,9 +113,9 @@ const CardDate = ({ date }) => {
 		</div>
 	);
 };
-const CardReadButton = ({ compact, blogPostSlug }) => {
+const CardReadButton = ({ compact, slug }) => {
 	return (
-		<Link href={`/${blogPostSlug}`}>
+		<Link href={`/${slug}`}>
 			<a className='hover:text-stone-800 hover:bg-white focus:bg-white border-2 border-white px-4 py-2 rounded'>
 				Read
 			</a>
