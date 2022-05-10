@@ -21,23 +21,21 @@ export const SearchBar = ({ setResultsCallback }) => {
 	}, [searchTerm]);
 
 	return (
-		<div className='relative p-4 w-3/4 mx-auto'>
-			<div className='container mx-auto flex items-center justify-center'>
-				<div className='relative text-gray-600 w-72 mx-auto'>
-					<form>
-						<input
-							type='search'
-							name='search'
-							id='search'
-							className='bg-white h-10 px-5 pr-10 rounded text-sm focus:outline-none w-72'
-							value={searchTerm}
-							onChange={(e) => setSearchTerm(e.target.value)}
-							placeholder='Search Posts...'
-						/>
+		<div className='container mx-auto flex items-center justify-center'>
+			<div className='relative text-gray-600 w-72 mx-auto'>
+				<form>
+					<input
+						type='search'
+						name='search'
+						id='search'
+						className='bg-white h-10 px-5 pr-10 rounded text-sm focus:outline-none w-72'
+						value={searchTerm}
+						onChange={(e) => setSearchTerm(e.target.value)}
+						placeholder='Search Posts...'
+					/>
 
-						<FaSearch className='absolute top-0 right-0 text-black mt-3 mr-4' />
-					</form>
-				</div>
+					<FaSearch className='absolute top-0 right-0 text-black mt-3 mr-4' />
+				</form>
 			</div>
 		</div>
 	);

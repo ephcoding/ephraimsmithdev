@@ -4,9 +4,9 @@ import Image from "next/image";
 export const Header = () => {
 	return (
 		<header className='w-full'>
-			<div className='container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row md:justify-between'>
+			<div className='container mx-auto flex flex-col flex-wrap items-center pt-4 mb-4 md:flex-row md:justify-between'>
 				<HeaderBranding />
-				<HeaderNav />
+				{/* <HeaderNav /> */}
 			</div>
 		</header>
 	);
@@ -15,7 +15,7 @@ export const Header = () => {
 const HeaderBranding = () => {
 	return (
 		<Link href='/'>
-			<a className='flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0'>
+			<a className='flex md:w-1/5 title-font font-medium items-center md:justify-start md:mb-0'>
 				<HeaderBrandingIcon />
 
 				<span className='ml-3 text-xl'>
