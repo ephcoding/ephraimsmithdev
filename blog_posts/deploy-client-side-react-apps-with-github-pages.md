@@ -1,12 +1,12 @@
 ---
 cover_image: "/images/blog_post/img4.jpg"
-title: "Step-By-Step Article Template"
-sub_title: "Using this template for explaining the things."
-project: "Project Name"
-tag: "ReactNative"
+title: "All the...small things"
+sub_title: "Deploying a Simple React App with GitHub Pages"
+tag: "React"
+project: "React-Tailwind-Jest Starter"
 date: "December 12, 2021"
 excerpt: "this is a description for the template explaining the thing."
-keywords: "keyword 1, keyword 2, keyword 3"
+keywords: "React, TailwindCSS, Jest, Parcel, GitHub Pages"
 ---
 
 # **\"How To\" (achieve the thing) in # of steps**

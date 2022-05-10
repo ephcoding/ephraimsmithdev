@@ -1,19 +1,17 @@
 ---
-cover_image: "/images/blog_post/img1.jpg"
-title: "Concept Definition Article Template"
-sub_title: "Using this template for explaining the things."
-tag: "Jest"
-project: "Project Name"
-date: "January 1, 2020"
+cover_image: "/images/blog_post/img2.jpg"
+title: "Getting Started/Beginner Article Template"
+sub_title: "Static site generation and data-fetching with Next.js."
+tag: "NextJS"
+project: "Tornado Action"
+date: "December 31, 2020"
 excerpt: "this is a description for the template explaining the thing."
-keywords: "keyword 1, keyword 2, keyword 3"
+keywords: "NextJS, Static Site Generation, React, data-fetching, JavaScript"
 ---
 
-# **What Is/Are Topic: Add Context**
+# **Mention Topic & \"Getting Started\"/\"Beginners\" in Title**
 
-Define topic here. Keep it short & to the point.
-
-![test image](../public/bg_mars-glowing.jpg)
+INTRO: Reinforce why someone would need to know thing. Include some kind of CTA.
 
 Table of contents:
 

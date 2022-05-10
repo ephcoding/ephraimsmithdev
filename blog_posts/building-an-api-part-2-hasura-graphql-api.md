@@ -1,17 +1,19 @@
 ---
-cover_image: "/images/blog_post/img2.jpg"
-title: "Getting Started/Beginner Article Template"
+cover_image: "/images/blog_post/img1.jpg"
+title: "Concept Definition Article Template"
 sub_title: "Using this template for explaining the things."
-project: "Project Name"
-tag: "NodeJS"
-date: "December 31, 2020"
+tag: "GraphQL"
+project: "Vortx API"
+date: "January 1, 2020"
 excerpt: "this is a description for the template explaining the thing."
-keywords: "keyword 1, keyword 2, keyword 3"
+keywords: "NodeJS, GraphQL, Knex, Heroku, Hasura, PostgreSQL"
 ---
 
-# **Mention Topic & \"Getting Started\"/\"Beginners\" in Title**
+# **What Is/Are Topic: Add Context**
 
-INTRO: Reinforce why someone would need to know thing. Include some kind of CTA.
+Define topic here. Keep it short & to the point.
+
+![test image](../public/bg_mars-glowing.jpg)
 
 Table of contents:
 

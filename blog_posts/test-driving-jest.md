@@ -1,12 +1,12 @@
 ---
 cover_image: "/images/blog_post/img4.jpg"
-title: "Step-By-Step Article Template"
-sub_title: "Using this template for explaining the things."
-project: "Project Name"
-tag: "JavaScript"
+title: "I've been everywhere"
+sub_title: "displaying geolocation data with the ArcGIS JavaScript API"
+tag: "Jest"
+project: "tornadoaction.com: displaying convective outlooks & tornado paths"
 date: "December 12, 2021"
 excerpt: "this is a description for the template explaining the thing."
-keywords: "keyword 1, keyword 2, keyword 3"
+keywords: "ArcGIS, "
 ---
 
 # **\"How To\" (achieve the thing) in # of steps**
