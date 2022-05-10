@@ -15,13 +15,13 @@ dayjs.extend(localizedFormat);
 
 export const BlogPostPreviewCardList = ({ blog_posts }) => {
 	return (
-		<>
+		<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
 			{blog_posts.length > 0
 				? blog_posts.map((post, index) => (
 						<BlogPostPreviewCard key={index} blog_post={post} />
 				  ))
-				: "No cached blog posts.."}
-		</>
+				: "it's a feature.  not a bu..  alright, it's broken."}
+		</div>
 	);
 };
 
@@ -142,4 +142,6 @@ const CardReadButton = ({ compact, slug }) => {
 	);
 };
 
-BlogPostPreviewCardList.propTypes = {};
+BlogPostPreviewCardList.propTypes = {
+	blog_posts: PropTypes.arrayOf(PropTypes.object),
+};
