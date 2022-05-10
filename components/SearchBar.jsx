@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 
 export const SearchBar = ({ setResultsCallback }) => {
+	// TODO: make debounce() to prevent api-hit on every keyPress
 	const [searchTerm, setSearchTerm] = useState("");
 
 	useEffect(() => {
