@@ -25,21 +25,14 @@ const BlogPostPage = ({
 			</Link>
 			<div className='w-full px-10 py-6 bg-stone-800 rounded-lg mt-6'>
 				<div className='mt-4'>
+					<Image src={cover_image} alt='' height={75} width={150} />
 					<h1 className='text-5xl mb-2'>{title}</h1>
 					<h2 className='mb-4'>{sub_title}</h2>
 					<TagIcon size={30} color={tagColor} />
 				</div>
-				<div className='relative container w-full h-58'>
-					<Image
-						src={cover_image}
-						alt=''
-						className='w-full rounded'
-						layout='fill'
-						objectFit='cover'
-					/>
-				</div>
+				<div className='container w-1/2'></div>
 
-				<div className='mt-2'>
+				<div className='content-styles mt-2'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 				</div>
 			</div>
