@@ -3,9 +3,16 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "utils";
-import Link from "next/link";
-import { BlogPostPreviewCardList, PageWrapper, SearchBar } from "components";
+import { TAG_ICON_MAP } from "site-data";
 import { getSlugsWithFrMat } from "utils";
+
+import Link from "next/link";
+import {
+	BlogPostPreviewCardList,
+	PageWrapper,
+	SearchBar,
+	TagIconFilterList,
+} from "components";
 
 export default function HomePage({ blog_posts: cachedBlogPosts }) {
 	const [searchResults, setSearchResults] = useState([]);
@@ -16,9 +23,8 @@ export default function HomePage({ blog_posts: cachedBlogPosts }) {
 	return (
 		<PageWrapper>
 			<SearchBar setResultsCallback={setSearchResults} />
-			<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-				<BlogPostPreviewCardList blog_posts={blogPostsToDisplay} />
-			</div>
+			<TagIconFilterList size={30} icons_OBJ={TAG_ICON_MAP} />
+			<BlogPostPreviewCardList blog_posts={blogPostsToDisplay} />
 		</PageWrapper>
 	);
 }
