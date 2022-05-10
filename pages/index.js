@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import { sortByDate } from "utils";
 import Link from "next/link";
 import { BlogPostPreviewCard, PageWrapper, SearchBar } from "components";
-import { BLOG_POST_TAGS } from "constants";
 import { getSlugsWithFrMat } from "utils";
 
 export default function HomePage({ blog_posts }) {
