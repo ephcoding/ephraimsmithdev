@@ -1,27 +1,24 @@
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
-import { useSearchInput } from "hooks/useSearchInput";
 
-export const SearchBar = () => {
+export const SearchBar = ({ setResultsCallback }) => {
 	const [searchTerm, setSearchTerm] = useState("");
-	const [searchResults, setSearchResults] = useState([]);
 
 	useEffect(() => {
-		const getResults = async () => {
+		const getSearchResults = async () => {
 			if (searchTerm === "") {
-				setSearchResults([]);
+				setResultsCallback([]);
 			} else {
 				const res = await fetch(`/api/search?q=${searchTerm}`);
+				const { results } = await res.json();
 
-				const results = await res.json();
+				console.log(">> useSearchResults.jsx: [results] >>\n", results);
 
-				console.log(">> SearchBar.jsx: [results] >>\n", results);
-
-				setSearchResults(results);
+				setResultsCallback(results);
 			}
 		};
 
-		getResults();
+		getSearchResults();
 	}, [searchTerm]);
 
 	return (
