@@ -10,10 +10,10 @@ export const processCachedBlogPosts = () => {
 	// 		path.join("posts", filename),
 	// 		"utf-8"
 	// 	);
-	// 	const { data: frontmatter } = matter(markdownWithMeta);
+	// 	const { data: meta } = matter(markdownWithMeta);
 	// 	return {
 	// 		slug,
-	// 		frontmatter,
+	// 		meta,
 	// 	};
 	// });
 	// return `export const posts = ${JSON.stringify(posts)}`;

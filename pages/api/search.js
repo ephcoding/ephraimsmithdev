@@ -19,11 +19,11 @@ const search = (req, res) => {
 				"utf-8"
 			);
 
-			const { data: frontmatter } = matter(blogPostContent);
+			const { data: meta } = matter(blogPostContent);
 
 			return {
 				blog_post_slug,
-				frontmatter,
+				meta,
 			};
 		});
 	}
@@ -31,10 +31,12 @@ const search = (req, res) => {
 	const lowerCaseSearchTerm = req.query.q.toLowerCase();
 
 	const results = blog_posts.filter(
-		({ frontmatter: { title, excerpt, tag, project } }) =>
-			[title, excerpt, tag, project].some((field) =>
-				field.toLowerCase().includes(lowerCaseSearchTerm)
-			)
+		({ meta: { title, excerpt, tag, project } }) =>
+			[title, excerpt, tag, project].some((field) => {
+				const metaField = field.toLowerCase();
+
+				return metaField.includes(lowerCaseSearchTerm);
+			})
 	);
 
 	console.log(">> API >>\n", results);

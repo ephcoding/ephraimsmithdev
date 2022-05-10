@@ -9,7 +9,7 @@ import { PageWrapper } from "components";
 import { TAG_ICON_MAP } from "site-data";
 
 const BlogPostPage = ({
-	frontmatter: { cover_image, title, sub_title, tag, project, date },
+	meta: { cover_image, title, sub_title, tag, project, date },
 	content,
 	blog_post_slug,
 }) => {
@@ -65,10 +65,10 @@ export async function getStaticProps({ params: { blog_post_slug } }) {
 		"utf-8"
 	);
 
-	const { data: frontmatter, content } = matter(blogPostContent);
+	const { data: meta, content } = matter(blogPostContent);
 	return {
 		props: {
-			frontmatter,
+			meta,
 			content,
 			blog_post_slug,
 		},
