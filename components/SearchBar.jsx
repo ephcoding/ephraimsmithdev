@@ -21,9 +21,9 @@ export const SearchBar = ({ setResultsCallback }) => {
 	}, [searchTerm]);
 
 	return (
-		<div className='relative p-4 w-3/4'>
-			<div className='container mx-auto flex items-center justify-center md:justify-end'>
-				<div className='relative text-gray-600 w-72'>
+		<div className='relative p-4 w-3/4 mx-auto'>
+			<div className='container mx-auto flex items-center justify-center'>
+				<div className='relative text-gray-600 w-72 mx-auto'>
 					<form>
 						<input
 							type='search'
