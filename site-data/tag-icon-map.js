@@ -8,13 +8,14 @@ import {
 	SiNodedotjs,
 	SiPostgresql,
 	SiReact,
+	SiTailwindcss,
 	SiTypescript,
 } from "react-icons/si";
 
 export const TAG_ICON_MAP = {
 	css: {
 		color: "#264de4 ",
-		icon: "SiCss3",
+		icon: SiCss3,
 	},
 	graphql: {
 		color: "#E10098",
@@ -22,7 +23,7 @@ export const TAG_ICON_MAP = {
 	},
 	html: {
 		color: "#E34E26",
-		icon: "SiHtml5",
+		icon: SiHtml5,
 	},
 	javascript: {
 		color: "#f7df1e",
@@ -33,7 +34,7 @@ export const TAG_ICON_MAP = {
 		icon: SiJest,
 	},
 	nextjs: {
-		color: "#333",
+		color: "#fff",
 		icon: SiNextdotjs,
 	},
 	nodejs: {
@@ -51,6 +52,10 @@ export const TAG_ICON_MAP = {
 	reactnative: {
 		color: "#61DAFB",
 		icon: SiReact,
+	},
+	tailwindcss: {
+		color: "#06B6D4",
+		icon: SiTailwindcss,
 	},
 	typescript: {
 		color: "#007ACC",
