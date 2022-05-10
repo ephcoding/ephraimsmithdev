@@ -23,7 +23,7 @@ export default function HomePage({ blog_posts: cachedBlogPosts }) {
 	return (
 		<PageWrapper>
 			<SearchBar setResultsCallback={setSearchResults} />
-			<TagIconFilterList size={30} icons_OBJ={TAG_ICON_MAP} />
+			{/* <TagIconFilterList size={30} icons_OBJ={TAG_ICON_MAP} /> */}
 			<BlogPostPreviewCardList blog_posts={blogPostsToDisplay} />
 		</PageWrapper>
 	);
