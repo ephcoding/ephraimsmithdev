@@ -1,14 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SearchBar } from "components";
 
 export const Header = () => {
 	return (
 		<header className='w-full'>
 			<div className='container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row md:justify-between'>
 				<HeaderBranding />
-				<SearchBar />
-				{/* <HeaderNav /> */}
+				<HeaderNav />
 			</div>
 		</header>
 	);
@@ -20,12 +18,13 @@ const HeaderBranding = () => {
 			<a className='flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0'>
 				<HeaderBrandingIcon />
 
-				<span className='ml-3 text-xl'>EPHRAIMSMITH.DEV</span>
+				<span className='ml-3 text-xl'>
+					EPHRAIM<span className='text-blue-500'>SMITH</span>.DEV
+				</span>
 			</a>
 		</Link>
 	);
 };
-
 const HeaderBrandingIcon = () => {
 	return (
 		<Image
@@ -36,12 +35,11 @@ const HeaderBrandingIcon = () => {
 		/>
 	);
 };
-
 const HeaderNav = () => {
 	const navItems = [
 		{
-			name: "blog",
-			href: "/blog",
+			name: "about",
+			href: "/about",
 		},
 	];
 
@@ -53,7 +51,6 @@ const HeaderNav = () => {
 		</nav>
 	);
 };
-
 const HeaderNavItem = ({ navItem: { name, href } }) => {
 	return (
 		<Link href={href}>
