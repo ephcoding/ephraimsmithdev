@@ -15,7 +15,7 @@ dayjs.extend(localizedFormat);
 
 export const BlogPostPreviewCardList = ({ blog_posts }) => {
 	return (
-		<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
+		<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
 			{blog_posts.length > 0
 				? blog_posts.map((post, index) => (
 						<BlogPostPreviewCard key={index} blog_post={post} />
@@ -82,15 +82,24 @@ const BlogPostPreviewCard = ({
 	const TagIcon = tagMap[tag.toLowerCase()].icon;
 
 	return (
-		<div className='w-full shadow-md shadow-white mt-6 rounded-lg'>
+		<div
+			className={`relative w-full shadow-md shadow-white rounded-lg overflow-hidden p-2 ${bgColor}`}
+		>
 			<div
+				className={`absolute h-[300px] w-[500px] left-1/3 bottom-0 origin-bottom-left rotate-[30deg] bg-stone-800 flex`}
+			>
+				<div
+					className={`h-full w-1 ${bgColor} shadow-md shadow-black/80`}
+				></div>
+			</div>
+			{/* <div
 				className={`flex items-center ${bgColor} justify-center rounded-t-lg px-6 py-1 text-black`}
 			>
-				<TagIcon size={20} color='black' />
-				<p className='ml-2'>{tag}</p>
-			</div>
-			<CardCoverImage cover_image={cover_image} tag={tag} />
-			<CardTitles slug={blog_post_slug} title={title} excerpt={excerpt} />
+			<TagIcon size={20} color='black' />
+			<p className='ml-2'>{tag}</p>
+			</div> */}
+			{/* <CardCoverImage cover_image={cover_image} tag={tag} /> */}
+			<CardTitle slug={blog_post_slug} title={title} sub_title={sub_title} />
 			<div className='flex items-center justify-between mt-8'>
 				<CardDate date={date} />
 				<CardReadButton slug={blog_post_slug} />
@@ -98,32 +107,21 @@ const BlogPostPreviewCard = ({
 		</div>
 	);
 };
-const CardCoverImage = ({ cover_image, tag }) => {
-	return (
-		<div className={`relative h-32 w-full mb-4`}>
-			<Image
-				src={cover_image}
-				alt='blog post cover image'
-				layout='fill'
-				objectFit='cover'
-				objectPosition='center'
-				className='mb-4'
-			/>
-			{/* <div className='absolute top-0 right-0 bottom-0 left-0'>
-				<TagIcon size={40} color={tagColor} />
-			</div> */}
-		</div>
-	);
-};
-const CardTitles = ({ slug, title, excerpt }) => {
+
+const CardTitle = ({ slug, title, sub_title }) => {
 	return (
 		<div className='mt-2'>
 			<Link href={`/${slug}`}>
-				<a className='text-xl font-bold hover:underline'>{title}</a>
+				<a className='text-sm font-bold bg-transparent hover:underline'>
+					{title}
+				</a>
 			</Link>
-			<p className='mt-2 text-sm'>{excerpt}</p>
+			<p className='mt-2 text-sm'>{sub_title}</p>
 		</div>
 	);
+};
+const CardSubTitle = () => {
+	return <div></div>;
 };
 const CardDate = ({ date }) => {
 	return (
