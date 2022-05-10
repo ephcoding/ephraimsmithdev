@@ -9,6 +9,7 @@ import {
 	SiPostgresql,
 	SiReact,
 	SiTailwindcss,
+	SiTensorflow,
 	SiTypescript,
 } from "react-icons/si";
 
@@ -56,6 +57,10 @@ export const TAG_ICON_MAP = {
 	tailwindcss: {
 		color: "#06B6D4",
 		icon: SiTailwindcss,
+	},
+	tensorflow: {
+		color: "#FF6F00",
+		icon: SiTensorflow,
 	},
 	typescript: {
 		color: "#007ACC",
