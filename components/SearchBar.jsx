@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
-import { BlogPostPreviewCard } from "components";
+import { useSearchInput } from "hooks/useSearchInput";
 
 export const SearchBar = () => {
 	const [searchTerm, setSearchTerm] = useState("");
@@ -17,7 +17,7 @@ export const SearchBar = () => {
 
 				console.log(">> SearchBar.jsx: [results] >>\n", results);
 
-				// setSearchResults(results);
+				setSearchResults(results);
 			}
 		};
 
