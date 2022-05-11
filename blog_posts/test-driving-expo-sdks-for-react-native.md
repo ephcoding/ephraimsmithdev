@@ -2,7 +2,7 @@
 cover_image: "/images/blog_post/img3.jpg"
 title: "List Article Template"
 sub_title: "Using this template for explaining the things."
-tag: "ReactNative"
+tag: "Expo"
 project: "Project Name"
 date: "June 15, 2021"
 excerpt: "this is a description for the template explaining the thing."

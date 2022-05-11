@@ -2,7 +2,7 @@
 cover_image: "/images/blog_post/img2.jpg"
 title: "Getting Started/Beginner Article Template"
 sub_title: "Using this template for explaining the things."
-tag: "DataViz"
+tag: "NextJS"
 project: "Project Name"
 date: "December 31, 2020"
 excerpt: "this is a description for the template explaining the thing."
