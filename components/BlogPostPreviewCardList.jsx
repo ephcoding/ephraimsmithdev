@@ -104,18 +104,9 @@ const BlogPostPreviewCard = ({
   return (
     <div className={`relative w-full ${bgColor} overflow-hidden`}>
       <div className="bg-gradient-to-br from-black to-transparent m-1 p-4">
-        <div className="flex justify-between mb-8">
-          <div className="w-2/3">
-            <Title slug={blog_post_slug} text_color={textColor} title={title} />
-            <SubTitle sub_title={sub_title} />
-          </div>
-          <div>
-            <TagIcon size={60} color={tagColor} className="drop-shadow-xl" />
-          </div>
-        </div>
-        <div className="flex items-center justify-between">
-          <Date date={date} />
-          <ReadBtn slug={blog_post_slug} />
+        <div className="flex justify mb-8">
+          <TagIcon size={60} color={tagColor} className="drop-shadow-xl" />
+          <SubTitle sub_title={sub_title} />
         </div>
       </div>
     </div>
@@ -141,15 +132,6 @@ const Date = ({ date }) => {
     <div className="md:block font-light text-sm">
       {dayjs(date).format("ll")}
     </div>
-  );
-};
-const ReadBtn = ({ compact, slug }) => {
-  return (
-    <Link href={`/${slug}`}>
-      <a className="text-sm hover:text-stone-800 hover:bg-white focus:bg-white border-2 border-white px-4 py-1 rounded">
-        Read
-      </a>
-    </Link>
   );
 };
 
