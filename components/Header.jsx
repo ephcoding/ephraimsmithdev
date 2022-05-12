@@ -71,17 +71,17 @@ const MobileNavBtn = ({ open }) => {
 };
 const MobileNavItems = ({ nav_items }) => {
 	return (
-		<Disclosure.Panel className='absolute top-0 h-screen w-screen sm:hidden bg-stone-900/70'>
+		<Disclosure.Panel className='absolute top-0 h-screen w-screen sm:hidden bg-stone-900/80'>
 			<div className='flex flex-col justify-center items-center h-full px-2 pt-2 pb-3 space-y-1'>
-				{MAIN_NAV_ITEMS.map((item) => (
-					<Disclosure.Button
-						key={item.name}
-						as='a'
-						href={item.href}
-						className='text-blue-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md'
-					>
-						{item.name}
-					</Disclosure.Button>
+				{MAIN_NAV_ITEMS.map(({ href, name }) => (
+					<Link href={href} key={name} passHref>
+						<Disclosure.Button
+							as='a'
+							className='hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-4xl'
+						>
+							{name}
+						</Disclosure.Button>
+					</Link>
 				))}
 			</div>
 		</Disclosure.Panel>
