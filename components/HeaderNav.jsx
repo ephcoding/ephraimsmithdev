@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Navigation = ({ nav_items }) => {
+export const HeaderNav = ({ nav_items }) => {
 	return (
 		<nav>
 			<ul>
