@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -16,7 +17,7 @@ export const Header = () => {
 					<div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'>
 						<div className='relative flex items-center justify-between h-16'>
 							<MobileNavBtn open={open} />
-							<div>Ephraim Smith</div>
+							<Branding />
 							<MainNavItems nav_items={MAIN_NAV_ITEMS} />
 						</div>
 					</div>
@@ -27,6 +28,14 @@ export const Header = () => {
 	);
 };
 
+const Branding = () => {
+	return (
+		<div className='flex items-center'>
+			<Image src='/images/eph-icon-1000.png' height={35} width={35} />
+			<span className='ml-2'>Ephraim Smith</span>
+		</div>
+	);
+};
 const MainNavItems = ({ nav_items }) => {
 	return (
 		<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-end'>
@@ -36,7 +45,7 @@ const MainNavItems = ({ nav_items }) => {
 						<a
 							key={item.name}
 							href={item.href}
-							className='text-red-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+							className='hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
 						>
 							{item.name}
 						</a>
