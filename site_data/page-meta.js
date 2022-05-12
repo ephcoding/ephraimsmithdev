@@ -1,5 +1,5 @@
 export const PAGE_META = {
-	homepage_meta: {
+	home_page_meta: {
 		metaDesc:
 			"My name's Ephraim Smith.  Heavy equipment operator turned software developer.  Building my way into the software industry.",
 		metaKeywords:
@@ -9,7 +9,7 @@ export const PAGE_META = {
 			"My name's Ephraim Smith.  Heavy equipment operator turned software developer.  Building my way into the software industry.",
 		pageTitle: "About Me",
 	},
-	toolspage_meta: {
+	tools_page_meta: {
 		metaDesc:
 			"A builder's only as good as his tools.  I lean hard on the experience of others.  Learn through imitation.  Expand on intuition.",
 		metaKeywords:
@@ -18,5 +18,14 @@ export const PAGE_META = {
 		pageIntro:
 			"A builder's only as good as his tools.  I lean hard on the experience of others.  Learn through imitation.  Expand on intuition.",
 		pageTitle: "My Tools",
+	},
+	tornado_action_page_meta: {
+		metaDesc:
+			"Get real-time tornado alerts, news, and stats with Tornado Action at tornadoaction.com.",
+		metaKeywords:
+			"severe weather, tornado, tornadoes, dangerous weather, weather alerts",
+		metaTitle: "Projects | Tornado Action",
+		pageIntro: "",
+		pageTitle: "Tornado Action",
 	},
 };
