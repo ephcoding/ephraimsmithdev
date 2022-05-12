@@ -16,6 +16,7 @@ export const Header = () => {
 					<div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'>
 						<div className='relative flex items-center justify-between h-16'>
 							<MobileNavBtn open={open} />
+							<div>Ephraim Smith</div>
 							<MainNavItems nav_items={MAIN_NAV_ITEMS} />
 						</div>
 					</div>
@@ -28,7 +29,7 @@ export const Header = () => {
 
 const MainNavItems = ({ nav_items }) => {
 	return (
-		<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
+		<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-end'>
 			<div className='hidden sm:block sm:ml-6'>
 				<div className='flex space-x-4'>
 					{MAIN_NAV_ITEMS.map((item) => (
