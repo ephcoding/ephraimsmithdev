@@ -16,58 +16,86 @@ import {
 
 export const TAG_ICON_MAP = {
   css: {
+    border_color: "bg-[#264de4]",
+    text_color: "text-[#264de4]",
     color: "#264de4 ",
     icon: SiCss3,
   },
   expo: {
+    border_color: "bg-[#ffffff]",
+    text_color: "text-[#ffffff]",
     color: "#ffffff ",
     icon: SiExpo,
   },
   graphql: {
+    border_color: "bg-[#E10098]",
+    text_color: "text-[#E10098]",
     color: "#E10098",
     icon: SiGraphql,
   },
   html: {
+    border_color: "bg-[#E34E26]",
+    text_color: "text-[#E34E26]",
     color: "#E34E26",
     icon: SiHtml5,
   },
   javascript: {
+    border_color: "bg-[#f7df1e]",
+    text_color: "text-[#f7df1e]",
     color: "#f7df1e",
     icon: SiJavascript,
   },
   jest: {
+    border_color: "bg-[#cc4615]",
+    text_color: "text-[#cc4615]",
     color: "#cc4615",
     icon: SiJest,
   },
   nextjs: {
+    border_color: "bg-[#ffffff]",
+    text_color: "text-[#ffffff]",
     color: "#fff",
     icon: SiNextdotjs,
   },
   nodejs: {
+    border_color: "bg-[#66cc33]",
+    text_color: "text-[#66cc33]",
     color: "#66cc33",
     icon: SiNodedotjs,
   },
   postgresql: {
+    border_color: "bg-[#336791]",
+    text_color: "text-[#336791]",
     color: "#336791",
     icon: SiPostgresql,
   },
   react: {
+    border_color: "bg-[#61DAFB]",
+    text_color: "text-[#61DAFB]",
     color: "#61DAFB",
     icon: SiReact,
   },
   reactnative: {
+    border_color: "bg-[#61DAFB]",
+    text_color: "text-[#61DAFB]",
     color: "#61DAFB",
     icon: SiReact,
   },
   tailwindcss: {
+    border_color: "bg-[#06B6D4]",
+    text_color: "text-[#06B6D4]",
     color: "#06B6D4",
     icon: SiTailwindcss,
   },
   tensorflow: {
+    border_color: "bg-[#FF6F00]",
+    text_color: "text-[#FF6F00]",
     color: "#FF6F00",
     icon: SiTensorflow,
   },
   typescript: {
+    border_color: "bg-[#007ACC]",
+    text_color: "text-[#007ACC]",
     color: "#007ACC",
     icon: SiTypescript,
   },
