@@ -1,13 +1,11 @@
-import Navigation from "./Navigation";
+import { Navigation } from "components";
+import { NAV_ITEMS } from "site_data";
 
-export default function Header({ title: { first, second } }) {
+export const Header = ({ title }) => {
 	return (
-		<header className='header'>
-			<h1>
-				{first ? first : null}
-				<span className='blue'>{second ? second : null}</span>
-			</h1>
-			<Navigation />
+		<header>
+			<h1>{title}</h1>
+			<Navigation nav_items={NAV_ITEMS} />
 		</header>
 	);
-}
+};

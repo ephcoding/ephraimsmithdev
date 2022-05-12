@@ -1,23 +1,26 @@
+import PropTypes from "prop-types";
 import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
+import { Footer, Header } from "components";
 
-export default function Page({ pageInfo, children }) {
-	const {
-		cssClass,
-		pageHeading,
-		pageIntro,
-		metaDescription,
-		metaKeywords,
-		metaTitle,
-	} = pageInfo;
+PageWrapper.propTypes = {
+	page_meta: PropTypes.shape({
+		metaDesc: PropTypes.string.isRequired,
+		metaKeywords: PropTypes.string.isRequired,
+		metaTitle: PropTypes.string.isRequired,
+		pageIntro: PropTypes.string.isRequired,
+		pageTitle: PropTypes.string.isRequired,
+	}),
+};
+
+export function PageWrapper({ page_meta, children }) {
+	const { metaDesc, metaKeywords, metaTitle, pageIntro, pageTitle } = page_meta;
 
 	return (
 		<div id='Meta' className='meta'>
 			<Head>
 				<title>{metaTitle}</title>
 				<meta name='keywords' content={metaKeywords} />
-				<meta name='description' content={metaDescription} />
+				<meta name='description' content={metaDesc} />
 				<link rel='icon' href='/favicon.ico' />
 				{/* LinkedIn Meta */}
 				<meta property='og:title' name='title' content='ephraimsmith.dev' />
@@ -49,12 +52,10 @@ export default function Page({ pageInfo, children }) {
 					content='Ephraim Smith | sharing software, mistakes, bad dad jokes, and lessons learned with the world.  Probably not in that order.'
 				/>
 			</Head>
-			<div className={`page ${cssClass}-page`}>
-				<Header title={pageHeading} />
-				<main className='content'>
-					<p className='page-intro'>{pageIntro}</p>
-					{children}
-				</main>
+			<div>
+				<Header title={pageTitle} />
+				<p>{pageIntro}</p>
+				<main>{children}</main>
 				<Footer />
 			</div>
 		</div>

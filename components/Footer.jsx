@@ -1,13 +1,9 @@
-import Navigation from "./Navigation";
+import { getCurrentYear } from "utils";
 
-export default function Footer() {
+export const Footer = () => {
 	return (
-		<footer className='footer'>
-			<Navigation />
-			<hr className='footer-hr' />
-			<div className='copyright'>
-				&copy; {new Date().getFullYear()} Ephraim Smith | ephraimsmith.dev
-			</div>
+		<footer>
+			<div>&copy; {getCurrentYear()} Ephraim Smith | ephraimsmith.dev</div>
 		</footer>
 	);
-}
+};
