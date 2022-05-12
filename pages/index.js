@@ -6,7 +6,9 @@ export default function Home() {
 
 	return (
 		<PageWrapper page_meta={home}>
-			<h2 className='red-text-500'>TailwindCSS Test</h2>
+			<section id='about-section'></section>
+			<section id='project-section'></section>
+			<section id='contact-section'></section>
 		</PageWrapper>
 	);
 }
