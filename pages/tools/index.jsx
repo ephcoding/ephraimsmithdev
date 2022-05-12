@@ -4,7 +4,7 @@ import { PAGE_META, TOOLS_LIST } from "site_data";
 // import { sortHighLow } from "js/util_funcs";
 
 const Tools = () => {
-	const { toolspage_meta } = PAGE_META;
+	const { tools_page_meta: toolspage_meta } = PAGE_META;
 
 	// const sortedTools = TOOLS.sort(({ name }) => sortHighLow(this.name, name));
 

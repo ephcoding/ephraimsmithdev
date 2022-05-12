@@ -4,10 +4,6 @@ export const MAIN_NAV_ITEMS = [
 		href: "/",
 	},
 	{
-		name: "projects",
-		href: "/projects",
-	},
-	{
 		name: "tools",
 		href: "/tools",
 	},
