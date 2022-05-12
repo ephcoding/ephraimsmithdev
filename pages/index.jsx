@@ -1,14 +1,8 @@
-import { PAGES, PROJECTS } from "../js/site_data";
-import Card from "components/Card";
-import Link from "next/link";
-import Page from "components/PageWrapper";
+import { PAGE_META } from "site_data";
+import { PageWrapper } from "components";
 
 export default function Home() {
-	const { home } = PAGES;
+	const { home } = PAGE_META;
 
-	const projectCards = PROJECTS.map((project) => (
-		<Card cardMeta={project} key={project.name} />
-	));
-
-	return <Page pageInfo={home}></Page>;
+	return <PageWrapper page_meta={home}></PageWrapper>;
 }
