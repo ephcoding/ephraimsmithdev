@@ -1,6 +1,6 @@
 import Page from "components/PageWrapper";
 import Link from "next/link";
-import { PAGES, TOOLS } from "../../js/site_data";
+import { PAGES, TOOLS } from "../../site_data/site_data";
 // import { sortHighLow } from "js/util_funcs";
 
 const Tools = () => {
