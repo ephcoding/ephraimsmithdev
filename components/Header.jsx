@@ -1,15 +1,15 @@
-import { Navigation } from "components";
+import { HeaderNav } from "components";
 import { NAV_ITEMS } from "site_data";
 
 export const Header = ({ title }) => {
 	return (
-		<header>
+		<header className='bg-stone-700'>
 			<Branding />
-			<Navigation nav_items={NAV_ITEMS} />
+			<HeaderNav nav_items={NAV_ITEMS} />
 		</header>
 	);
 };
 
 const Branding = () => {
-	return <div></div>;
+	return <div>EPHRAIM SMITH</div>;
 };
