@@ -5,7 +5,7 @@ export const Navigation = ({ nav_items }) => {
 		<nav>
 			<ul>
 				{nav_items.map(({ href, name }) => (
-					<Link href={href}>
+					<Link href={href} key={name}>
 						<a>{name}</a>
 					</Link>
 				))}

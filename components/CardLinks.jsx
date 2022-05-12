@@ -5,10 +5,10 @@ const CardLinks = ({ links }) => {
 	const { appStore, repo, site } = links;
 
 	return (
-		<div className='card__links'>
+		<div>
 			{appStore ? (
 				<Link href={appStore}>
-					<a target='_blank' className='card__link'>
+					<a target='_blank'>
 						<FaMobileAlt size={20} title='AppStore' />
 						<span>app store</span>
 					</a>
@@ -16,7 +16,7 @@ const CardLinks = ({ links }) => {
 			) : null}
 			{repo ? (
 				<Link href={repo}>
-					<a target='_blank' className='card__link'>
+					<a target='_blank'>
 						<FaGithub size={20} title='GitHub' />
 						<span>code</span>
 					</a>
@@ -24,7 +24,7 @@ const CardLinks = ({ links }) => {
 			) : null}
 			{site ? (
 				<Link href={site}>
-					<a target='_blank' className='project-link'>
+					<a target='_blank'>
 						<FaTv size={20} title='Website' />
 						<span>website</span>
 					</a>

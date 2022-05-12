@@ -5,11 +5,11 @@ const Card = ({ cardMeta }) => {
 	const { bgImgClass, description, name, tags, urls } = cardMeta;
 
 	return (
-		<li className={`card ${bgImgClass}`}>
-			<div className='card__content'>
-				<div className='card__text'>
+		<li ={`card ${bgImgClass}`}>
+			<div>
+				<div>
 					<h2>{name}</h2>
-					<p className='card__description'>{description}</p>
+					<p>{description}</p>
 				</div>
 				<CardLinks links={urls} />
 			</div>

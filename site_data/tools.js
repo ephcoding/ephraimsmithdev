@@ -1,4 +1,4 @@
-export const TOOLS = [
+export const TOOLS_LIST = [
 	{
 		name: "Architecture Diagrams (AWS)",
 		url: "https://aws.amazon.com/architecture/reference-architecture-diagrams/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-tech-category=*all&awsf.whitepapers-industries=*all&solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc",

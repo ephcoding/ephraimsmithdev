@@ -1,5 +1,5 @@
 export const PAGE_META = {
-	home: {
+	homepage_meta: {
 		metaDesc:
 			"My name's Ephraim Smith.  Heavy equipment operator turned software developer.  Building my way into the software industry.",
 		metaKeywords:
@@ -9,7 +9,7 @@ export const PAGE_META = {
 			"My name's Ephraim Smith.  Heavy equipment operator turned software developer.  Building my way into the software industry.",
 		pageTitle: "About Me",
 	},
-	tools: {
+	toolspage_meta: {
 		metaDesc:
 			"A builder's only as good as his tools.  I lean hard on the experience of others.  Learn through imitation.  Expand on intuition.",
 		metaKeywords:
