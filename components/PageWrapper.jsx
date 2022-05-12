@@ -52,9 +52,9 @@ export function PageWrapper({ page_meta, children }) {
 					content='Ephraim Smith | sharing software, mistakes, bad dad jokes, and lessons learned with the world.  Probably not in that order.'
 				/>
 			</Head>
-			<div>
+			<div className='flex flex-col min-h-screen'>
 				<Header title={pageTitle} />
-				<main>{children}</main>
+				<main className='grow'>{children}</main>
 				<Footer />
 			</div>
 		</div>
