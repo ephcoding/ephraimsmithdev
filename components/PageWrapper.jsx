@@ -16,7 +16,7 @@ export function PageWrapper({ page_meta, children }) {
 	const { metaDesc, metaKeywords, metaTitle, pageIntro, pageTitle } = page_meta;
 
 	return (
-		<div>
+		<div className='bg-black text-white min-h-screen'>
 			<Head>
 				<title>{metaTitle}</title>
 				<meta name='keywords' content={metaKeywords} />
@@ -54,7 +54,6 @@ export function PageWrapper({ page_meta, children }) {
 			</Head>
 			<div>
 				<Header title={pageTitle} />
-				<p>{pageIntro}</p>
 				<main>{children}</main>
 				<Footer />
 			</div>

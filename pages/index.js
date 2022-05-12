@@ -6,7 +6,7 @@ export default function Home() {
 
 	return (
 		<PageWrapper page_meta={home}>
-			<h2>TailwindCSS Test</h2>
+			<h2 className='red-text-500'>TailwindCSS Test</h2>
 		</PageWrapper>
 	);
 }
