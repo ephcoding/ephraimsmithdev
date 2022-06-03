@@ -6,52 +6,52 @@ import { Section } from "components/Section";
 import { SECTION_DATA } from "site_data";
 
 export default function Home() {
-	const { home_page_meta } = PAGE_META;
+  const { home_page_meta } = PAGE_META;
 
-	return (
-		<PageWrapper page_meta={home_page_meta}>
-			<div className='min-h-screen justify-center'>
-				<section
-					id='intro'
-					className='h-3/4 border-red-500 border-2 w-full flex flex-col items-center justify-center'
-				>
-					<div className='relative rounded-full h-[50vw] w-[50vw] overflow-hidden mx-auto mb-10 bg-stone-50 shadow shadow-blue-500 border-2 border-blue-600'>
-						<Image
-							alt='profile image of Ephraim Smith'
-							src='/images/headshot.png'
-							layout='fill'
-						/>
-					</div>
-					<div className='text-center'>
-						<h1 className='uppercase text-2xl font-bold'>Ephraim Smith</h1>
-						<p className='text-sm'>Software Developer</p>
-					</div>
-				</section>
-				{SECTION_DATA.map((section) => (
-					<Section key={section.heading} section_data={section} />
-				))}
-			</div>
-		</PageWrapper>
-	);
+  return (
+    <PageWrapper page_meta={home_page_meta}>
+      <div className="min-h-screen justify-center">
+        <section
+          id="intro"
+          className="min-h-[50vh] w-full flex flex-col items-center justify-center"
+        >
+          <div className="relative rounded-full h-[35vw] w-[35vw] overflow-hidden mx-auto mb-5 bg-stone-50 border-2 border-stone-200">
+            <Image
+              alt="profile image of Ephraim Smith"
+              src="/images/headshot.png"
+              layout="fill"
+            />
+          </div>
+          <div className="text-center">
+            <h1 className="uppercase text-2xl font-bold">Ephraim Smith</h1>
+            <p className="text-sm">Software Developer</p>
+          </div>
+        </section>
+        {SECTION_DATA.map((section) => (
+          <Section key={section.heading} section_data={section} />
+        ))}
+      </div>
+    </PageWrapper>
+  );
 }
 
 const Button = ({ children, href, isSolid }) => {
-	return (
-		<Link href={href}>
-			<a
-				target='_self'
-				className={`${
-					isSolid ? "bg-blue-500" : "bg-transparent"
-				} block w-fit border-2 border-blue-500  bg-blue-500 px-4 py-2`}
-			>
-				{children}
-			</a>
-		</Link>
-	);
+  return (
+    <Link href={href}>
+      <a
+        target="_self"
+        className={`${
+          isSolid ? "bg-blue-500" : "bg-transparent"
+        } block w-fit border-2 border-blue-500  bg-blue-500 px-4 py-2`}
+      >
+        {children}
+      </a>
+    </Link>
+  );
 };
 
 {
-	/* <section id='about-section'>
+  /* <section id='about-section'>
 				<p className='text-lg'>
 					Hey, I'm <span className='font-bold'>Ephraim Smith</span>
 				</p>
