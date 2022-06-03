@@ -16,7 +16,7 @@ export function PageWrapper({ page_meta, children }) {
 	const { metaDesc, metaKeywords, metaTitle, pageIntro, pageTitle } = page_meta;
 
 	return (
-		<div className='bg-black text-white min-h-screen'>
+		<div className='bg-stone-900 text-stone-100 min-h-screen'>
 			<Head>
 				<title>{metaTitle}</title>
 				<meta name='keywords' content={metaKeywords} />
