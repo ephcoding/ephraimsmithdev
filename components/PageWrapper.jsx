@@ -53,7 +53,7 @@ export function PageWrapper({ page_meta, children }) {
 				/>
 			</Head>
 			<div className='flex flex-col min-h-screen'>
-				<Header title={pageTitle} />
+				{/* <Header title={pageTitle} /> */}
 				<main className='grow'>{children}</main>
 				<Footer />
 			</div>
