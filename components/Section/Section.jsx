@@ -1,12 +1,14 @@
 import React from "react";
 
-export const Section = ({ sectionData, children }) => {
-  const {heading} = sectionData;
+export const Section = ({ section_data }) => {
+	const { styles, heading, content } = section_data;
 
 	return (
-		<section className={}>
-			<h2>{heading}</h2>
-			<div>{children}</div>
+		<section className={`${styles} min-h-[50vh]`}>
+			<div className='px-4'>
+				<h2>{heading}</h2>
+				{content}
+			</div>
 		</section>
 	);
 };

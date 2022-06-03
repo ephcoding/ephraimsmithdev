@@ -2,14 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { PAGE_META } from "site_data";
 import { PageWrapper } from "components";
+import { Section } from "components/Section";
+import { SECTION_DATA } from "site_data";
 
 export default function Home() {
 	const { home_page_meta } = PAGE_META;
 
 	return (
 		<PageWrapper page_meta={home_page_meta}>
-			<div className='h-screen justify-center'>
-				<section id='intro' className='h-3/4 border-red-500 border-2 w-full'>
+			<div className='min-h-screen justify-center'>
+				<section
+					id='intro'
+					className='h-3/4 border-red-500 border-2 w-full flex flex-col items-center justify-center'
+				>
 					<div className='relative rounded-full h-[50vw] w-[50vw] overflow-hidden mx-auto mb-10 bg-stone-50 shadow shadow-blue-500 border-2 border-blue-600'>
 						<Image
 							alt='profile image of Ephraim Smith'
@@ -18,34 +23,13 @@ export default function Home() {
 						/>
 					</div>
 					<div className='text-center'>
-						<h1>Ephraim Smith</h1>
-						<p>Software Developer</p>
+						<h1 className='uppercase text-2xl font-bold'>Ephraim Smith</h1>
+						<p className='text-sm'>Software Developer</p>
 					</div>
 				</section>
-				<section id='tech-interests'>
-					<h2>What I'm into:</h2>
-					<ul>
-						<li className=''>Expo</li>
-						<li className=''>React Native</li>
-						<li className=''>React</li>
-						<li className=''>Next.js</li>
-					</ul>
-				</section>
-				<section id='projects'>
-					<h2>What I'm working on:</h2>
-					<ul>
-						<li className=''>tornadoaction.com</li>
-						<li className=''>Coming Soon: mobiledevgarage.com</li>
-						<li className=''>
-							Coming Soon:{" "}
-							<ul>
-								<li>Relative Income mobile app</li>
-							</ul>
-						</li>
-
-						<li className=''>Next.js</li>
-					</ul>
-				</section>
+				{SECTION_DATA.map((section) => (
+					<Section key={section.heading} section_data={section} />
+				))}
 			</div>
 		</PageWrapper>
 	);
