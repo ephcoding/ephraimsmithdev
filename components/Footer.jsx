@@ -4,8 +4,8 @@ import { getCurrentYear } from "utils";
 
 export const Footer = () => {
 	return (
-		<footer className='flex flex-col items-center'>
-			<FooterNav />
+		<footer className='flex flex-col items-center py-2'>
+			{/* <FooterNav /> */}
 			<Copyright />
 		</footer>
 	);
