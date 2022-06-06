@@ -1,23 +1,32 @@
-export const SECTION_DATA = [
-	{
-		bg_color: "bg-stone-200",
+import Image from "next/image";
+import Link from "next/link";
+import { SOCIAL_NAV } from "./social-nav";
+
+// ** FEEDS MAIN-NAV MENU ITEMS
+
+export const SECTION_DATA = {
+	about: {
 		heading: "about me",
+		intro:
+			"work hard.  play hard.  for most this is a cliche` slogan.  for me  it's how I approach my life everyday.  pushing myself physically and mentally everyday has taught me things no degree ever could.",
 		content: (
 			<ul>
 				<li>Skydives: 127</li>
 				<li>Bungee Jumps: 2</li>
 				<li>Miles on Motorcycles: 30,000 +</li>
+				<li>Custom-built the electric guitar that I play. (not well)</li>
 			</ul>
 		),
 	},
-	{
-		bg_color: "bg-stone-900",
+	education: {
 		heading: "education",
+		intro:
+			"my entire life, I've had an extreme curiosity for how the world and everything in it works.  I see education as a springboard - not the endgame.  the real learning doesn't start until you start breaking things.",
 		content: (
 			<ul>
 				<li>
 					<p>Bowling Green State University</p>
-					<p>Construction Management & Technology</p>
+					<p>B.S. Construction Management & Technology</p>
 				</li>
 				<li>
 					<p>Tech Elevator</p>
@@ -38,47 +47,56 @@ export const SECTION_DATA = [
 			</ul>
 		),
 	},
-	{
-		bg_color: "bg-stone-200",
+	experience: {
 		heading: "experience",
+		intro:
+			"with a uniquely diverse professional background, I have learned to approach problems with questions.  not answers.",
 		content: (
 			<ul>
 				<li>
 					<p>Aderant</p>
-					<ul>
-						<li>QA Engineer</li>
-						<li>SDET</li>
-						<li>R \& D Developer</li>
-						<li>Internal Tools Developer</li>
-					</ul>
-				</li>
-				<li>
-					<p>Technical Documentation Page</p>
+					<p>QA Engineer</p>
+					<div>
+						<p>SDET</p>
+						<p>R \& D Developer</p>
+						<p>Internal Tools Developer</p>
+					</div>
 				</li>
 			</ul>
 		),
 	},
-	{
-		bg_color: "bg-stone-900",
+	projects: {
 		heading: "projects",
+		intro: "where the rubber meets the road..",
 		content: (
 			<ul>
 				<li>
 					<h2>Tornado Action</h2>
-					<li>Real-Time Tornado Alerts</li>
-					<li>Daily Severe Weather Outlooks</li>
+					<p>Real-Time Tornado Alerts</p>
+					<p>Daily Severe Weather Outlooks</p>
 				</li>
-				<li>
+				{/* <li>
 					<h2>Relative Income</h2>
-					<li>True net-income calculator</li>
-					<li>Financial awareness</li>
-				</li>
+					<p>True net-income calculator</p>
+					<p>Financial awareness</p>
+				</li> */}
 			</ul>
 		),
 	},
-	{
-		bg_color: "bg-stone-200",
+	connect: {
 		heading: "connect",
-		content: "Connect with me section",
+		intro:
+			"hit me up.  let's work together, trade war stories, copy notes, start a side project, tell lies, catch drinks.  we all have something to learn from each other.",
+		content: (
+			<div className='min-h-full bg-stone-300'>
+				{SOCIAL_NAV.map((item) => (
+					<Link key={item.name} href={item.href} passHref>
+						<a className='inline' target='_blank'>
+							<item.icon fontSize='2rem' />
+						</a>
+					</Link>
+				))}
+			</div>
+		),
 	},
-];
+};
