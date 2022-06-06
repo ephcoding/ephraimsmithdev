@@ -38,8 +38,8 @@ const Branding = () => {
 };
 const MainNavItems = ({ nav_items }) => {
 	return (
-		<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-end'>
-			<div className='hidden sm:block sm:ml-6'>
+		<div className='flex-1 flex items-center justify-center md:items-stretch md:justify-end'>
+			<div className='hidden md:block md:ml-6'>
 				<div className='flex space-x-4'>
 					{MAIN_NAV_ITEMS.map((item) => (
 						<a
@@ -57,13 +57,14 @@ const MainNavItems = ({ nav_items }) => {
 };
 const MobileNavBtn = ({ open }) => {
 	return (
-		<div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
-			<Disclosure.Button className='z-10 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+		<div className='absolute inset-y-0 right-0 flex items-center md:hidden'>
+			{/* <Disclosure.Button className='z-10 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'> */}
+			<Disclosure.Button className='z-10 inline-flex items-center justify-center p-2'>
 				<span className='sr-only'>Open main menu</span>
 				{open ? (
-					<MdClose size={20} color='white' aria-hidden='true' />
+					<MdClose size={25} color='white' aria-hidden='true' />
 				) : (
-					<MdMenu size={20} color='white' aria-hidden='true' />
+					<MdMenu size={25} color='white' aria-hidden='true' />
 				)}
 			</Disclosure.Button>
 		</div>
@@ -71,17 +72,19 @@ const MobileNavBtn = ({ open }) => {
 };
 const MobileNavItems = ({ nav_items }) => {
 	return (
-		<Disclosure.Panel className='absolute top-0 h-screen w-screen sm:hidden bg-stone-900/80'>
-			<div className='flex flex-col justify-center items-center h-full px-2 pt-2 pb-3 space-y-1'>
+		<Disclosure.Panel className='absolute top-0 left-0 w-screen h-screen md:hidden bg-stone-900/90'>
+			<div className='flex flex-col justify-center h-full items-center space-y-5'>
 				{MAIN_NAV_ITEMS.map(({ href, name }) => (
-					<Link href={href} key={name} passHref>
-						<Disclosure.Button
-							as='a'
-							className='hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-4xl'
-						>
-							{name}
-						</Disclosure.Button>
-					</Link>
+					// <Link  passHref>
+					<Disclosure.Button
+						as='a'
+						href={href}
+						key={name}
+						className='focus:text-red-500 block text-4xl'
+					>
+						{name}
+					</Disclosure.Button>
+					// </Link>
 				))}
 			</div>
 		</Disclosure.Panel>
