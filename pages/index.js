@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PAGE_META } from "site_data";
@@ -23,8 +24,8 @@ export default function Home() {
 						</p>
 					</div>
 				</section>
-				{SECTION_DATA.map((section) => (
-					<Section key={section.heading} section_data={section} />
+				{Object.entries(SECTION_DATA).map(([key, content]) => (
+					<Section key={key} id={key} section_data={content} />
 				))}
 			</div>
 		</PageWrapper>

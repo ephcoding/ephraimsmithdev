@@ -1,13 +1,14 @@
 import React from "react";
 
-export const Section = ({ section_data, children }) => {
-	const { bg_color, heading, content } = section_data;
+export const Section = ({ id, section_data }) => {
+	const { heading, intro, content } = section_data;
 
 	return (
-		<section className={`${bg_color} min-h-[50vh]`}>
+		<section id={id} className={`flex flex-col justify-center min-h-[50vh]`}>
 			<div className='p-4'>
-				<h2 className='text-4xl font-bold text-center'>{heading}</h2>
-				{children}
+				<h2 className='text-4xl font-bold text-center mb-4'>{heading}</h2>
+				<p className='text-center mb-4'>{intro}</p>
+				{content}
 			</div>
 		</section>
 	);
