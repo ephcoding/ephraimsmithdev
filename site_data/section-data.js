@@ -7,42 +7,59 @@ import { SOCIAL_NAV } from "./social-nav";
 export const SECTION_DATA = {
 	about: {
 		heading: "about me",
-		intro:
-			"work hard.  play hard.  for most this is a cliche` slogan.  for me  it's how I approach my life everyday.  pushing myself physically and mentally everyday has taught me things no degree ever could.",
+		intro: "100% believe all limitations live between the ears.",
 		content: (
-			<ul>
+			<ul className='text-sm'>
 				<li>Skydives: 127</li>
 				<li>Bungee Jumps: 2</li>
-				<li>Miles on Motorcycles: 30,000 +</li>
-				<li>Custom-built the electric guitar that I play. (not well)</li>
+				<li>Miles on Motorcycles: 30,000+</li>
+				<li>Started learning to skateboard at 37.</li>
+				<li>Custom-built the electric guitar that I play</li>
+				<li>Achieved the prestigious Eagle Scout Award at 13.</li>
+				<li>Wife and I paid off $212,000 of debt in 3.5 years.</li>
+				<li>
+					Reverse-engineered the Army Regulations to get selected as a pilot
+					without any military connections or flight experience.
+				</li>
 			</ul>
 		),
 	},
 	education: {
 		heading: "education",
-		intro:
-			"my entire life, I've had an extreme curiosity for how the world and everything in it works.  I see education as a springboard - not the endgame.  the real learning doesn't start until you start breaking things.",
+		intro: "",
 		content: (
 			<ul>
 				<li>
 					<p>Bowling Green State University</p>
-					<p>B.S. Construction Management & Technology</p>
+					<p>B.S., Construction Management & Technology</p>
+				</li>
+				<li>
+					<p>International Union of Operating Engineers</p>
+					<p>Diploma, Heavy Equipment Operator</p>
+				</li>
+				<li>
+					<p>Erie County Technical School</p>
+					<p>Diploma, Construction Trades</p>
+				</li>
+				<li>
+					<p>United States Army</p>
+					<p>Basic Combat Training</p>
 				</li>
 				<li>
 					<p>Tech Elevator</p>
-					<p>Fullstack Java Bootcamp</p>
+					<p>Diploma, Fullstack Java Bootcamp</p>
 				</li>
 				<li>
 					<p>FreeCodeCamp</p>
-					<p>Responsive Web Design</p>
+					<p>Certificate: Responsive Web Design</p>
 				</li>
 				<li>
 					<p>FreeCodeCamp</p>
-					<p>JavaScript Algorithms & Data Structures</p>
+					<p>Certificate: JavaScript Algorithms & Data Structures</p>
 				</li>
 				<li>
 					<p>FreeCodeCamp</p>
-					<p>Front End Development Libraries</p>
+					<p>Certificate: Front End Development Libraries</p>
 				</li>
 			</ul>
 		),
