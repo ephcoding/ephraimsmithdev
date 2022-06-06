@@ -9,7 +9,7 @@ export const SECTION_DATA = {
 		heading: "about me",
 		intro: "100% believe all limitations live between the ears.",
 		content: (
-			<ul className='text-sm'>
+			<ul>
 				<li>Skydives: 127</li>
 				<li>Bungee Jumps: 2</li>
 				<li>Miles on Motorcycles: 30,000+</li>

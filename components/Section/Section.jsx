@@ -8,7 +8,7 @@ export const Section = ({ id, section_data }) => {
 			<div className='p-4'>
 				<h2 className='text-4xl font-bold text-center mb-4'>{heading}</h2>
 				<p className='text-center mb-4'>{intro}</p>
-				{content}
+				<div className='text-sm'>{content}</div>
 			</div>
 		</section>
 	);
