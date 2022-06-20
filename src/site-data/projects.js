@@ -105,4 +105,20 @@ const FCC_PROJECTS = [
 	},
 ];
 
-const MY_PROJECTS = {};
+const APPLICATIONS = [
+	{ name: "ROVERCAM", description: "", img: "", hrefs: [] },
+	{ name: "SportsWX", description: "", img: "", hrefs: [] },
+	{ name: "Tornado Warned", description: "", img: "", hrefs: [] },
+];
+
+const TOOLS = [
+	{ name: "Expo/React Native Starter", description: "", img: "", hrefs: [] },
+	{ name: "Fullstack Next.js Starter", description: "", img: "", hrefs: [] },
+	{
+		name: "PostgreSQL/GraphQL API Starter",
+		description: "",
+		img: "",
+		hrefs: [],
+	},
+	{ name: "Web App Starter", description: "", img: "", hrefs: [] },
+];
