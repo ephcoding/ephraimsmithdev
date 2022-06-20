@@ -1,2 +1,4 @@
-export * from "./site-config";
-export * from "./tag-icon-map";
+export * from "./configs";
+export * from "./navigation";
+export * from "./projects";
+export * from "./sections";
