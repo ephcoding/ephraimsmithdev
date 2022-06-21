@@ -30,7 +30,7 @@ export const PageWrapper = ({ children }) => {
 				<title>Ephraim Smith</title>
 			</Head>
 			<Navbar />
-			<Hero />
+			{/* <Hero /> */}
 			<main className='container px-4 mx-auto'>{children}</main>
 			<Footer />
 		</div>
