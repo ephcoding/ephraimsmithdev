@@ -15,9 +15,9 @@ export const Hero = () => {
 					<div className='btn-group'>
 						{SITE_NAV.map(({ name, href }) => (
 							<Link key={name} href={href}>
-								<button className='btn'>
-									<a className='text-2xs'>{name}</a>
-								</button>
+								<a className='text-2xs'>
+									<button className='btn'>{name}</button>
+								</a>
 							</Link>
 						))}
 					</div>
