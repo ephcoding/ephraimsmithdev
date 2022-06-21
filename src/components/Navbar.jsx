@@ -61,9 +61,9 @@ const NavItems = () => {
 	return (
 		<>
 			{SITE_NAV.map(({ name, href }) => (
-				<li key={href} className='link link-secondary'>
+				<li key={href}>
 					<Link href={href}>
-						<a>{name}</a>
+						<a className='link link-secondary'>{name}</a>
 					</Link>
 				</li>
 			))}
