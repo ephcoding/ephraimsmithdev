@@ -22,27 +22,7 @@ export const PROJECTS = [
 		img_src: "images/rovercam.png",
 		hrefs: {
 			code: `${MODEVX_GH_REPO}/rovercam`,
-			live_project: "https://rovercamapp.com",
-		},
-	},
-	{
-		name: "Mobile App Promo Page Template",
-		description:
-			"Single-page website template for promoting or vetting your latest app ideas.",
-		img_src: "images/preview-placeholder.png",
-		hrefs: {
-			code: `${EPHCODING_GH_REPO}`,
-			live_project: `${EPHCODING_GH_PAGES}`,
-		},
-	},
-	{
-		name: "Break It Up",
-		description:
-			"High-focus tasks require dedicated break time.  Give your brain the breaks it needs with Break It Up.",
-		img_src: "images/preview-placeholder.png",
-		hrefs: {
-			code: `${EPHCODING_GH_REPO}`,
-			live_project: `${EPHCODING_GH_PAGES}`,
+			live_project: "https://www.rovercamapp.com",
 		},
 	},
 ];
