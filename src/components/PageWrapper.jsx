@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { Header } from "components";
+import { Footer, Hero } from "components";
 
-export const PageWrapper = ({ title, children }) => {
+export const PageWrapper = ({ children }) => {
 	return (
-		<div className='bg-black text-slate-100 min-h-screen'>
+		<div data-theme='dark' className='bg-black text-slate-100 min-h-screen'>
 			<Head>
 				<meta
 					name='keywords'
@@ -29,10 +29,9 @@ export const PageWrapper = ({ title, children }) => {
 				<meta name='twitter:creator' content='@ephcoding' />
 				<title>Ephraim Smith</title>
 			</Head>
-
-			<Header />
-
+			<Hero />
 			<main className='container px-4 mx-auto'>{children}</main>
+			<Footer />
 		</div>
 	);
 };
