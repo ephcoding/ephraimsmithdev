@@ -31,7 +31,7 @@ export const PageWrapper = ({ children }) => {
 			</Head>
 			<Navbar />
 			{/* <Hero /> */}
-			<main className='container px-4 mx-auto'>{children}</main>
+			<main>{children}</main>
 			<Footer />
 		</div>
 	);
