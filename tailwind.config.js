@@ -1,11 +1,15 @@
 module.exports = {
 	content: [
-		"pages/**/*.{js,ts,jsx,tsx}",
-		"components/**/*.{js,ts,jsx,tsx}",
-		"site_data/**/*.{js}",
+		"./src/pages/**/*.{js,ts,jsx,tsx}",
+		"./src/components/**/*.{js,ts,jsx,tsx}",
+		"./src/site_data/**/*.{js}",
 	],
 	theme: {
 		extend: {},
 	},
 	plugins: [require("daisyui")],
+	daisyui: {
+		styled: true,
+		themes: ["dark", "light"],
+	},
 };
