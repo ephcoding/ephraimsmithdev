@@ -18,7 +18,11 @@ export const Navbar = () => {
 };
 
 const Header = ({ children }) => {
-	return <header className='navbar bg-base-100'>{children}</header>;
+	return (
+		<header className='navbar bg-base-100 sticky left-0 top-0 right-0 z-10'>
+			{children}
+		</header>
+	);
 };
 
 const Branding = ({ img = null, title }) => {
