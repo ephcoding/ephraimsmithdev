@@ -3,7 +3,7 @@ import { Footer, Hero, Navbar } from "components";
 
 export const PageWrapper = ({ children }) => {
 	return (
-		<div data-theme='black'>
+		<div data-theme='forest'>
 			<Head>
 				<meta
 					name='keywords'
