@@ -16,7 +16,7 @@ export const Footer = () => {
 				<div className='grid grid-flow-col gap-4'>
 					{SOCIAL_LINKS.map(({ name, href, icon_name }) => (
 						<Link key={href} href={href}>
-							<a className='link link-hover'>
+							<a className='link link-hover' target='_blank'>
 								<ReactIconLink name={icon_name} />
 							</a>
 						</Link>
