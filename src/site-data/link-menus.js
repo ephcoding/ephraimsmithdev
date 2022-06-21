@@ -1,7 +1,7 @@
 export const SITE_NAV = [
-	{ name: "projects", href: "#projects" },
-	{ name: "experience", href: "#experience" },
-	{ name: "education", href: "#education" },
+	{ name: "projects", href: "#projects-section" },
+	{ name: "experience", href: "#experience-section" },
+	{ name: "education", href: "#education-section" },
 ];
 
 export const SOCIAL_LINKS = [
