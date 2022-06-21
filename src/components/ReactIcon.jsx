@@ -1,3 +1,4 @@
+import { IconContext } from "react-icons";
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export const ReactIconLink = ({ name }) => {
@@ -9,5 +10,9 @@ export const ReactIconLink = ({ name }) => {
 	};
 	const Component = iconMap[name];
 
-	return <Component size={25} />;
+	return (
+		<IconContext.Provider value={{ className: "text-secondary" }}>
+			<Component size={25} />
+		</IconContext.Provider>
+	);
 };
