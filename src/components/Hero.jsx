@@ -1,4 +1,5 @@
-import { Navbar } from "./Navbar";
+import Link from "next/link";
+import { SITE_NAV } from "site-data";
 
 export const Hero = () => {
 	return (
@@ -11,7 +12,15 @@ export const Hero = () => {
 						excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
 						a id nisi.
 					</p>
-					<button className='btn btn-primary'>Get Started</button>
+					<div className='btn-group'>
+						{SITE_NAV.map(({ name, href }) => (
+							<Link key={name} href={href}>
+								<button className='btn'>
+									<a className='text-2xs'>{name}</a>
+								</button>
+							</Link>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
