@@ -9,7 +9,7 @@ export const Navbar = () => {
 			<div className='navbar-start'>
 				<Branding title='Ephraim Smith' />
 			</div>
-			<div class='navbar-end'>
+			<div className='navbar-end'>
 				<MobileNav />
 				<HorizontalNav />
 			</div>
@@ -25,7 +25,7 @@ const Branding = ({ img = null, title }) => {
 	return (
 		<div className='flex'>
 			<Link href='/'>
-				<a class='btn btn-ghost normal-case text-xl'>{title}</a>
+				<a className='btn btn-ghost normal-case text-xl'>{title}</a>
 			</Link>
 		</div>
 	);
@@ -33,13 +33,13 @@ const Branding = ({ img = null, title }) => {
 
 const MobileNav = () => {
 	return (
-		<div class='dropdown dropdown-end'>
-			<label tabindex='0' class='btn btn-ghost md:hidden'>
+		<div className='dropdown dropdown-end'>
+			<label tabindex='0' className='btn btn-ghost md:hidden'>
 				<FaBars size={30} />
 			</label>
 			<ul
 				tabindex='0'
-				class='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
+				className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
 			>
 				<NavItems />
 			</ul>
@@ -49,8 +49,8 @@ const MobileNav = () => {
 
 const HorizontalNav = () => {
 	return (
-		<div class='hidden md:flex'>
-			<ul class='menu menu-horizontal p-0'>
+		<div className='hidden md:flex'>
+			<ul className='menu menu-horizontal p-0'>
 				<NavItems />
 			</ul>
 		</div>
