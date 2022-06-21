@@ -4,8 +4,8 @@ import { ReactIconLink } from "./ReactIcon";
 
 export const Footer = () => {
 	return (
-		<footer class='footer footer-center p-10 bg-primary text-primary-content'>
-			<div class='grid grid-flow-col gap-4'>
+		<footer className='footer footer-center p-10 bg-primary text-primary-content'>
+			<div className='grid grid-flow-col gap-4'>
 				{SITE_NAV.map(({ name, href }) => (
 					<Link key={href} href={href}>
 						<a className='link link-hover'>{name}</a>
@@ -13,7 +13,7 @@ export const Footer = () => {
 				))}
 			</div>
 			<div>
-				<div class='grid grid-flow-col gap-4'>
+				<div className='grid grid-flow-col gap-4'>
 					{SOCIAL_LINKS.map(({ name, href, icon_name }) => (
 						<Link key={href} href={href}>
 							<a className='link link-hover'>
