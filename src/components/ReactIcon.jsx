@@ -11,8 +11,10 @@ export const ReactIconLink = ({ name }) => {
 	const Component = iconMap[name];
 
 	return (
-		<IconContext.Provider value={{ className: "text-accent" }}>
-			<Component size={25} />
+		<IconContext.Provider
+			value={{ className: "text-content text-2xl md:text-3xl" }}
+		>
+			<Component />
 		</IconContext.Provider>
 	);
 };
